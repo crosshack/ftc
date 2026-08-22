@@ -569,7 +569,9 @@ h1, h2, h3, h4 {
   display: block;
 }
 .see-also p { margin: 0 0 14px; }
-.see-also a { color: var(--accent); font-weight: 600; }
+.see-also a { color: var(--text); font-weight: 600; position: relative; display: inline-block; padding-right: 18px; }
+.see-also a:hover { color: var(--accent); }
+.see-also a .chev { width: 8px; height: 12px; position: absolute; top: 50%; right: 0; transform: translateY(-50%); }
 
 /* Article reference / citation links (distinct accent from see-also) */
 .reference-links {
