@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="../assets/img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="192x192" href="../assets/img/favicon-192.png">
+<title>プレー選択とプレスナップリードの基礎 ― スナップ前に結果は半分決まる | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="何がプレーコールを決めるのか、QBがスナップ前に何を読んでいるのかを解説する基礎知識ページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">プレー選択とプレスナップリードの基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="article-head">
+  <div class="container">
+    <span class="tag tag-flag">オフェンス</span>
+    <div class="page-head-title-row">
+      <h1>プレー選択とプレスナップリードの基礎<br><span class="subtitle">― スナップ前に結果は半分決まる</span></h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="35" cy="52" r="3.5" fill="#eceee9"/>
+        <path d="M20,52 A15,15 0 0 1 50,52" fill="none" stroke="#3ecf6e" stroke-width="1" opacity="0.5"/>
+        <path d="M25,52 A10,10 0 0 1 45,52" fill="none" stroke="#3ecf6e" stroke-width="1" opacity="0.4"/>
+        <circle cx="46" cy="24" r="4" fill="none" stroke="#ffc633" stroke-width="1.4"/>
+        <circle cx="46" cy="24" r="1.8" fill="#ffc633"/>
+      </svg>
+    </div>
+    <div class="meta">読了目安 8分 ・ QBの視点</div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>プレーが決まるまでには2段階の意思決定がある。ひとつはスナップより前、コーチとQBが「どのプレーを選ぶか」を決めるプレー選択。もうひとつはスナップ直前の数秒、QBが相手の配置を読んで最終調整する「プレスナップリード」だ。この2つを順番に見ていく。</p>
+
+  <h2>プレー選択 ― 攻撃の設計図を選ぶ</h2>
+
+  <h3>閃きではなく、状況で選ぶ</h3>
+  <p>プレーコールは、選手個人の思いつきではなく、複数の状況要因を踏まえてコーチとQBが選び取る意思決定である。同じ1stダウンでも、試合展開によって選ばれるプレーはまったく違う。</p>
+
+  <table class="compare-table">
+    <tr><th>要素</th><th>具体例</th><th>傾向</th></tr>
+    <tr><td>ダウン&amp;ディスタンス</td><td>3rd&amp;ロング（残り8ヤード以上）</td><td>パスに偏りやすい</td></tr>
+    <tr><td>スコア・残り時間</td><td>終盤の大量リード</td><td>時計を進めるランが増える</td></tr>
+    <tr><td>フィールドポジション</td><td>レッドゾーン</td><td>スペースの狭さに応じた専用プレーが増える</td></tr>
+    <tr><td>対戦相手の傾向</td><td>事前のスカウティング</td><td>相手の弱点を突くプレーを用意する</td></tr>
+  </table>
+
+  <h3>誰が決めるか ― プレーコール伝達の仕組み</h3>
+  <p>多くのチームでは、ヘッドコーチやオフェンスコーディネーターが「プレーコーラー」としてプレーを決め、ヘルメット内蔵の無線でQBに伝える。NFLではスナップの15秒前に無線が自動的に切れるため、そこから先はQBがハドルやプレスナップの読みをもとに最終調整する。</p>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    近年は、勝率計算に基づく「アナリティクス」を参考に、これまでより4thダウンで果敢に狙うなど、リスクを取った選択をするチームが増えている。
+  </div>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    ダウンと残りヤードを意識して見るだけで、次にどんなプレーが来やすいかの予測精度が大きく上がる。特に3rd&amp;ロングでの守備陣の動きに注目したい。
+  </div>
+
+  <h2>プレスナップリード ― スナップ前に何を読むか</h2>
+
+  <h3>静止画から読む ― ボックスとシェル</h3>
+  <p>QBはスナップ前の数秒で、まず静止した配置から2つの情報を読み取る。</p>
+  <p>ひとつは「ボックス」。オフェンスラインのすぐ周辺、ランプレーに直接関わるエリアのことで、QBはこの中にディフェンダーが何人いるかを数える。ブロックできるOLの人数と比較し、ランプレーが数的に有利か不利かを判断する材料にする。</p>
+  <p>もうひとつが、深い位置にいるセーフティの人数と位置、通称「シェル」。</p>
+  <table class="compare-table">
+    <tr><th>シェル</th><th>特徴</th><th>示唆されるカバレッジ</th></tr>
+    <tr>
+      <td>1ハイ（シングルハイ）</td>
+      <td>フィールド中央深くにセーフティが1人だけ</td>
+      <td>カバー1やカバー3など。ボックスにもう1人人員を割いている可能性が高い</td>
+    </tr>
+    <tr>
+      <td>2ハイ（ダブルハイ）</td>
+      <td>セーフティ2人が左右に均等に深く位置</td>
+      <td>カバー2やカバー4など。中央の深いパスに人数を割く分、ボックスは手薄になりやすい</td>
+    </tr>
+  </table>
+  <p>ただし現代のディフェンスは、スナップ直前にセーフティを動かして本来のシェルを隠す「ディスガイズ（偽装）」を多用する。そのためQBは1つの静止画だけでなく、セットしてからスナップまでの動きも含めて読む必要がある。</p>
+
+  <h3>動きから読む ― モーションとレバレッジ</h3>
+  <p>静止画だけでなく、選手を動かして相手の反応を引き出す読み方もある。</p>
+  <ul>
+    <li><strong>モーションへの反応</strong>：レシーバーやRBを横に動かす「モーション」に対し、ディフェンダーが1人ついてきて一緒に移動すれば、そのエリアはマンツーマンの可能性が高い。立ち位置がほとんど変わらなければ、ゾーンでエリアを守っている可能性が高い。</li>
+    <li><strong>CBのレバレッジ</strong>：レシーバーに対するコーナーバックの立ち位置。近くに詰めて構える「プレスカバレッジ」はマンツーマンで強くマークする意図、数ヤード下がる「オフカバレッジ」はゾーンで広く守る意図が多い。</li>
+  </ul>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    ディフェンスのディスガイズ（偽装）技術は年々高度化しており、スナップ直前までシェルを変え続けることでQBの読みを乱すチームが増えている。
+  </div>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    モーションした選手にディフェンダーが1人だけついていくかどうかは、テレビ中継でも比較的追いやすいプレスナップリードの入り口。まずはそこに注目してみたい。
+  </div>
+
+  <h2>読みの結果 ― チェックか、オーディブルか</h2>
+
+  <h3>土壇場の2択 ― チェックとオーディブル</h3>
+  <p>これらの情報を数秒でまとめ、QBは元々コールされていたプレーをそのまま実行する「チェック」か、別のプレーに切り替える「オーディブル」かを選ぶ。</p>
+
+  <h3>コーチが選択肢を渡す ― RPOという仕組み</h3>
+  <p>近年はコーチが複数のプレーをあらかじめセットにして送り、QBがディフェンスの形を見て選択する「RPO（ラン・パス・オプション）」のような仕組みも一般的になっている。オーディブルが「プレー全体の変更」だとすれば、RPOは「プレーの中に選択肢が最初から埋め込まれている」という違いがある。</p>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    RPOの普及により、オーディブルのようなプレー全体の変更ではなく、プレーの内部でボールの配り先を選ぶ判断がQBに委ねられる場面が増えている。
+  </div>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    スナップ直前にQBが手や声でジェスチャーをしていたら、それはチェック・オーディブルのサインかもしれない。
+  </div>
+
+</article>
+
+<div class="page-nav container">
+  <a class="page-nav-card prev" href="offense-formations.html">
+    <span class="nav-label">前のページ</span>
+    <span class="nav-title"><svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M9,0 L4,7 L9,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>オフェンスフォーメーションの基礎</span>
+    <span class="nav-desc">パーソネル、バックフィールド・レシーバーの型を整理。</span>
+  </a>
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">プレー選択とプレスナップリードの基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; 2026 FOOTBALLTACTICS.CLUB</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>

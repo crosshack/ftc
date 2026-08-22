@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="../assets/img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="192x192" href="../assets/img/favicon-192.png">
+<title>プレスナップモーションへの対応と今後の攻防 | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="セーフティのポストスナップ移動やカバレッジの偽装、DBのクロストレーニングなど、プレスナップモーションに対するディフェンス側の対応を解説する。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../topics.html">トピックス</a></li>
+      <li><span class="current">プレスナップモーションへの対応と今後の攻防</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="article-head">
+  <div class="container">
+    <span class="theme-tag"><a href="../topics.html?theme=presnap-motion">プレスナップモーションの浸透</a><span class="part">後編</span></span>
+    <div class="page-head-title-row">
+      <h1>プレスナップモーションへの対応と今後の攻防</h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="45" cy="50" r="3.5" fill="#eceee9"/>
+        <path d="M45,50 L20,50" fill="none" stroke="#ffc633" stroke-width="2" stroke-dasharray="3,2"/>
+        <path d="M24,46 L18,50 L24,54" fill="none" stroke="#ffc633" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="18" cy="50" r="3.5" fill="#ffc633"/>
+      </svg>
+    </div>
+    <div class="meta">読了目安 5分 ・ 2026.08.21 公開</div>
+    <div class="topic-tags">
+      <a href="../topics.html?tag=offense">#オフェンス</a>
+      <a href="../topics.html?tag=defense">#ディフェンス</a>
+      <a href="../topics.html?tag=scheme-analysis">#スキーム分析</a>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>前編では、なぜプレスナップモーションがここまで浸透したのかを、データとともに見てきた。後編では、この流れに対してディフェンス側がどう対応してきたのか、そして今後どうなっていくのかを見ていく。</p>
+
+  <h2>対応策１：セーフティのポストスナップ移動</h2>
+  <p>2025年シーズン、ディフェンスがスナップ直前・直後にセーフティを動かした割合は30.2%に上った。あえてスナップ前に特定のカバレッジに見える配置を見せておき、スナップと同時に別の形へ切り替える ―― この「見せてから変える」手法が、モーションへの対抗策として広く定着している。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="600" height="220" fill="#141713" rx="4"/>
+      <line x1="0" y1="190" x2="600" y2="190" stroke="#3ecf6e" stroke-width="2" stroke-dasharray="6,6"/>
+      <text x="10" y="205" fill="#a8afa2" font-size="11" font-family="Oswald">LOS</text>
+      <circle cx="300" cy="40" r="9" fill="none" stroke="#eceee9" stroke-width="1.5" stroke-dasharray="3,3"/>
+      <text x="300" y="24" fill="#a8afa2" font-size="11" text-anchor="middle" font-family="Oswald">S(スナップ前)</text>
+      <path d="M300,50 L180,110" fill="none" stroke="#eceee9" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arrowS1)"/>
+      <circle cx="180" cy="110" r="9" fill="#eceee9"/><text x="180" y="130" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">S(片側へ回転)</text>
+      <path d="M310,50 L430,110" fill="none" stroke="#ffc633" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arrowS2)"/>
+      <circle cx="430" cy="110" r="9" fill="#ffc633"/><text x="430" y="130" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">S(逆側へ回転)</text>
+      <defs>
+        <marker id="arrowS1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#eceee9"/></marker>
+        <marker id="arrowS2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffc633"/></marker>
+      </defs>
+    </svg>
+    <figcaption>図: スナップ前は中央に構えていたセーフティが、スナップと同時に左右どちらかへ回転する。オフェンスはスナップ前の絵を基準に読むため、この回転が事前の読みを狂わせる。</figcaption>
+  </figure>
+
+  <p>オフェンスのプレコールはスナップ前の見た目を基準に組み立てられることが多いため、あえて誤った絵を見せることで、事前の読みを無効化しようとしている。</p>
+
+  <h2>対応策２：カバレッジの偽装が急増</h2>
+  <p>これは単発の技術ではなく、より大きな潮流でもある。カバレッジを偽装する割合は、2022年の26.8%から2023年27.8%、2024年30.4%、2025年32.2%と年々上昇している。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="600" height="160" fill="#141713" rx="4"/>
+      <line x1="40" y1="130" x2="560" y2="130" stroke="#3d4238" stroke-width="1"/>
+      <rect x="90" y="94" width="70" height="36" fill="#3ecf6e" fill-opacity="0.35"/>
+      <text x="125" y="82" fill="#a8afa2" font-size="12" text-anchor="middle" font-family="Oswald">26.8%</text>
+      <text x="125" y="148" fill="#a8afa2" font-size="11" text-anchor="middle" font-family="Noto Sans JP">2022</text>
+      <rect x="220" y="90" width="70" height="40" fill="#3ecf6e" fill-opacity="0.5"/>
+      <text x="255" y="78" fill="#a8afa2" font-size="12" text-anchor="middle" font-family="Oswald">27.8%</text>
+      <text x="255" y="148" fill="#a8afa2" font-size="11" text-anchor="middle" font-family="Noto Sans JP">2023</text>
+      <rect x="350" y="76" width="70" height="54" fill="#3ecf6e" fill-opacity="0.7"/>
+      <text x="385" y="64" fill="#a8afa2" font-size="12" text-anchor="middle" font-family="Oswald">30.4%</text>
+      <text x="385" y="148" fill="#a8afa2" font-size="11" text-anchor="middle" font-family="Noto Sans JP">2024</text>
+      <rect x="480" y="68" width="70" height="62" fill="#3ecf6e" fill-opacity="0.9"/>
+      <text x="515" y="56" fill="#eceee9" font-size="12" text-anchor="middle" font-family="Oswald">32.2%</text>
+      <text x="515" y="148" fill="#a8afa2" font-size="11" text-anchor="middle" font-family="Noto Sans JP">2025</text>
+    </svg>
+    <figcaption>図: カバレッジを偽装するプレーの割合は、2022年から2025年にかけて年々上昇している。</figcaption>
+  </figure>
+
+  <p>偽装されたカバレッジに対してはQBの完成率が65.3%・7.14ヤード/アテンプトとやや高くなる一方、タッチダウンよりインターセプションの数の方が多いというデータもあり、一発の長打を防ぎながらミスを誘発する効果が表れている。</p>
+
+  <h2>DBのクロストレーニングと実例</h2>
+  <p>守備側の対応を支えているのが、DBとLBの垣根を越えたクロストレーニングだ。モーションに振り回されないスピードと、ゾーンを読むコーチングを兼ね備えた選手が重宝されている。</p>
+  <p>具体例が、2025年に49ersのディフェンスコーディネーターへ復帰したロバート・セイラーだ。同ディフェンスは「ウィークセーフティ」をハッシュに固定せず、状況を見て判断する「ビジョンディフェンダー」として起用し、ウィークローテーションのカバー3とクォーターズを組み合わせるスキームを採用している。この結果、2024年にリーグ29位だったランディフェンスは、2025年に7位まで改善した。</p>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    セーフティの回転やカバレッジの偽装は、モーションだけへの対策ではなく、オフェンス全体のプレスナップ読みを鈍らせるための、より広い枠組みの一部として広がっている。
+  </div>
+
+  <h2>今後の展望</h2>
+  <p>モーションと、それに対する偽装・回転の応酬は、今後もいたちごっこのように続いていくはずだ。オフェンスは新しい動かし方でディフェンスの反応を探り、ディフェンスはその反応自体を隠すことで対抗する。この「見せて、隠す」の駆け引きこそが、現代のNFLディフェンスを理解する上で欠かせない視点になっている。</p>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    スナップ直前・直後にセーフティが大きく動く場面があれば、それはディフェンスがカバレッジを偽装しているサインかもしれない。
+  </div>
+
+  <div class="reference-links">
+    <span class="label">出典</span>
+    <ul>
+      <li><a href="https://athlonsports.com/nfl/nfl-disguised-coverages-brian-flores-drake-maye-all-22-analysis" target="_blank" rel="noopener">Athlon Sports ― Masters of Deception: Why Disguised Coverages Define Modern NFL Defenses</a></li>
+      <li><a href="https://sfstandard.com/2025/12/10/robert-saleh-49ers-defense-scheme/" target="_blank" rel="noopener">The San Francisco Standard ― How Robert Saleh has made magic with an anomalous 49ers defense</a></li>
+      <li><a href="https://www.matchquarters.com/p/teaching-vision-safety-saleh-quarters-weak-rotation" target="_blank" rel="noopener">Match Quarters ― Teaching the Vision Safety: Saleh's Quarters &amp; Defensive Meta</a></li>
+    </ul>
+  </div>
+
+</article>
+
+<div class="page-nav container">
+  <a class="page-nav-card prev" href="presnap-motion-1.html">
+    <span class="nav-label">前のページ</span>
+    <span class="nav-title"><svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M9,0 L4,7 L9,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>なぜモーションがここまで増えたのか</span>
+    <span class="nav-desc">使用率が10年で37.6%から63.9%まで上昇した背景と、その効果をデータで解説。</span>
+  </a>
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../topics.html">トピックス</a></li>
+      <li><span class="current">プレスナップモーションへの対応と今後の攻防</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; 2026 FOOTBALLTACTICS.CLUB</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>

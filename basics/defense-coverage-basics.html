@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="../assets/img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="192x192" href="../assets/img/favicon-192.png">
+<title>カバレッジの基礎 ― 11人でパスを封じる設計図 | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="マンツーマンとゾーンという方式の違い、カバー1〜4というパターンの違いから、パスカバレッジの基本を解説する基礎知識ページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">カバレッジの基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="article-head">
+  <div class="container">
+    <span class="tag tag-flag">ディフェンス</span>
+    <div class="page-head-title-row">
+      <h1>カバレッジの基礎<br><span class="subtitle">― 11人でパスを封じる設計図</span></h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10,50 Q35,20 60,50" fill="rgba(62,207,110,0.12)" stroke="#3ecf6e" stroke-width="1.5"/>
+        <path d="M10,50 Q35,55 60,50" fill="rgba(30,136,229,0.12)" stroke="#1e88e5" stroke-width="1.5"/>
+      </svg>
+    </div>
+    <div class="meta">読了目安 10分 ・ カバレッジ</div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>パスプレーにおいて、ディフェンスがレシーバーへのパスを封じるための守り方を「カバレッジ」と呼ぶ。誰が、どこを、どう守るかという役割分担の設計図であり、その組み方によってオフェンスに与えるプレッシャーの質がまったく変わる。ここでは、カバレッジを構成する2つの軸 ―― 「方式（マンツーマンかゾーンか）」と「パターン（ディープを何人で守るか）」―― に分けて整理する。</p>
+
+  <h2>カバレッジの方式 ― マンツーマンとゾーン</h2>
+
+  <h3>選手を追うか、エリアを守るか</h3>
+  <p>カバレッジの方式は大きく2つに分かれる。特定の選手を一対一で追いかける「マンツーマン」と、選手ではなくエリア（ゾーン）を守る「ゾーン」だ。</p>
+
+  <table class="compare-table">
+    <tr><th>方式</th><th>特徴</th><th>強み</th><th>弱み</th></tr>
+    <tr>
+      <td>マンツーマン</td>
+      <td>特定の1人を一対一で追いかける</td>
+      <td>責任の所在が明確。ブリッツと組み合わせやすい</td>
+      <td>個人のスピード・テクニックで振り切られるリスク。後方のヘルプが手薄になりやすい</td>
+    </tr>
+    <tr>
+      <td>ゾーン</td>
+      <td>選手ではなくエリアを担当する</td>
+      <td>常にボールを見ながら守れる。複数人でエリアを共有できる</td>
+      <td>ゾーンの継ぎ目（シーム）を突かれやすい。責任の所在が曖昧になりがち</td>
+    </tr>
+  </table>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    近年は、スナップ後にレシーバーの動きを見てからマン/ゾーンの割り当てを変える「パターンマッチ（マッチカバレッジ）」が主流になりつつあり、両者の境界はあいまいになっている。
+  </div>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    スナップ前、CBがレシーバーに正対して構えていればマンツーマンの匂いが強く、フィールド全体を向いて構えていればゾーンの可能性が高い。
+  </div>
+
+  <h2>カバレッジのパターン ― ディープを何人で守るか</h2>
+
+  <h3>深さの分担で決まる、もうひとつの軸</h3>
+  <p>カバレッジのパターンは、ディープ（深いエリア）を何人で守るかによって分類され、「カバー」に続く数字がその人数を表す。理論上はカバー0（ディープ0人、全員マンツーマン）からカバー6まで存在するが、実戦で頻出するのはカバー1〜4の4パターン。ここではこの代表的な4つを、方式（マン/ゾーン）との組み合わせとあわせて見ていく。</p>
+
+  <h3>カバー1 ― 1人を残し、全員でマンツーマン</h3>
+  <figure class="diagram">
+    <svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="600" height="260" fill="#141713" rx="4"/>
+      <rect x="0" y="0" width="600" height="130" fill="#3ecf6e" fill-opacity="0.10" stroke="#3d4238"/>
+      <line x1="0" y1="230" x2="600" y2="230" stroke="#3ecf6e" stroke-width="2" stroke-dasharray="6,6"/>
+      <text x="10" y="245" fill="#a8afa2" font-size="11" font-family="Oswald">LOS</text>
+      <circle cx="300" cy="55" r="9" fill="#eceee9"/><text x="300" y="40" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">S</text>
+      <circle cx="50" cy="180" r="9" fill="#a8afa2"/><text x="50" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">CB</text>
+      <circle cx="150" cy="180" r="9" fill="#a8afa2"/><text x="150" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">S/LB</text>
+      <circle cx="250" cy="180" r="9" fill="#a8afa2"/><text x="250" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">LB</text>
+      <circle cx="350" cy="180" r="9" fill="#a8afa2"/><text x="350" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">LB</text>
+      <circle cx="450" cy="180" r="9" fill="#a8afa2"/><text x="450" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">S/LB</text>
+      <circle cx="550" cy="180" r="9" fill="#a8afa2"/><text x="550" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">CB</text>
+    </svg>
+    <figcaption>図: カバー1の基本形。深いエリアは1人のセーフティ（フリーセーフティ）が単独で守り、残り6人はそれぞれレシーバーを一対一でマークする（マンツーマン）。浅いエリアにゾーンの区切りがないのが、カバー2〜4との違い。</figcaption>
+  </figure>
+  <p>ディープを1人のセーフティだけで守り、残り6人がそれぞれ担当のレシーバーを一対一でマークする、マンツーマンを土台にしたカバレッジ。方式で言えば純粋なマンツーマンにあたる。</p>
+  <p>浮いた人数を使ってブリッツ（追加のパスラッシュ）を仕掛けやすく、QBに強いプレッシャーをかけたい場面で好んで使われる。弱みは、深いエリアを守るのがセーフティ1人だけのため、その裏を破られると一気にビッグプレーに繋がりやすいこと。</p>
+
+  <h3>カバー2 ― 2人のディープセーフティで蓋をする</h3>
+  <figure class="diagram">
+    <svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="600" height="260" fill="#141713" rx="4"/>
+      <rect x="0" y="0" width="300" height="130" fill="#3ecf6e" fill-opacity="0.10" stroke="#3d4238"/>
+      <rect x="300" y="0" width="300" height="130" fill="#3ecf6e" fill-opacity="0.16" stroke="#3d4238"/>
+      <rect x="0" y="130" width="120" height="100" fill="#ffc633" fill-opacity="0.10" stroke="#3d4238"/>
+      <rect x="120" y="130" width="120" height="100" fill="#ffc633" fill-opacity="0.16" stroke="#3d4238"/>
+      <rect x="240" y="130" width="120" height="100" fill="#ffc633" fill-opacity="0.10" stroke="#3d4238"/>
+      <rect x="360" y="130" width="120" height="100" fill="#ffc633" fill-opacity="0.16" stroke="#3d4238"/>
+      <rect x="480" y="130" width="120" height="100" fill="#ffc633" fill-opacity="0.10" stroke="#3d4238"/>
+      <line x1="0" y1="230" x2="600" y2="230" stroke="#3ecf6e" stroke-width="2" stroke-dasharray="6,6"/>
+      <text x="10" y="245" fill="#a8afa2" font-size="11" font-family="Oswald">LOS</text>
+      <circle cx="150" cy="55" r="9" fill="#eceee9"/><text x="150" y="40" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">S</text>
+      <circle cx="450" cy="55" r="9" fill="#eceee9"/><text x="450" y="40" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">S</text>
+      <circle cx="60" cy="180" r="9" fill="#a8afa2"/><text x="60" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">CB</text>
+      <circle cx="180" cy="180" r="9" fill="#a8afa2"/><text x="180" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">LB</text>
+      <circle cx="300" cy="180" r="9" fill="#a8afa2"/><text x="300" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">LB</text>
+      <circle cx="420" cy="180" r="9" fill="#a8afa2"/><text x="420" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">LB</text>
+      <circle cx="540" cy="180" r="9" fill="#a8afa2"/><text x="540" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">CB</text>
+    </svg>
+    <figcaption>図: カバー2の基本形。2人のセーフティがフィールドを左右半分ずつ深く守り、CB・LB計5人が浅いゾーンを分担する。</figcaption>
+  </figure>
+  <p>カバー2は、2人のセーフティがフィールドを左右に分けて深いエリアを守る形。浅いエリアの守り方によって、CBとLBがゾーンで分担する「カバー2ゾーン」と、CBがレシーバーにマンツーマンでつき、セーフティがその後方をヘルプする「カバー2マン」の2種類に分かれる。単に「カバー2」と言う場合はゾーン版を指すことが多い。</p>
+  <p>弱みは、2人のセーフティが左右に分かれているため<strong>フィールド中央の深いエリア</strong>（ディープミドル）に穴が生まれやすいこと。またサイドライン際を深く狙うコーナールートも、セーフティとCBの間の「ホール」を突かれやすい。</p>
+
+  <h3>カバー3 ― 3分割でディープを消す</h3>
+  <figure class="diagram">
+    <svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="600" height="260" fill="#141713" rx="4"/>
+      <rect x="0" y="0" width="200" height="130" fill="#3ecf6e" fill-opacity="0.10" stroke="#3d4238"/>
+      <rect x="200" y="0" width="200" height="130" fill="#3ecf6e" fill-opacity="0.16" stroke="#3d4238"/>
+      <rect x="400" y="0" width="200" height="130" fill="#3ecf6e" fill-opacity="0.10" stroke="#3d4238"/>
+      <rect x="0" y="130" width="150" height="100" fill="#ffc633" fill-opacity="0.10" stroke="#3d4238"/>
+      <rect x="150" y="130" width="150" height="100" fill="#ffc633" fill-opacity="0.16" stroke="#3d4238"/>
+      <rect x="300" y="130" width="150" height="100" fill="#ffc633" fill-opacity="0.10" stroke="#3d4238"/>
+      <rect x="450" y="130" width="150" height="100" fill="#ffc633" fill-opacity="0.16" stroke="#3d4238"/>
+      <line x1="0" y1="230" x2="600" y2="230" stroke="#3ecf6e" stroke-width="2" stroke-dasharray="6,6"/>
+      <text x="10" y="245" fill="#a8afa2" font-size="11" font-family="Oswald">LOS</text>
+      <circle cx="100" cy="55" r="9" fill="#eceee9"/><text x="100" y="40" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">CB</text>
+      <circle cx="300" cy="55" r="9" fill="#eceee9"/><text x="300" y="40" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">S</text>
+      <circle cx="500" cy="55" r="9" fill="#eceee9"/><text x="500" y="40" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">CB</text>
+      <circle cx="75" cy="180" r="9" fill="#a8afa2"/><text x="75" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">S/LB</text>
+      <circle cx="225" cy="180" r="9" fill="#a8afa2"/><text x="225" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">LB</text>
+      <circle cx="375" cy="180" r="9" fill="#a8afa2"/><text x="375" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">LB</text>
+      <circle cx="525" cy="180" r="9" fill="#a8afa2"/><text x="525" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">S/LB</text>
+    </svg>
+    <figcaption>図: カバー3の基本形。両CBと1人のセーフティがフィールドを縦に3分割して深く守り、残り4人が浅いゾーンを分担する。</figcaption>
+  </figure>
+  <p>カバー3は両CBと1人のセーフティの計3人が、フィールドを縦に3分割してディープを守る形。ディープに人数を割きすぎない分、もう1人のセーフティ（またはLB）をボックス近くに残せるため、ランに対する人数的な強さを保ちやすい。</p>
+  <p>弱みは、3分割した「サード」の境目にできる<strong>シーム（縫い目）</strong>のエリア。複数のレシーバーが縦に走る「4バーティカル」のようなコンセプトで、この境目を同時に複数狙われると1人のディフェンダーではカバーしきれないことがある。</p>
+
+  <h3>カバー4（クォーターズ） ― 4分割で縦を封じる</h3>
+  <figure class="diagram">
+    <svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="600" height="260" fill="#141713" rx="4"/>
+      <rect x="0" y="0" width="150" height="130" fill="#3ecf6e" fill-opacity="0.10" stroke="#3d4238"/>
+      <rect x="150" y="0" width="150" height="130" fill="#3ecf6e" fill-opacity="0.16" stroke="#3d4238"/>
+      <rect x="300" y="0" width="150" height="130" fill="#3ecf6e" fill-opacity="0.10" stroke="#3d4238"/>
+      <rect x="450" y="0" width="150" height="130" fill="#3ecf6e" fill-opacity="0.16" stroke="#3d4238"/>
+      <rect x="0" y="130" width="200" height="100" fill="#ffc633" fill-opacity="0.10" stroke="#3d4238"/>
+      <rect x="200" y="130" width="200" height="100" fill="#ffc633" fill-opacity="0.16" stroke="#3d4238"/>
+      <rect x="400" y="130" width="200" height="100" fill="#ffc633" fill-opacity="0.10" stroke="#3d4238"/>
+      <line x1="0" y1="230" x2="600" y2="230" stroke="#3ecf6e" stroke-width="2" stroke-dasharray="6,6"/>
+      <text x="10" y="245" fill="#a8afa2" font-size="11" font-family="Oswald">LOS</text>
+      <circle cx="75" cy="55" r="9" fill="#eceee9"/><text x="75" y="40" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">CB</text>
+      <circle cx="225" cy="55" r="9" fill="#eceee9"/><text x="225" y="40" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">S</text>
+      <circle cx="375" cy="55" r="9" fill="#eceee9"/><text x="375" y="40" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">S</text>
+      <circle cx="525" cy="55" r="9" fill="#eceee9"/><text x="525" y="40" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">CB</text>
+      <circle cx="100" cy="180" r="9" fill="#a8afa2"/><text x="100" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">LB</text>
+      <circle cx="300" cy="180" r="9" fill="#a8afa2"/><text x="300" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">LB</text>
+      <circle cx="500" cy="180" r="9" fill="#a8afa2"/><text x="500" y="200" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">LB</text>
+    </svg>
+    <figcaption>図: カバー4（クォーターズ）の基本形。CB・S計4人がフィールドを4分割して深く守り、残り3人が浅いゾーンを分担する。</figcaption>
+  </figure>
+  <p>カバー4は4人がフィールドを均等に4分割してディープを守る形で、「クォーターズ」とも呼ばれる。縦への深いパスに対して人数的な保険が最も多く、ビッグプレーを防ぎやすい。現代のディフェンスでは、レシーバーの動きを見てから受け持ちを変える「パターンマッチ」という発展形も広く使われている。</p>
+  <p>弱みは、浅いゾーンを守る人数が3人と最も少なくなること。スクリーンやクイックパスなど、素早く投げ切るショートパスの連続には弱さが出やすい。</p>
+
+  <h3>4つを比較する</h3>
+  <table class="compare-table">
+    <tr><th>型</th><th>方式</th><th>ディープ</th><th>浅いエリア</th><th>強み</th><th>弱み</th></tr>
+    <tr>
+      <td>カバー1</td>
+      <td>マンツーマン</td>
+      <td>1人（S）</td>
+      <td>6人</td>
+      <td>ブリッツを仕掛けやすい</td>
+      <td>ディープのヘルプが薄い</td>
+    </tr>
+    <tr>
+      <td>カバー2</td>
+      <td>ゾーン／マン</td>
+      <td>2人（S×2）</td>
+      <td>5人</td>
+      <td>ランサポートとのバランス</td>
+      <td>ディープミドルとコーナールート</td>
+    </tr>
+    <tr>
+      <td>カバー3</td>
+      <td>ゾーン</td>
+      <td>3人（CB×2, S×1）</td>
+      <td>4人</td>
+      <td>ボックスの人数を確保しやすい</td>
+      <td>ディープのシーム</td>
+    </tr>
+    <tr>
+      <td>カバー4</td>
+      <td>ゾーン</td>
+      <td>4人（CB×2, S×2）</td>
+      <td>3人</td>
+      <td>縦のビッグプレー抑止</td>
+      <td>浅いクイックパスの連続</td>
+    </tr>
+  </table>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    近年は、カバー3をベースにレシーバーの動きを見て柔軟に受け持ちを変える「パターンマッチ」や、カバー2とカバー4を状況に応じて使い分けるチームが増えており、役割が固定的な純粋なゾーンは減りつつある。
+  </div>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    キックオフ後、セーフティが2人深くにいれば2ハイ系（カバー2/4）、1人しかいなければ1ハイ系（カバー1/3）とまず大枠を掴み、そこからCBがプレスかオフかを見ていくと、ディフェンスの狙いが立体的に見えてくる。
+  </div>
+
+  <div class="see-also">
+    <span class="label">もっと詳しく</span>
+    <p>ここで紹介したのは代表的な型のみ。カバー0〜6の各バリエーションをフィールド図付きで確認できる。</p>
+    <a href="../tactics/defense-coverages.html">カバレッジまとめを見る &rarr;</a>
+  </div>
+
+</article>
+
+<div class="page-nav container">
+  <a class="page-nav-card prev" href="defense-formations.html">
+    <span class="nav-label">前のページ</span>
+    <span class="nav-title"><svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M9,0 L4,7 L9,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>ディフェンスフォーメーションの基礎</span>
+    <span class="nav-desc">4-3・3-4など、フロントの組み方の基本を整理。</span>
+  </a>
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">カバレッジの基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; 2026 FOOTBALLTACTICS.CLUB</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>

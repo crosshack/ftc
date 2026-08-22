@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="../assets/img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="192x192" href="../assets/img/favicon-192.png">
+<title>ディフェンスフォーメーションの基礎 ― フロントは何を語るか | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="4-3・3-4など、ディフェンスのフロント（前線）の組み方の基本と、ニッケル・ダイムといったサブパッケージ化の流れを解説する基礎知識ページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">ディフェンスフォーメーションの基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="article-head">
+  <div class="container">
+    <span class="tag tag-flag">ディフェンス</span>
+    <div class="page-head-title-row">
+      <h1>ディフェンスフォーメーションの基礎<br><span class="subtitle">― フロントは何を語るか</span></h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="20" cy="42" r="3.5" fill="#3ecf6e"/><circle cx="35" cy="42" r="3.5" fill="#3ecf6e"/><circle cx="50" cy="42" r="3.5" fill="#3ecf6e"/>
+        <circle cx="27" cy="30" r="3.5" fill="#eceee9"/><circle cx="43" cy="30" r="3.5" fill="#eceee9"/>
+      </svg>
+    </div>
+    <div class="meta">読了目安 7分 ・ フォーメーション</div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>オフェンスが「シングルバック」「ショットガン」のように名前のついたフォーメーションで並ぶのに対し、ディフェンスはLOSに構える人数の組み合わせを「4-3」「3-4」のような数字で表す。この数字は単なる並び順ではなく、そのディフェンスがランを止めることとパスを止めることのどちらに軸足を置いているかを映す設計図である。</p>
+
+  <h2>フロントの数字表記 ― 4-3とは何か</h2>
+
+  <h3>二つの数字が示すもの</h3>
+  <p>「4-3」「3-4」といった表記は、前の数字がDL（ディフェンスライン）の人数、後ろの数字がLB（ラインバッカー）の人数を示す。残りはDB（ディフェンスバック）で、ベースの布陣であれば基本的に4人になる（DL+LB+DB=11）。</p>
+  <table class="compare-table">
+    <tr><th>表記</th><th>内訳</th><th>傾向</th></tr>
+    <tr><td>4-3</td><td>DL4・LB3・DB4</td><td>DL4人でパスラッシュを完結させやすく、LBを守備範囲の広さに使える</td></tr>
+    <tr><td>3-4</td><td>DL3・LB4・DB4</td><td>LB4人のうち2人がエッジのパスラッシュを兼務し、狙いを絞らせにくい</td></tr>
+    <tr><td>ニッケル</td><td>DL4（または3）・LB2・DB5</td><td>LBを1人減らしDBを増やした、パス対応型のサブパッケージ</td></tr>
+  </table>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    パスオフェンスの主流化にともない、伝統的な4-3・3-4という「ベース」よりも、DBを5人にしたニッケルが実質的な基本布陣になりつつあるチームが増えている。
+  </div>
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    LOSに構える選手を数えるだけで、大まかなフロントタイプが判別できる。4人並んでいれば4-3系、3人であれば3-4系の可能性が高い。
+  </div>
+
+  <h2>代表的なフロントの型 ― 4-3と3-4</h2>
+
+  <h3>同じ11人でも、狙いはまったく違う</h3>
+  <p>DLとLBの人数バランスが変わるだけで、ディフェンス全体の性格は大きく変わる。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="600" height="260" fill="#141713" rx="4"/>
+      <line x1="0" y1="150" x2="600" y2="150" stroke="#3d4238" stroke-width="2" stroke-dasharray="6,6"/>
+      <text x="10" y="145" fill="#a8afa2" font-size="11" font-family="Oswald">LOS</text>
+
+      <circle cx="250" cy="134" r="9" fill="#3ecf6e"/>
+      <text x="250" y="116" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">DE</text>
+      <circle cx="300" cy="134" r="9" fill="#3ecf6e"/>
+      <text x="300" y="116" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">NT</text>
+      <circle cx="350" cy="134" r="9" fill="#3ecf6e"/>
+      <text x="350" y="116" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">DE</text>
+
+      <circle cx="170" cy="118" r="9" fill="#eceee9"/>
+      <text x="170" y="100" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">OLB</text>
+      <circle cx="430" cy="118" r="9" fill="#eceee9"/>
+      <text x="430" y="100" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">OLB</text>
+      <circle cx="270" cy="90" r="9" fill="#eceee9"/>
+      <text x="270" y="72" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">ILB</text>
+      <circle cx="330" cy="90" r="9" fill="#eceee9"/>
+      <text x="330" y="72" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">ILB</text>
+
+      <circle cx="80" cy="140" r="9" fill="#ffc633"/>
+      <text x="80" y="122" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">CB</text>
+      <circle cx="520" cy="140" r="9" fill="#ffc633"/>
+      <text x="520" y="122" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">CB</text>
+      <circle cx="220" cy="50" r="9" fill="#ffc633"/>
+      <text x="220" y="36" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">FS</text>
+      <circle cx="380" cy="50" r="9" fill="#ffc633"/>
+      <text x="380" y="36" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">SS</text>
+    </svg>
+    <figcaption>図1: 3-4ベースディフェンスの配置例。NT1人が中央を塞ぎ、2人のOLBがエッジのパスラッシュを兼務する。</figcaption>
+  </figure>
+
+  <ul>
+    <li><strong>4-3</strong>：DL4人でパスラッシュの基礎を作り、LB3人にランやカバレッジの柔軟性を持たせる。役割がシンプルで、伝統的に扱いやすいとされる。</li>
+    <li><strong>3-4</strong>：NT（ノーズタックル）1人が中央を塞ぎ、LB4人のうち2人（OLB）がエッジのパスラッシュを兼務する。同じ人数配置からラッシュしてくる位置を変えやすく、オフェンスに狙いを絞らせにくい。</li>
+  </ul>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    近年はハイブリッド化が進み、同じ選手をゲームの中で4-3にも3-4にも配置転換できる「マルチフロント」を採用するチームが増えている。
+  </div>
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    LOSに立つ選手が3人でも、LB位置の選手が低いスタンスで構えていれば、実質的に4人目のパスラッシャーとして扱われている可能性がある。
+  </div>
+
+  <h2>現代的な変化 ― サブパッケージという「新しいベース」</h2>
+
+  <h3>パス対応が生んだ、もう一つの基本形</h3>
+  <p>パスオフェンスの高度化により、LBをDBに置き換えてパス対応力を高めた「サブパッケージ」の重要性が増している。もはや特別な場面だけの布陣ではなく、多くのチームにとって最初に選ぶ布陣になりつつある。</p>
+  <ul>
+    <li><strong>ニッケル</strong>：DB5人（LB2人）。スロットレシーバーへの対応力を高めた、現代オフェンスに対する事実上の標準布陣。</li>
+    <li><strong>ダイム</strong>：DB6人（LB1人）。さらにパスに寄せた、パッシングダウン特化の布陣。</li>
+  </ul>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    伝統的な4-3・3-4は、むしろランを封じたい場面で使う"サブパッケージ"という位置づけに変わりつつあるチームも多い。ベースとサブの主従が入れ替わりつつある。
+  </div>
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    LBがベンチに下がり、代わりにDBが入ってくる交代を見たら、オフェンスがWR3人以上のパス型フォーメーションで出てきたサインであることが多い。
+  </div>
+
+  <h2>まとめ</h2>
+  <p>フロントの数字表記は「DLとLBの人数バランス」を示す設計図であり、パスオフェンスの高度化とともに、DBを増やしたサブパッケージが新しい基本形になりつつある。</p>
+
+  <div class="see-also">
+    <span class="label">もっと詳しく</span>
+    <p>ここで紹介したのは代表的な型のみ。全10種類のディフェンスフォーメーションを図解付きで確認できる。</p>
+    <a href="../tactics/defense-formations.html">ディフェンスフォーメーションまとめを見る &rarr;</a>
+  </div>
+
+</article>
+
+<div class="page-nav container">
+  <a class="page-nav-card prev" href="defense-positions.html">
+    <span class="nav-label">前のページ</span>
+    <span class="nav-title"><svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M9,0 L4,7 L9,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>ディフェンスポジションの基礎</span>
+    <span class="nav-desc">DL・LB・DB、11人それぞれの役割を解説。</span>
+  </a>
+  <a class="page-nav-card next" href="defense-coverage-basics.html">
+    <span class="nav-label">次のページ</span>
+    <span class="nav-title">カバレッジの基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span class="nav-desc">マンツーマンとゾーン、カバー1〜4のパターンを整理。</span>
+  </a>
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">ディフェンスフォーメーションの基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; 2026 FOOTBALLTACTICS.CLUB</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>

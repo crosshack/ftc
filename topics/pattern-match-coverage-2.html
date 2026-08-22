@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="../assets/img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="192x192" href="../assets/img/favicon-192.png">
+<title>パターンマッチ導入チームの実例と今後 | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="パターンマッチカバレッジを採用する実例チームと、スーパーボウルLIXでの実証、オフェンス側の対抗策を解説する。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../topics.html">トピックス</a></li>
+      <li><span class="current">パターンマッチ導入チームの実例と今後</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="article-head">
+  <div class="container">
+    <span class="theme-tag"><a href="../topics.html?theme=pattern-match-coverage">パターンマッチの最前線</a><span class="part">後編</span></span>
+    <div class="page-head-title-row">
+      <h1>パターンマッチ導入チームの実例と今後</h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="35" cy="46" r="8" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/>
+        <path d="M35,38 Q35,26 35,18" fill="none" stroke="#eceee9" stroke-width="1.8" stroke-dasharray="4,3"/>
+        <circle cx="35" cy="18" r="4" fill="#eceee9"/>
+        <path d="M35,52 L35,60" fill="none" stroke="#ffc633" stroke-width="2"/>
+        <circle cx="35" cy="60" r="3.5" fill="#ffc633"/>
+      </svg>
+    </div>
+    <div class="meta">読了目安 5分 ・ 2026.08.21 公開</div>
+    <div class="topic-tags">
+      <a href="../topics.html?tag=defense">#ディフェンス</a>
+      <a href="../topics.html?tag=coverage">#カバレッジ</a>
+      <a href="../topics.html?tag=scheme-analysis">#スキーム分析</a>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>前編では、パターンマッチカバレッジがなぜここまで主流になったのかを見てきた。後編では、実際にこの考え方を採用しているチームの実例と、それがもたらす効果、そしてオフェンス側の対抗策を見ていく。</p>
+
+  <h2>導入チームの広がり ― ライトボックスという選択</h2>
+  <p>パターンマッチの浸透を裏付けるのが、「ライトボックス」と呼ばれる守り方の広がりだ。ライトボックスとは、ラインの近くに置く人数を絞り、その分バックエンドのカバレッジに人数と信頼を置く配置を指す。2025年シーズンには、シーホークス・イーグルス・ラムズ・チャージャーズ・49ers・パンサーズの6チームが、守備スナップの50%以上でこのライトボックスを採用した。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="600" height="260" fill="#141713" rx="4"/>
+      <rect x="0" y="160" width="600" height="70" fill="#ffc633" fill-opacity="0.08"/>
+      <line x1="0" y1="230" x2="600" y2="230" stroke="#3ecf6e" stroke-width="2" stroke-dasharray="6,6"/>
+      <text x="10" y="245" fill="#a8afa2" font-size="11" font-family="Oswald">LOS</text>
+      <text x="580" y="175" fill="#ffc633" font-size="11" text-anchor="end" font-family="Oswald">BOX</text>
+      <circle cx="90" cy="195" r="8" fill="#a8afa2"/><circle cx="170" cy="195" r="8" fill="#a8afa2"/><circle cx="250" cy="195" r="8" fill="#a8afa2"/><circle cx="330" cy="195" r="8" fill="#a8afa2"/><circle cx="410" cy="195" r="8" fill="#a8afa2"/><circle cx="490" cy="195" r="8" fill="#a8afa2"/><circle cx="250" cy="165" r="8" fill="#a8afa2"/>
+      <circle cx="150" cy="70" r="8" fill="#eceee9"/><circle cx="300" cy="55" r="8" fill="#eceee9"/><circle cx="450" cy="70" r="8" fill="#eceee9"/><circle cx="300" cy="100" r="8" fill="#eceee9"/>
+    </svg>
+    <figcaption>図（上）: 標準的なボックス。ライン付近に7人、バックエンドに4人という配分が一般的な形。</figcaption>
+  </figure>
+  <figure class="diagram">
+    <svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="600" height="260" fill="#141713" rx="4"/>
+      <rect x="0" y="160" width="600" height="70" fill="#ffc633" fill-opacity="0.08"/>
+      <line x1="0" y1="230" x2="600" y2="230" stroke="#3ecf6e" stroke-width="2" stroke-dasharray="6,6"/>
+      <text x="10" y="245" fill="#a8afa2" font-size="11" font-family="Oswald">LOS</text>
+      <text x="580" y="175" fill="#ffc633" font-size="11" text-anchor="end" font-family="Oswald">BOX</text>
+      <circle cx="150" cy="195" r="8" fill="#a8afa2"/><circle cx="250" cy="195" r="8" fill="#a8afa2"/><circle cx="350" cy="195" r="8" fill="#a8afa2"/><circle cx="450" cy="195" r="8" fill="#a8afa2"/><circle cx="300" cy="165" r="8" fill="#a8afa2"/>
+      <circle cx="100" cy="65" r="8" fill="#eceee9"/><circle cx="220" cy="50" r="8" fill="#eceee9"/><circle cx="380" cy="50" r="8" fill="#eceee9"/><circle cx="500" cy="65" r="8" fill="#eceee9"/><circle cx="300" cy="90" r="8" fill="#eceee9"/><circle cx="300" cy="130" r="8" fill="#eceee9"/>
+    </svg>
+    <figcaption>図（下）: ライトボックス。ライン付近を5人に絞り、浮いた分をバックエンドの6人に厚く配分する。パターンマッチで後方の信頼度が上がったことで成立しやすくなった配置。</figcaption>
+  </figure>
+
+  <p>ボックスの人数を削っても守り切れるのは、後方のDBがパターンマッチのルールに従って自律的に正しい相手を捕まえられるという前提があるからだ。守備の信頼が、ライン際の人数配分そのものを変えつつある。</p>
+
+  <h2>象徴的な実証 ― イーグルスのスーパーボウルLIX</h2>
+  <p>この考え方の効果を最も分かりやすく示したのが、イーグルスがチーフスを40-22で下したスーパーボウルLIXだ。イーグルスは42回のドロップバックで一度もブリッツを送らなかったにもかかわらず、マホームズから6サック・16プレッシャーを記録した。</p>
+  <p>ブリッツを送らずに済んだ理由の一端は、後方のカバレッジにある。パターンマッチによって受け手を的確に消せていれば、QBは投げ先を失って持ち続けざるを得ず、その間にわずか4人のパスラッシュだけで十分な圧力をかけられる。強いカバレッジは、そのままパスラッシュの援護にもなるということだ。</p>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    守備の「後ろが強いから前を絞れる」という発想は、ライトボックスに限らずニッケル・ダイムなどDB中心の編成全体にも広がっている。パターンマッチはその土台を支える技術の1つと言える。
+  </div>
+
+  <h2>オフェンス側の対抗策</h2>
+  <p>もちろんオフェンス側も手をこまねいてはいない。パターンマッチのルールは「決められた条件で受け渡す」仕組みである以上、その受け渡しのタイミングそのものを狙う攻め方が有効になる。</p>
+  <p>複数のレシーバーを近接させて走らせ、受け渡しの判断を混乱させる「メッシュ」のようなコンセプトはその代表例だ。誰が誰を追うべきかの判断がコース上で交錯すれば、パターンマッチのルールも一瞬揺らぐ。またテンポを上げてディフェンスの意思疎通の時間を削る攻め方も、複雑なルールに依存するパターンマッチには効きやすいとされる。</p>
+
+  <h2>今後の展望</h2>
+  <p>パターンマッチとその対抗策は、今後もいたちごっこのように進化を続けていくはずだ。ディフェンス側はDBとLBの垣根を越えたクロストレーニングを進め、オフェンス側はルールの隙を突くコンセプトを磨いていく。カバレッジの「方式」そのものが変化し続けているという事実は、観戦の楽しみ方にも新しい視点を与えてくれる。</p>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    複数のレシーバーが近接して交差するプレーで、ディフェンダーが一瞬受け渡しに迷う場面があれば、それはパターンマッチのルールが揺さぶられている瞬間かもしれない。
+  </div>
+
+  <div class="reference-links">
+    <span class="label">出典</span>
+    <ul>
+      <li><a href="https://athlonsports.com/nfl/2026-nfl-preview-magazine-modern-defense-seahawks" target="_blank" rel="noopener">Athlon Sports ― 2026 NFL Preview: Changing Face of the Modern NFL Defense</a></li>
+      <li><a href="https://x.com/NextGenStats/status/1888791030666875304" target="_blank" rel="noopener">NFL Next Gen Stats ― Super Bowl LIX zero-blitz post</a></li>
+      <li><a href="https://sports.yahoo.com/eagles-generated-16-pressures-6-055916051.html" target="_blank" rel="noopener">Yahoo Sports ― Eagles generated 16 pressures, 6 sacks in Super Bowl LIX without blitzing Chiefs</a></li>
+    </ul>
+  </div>
+
+</article>
+
+<div class="page-nav container">
+  <a class="page-nav-card prev" href="pattern-match-coverage-1.html">
+    <span class="nav-label">前のページ</span>
+    <span class="nav-title"><svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M9,0 L4,7 L9,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>なぜパターンマッチが主流になったのか</span>
+    <span class="nav-desc">マンとゾーンの境界が曖昧になる背景と、基本的な仕組みを解説。</span>
+  </a>
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../topics.html">トピックス</a></li>
+      <li><span class="current">パターンマッチ導入チームの実例と今後</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; 2026 FOOTBALLTACTICS.CLUB</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>
