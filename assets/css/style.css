@@ -633,6 +633,33 @@ h1, h2, h3, h4 {
   text-align: left;
 }
 
+/* Row of equal-width mini diagrams (per play-type section) */
+.play-diagrams {
+  display: flex;
+  gap: 16px;
+  margin: 28px 0;
+}
+.play-diagrams .diagram-item {
+  flex: 1 1 0;
+  min-width: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 14px;
+  text-align: center;
+}
+.play-diagrams .diagram-item svg { width: 100%; height: auto; display: block; }
+.play-diagrams .diagram-item figcaption {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  text-align: center;
+}
+@media (max-width: 620px) {
+  .play-diagrams { flex-wrap: wrap; }
+  .play-diagrams .diagram-item { flex: 1 1 100%; }
+}
+
 /* comparison table */
 .compare-table {
   width: 100%;
