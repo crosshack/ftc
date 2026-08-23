@@ -635,13 +635,13 @@ h1, h2, h3, h4 {
 
 /* Row of equal-width mini diagrams (per play-type section) */
 .play-diagrams {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
   gap: 16px;
   margin: 28px 0;
 }
 .play-diagrams .diagram-item {
-  flex: 1 1 0;
-  min-width: 0;
   background: var(--bg-card);
   border: 1px solid var(--line);
   border-radius: 4px;
@@ -656,8 +656,7 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 @media (max-width: 620px) {
-  .play-diagrams { flex-wrap: wrap; }
-  .play-diagrams .diagram-item { flex: 1 1 100%; }
+  .play-diagrams { grid-auto-flow: row; grid-auto-columns: unset; }
 }
 
 /* comparison table */
