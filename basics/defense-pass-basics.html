@@ -111,6 +111,43 @@
   <h3>ゾーンカバレッジ ― エリアの中で待ち構える</h3>
   <p>特定の相手ではなく、担当するエリアに入ってきたレシーバーに反応する方式。個人を追い切る負担は小さいが、エリアの継ぎ目やゾーン間の受け渡しにセパレーションが生まれやすい。</p>
 
+  <div class="play-diagrams">
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 100" width="260" height="100" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="260" height="100" fill="#141713" rx="4"/>
+        <line x1="8" y1="80" x2="252" y2="80" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="50" cy="80" r="5" fill="#a8afa2"/>
+        <path d="M50,80 C70,55 90,35 112,18" stroke="#a8afa2" stroke-width="1.8" stroke-dasharray="2,3" fill="none" marker-end="url(#man-a)"/>
+        <circle cx="65" cy="78" r="5" fill="#eceee9"/>
+        <path d="M65,78 C82,54 100,36 120,22" stroke="#ffc633" stroke-width="2.2" fill="none" marker-end="url(#man-b)"/>
+        <defs>
+          <marker id="man-a" markerWidth="6" markerHeight="6" refX="2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 Z" fill="#a8afa2"/></marker>
+          <marker id="man-b" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker>
+        </defs>
+      </svg>
+      <figcaption>マンツーマンカバレッジ ― レシーバーの経路にそのまま張り付いて追う</figcaption>
+    </figure>
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 100" width="260" height="100" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="260" height="100" fill="#141713" rx="4"/>
+        <line x1="8" y1="80" x2="252" y2="80" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <rect x="140" y="10" width="100" height="66" rx="4" fill="#ffc633" fill-opacity="0.1" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,2"/>
+        <circle cx="190" cy="46" r="5" fill="#eceee9"/>
+        <circle cx="30" cy="80" r="5" fill="#a8afa2"/>
+        <path d="M30,80 C60,60 130,50 168,50" stroke="#a8afa2" stroke-width="1.6" stroke-dasharray="2,3" fill="none" marker-end="url(#zone-a)"/>
+        <circle cx="120" cy="16" r="5" fill="#a8afa2"/>
+        <path d="M120,16 C135,26 148,34 165,42" stroke="#a8afa2" stroke-width="1.6" stroke-dasharray="2,3" fill="none" marker-end="url(#zone-b)"/>
+        <path d="M190,46 L172,48" stroke="#ffc633" stroke-width="2" marker-end="url(#zone-c)"/>
+        <defs>
+          <marker id="zone-a" markerWidth="6" markerHeight="6" refX="2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 Z" fill="#a8afa2"/></marker>
+          <marker id="zone-b" markerWidth="6" markerHeight="6" refX="2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 Z" fill="#a8afa2"/></marker>
+          <marker id="zone-c" markerWidth="6" markerHeight="6" refX="2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 Z" fill="#ffc633"/></marker>
+        </defs>
+      </svg>
+      <figcaption>ゾーンカバレッジ ― 特定の相手ではなく、エリアに入ってきた相手に反応する</figcaption>
+    </figure>
+  </div>
+
   <div class="callout flag">
     <strong>背景・トレンド：</strong>
     見た目はゾーンでありながら、レシーバーの動き方（リリースパターン）によって特定の相手にはマンツーマン的に反応する「パターンマッチ」というカバレッジも広がっている。マンツーマンとゾーンを単純な二択で捉えるのではなく、両者の弱点を補い合う設計として組み合わせる考え方が主流になりつつある。
@@ -124,6 +161,39 @@
 
   <h3>オフカバレッジ ― 距離を保って様子を見る</h3>
   <p>あらかじめ距離を取り、レシーバーの動きを見てから反応する技術。ビッグプレーのリスクを抑えられる一方、浅いルートには間合いを詰められやすい。</p>
+
+  <div class="play-diagrams">
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 100" width="260" height="100" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="260" height="100" fill="#141713" rx="4"/>
+        <line x1="8" y1="80" x2="252" y2="80" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="120" cy="80" r="5" fill="#a8afa2"/>
+        <circle cx="120" cy="62" r="5" fill="#eceee9"/>
+        <path d="M120,62 L120,73" stroke="#ffc633" stroke-width="2" marker-end="url(#press-a)"/>
+        <path d="M120,80 C100,55 90,35 78,16" stroke="#a8afa2" stroke-width="1.6" stroke-dasharray="2,3" fill="none" marker-end="url(#press-b)"/>
+        <defs>
+          <marker id="press-a" markerWidth="6" markerHeight="6" refX="2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 Z" fill="#ffc633"/></marker>
+          <marker id="press-b" markerWidth="6" markerHeight="6" refX="2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 Z" fill="#a8afa2"/></marker>
+        </defs>
+      </svg>
+      <figcaption>プレスカバレッジ ― スナップと同時に体を寄せ、ルートの入り口を潰す</figcaption>
+    </figure>
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 100" width="260" height="100" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="260" height="100" fill="#141713" rx="4"/>
+        <line x1="8" y1="80" x2="252" y2="80" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="120" cy="80" r="5" fill="#a8afa2"/>
+        <circle cx="120" cy="34" r="5" fill="#eceee9"/>
+        <path d="M120,80 C100,58 88,38 76,16" stroke="#a8afa2" stroke-width="1.6" stroke-dasharray="2,3" fill="none" marker-end="url(#off-a)"/>
+        <path d="M120,34 L120,44" stroke="#ffc633" stroke-width="2" marker-end="url(#off-b)"/>
+        <defs>
+          <marker id="off-a" markerWidth="6" markerHeight="6" refX="2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 Z" fill="#a8afa2"/></marker>
+          <marker id="off-b" markerWidth="6" markerHeight="6" refX="2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 Z" fill="#ffc633"/></marker>
+        </defs>
+      </svg>
+      <figcaption>オフカバレッジ ― あらかじめ距離を取り、動きを見てから反応する</figcaption>
+    </figure>
+  </div>
 
   <h2>QBに時間を与えない技術 ― パスラッシュ</h2>
   <p>パスラッシュは、代表的な技術によって大きく4つに分けられる。</p>
