@@ -81,7 +81,7 @@ h1, h2, h3, h4 {
   height: 19px;
   width: auto;
   flex-shrink: 0;
-  margin-right: 6px;
+  margin-right: 4px;
   position: relative;
   top: 1px;
 }
