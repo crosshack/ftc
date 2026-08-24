@@ -77,12 +77,12 @@ h1, h2, h3, h4 {
   align-items: baseline;
 }
 .brand-mark {
-  height: 20.5px;
+  height: 18.5px;
   width: auto;
   flex-shrink: 0;
   margin-right: 6px;
   position: relative;
-  top: 0.5px;
+  top: 1.5px;
 }
 
 /* ---------- Breadcrumb ---------- */
