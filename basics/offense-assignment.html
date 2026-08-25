@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon-192.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180.png?v=2">
+<title>オフェンスアサインメントの基礎 ― 守備の配置をどう読み、崩すか | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="WRのスプリット幅やTEのアタッチ位置など、守備の配置を読み・崩すためのアライメントの考え方と、ブロッキングスキーム・プロテクションによるアサインメントの基礎を解説する基礎知識ページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=14">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><img src="../assets/img/logo-mark-header.svg" class="brand-mark" alt="">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">オフェンスアサインメントの基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="article-head">
+  <div class="container">
+    <span class="tag tag-flag">オフェンス</span>
+    <div class="page-head-title-row">
+      <h1>オフェンスアサインメントの基礎<br><span class="subtitle">― 守備の配置をどう読み、崩すか</span></h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="26" x2="70" y2="26" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="25" cy="26" r="3.5" fill="#3ecf6e"/><circle cx="35" cy="26" r="3.5" fill="#3ecf6e"/><circle cx="45" cy="26" r="3.5" fill="#3ecf6e"/>
+        <circle cx="16" cy="26" r="3.5" fill="#ffc633"/>
+        <circle cx="63" cy="26" r="3.5" fill="#ffc633"/>
+        <path d="M45,26 L63,26" stroke="#ffc633" stroke-width="1" stroke-dasharray="1,2"/>
+        <circle cx="35" cy="42" r="3.5" fill="#eceee9"/>
+      </svg>
+    </div>
+    <div class="meta">読了目安 8分 ・ アサインメント</div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>オフェンスフォーメーションの基礎で見た、パーソネルやバックフィールド・レシーバーの型は、攻撃側が「何をしたいか」を映す設計図だった。しかし同じフォーメーションで並んでいても、目の前の守備がどう構えているかによって、それを「どう通すか」という一段細かい判断は毎回変わってくる。フォーメーションが自分たちの意図の表現だとすれば、ここから先は、相手の配置を読みながら自分たちの意図を通すための考え方 ―― 「アライメント」と「アサインメント」を見ていく。</p>
+
+  <p>アライメントは「どこに立つか」、アサインメントは「何をするか」を指す。この語彙自体は守備側で体系化が進んでいるものだが、オフェンス側にも対応する考え方がある。WR・TE・OLがどこに構えるか(アライメント)と、スナップ後に誰が誰をブロックするか(アサインメント)は、それぞれ独立して決められる。まずアライメントから見ていく。</p>
+
+  <h2>アライメント ― 守備の配置を読み、崩すための位置取り</h2>
+
+  <h3>WRのスプリット幅とリリース角度 ― 間合いで迷わせる</h3>
+  <p>WRがOLからどれだけ離れて構えるか、その「スプリット幅」は見た目の違いにとどまらず、対面するCBの対応を左右する要素になる。スプリットを狭くする(タイトスプリット)と、CBとの間合いが詰まり、リリース(スタート直後の動き出し)の角度で内外どちらにも仕掛けやすくなる。逆にスプリットを大きく取る(ワイドスプリット)と、CBを外側へ大きく開かせ、その分ボックス周辺のスペースを間接的に空けさせる効果がある。</p>
+
+  <table class="compare-table">
+    <tr><th>スプリット幅</th><th>具体例</th><th>傾向</th></tr>
+    <tr><td>タイト(狭い)</td><td>ボックスに近い位置で構える</td><td>リリースの選択肢が増え、ラン・パスの判別がされにくい</td></tr>
+    <tr><td>ワイド(広い)</td><td>サイドラインいっぱいに開く</td><td>CBを外へ広げ、ボックス内のスペースを間接的に作る</td></tr>
+  </table>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    試合を通じて広めのスプリットを取り続けているチームは、そのぶんランのスペースを作る意図がある可能性が高い。逆にスプリット幅がそのプレーだけ急に変わったら、何か仕掛けようとしている合図かもしれない。
+  </div>
+
+  <h3>TEのアタッチ位置 ― ラインに付くか、離れるか</h3>
+  <p>TEがOLに体を触れさせて並ぶ「アタッチ(イン・ライン)」か、そこから1〜2ヤード離れて構える「デタッチ」かも、守備の対応を変えるアライメントのひとつ。アタッチしたTEは、その方向のランをブロックで支える追加の人員として数えられるため、守備もその方向にエッジの選手をもう1人多く割り当てやすい。デタッチしたTEは大きめのWRに近い扱いになり、守備はカバレッジのミスマッチを気にして、逆にその方向のボックス人数を減らすことがある。</p>
+
+  <div class="play-diagrams">
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 90" width="260" height="90" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="260" height="90" fill="#141713" rx="4"/>
+        <line x1="8" y1="66" x2="252" y2="66" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <rect x="70" y="56" width="18" height="18" fill="#3ecf6e" rx="2"/>
+        <rect x="90" y="56" width="18" height="18" fill="#3ecf6e" rx="2"/>
+        <rect x="110" y="56" width="18" height="18" fill="#3ecf6e" rx="2"/>
+        <rect x="130" y="56" width="18" height="18" fill="#3ecf6e" rx="2"/>
+        <rect x="150" y="56" width="18" height="18" fill="#ffc633" rx="2"/>
+        <text x="159" y="70" fill="#0c0e0c" font-size="9" text-anchor="middle" font-family="Oswald" font-weight="700">TE</text>
+        <circle cx="190" cy="20" r="6" fill="#a8afa2"/>
+        <path d="M159,56 L184,26" stroke="#3d4238" stroke-width="1" stroke-dasharray="1,2"/>
+      </svg>
+      <figcaption>アタッチ ― TEがOLに体を付けて並び、その方向のエッジ守備を1人増やさせる</figcaption>
+    </figure>
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 90" width="260" height="90" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="260" height="90" fill="#141713" rx="4"/>
+        <line x1="8" y1="66" x2="252" y2="66" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <rect x="70" y="56" width="18" height="18" fill="#3ecf6e" rx="2"/>
+        <rect x="90" y="56" width="18" height="18" fill="#3ecf6e" rx="2"/>
+        <rect x="110" y="56" width="18" height="18" fill="#3ecf6e" rx="2"/>
+        <rect x="130" y="56" width="18" height="18" fill="#3ecf6e" rx="2"/>
+        <rect x="172" y="50" width="18" height="18" fill="#ffc633" rx="2"/>
+        <text x="181" y="64" fill="#0c0e0c" font-size="9" text-anchor="middle" font-family="Oswald" font-weight="700">TE</text>
+        <circle cx="210" cy="16" r="6" fill="#a8afa2"/>
+        <path d="M181,50 L206,22" stroke="#3d4238" stroke-width="1" stroke-dasharray="1,2"/>
+      </svg>
+      <figcaption>デタッチ ― TEがラインから離れ、大きめのWRに近い扱いになる</figcaption>
+    </figure>
+  </div>
+
+  <h3>OLのスプリット ― ギャップの幅を作る</h3>
+  <p>OL同士の間隔(スプリット)を狭める・広げることも、アライメントの一部である。スプリットを狭めると、DLが差し込めるスペースそのものが小さくなり、パワー系のランやコンボブロックがしやすくなる。逆にスプリットを広げると、パスラッシュのレーンやランのカットバックスペースが広がる一方、DLがギャップへ侵入しやすくもなる。</p>
+
+  <div class="play-diagrams">
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 90" width="260" height="90" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="260" height="90" fill="#141713" rx="4"/>
+        <line x1="8" y1="66" x2="252" y2="66" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <rect x="80" y="52" width="20" height="22" fill="#3ecf6e" rx="2"/>
+        <rect x="102" y="52" width="20" height="22" fill="#3ecf6e" rx="2"/>
+        <rect x="124" y="52" width="20" height="22" fill="#3ecf6e" rx="2"/>
+        <rect x="146" y="52" width="20" height="22" fill="#3ecf6e" rx="2"/>
+        <rect x="168" y="52" width="20" height="22" fill="#3ecf6e" rx="2"/>
+      </svg>
+      <figcaption>タイトスプリット ― 間隔を詰め、ギャップを狭くしてDLの侵入を防ぐ</figcaption>
+    </figure>
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 90" width="260" height="90" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="260" height="90" fill="#141713" rx="4"/>
+        <line x1="8" y1="66" x2="252" y2="66" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <rect x="58" y="52" width="20" height="22" fill="#3ecf6e" rx="2"/>
+        <rect x="94" y="52" width="20" height="22" fill="#3ecf6e" rx="2"/>
+        <rect x="130" y="52" width="20" height="22" fill="#3ecf6e" rx="2"/>
+        <rect x="166" y="52" width="20" height="22" fill="#3ecf6e" rx="2"/>
+        <rect x="202" y="52" width="20" height="22" fill="#3ecf6e" rx="2"/>
+      </svg>
+      <figcaption>ワイドスプリット ― 間隔を広げ、パスの視野とカットバックのスペースを作る</figcaption>
+    </figure>
+  </div>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    近年はパスプロテクションとQBの視野確保を優先して、OLのスプリットを従来より広めに取るチームが増えている。ランの際はDLがギャップへ侵入しやすくなるトレードオフもある。
+  </div>
+
+  <h2>アサインメント ― 誰が誰をブロックするか</h2>
+  <p>アライメントで守備の配置を読み、有利な位置取りをしたうえで、実際に「誰が誰をブロックするか」を割り振るのがアサインメントである。オフェンスのアサインメントは大きく2つの場面で使われる考え方で、それぞれの詳細は別のページで扱っている。</p>
+
+  <h3>ランのブロッキングアサインメント ― ゾーンとマン</h3>
+  <p>ランプレーでは、OL全員が同じ方向へ動きコンボブロックを軸に守備の反応を見てからホールを選ぶ「ゾーンスキーム」と、あらかじめ狙うギャップを決めてプルやキックアウトで数的優位を作りに行く「マンスキーム」の、2つの割り当て方式がある。</p>
+
+  <div class="see-also">
+    <span class="label">もっと詳しく</span>
+    <p>ギャップの呼び方、コンボブロックやプルの技術、ゾーンスキーム/マンスキームの違いは、こちらで図解付きで整理している。</p>
+    <a href="offense-run-basics.html">ランオフェンスの基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+
+  <h3>パスのプロテクションアサインメント ― マンプロとスライド</h3>
+  <p>パスプレーでは、OLやRBが「誰が誰を止めるか」を決め切る「マンプロテクション」と、エリアで受け持つ「スライド/ゾーンプロテクション」の、2つの割り当て方式がある。ブリッツの人数がプロテクションを上回る場面に備えたホットルートも、このアサインメントの延長線上にある考え方だ。</p>
+
+  <div class="see-also">
+    <span class="label">もっと詳しく</span>
+    <p>マンプロテクションとスライド/ゾーンプロテクションの違い、ブリッツ・ピックアップとホットルートは、こちらで図解付きで整理している。</p>
+    <a href="offense-pass-basics.html">パスオフェンスの基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    OLが指差しや声でギャップを確認し合っている様子が見えたら、それはアサインメントを揃えている最中。スナップ直前にセンターがコールし直す場面は、守備のブリッツを見て割り当てを土壇場で修正しているサインであることが多い。
+  </div>
+
+  <h2>まとめ</h2>
+  <p>アライメント(どこに立つか)とアサインメント(何をするか)は、フォーメーション(何をしたいか)よりも一段細かい粒度で、相手の配置を読みながら自分たちの意図を通すための考え方である。この2つの語彙は、この先のランオフェンスの基礎・パスオフェンスの基礎でも前提として使っていく。</p>
+
+</article>
+
+<div class="page-nav container">
+  <a class="page-nav-card prev" href="offense-formations.html">
+    <span class="nav-label">前のページ</span>
+    <span class="nav-title"><svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M9,0 L4,7 L9,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>オフェンスフォーメーションの基礎</span>
+    <span class="nav-desc">パーソネル、バックフィールド・レシーバーの型を整理。</span>
+  </a>
+  <a class="page-nav-card next" href="offense-play-types.html">
+    <span class="nav-label">次のページ</span>
+    <span class="nav-title">プレータイプの基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span class="nav-desc">ランプレーとパスプレー、それぞれの分類の考え方。</span>
+  </a>
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">オフェンスアサインメントの基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; 2026 FOOTBALLTACTICS.CLUB</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>
