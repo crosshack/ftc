@@ -13,6 +13,7 @@
   --accent: #3ecf6e;
   --accent-dim: #234d33;
   --flag: #ffc633;
+  --orange: #ff8c33;
   --font-head: 'Oswald', 'Hiragino Sans', 'Yu Gothic', sans-serif;
   --font-body: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', -apple-system, sans-serif;
   --max-w: 880px;
@@ -554,6 +555,8 @@ h1, h2, h3, h4 {
 .callout strong { color: var(--accent); }
 .callout.flag { border-left-color: var(--flag); }
 .callout.flag strong { color: var(--flag); }
+.callout.orange { border-left-color: var(--orange); }
+.callout.orange strong { color: var(--orange); }
 
 /* Page-level "see also" pointer box (distinct from per-section callouts) */
 .see-also {
