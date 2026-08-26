@@ -125,4 +125,20 @@ window.TOPICS_DATA = [
     ],
     thumb: '<circle cx="35" cy="35" r="16" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="46" y1="46" x2="58" y2="58" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="38" r="3.5" fill="#eceee9"/><path d="M30,38 L40,28" stroke="#ffc633" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="28" r="3.5" fill="#ffc633"/>'
   }
+  ,
+  {
+    slug: "real-play-analysis-003",
+    title: "オフェンスラインの「クセ」を読み切っていた、開始1Qのコーナーブリッツ",
+    excerpt: "第60回スーパーボウル開始1Q、デヴォン・ウィザースプーンのコーナーブリッツによる10ヤードサック。ルーキー2人が並ぶペイトリオッツのオフェンスラインに、シーホークスは何を読み切っていたのかを分解する。",
+    url: "topics/real-play-analysis-003.html",
+    date: "2026-08-26",
+    readMin: 5,
+    theme: { slug: "real-play-analysis", name: "実戦プレー分析", part: "#003" },
+    tags: [
+      { slug: "defense", name: "ディフェンス" },
+      { slug: "scheme-analysis", name: "スキーム分析" },
+      { slug: "play-breakdown", name: "実戦分析" }
+    ],
+    thumb: '<circle cx="35" cy="35" r="16" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="46" y1="46" x2="58" y2="58" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="38" r="3.5" fill="#eceee9"/><path d="M30,38 L40,28" stroke="#ffc633" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="28" r="3.5" fill="#ffc633"/>'
+  }
 ];
