@@ -96,13 +96,13 @@ window.TOPICS_DATA = [
   }
   ,
   {
-    slug: "real-play-analysis-001",
+    slug: "real-play-explained-001",
     title: "ジャガーズを2週連続で沈めた、13パーソネルの1プレー",
-    excerpt: "2025年シーズンWeek 7、ラムズ対ジャガーズ。4th-and-1で見せたプレーアクションの1本を、フォーメーションから結果まで分析する。",
-    url: "topics/real-play-analysis-001.html",
+    excerpt: "2025年シーズンWeek 7、ラムズ対ジャガーズ。4th-and-1で見せたプレーアクションの1本を、フォーメーションから結果まで解説する。",
+    url: "topics/real-play-explained-001.html",
     date: "2026-08-26",
     readMin: 5,
-    theme: { slug: "real-play-analysis", name: "実戦プレー分析", part: "#001" },
+    theme: { slug: "real-play-explained", name: "実戦プレー解説", part: "#001" },
     tags: [
       { slug: "offense", name: "オフェンス" },
       { slug: "scheme-analysis", name: "スキーム分析" },
@@ -111,13 +111,13 @@ window.TOPICS_DATA = [
     thumb: '<circle cx="35" cy="35" r="16" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="46" y1="46" x2="58" y2="58" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="38" r="3.5" fill="#eceee9"/><path d="M30,38 L40,28" stroke="#ffc633" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="28" r="3.5" fill="#ffc633"/>'
   },
   {
-    slug: "real-play-analysis-002",
+    slug: "real-play-explained-002",
     title: "無名ルーキーが「一週間前から知っていた」ゴールラインインターセプト",
-    excerpt: "第49回スーパーボウル終盤、無名の新人CBマルコム・バトラーが見せたゴールラインインターセプト。土壇場の判断ではなく、直前の練習で叩き込まれた予習がどう結果に結びついたかを分析する。",
-    url: "topics/real-play-analysis-002.html",
+    excerpt: "第49回スーパーボウル終盤、無名の新人CBマルコム・バトラーが見せたゴールラインインターセプト。土壇場の判断ではなく、直前の練習で叩き込まれた予習がどう結果に結びついたかを解説する。",
+    url: "topics/real-play-explained-002.html",
     date: "2026-08-26",
     readMin: 5,
-    theme: { slug: "real-play-analysis", name: "実戦プレー分析", part: "#002" },
+    theme: { slug: "real-play-explained", name: "実戦プレー解説", part: "#002" },
     tags: [
       { slug: "defense", name: "ディフェンス" },
       { slug: "game-management", name: "ゲームマネジメント" },
@@ -127,13 +127,13 @@ window.TOPICS_DATA = [
   }
   ,
   {
-    slug: "real-play-analysis-003",
+    slug: "real-play-explained-003",
     title: "オフェンスラインの「クセ」を読み切っていた、開始1Qのコーナーブリッツ",
-    excerpt: "第60回スーパーボウル開始1Q、デヴォン・ウィザースプーンのコーナーブリッツによる10ヤードサック。ルーキー2人が並ぶペイトリオッツのオフェンスラインに、シーホークスは何を読み切っていたのかを分析する。",
-    url: "topics/real-play-analysis-003.html",
+    excerpt: "第60回スーパーボウル開始1Q、デヴォン・ウィザースプーンのコーナーブリッツによる10ヤードサック。ルーキー2人が並ぶペイトリオッツのオフェンスラインに、シーホークスは何を読み切っていたのかを解説する。",
+    url: "topics/real-play-explained-003.html",
     date: "2026-08-26",
     readMin: 5,
-    theme: { slug: "real-play-analysis", name: "実戦プレー分析", part: "#003" },
+    theme: { slug: "real-play-explained", name: "実戦プレー解説", part: "#003" },
     tags: [
       { slug: "defense", name: "ディフェンス" },
       { slug: "scheme-analysis", name: "スキーム分析" },
