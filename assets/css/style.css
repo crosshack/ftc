@@ -541,6 +541,7 @@ h1, h2, h3, h4 {
 .article-body ul, .article-body ol { color: #d9dbd4; padding-left: 22px; margin-bottom: 18px; }
 .article-body li { margin-bottom: 8px; }
 .article-body strong { color: var(--text); }
+.plain-link { color: inherit; }
 
 .callout {
   background: var(--bg-card);
