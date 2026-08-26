@@ -102,7 +102,7 @@ window.TOPICS_DATA = [
     url: "topics/real-play-breakdown-01.html",
     date: "2026-08-26",
     readMin: 5,
-    theme: { slug: "real-play-breakdown", name: "実戦プレー分解シリーズ", part: "#01" },
+    theme: { slug: "real-play-breakdown", name: "実戦プレー分析", part: "#01" },
     tags: [
       { slug: "offense", name: "オフェンス" },
       { slug: "scheme-analysis", name: "スキーム分析" },
@@ -117,7 +117,7 @@ window.TOPICS_DATA = [
     url: "topics/real-play-breakdown-02.html",
     date: "2026-08-26",
     readMin: 5,
-    theme: { slug: "real-play-breakdown", name: "実戦プレー分解シリーズ", part: "#02" },
+    theme: { slug: "real-play-breakdown", name: "実戦プレー分析", part: "#02" },
     tags: [
       { slug: "defense", name: "ディフェンス" },
       { slug: "game-management", name: "ゲームマネジメント" },
