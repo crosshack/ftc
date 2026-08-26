@@ -98,7 +98,7 @@ window.TOPICS_DATA = [
   {
     slug: "real-play-explained-001",
     title: "ジャガーズを2週連続で沈めた、13パーソネルの1プレー",
-    excerpt: "2025年シーズンWeek 7、ラムズ対ジャガーズ。4th-and-1で見せたプレーアクションの1本を、フォーメーションから結果まで解説する。",
+    excerpt: "2025年シーズンWeek 7、ラムズ対ジャガーズ。4th&1で見せたプレーアクションの1本を、フォーメーションから結果まで解説する。",
     url: "topics/real-play-explained-001.html",
     date: "2026-08-26",
     readMin: 5,
