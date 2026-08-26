@@ -327,7 +327,7 @@ h1, h2, h3, h4 {
 .section-head h2 a { color: var(--text); position: relative; display: inline-block; padding-right: 18px; }
 .section-head h2 a:hover { color: var(--accent); }
 .section-head h2 a .chev { width: 8px; height: 12px; position: absolute; top: 50%; right: 0; transform: translateY(-50%); }
-.section-head h2 a .section-icon { width: 20px; height: 20px; margin-right: 10px; vertical-align: middle; }
+.section-head h2 a .section-icon { width: 20px; height: 20px; margin-right: 10px; vertical-align: middle; position: relative; top: -2px; }
 .section-note-bottom { display: flex; justify-content: flex-end; align-items: baseline; gap: 10px; font-size: 0.9rem; color: var(--text-dim); margin: 12px 0 0; }
 .section-note-bottom .more { font-size: 0.9rem; color: var(--accent); }
 
@@ -794,7 +794,7 @@ h1, h2, h3, h4 {
 }
 .page-head h1 { font-size: 2.2rem; margin: 0 0 14px; }
 .page-head h1.has-icon { position: relative; padding-left: 1.25em; }
-.page-head h1 .page-head-icon { position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 0.85em; height: 0.85em; }
+.page-head h1 .page-head-icon { position: absolute; left: 0; top: 50%; transform: translateY(calc(-50% + 2px)); width: 0.85em; height: 0.85em; }
 .page-head p { color: var(--text-dim); }
 
 /* ---------- Glossary ---------- */
