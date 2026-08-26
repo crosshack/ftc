@@ -94,4 +94,35 @@ window.TOPICS_DATA = [
     ],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="20" cy="50" r="3.5" fill="#ffc633"/><circle cx="30" cy="50" r="3.5" fill="#ffc633"/><circle cx="40" cy="50" r="3.5" fill="#ffc633"/><circle cx="55" cy="50" r="3.5" fill="#eceee9"/><circle cx="30" cy="60" r="3.5" fill="#eceee9"/>'
   }
+  ,
+  {
+    slug: "real-play-breakdown-01",
+    title: "ジャガーズを2週連続で沈めた、13パーソネルの1プレー",
+    excerpt: "2025年シーズンWeek 7、ラムズ対ジャガーズ。4th-and-1で見せたプレーアクションの1本を、フォーメーションから結果まで分解する。",
+    url: "topics/real-play-breakdown-01.html",
+    date: "2026-08-26",
+    readMin: 5,
+    theme: { slug: "real-play-breakdown", name: "実戦プレー分解シリーズ", part: "#01" },
+    tags: [
+      { slug: "offense", name: "オフェンス" },
+      { slug: "scheme-analysis", name: "スキーム分析" },
+      { slug: "play-breakdown", name: "実戦分析" }
+    ],
+    thumb: '<circle cx="35" cy="35" r="16" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="46" y1="46" x2="58" y2="58" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="38" r="3.5" fill="#eceee9"/><path d="M30,38 L40,28" stroke="#ffc633" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="28" r="3.5" fill="#ffc633"/>'
+  },
+  {
+    slug: "real-play-breakdown-02",
+    title: "無名ルーキーが「一週間前から知っていた」ゴールラインインターセプト",
+    excerpt: "第49回スーパーボウル終盤、無名の新人CBマルコム・バトラーが見せたゴールラインインターセプト。土壇場の判断ではなく、直前の練習で叩き込まれた予習がどう結果に結びついたかを分解する。",
+    url: "topics/real-play-breakdown-02.html",
+    date: "2026-08-26",
+    readMin: 5,
+    theme: { slug: "real-play-breakdown", name: "実戦プレー分解シリーズ", part: "#02" },
+    tags: [
+      { slug: "defense", name: "ディフェンス" },
+      { slug: "game-management", name: "ゲームマネジメント" },
+      { slug: "play-breakdown", name: "実戦分析" }
+    ],
+    thumb: '<circle cx="35" cy="35" r="16" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="46" y1="46" x2="58" y2="58" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="38" r="3.5" fill="#eceee9"/><path d="M30,38 L40,28" stroke="#ffc633" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="28" r="3.5" fill="#ffc633"/>'
+  }
 ];
