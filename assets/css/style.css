@@ -77,11 +77,13 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
 }
-.brand-logo {
-  height: 24.85px;
+.brand-mark {
+  height: 19px;
   width: auto;
   flex-shrink: 0;
-  display: block;
+  margin-right: 4px;
+  position: relative;
+  top: 1.1px;
 }
 
 /* ---------- Breadcrumb ---------- */
