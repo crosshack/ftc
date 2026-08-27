@@ -25,11 +25,11 @@ window.BASICS_DATA = [
         { slug: 'offensive-line', name: 'オフェンスライン' },
         { slug: 'pass', name: 'パス' },
         { slug: 'pass-protection', name: 'パスプロテクション' },
-        { slug: 'quarter', name: 'クォーター' },
         { slug: 'quarterback', name: 'クォーターバック' },
         { slug: 'receiver', name: 'レシーバー' },
         { slug: 'run', name: 'ラン' },
         { slug: 'running-back', name: 'ランニングバック' },
+        { slug: 'snap', name: 'スナップ' },
         { slug: 'tackle', name: 'タックル' },
         { slug: 'tight-end', name: 'タイトエンド' },
         { slug: 'wide-receiver', name: 'ワイドレシーバー' }
@@ -47,7 +47,6 @@ window.BASICS_DATA = [
         { slug: 'bunch-formation', name: 'バンチ' },
         { slug: 'center', name: 'センター' },
         { slug: 'defense', name: 'ディフェンス' },
-        { slug: 'field', name: 'フィールド' },
         { slug: 'formation', name: 'フォーメーション' },
         { slug: 'i-formation', name: 'アイフォーメーション' },
         { slug: 'offense', name: 'オフェンス' },
@@ -59,6 +58,7 @@ window.BASICS_DATA = [
         { slug: 'run', name: 'ラン' },
         { slug: 'running-back', name: 'ランニングバック' },
         { slug: 'shotgun', name: 'ショットガン' },
+        { slug: 'single-back', name: 'シングルバック' },
         { slug: 'snap', name: 'スナップ' },
         { slug: 'spread', name: 'スプレッド' },
         { slug: 'tight-end', name: 'タイトエンド' },
@@ -79,8 +79,8 @@ window.BASICS_DATA = [
         { slug: 'block', name: 'ブロック' },
         { slug: 'box', name: 'ボックス' },
         { slug: 'edge', name: 'エッジ' },
-        { slug: 'field', name: 'フィールド' },
         { slug: 'formation', name: 'フォーメーション' },
+        { slug: 'man-scheme', name: 'マンスキーム' },
         { slug: 'offense', name: 'オフェンス' },
         { slug: 'pass', name: 'パス' },
         { slug: 'personnel', name: 'パーソネル' },
@@ -89,7 +89,7 @@ window.BASICS_DATA = [
         { slug: 'run', name: 'ラン' },
         { slug: 'snap', name: 'スナップ' },
         { slug: 'tight-end', name: 'タイトエンド' },
-        { slug: 'zone', name: 'ゾーン' }
+        { slug: 'zone-scheme', name: 'ゾーンスキーム' }
       ],
       thumb: '<line x1="0" y1="26" x2="70" y2="26" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="25" cy="26" r="3.5" fill="#3ecf6e"/><circle cx="35" cy="26" r="3.5" fill="#3ecf6e"/><circle cx="45" cy="26" r="3.5" fill="#3ecf6e"/> <circle cx="16" cy="26" r="3.5" fill="#ffc633"/> <circle cx="63" cy="26" r="3.5" fill="#ffc633"/> <path d="M45,26 L63,26" stroke="#ffc633" stroke-width="1" stroke-dasharray="1,2"/> <circle cx="35" cy="42" r="3.5" fill="#eceee9"/>'
     },
@@ -117,7 +117,7 @@ window.BASICS_DATA = [
         { slug: 'run', name: 'ラン' },
         { slug: 'screen-pass', name: 'スクリーンパス' },
         { slug: 'snap', name: 'スナップ' },
-        { slug: 'zone', name: 'ゾーン' }
+        { slug: 'zone-scheme', name: 'ゾーンスキーム' }
       ],
       thumb: '<line x1="0" y1="55" x2="70" y2="55" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="20" cy="55" r="3.5" fill="#eceee9"/> <path d="M20,55 L45,55" fill="none" stroke="#3ecf6e" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowRunCard)"/> <path d="M20,55 Q35,15 55,20" fill="none" stroke="#ffc633" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowPassCard)"/> <defs> <marker id="arrowRunCard" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#3ecf6e"/></marker> <marker id="arrowPassCard" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffc633"/></marker> </defs>'
     },
@@ -135,6 +135,7 @@ window.BASICS_DATA = [
         { slug: 'guard', name: 'ガード' },
         { slug: 'hole', name: 'ホール' },
         { slug: 'lead-block', name: 'リードブロック' },
+        { slug: 'man-scheme', name: 'マンスキーム' },
         { slug: 'offense', name: 'オフェンス' },
         { slug: 'pass', name: 'パス' },
         { slug: 'play-action-pass', name: 'プレーアクションパス' },
@@ -144,7 +145,7 @@ window.BASICS_DATA = [
         { slug: 'tackle', name: 'タックル' },
         { slug: 'tight-end', name: 'タイトエンド' },
         { slug: 'yard', name: 'ヤード' },
-        { slug: 'zone', name: 'ゾーン' }
+        { slug: 'zone-scheme', name: 'ゾーンスキーム' }
       ],
       thumb: '<line x1="0" y1="20" x2="70" y2="20" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <rect x="14" y="19" width="10" height="10" fill="#3d4238"/> <rect x="28" y="19" width="10" height="10" fill="#3d4238"/> <rect x="42" y="19" width="10" height="10" fill="#3d4238"/> <circle cx="33" cy="47" r="4" fill="#eceee9"/> <path d="M33,47 L33,25" stroke="#3ecf6e" stroke-width="2" stroke-linecap="round" marker-end="url(#runBasicsCardArrow)"/> <defs> <marker id="runBasicsCardArrow" markerWidth="8" markerHeight="8" refX="3" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#3ecf6e"/></marker> </defs>'
     },
@@ -171,7 +172,8 @@ window.BASICS_DATA = [
         { slug: 'run', name: 'ラン' },
         { slug: 'smash', name: 'スマッシュ' },
         { slug: 'snap', name: 'スナップ' },
-        { slug: 'zone', name: 'ゾーン' }
+        { slug: 'zone', name: 'ゾーン' },
+        { slug: 'zone-protection', name: 'ゾーンプロテクション' }
       ],
       thumb: '<line x1="0" y1="55" x2="70" y2="55" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="20" cy="50" r="3.5" fill="#eceee9"/> <path d="M20,50 L20,20" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#passBasicsCardA)"/> <path d="M20,50 L45,50 L52,28" stroke="#ffc633" stroke-width="1.8" fill="none" stroke-linecap="round" marker-end="url(#passBasicsCardB)"/> <defs> <marker id="passBasicsCardA" markerWidth="8" markerHeight="8" refX="3" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffc633"/></marker> <marker id="passBasicsCardB" markerWidth="8" markerHeight="8" refX="3" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffc633"/></marker> </defs>'
     },
@@ -437,10 +439,8 @@ window.BASICS_DATA = [
       excerpt: '確実に3点を取る条件 ― キッカーを助ける要素、プロテクションの仕組みを解説。',
       readMin: 7,
       tags: [
-        { slug: 'block', name: 'ブロック' },
         { slug: 'blocked-kick', name: 'ブロックキック' },
         { slug: 'edge', name: 'エッジ' },
-        { slug: 'field', name: 'フィールド' },
         { slug: 'field-goal-2', name: 'フィールドゴール' },
         { slug: 'holder', name: 'ホルダー' },
         { slug: 'hole', name: 'ホール' },
@@ -486,7 +486,6 @@ window.BASICS_DATA = [
       excerpt: '再開位置を優位にする条件 ― 届ける技術とプロテクションを解説。',
       readMin: 7,
       tags: [
-        { slug: 'block', name: 'ブロック' },
         { slug: 'blocked-kick', name: 'ブロックキック' },
         { slug: 'coverage', name: 'カバレッジ' },
         { slug: 'down', name: 'ダウン' },

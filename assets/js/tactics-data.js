@@ -70,8 +70,7 @@ window.TACTICS_DATA = [
         { slug: 'tackle', name: 'タックル' },
         { slug: 'x-receiver', name: 'Xレシーバー' },
         { slug: 'y-receiver', name: 'Yレシーバー' },
-        { slug: 'z-receiver', name: 'Zレシーバー' },
-        { slug: 'zone', name: 'ゾーン' }
+        { slug: 'z-receiver', name: 'Zレシーバー' }
       ],
       thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="35" cy="50" r="3.5" fill="#eceee9"/> <path d="M35,50 L20,40" stroke="#424242" stroke-width="4" stroke-linecap="round"/> <path d="M35,50 L50,40" stroke="#1e88e5" stroke-width="4" stroke-linecap="round"/> <path d="M35,50 L35,20" stroke="#e53935" stroke-width="2" fill="none"/>'
     },
@@ -103,7 +102,6 @@ window.TACTICS_DATA = [
         { slug: 'post-wheel', name: 'ポスト・ホイール' },
         { slug: 'quarterback', name: 'クォーターバック' },
         { slug: 'route', name: 'ルート' },
-        { slug: 'run', name: 'ラン' },
         { slug: 'running-back', name: 'ランニングバック' },
         { slug: 'safety', name: 'セーフティ' },
         { slug: 'slant-flat', name: 'スラント・フラット' },
@@ -130,7 +128,6 @@ window.TACTICS_DATA = [
         { slug: 'defensive-end', name: 'ディフェンスエンド' },
         { slug: 'defensive-tackle', name: 'ディフェンスタックル' },
         { slug: 'draw', name: 'ドロー' },
-        { slug: 'flat', name: 'フラット' },
         { slug: 'guard', name: 'ガード' },
         { slug: 'h-receiver', name: 'Hレシーバー' },
         { slug: 'middle-linebacker', name: 'ミドルラインバッカー' },
