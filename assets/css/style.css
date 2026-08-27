@@ -542,6 +542,14 @@ h1, h2, h3, h4 {
 .article-body ul, .article-body ol { color: #d9dbd4; padding-left: 22px; margin-bottom: 18px; }
 .article-body li { margin-bottom: 8px; }
 .article-body strong { color: var(--text); }
+
+/* term hub pages: cards are reused inside .article-body, which otherwise
+   targets prose h3 (accent color, 30px top margin). Restore the .card h3
+   styling when a card is nested in an article body. */
+.article-body .card h3 { margin: 0 0 8px; font-size: 1.2rem; color: var(--text); }
+/* term hub pages: extra breathing room below the final 関連する用語 section,
+   matching the 44px rhythm used between h2 sections elsewhere on the page. */
+.article-body > .term-related:last-child { margin-bottom: 24px; }
 .plain-link { color: inherit; }
 
 .callout {
