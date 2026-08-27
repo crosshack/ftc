@@ -90,6 +90,7 @@ window.BASICS_DATA = [
         { slug: 'run', name: 'ラン' },
         { slug: 'snap', name: 'スナップ' },
         { slug: 'tight-end', name: 'タイトエンド' },
+        { slug: 'zone-protection', name: 'ゾーンプロテクション' },
         { slug: 'zone-scheme', name: 'ゾーンスキーム' }
       ],
       thumb: '<line x1="0" y1="26" x2="70" y2="26" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="25" cy="26" r="3.5" fill="#3ecf6e"/><circle cx="35" cy="26" r="3.5" fill="#3ecf6e"/><circle cx="45" cy="26" r="3.5" fill="#3ecf6e"/> <circle cx="16" cy="26" r="3.5" fill="#ffc633"/> <circle cx="63" cy="26" r="3.5" fill="#ffc633"/> <path d="M45,26 L63,26" stroke="#ffc633" stroke-width="1" stroke-dasharray="1,2"/> <circle cx="35" cy="42" r="3.5" fill="#eceee9"/>'
