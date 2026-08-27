@@ -550,6 +550,7 @@ h1, h2, h3, h4 {
 /* term hub pages: extra breathing room below the final 関連する用語 section,
    matching the 44px rhythm used between h2 sections elsewhere on the page. */
 .article-body > .term-related:last-child { margin-bottom: 44px; }
+.article-body h2 .section-icon { width: 20px; height: 20px; margin-right: 10px; vertical-align: middle; position: relative; top: -2px; }
 .plain-link { color: inherit; }
 
 .callout {
