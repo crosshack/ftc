@@ -126,21 +126,21 @@
         a.classList.add('tag-hidden');
       });
 
-      var more = document.createElement('a');
-      more.href = '#';
+      var more = document.createElement('span');
       more.className = 'tag-more';
       more.appendChild(document.createTextNode('...'));
-      var moreLabel = document.createElement('span');
-      moreLabel.className = 'tag-more-label';
-      moreLabel.textContent = 'すべて表示';
-      more.appendChild(moreLabel);
-      more.addEventListener('click', function (e) {
+      var moreLink = document.createElement('a');
+      moreLink.href = '#';
+      moreLink.className = 'tag-more-label';
+      moreLink.textContent = 'すべて表示';
+      moreLink.addEventListener('click', function (e) {
         e.preventDefault();
         hidden.forEach(function (a) {
           a.classList.remove('tag-hidden');
         });
         more.remove();
       });
+      more.appendChild(moreLink);
 
       tags[LIMIT - 1].insertAdjacentElement('afterend', more);
     });

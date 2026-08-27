@@ -530,8 +530,8 @@ h1, h2, h3, h4 {
 }
 .topic-tags a:hover { text-decoration: underline; }
 .topic-tags a.tag-hidden { display: none; }
-.topic-tags a.tag-more { color: var(--accent); margin-left: -10px; }
-.topic-tags a.tag-more .tag-more-label { margin-left: 4px; }
+.topic-tags span.tag-more { color: var(--accent); margin-left: -10px; }
+.topic-tags span.tag-more .tag-more-label { margin-left: 4px; }
 
 .article-body { max-width: 720px; margin: 40px auto 0; padding: 0 24px; }
 .article-body h2 {
