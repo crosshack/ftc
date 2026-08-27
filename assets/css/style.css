@@ -529,6 +529,9 @@ h1, h2, h3, h4 {
   text-decoration: none;
 }
 .topic-tags a:hover { text-decoration: underline; }
+.topic-tags a.tag-hidden { display: none; }
+.topic-tags a.tag-more { color: var(--text-dim); }
+.topic-tags a.tag-more:hover { color: var(--accent); }
 
 .article-body { max-width: 720px; margin: 40px auto 0; padding: 0 24px; }
 .article-body h2 {

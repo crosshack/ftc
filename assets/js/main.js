@@ -110,3 +110,35 @@
     });
   });
 })();
+
+// Hashtag list truncation - if a .topic-tags block has more than LIMIT
+// tags, hide the rest behind a "...すべて表示" link that reveals them on click.
+(function () {
+  var LIMIT = 10;
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.topic-tags').forEach(function (list) {
+      var tags = Array.prototype.slice.call(list.querySelectorAll(':scope > a'));
+      if (tags.length <= LIMIT) return;
+
+      var hidden = tags.slice(LIMIT);
+      hidden.forEach(function (a) {
+        a.classList.add('tag-hidden');
+      });
+
+      var more = document.createElement('a');
+      more.href = '#';
+      more.className = 'tag-more';
+      more.textContent = '...すべて表示';
+      more.addEventListener('click', function (e) {
+        e.preventDefault();
+        hidden.forEach(function (a) {
+          a.classList.remove('tag-hidden');
+        });
+        more.remove();
+      });
+
+      tags[LIMIT - 1].insertAdjacentElement('afterend', more);
+    });
+  });
+})();
