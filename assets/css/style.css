@@ -867,7 +867,9 @@ h1, h2, h3, h4 {
 .term-name { font-family: var(--font-head); font-size: 1.1rem; font-weight: 600; color: var(--text); }
 .term-en { color: var(--text-dim); font-size: 0.82rem; }
 .term-cat { color: var(--text-dim); font-size: 0.75rem; letter-spacing: 0.04em; white-space: nowrap; padding-left: 12px; border-left: 1px solid var(--line-strong); }
-.term-link { display: inline-flex; align-self: center; }
+.term-name-link { position: relative; display: inline-block; padding-right: 14px; text-decoration: none; }
+.term-name-link:hover .term-name { color: var(--accent); }
+.term-name-link .term-link-icon { position: absolute; top: 50%; right: 0; transform: translateY(-50%); }
 .term-link-icon { width: 8px; height: 12px; }
 .term-def { margin: 0 0 10px; color: var(--text-dim); font-size: 0.94rem; max-width: 640px; }
 .term-def a { color: var(--text-dim); text-decoration: none; border-bottom: 1px solid var(--line-strong); padding-bottom: 0; }
