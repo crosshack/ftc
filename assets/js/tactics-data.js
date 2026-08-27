@@ -19,18 +19,18 @@ window.TACTICS_DATA = [
         { slug: 'field', name: 'フィールド' },
         { slug: 'formation', name: 'フォーメーション' },
         { slug: 'fullback', name: 'フルバック' },
+        { slug: 'guard', name: 'ガード' },
         { slug: 'i-formation', name: 'アイフォーメーション' },
         { slug: 'offense', name: 'オフェンス' },
-        { slug: 'pass', name: 'パス' },
         { slug: 'personnel', name: 'パーソネル' },
         { slug: 'pistol-formation', name: 'ピストル' },
         { slug: 'pro-set', name: 'プロセット' },
         { slug: 'quarterback', name: 'クォーターバック' },
-        { slug: 'run', name: 'ラン' },
         { slug: 'running-back', name: 'ランニングバック' },
         { slug: 'shotgun', name: 'ショットガン' },
         { slug: 'single-back', name: 'シングルバック' },
         { slug: 'spread', name: 'スプレッド' },
+        { slug: 'tackle', name: 'タックル' },
         { slug: 'trips', name: 'トリップス' },
         { slug: 'wildcat-formation', name: 'ワイルドキャット' }
       ],
@@ -47,11 +47,11 @@ window.TACTICS_DATA = [
         { slug: 'center', name: 'センター' },
         { slug: 'cornerback', name: 'コーナーバック' },
         { slug: 'counter', name: 'カウンター' },
-        { slug: 'defense', name: 'ディフェンス' },
         { slug: 'defensive-end', name: 'ディフェンスエンド' },
         { slug: 'defensive-tackle', name: 'ディフェンスタックル' },
         { slug: 'duo', name: 'デュオ' },
         { slug: 'fullback', name: 'フルバック' },
+        { slug: 'guard', name: 'ガード' },
         { slug: 'inside-zone', name: 'インサイド・ゾーン' },
         { slug: 'iso', name: 'アイソ' },
         { slug: 'linebacker', name: 'ラインバッカー' },
@@ -62,6 +62,7 @@ window.TACTICS_DATA = [
         { slug: 'run', name: 'ラン' },
         { slug: 'running-back', name: 'ランニングバック' },
         { slug: 'safety', name: 'セーフティ' },
+        { slug: 'tackle', name: 'タックル' },
         { slug: 'zone', name: 'ゾーン' }
       ],
       thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="35" cy="50" r="3.5" fill="#eceee9"/> <path d="M35,50 L20,40" stroke="#424242" stroke-width="4" stroke-linecap="round"/> <path d="M35,50 L50,40" stroke="#1e88e5" stroke-width="4" stroke-linecap="round"/> <path d="M35,50 L35,20" stroke="#e53935" stroke-width="2" fill="none"/>'
@@ -83,6 +84,7 @@ window.TACTICS_DATA = [
         { slug: 'flat', name: 'フラット' },
         { slug: 'flood', name: 'フラッド' },
         { slug: 'four-verticals', name: 'フォー・バーティカルズ' },
+        { slug: 'guard', name: 'ガード' },
         { slug: 'levels', name: 'レベルズ' },
         { slug: 'linebacker', name: 'ラインバッカー' },
         { slug: 'mesh', name: 'メッシュ' },
@@ -98,7 +100,8 @@ window.TACTICS_DATA = [
         { slug: 'slant-flat', name: 'スラント・フラット' },
         { slug: 'smash', name: 'スマッシュ' },
         { slug: 'spot', name: 'スポット' },
-        { slug: 'stick', name: 'スティック' }
+        { slug: 'stick', name: 'スティック' },
+        { slug: 'tackle', name: 'タックル' }
       ],
       thumb: '<line x1="0" y1="55" x2="70" y2="55" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="14" cy="55" r="3" fill="#eceee9"/><circle cx="32" cy="55" r="3" fill="#eceee9"/><circle cx="50" cy="55" r="3" fill="#eceee9"/> <path d="M14,55 L8,10" stroke="#e53935" stroke-width="2" fill="none"/> <path d="M32,55 L34,12" stroke="#1e88e5" stroke-width="2" fill="none"/> <path d="M50,55 L54,18" stroke="#8e24aa" stroke-width="2" fill="none"/>'
     },
@@ -109,15 +112,14 @@ window.TACTICS_DATA = [
       excerpt: 'バブル、スティック、グランスなどの代表的なRPOコンセプトを、 読みのキーとなるディフェンダーつきで解説。',
       meta: '全6コンセプト',
       tags: [
-        { slug: 'assignment', name: 'アサイメント' },
         { slug: 'center', name: 'センター' },
         { slug: 'cornerback', name: 'コーナーバック' },
         { slug: 'defender', name: 'ディフェンダー' },
-        { slug: 'defense', name: 'ディフェンス' },
         { slug: 'defensive-end', name: 'ディフェンスエンド' },
         { slug: 'defensive-tackle', name: 'ディフェンスタックル' },
         { slug: 'draw', name: 'ドロー' },
         { slug: 'flat', name: 'フラット' },
+        { slug: 'guard', name: 'ガード' },
         { slug: 'middle-linebacker', name: 'ミドルラインバッカー' },
         { slug: 'offense', name: 'オフェンス' },
         { slug: 'outside-linebacker', name: 'アウトサイドラインバッカー' },
@@ -128,7 +130,8 @@ window.TACTICS_DATA = [
         { slug: 'running-back', name: 'ランニングバック' },
         { slug: 'safety', name: 'セーフティ' },
         { slug: 'slant-flat', name: 'スラント・フラット' },
-        { slug: 'stick', name: 'スティック' }
+        { slug: 'stick', name: 'スティック' },
+        { slug: 'tackle', name: 'タックル' }
       ],
       thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="35" cy="50" r="3.5" fill="#eceee9"/> <path d="M35,50 L20,40" stroke="#424242" stroke-width="4" stroke-linecap="round"/> <path d="M35,50 L35,20" stroke="#e53935" stroke-width="2" fill="none"/> <path d="M35,50 L50,32" stroke="#1e88e5" stroke-width="2.4" fill="none"/> <circle cx="50" cy="32" r="6" fill="none" stroke="#ffc633" stroke-width="1.4" stroke-dasharray="2,2"/>'
     }
@@ -162,13 +165,15 @@ window.TACTICS_DATA = [
         { slug: 'defensive-tackle', name: 'ディフェンスタックル' },
         { slug: 'field', name: 'フィールド' },
         { slug: 'formation', name: 'フォーメーション' },
+        { slug: 'guard', name: 'ガード' },
         { slug: 'linebacker', name: 'ラインバッカー' },
         { slug: 'nickel-back', name: 'ニッケルバック' },
         { slug: 'nose-tackle', name: 'ノーズタックル' },
         { slug: 'quarter', name: 'クォーター' },
         { slug: 'quarterback', name: 'クォーターバック' },
         { slug: 'running-back', name: 'ランニングバック' },
-        { slug: 'safety', name: 'セーフティ' }
+        { slug: 'safety', name: 'セーフティ' },
+        { slug: 'tackle', name: 'タックル' }
       ],
       thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="20" cy="42" r="3.5" fill="#3ecf6e"/><circle cx="35" cy="42" r="3.5" fill="#3ecf6e"/><circle cx="50" cy="42" r="3.5" fill="#3ecf6e"/> <circle cx="27" cy="27" r="3.5" fill="#eceee9"/><circle cx="43" cy="27" r="3.5" fill="#eceee9"/> <circle cx="10" cy="38" r="3.5" fill="#ffc633"/><circle cx="60" cy="38" r="3.5" fill="#ffc633"/>'
     },
@@ -193,12 +198,14 @@ window.TACTICS_DATA = [
         { slug: 'defensive-end', name: 'ディフェンスエンド' },
         { slug: 'defensive-tackle', name: 'ディフェンスタックル' },
         { slug: 'field', name: 'フィールド' },
+        { slug: 'guard', name: 'ガード' },
         { slug: 'hole', name: 'ホール' },
         { slug: 'linebacker', name: 'ラインバッカー' },
         { slug: 'nickel-back', name: 'ニッケルバック' },
         { slug: 'quarterback', name: 'クォーターバック' },
         { slug: 'running-back', name: 'ランニングバック' },
         { slug: 'safety', name: 'セーフティ' },
+        { slug: 'tackle', name: 'タックル' },
         { slug: 'zone', name: 'ゾーン' },
         { slug: 'zone-coverage', name: 'ゾーンカバレッジ' }
       ],
