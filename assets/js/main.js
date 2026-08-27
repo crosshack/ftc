@@ -113,15 +113,19 @@
 
 // Hashtag list truncation - if a .topic-tags block has more than LIMIT
 // tags, hide the rest behind a "...すべて表示" link that reveals them on click.
+// Card contexts (home/list page cards, glossary hub preview cards) use a
+// tighter limit than full detail pages, since cards are smaller and denser.
 (function () {
-  var LIMIT = 10;
+  var LIMIT_CARD = 5;
+  var LIMIT_DEFAULT = 10;
 
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.topic-tags').forEach(function (list) {
+      var limit = list.closest('.card') ? LIMIT_CARD : LIMIT_DEFAULT;
       var tags = Array.prototype.slice.call(list.querySelectorAll(':scope > a'));
-      if (tags.length <= LIMIT) return;
+      if (tags.length <= limit) return;
 
-      var hidden = tags.slice(LIMIT);
+      var hidden = tags.slice(limit);
       hidden.forEach(function (a) {
         a.classList.add('tag-hidden');
       });
@@ -142,7 +146,7 @@
       });
       more.appendChild(moreLink);
 
-      tags[LIMIT - 1].insertAdjacentElement('afterend', more);
+      tags[limit - 1].insertAdjacentElement('afterend', more);
     });
   });
 })();
