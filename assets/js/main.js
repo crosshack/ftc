@@ -129,7 +129,11 @@
       var more = document.createElement('a');
       more.href = '#';
       more.className = 'tag-more';
-      more.textContent = '...すべて表示';
+      more.appendChild(document.createTextNode('...'));
+      var moreLabel = document.createElement('span');
+      moreLabel.className = 'tag-more-label';
+      moreLabel.textContent = 'すべて表示';
+      more.appendChild(moreLabel);
       more.addEventListener('click', function (e) {
         e.preventDefault();
         hidden.forEach(function (a) {
