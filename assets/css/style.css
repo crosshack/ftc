@@ -549,7 +549,7 @@ h1, h2, h3, h4 {
 .article-body .card h3 { margin: 0 0 8px; font-size: 1.2rem; color: var(--text); }
 /* term hub pages: extra breathing room below the final 関連する用語 section,
    matching the 44px rhythm used between h2 sections elsewhere on the page. */
-.article-body > .term-related:last-child { margin-bottom: 24px; }
+.article-body > .term-related:last-child { margin-bottom: 44px; }
 .plain-link { color: inherit; }
 
 .callout {
