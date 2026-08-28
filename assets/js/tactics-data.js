@@ -234,6 +234,7 @@ window.TACTICS_DATA = [
         { slug: 'nickel-package', name: 'ニッケル' },
         { slug: 'bunch-formation', name: 'バンチ' },
         { slug: 'pass-rush', name: 'パスラッシュ' },
+        { slug: 'fade-route', name: 'フェイドルート' },
         { slug: 'man-free', name: 'マンフリー' },
         { slug: 'rover', name: 'ロバー' },
         { slug: 'snap', name: 'スナップ' },
