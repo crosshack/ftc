@@ -221,6 +221,7 @@ window.TOPICS_DATA = [
     theme: { slug: "real-play-explained", name: "実戦プレー解説", part: "#003" },
     tags: [
         { slug: "blitz", name: "ブリッツ" },
+        { slug: "offensive-line", name: "オフェンスライン" },
         { slug: "guard", name: "ガード" },
         { slug: "sack", name: "サック" },
         { slug: "offense", name: "オフェンス" },
@@ -237,7 +238,6 @@ window.TOPICS_DATA = [
         { slug: "pass-rush", name: "パスラッシュ" },
         { slug: "edge", name: "エッジ" },
         { slug: "offensive-coordinator", name: "オフェンスコーディネーター" },
-        { slug: "offensive-line", name: "オフェンスライン" },
         { slug: "cornerback", name: "コーナーバック" },
         { slug: "blocker", name: "ブロッカー" },
         { slug: "head-coach", name: "ヘッドコーチ" },

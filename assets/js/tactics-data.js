@@ -228,6 +228,7 @@ window.TACTICS_DATA = [
       excerpt: 'バブル、スティック、グランスなどの代表的なRPOコンセプトを、 読みのキーとなるディフェンダーつきで解説。',
       meta: '全6コンセプト',
       tags: [
+        { slug: 'run-pass-option', name: 'ラン・パス・オプション' },
         { slug: 'stick', name: 'スティック' },
         { slug: 'run', name: 'ラン' },
         { slug: 'assignment', name: 'アサイメント' },
