@@ -13,17 +13,19 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "pattern-match-coverage", name: "パターンマッチの最前線", part: "前編" },
     tags: [
-        { slug: "area", name: "エリア" },
-        { slug: "cornerback", name: "コーナーバック" },
-        { slug: "coverage", name: "カバレッジ" },
-        { slug: "defender", name: "ディフェンダー" },
-        { slug: "defense", name: "ディフェンス" },
-        { slug: "linebacker", name: "ラインバッカー" },
-        { slug: "match-coverage", name: "パターンマッチカバレッジ" },
-        { slug: "receiver", name: "レシーバー" },
+        { slug: "zone", name: "ゾーン" },
         { slug: "snap", name: "スナップ" },
+        { slug: "match-coverage", name: "パターンマッチカバレッジ" },
+        { slug: "coverage", name: "カバレッジ" },
+        { slug: "defense", name: "ディフェンス" },
+        { slug: "receiver", name: "レシーバー" },
+        { slug: "cornerback", name: "コーナーバック" },
+        { slug: "linebacker", name: "ラインバッカー" },
         { slug: "wide-receiver", name: "ワイドレシーバー" },
-        { slug: "zone", name: "ゾーン" }
+        { slug: "defender", name: "ディフェンダー" },
+        { slug: "safety", name: "セーフティ" },
+        { slug: "area", name: "エリア" },
+        { slug: "pass", name: "パス" }
       ],
     thumb: '<circle cx="35" cy="46" r="8" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><path d="M35,38 Q35,26 35,18" fill="none" stroke="#eceee9" stroke-width="1.8" stroke-dasharray="4,3"/><circle cx="35" cy="18" r="4" fill="#eceee9"/><path d="M35,52 L35,60" fill="none" stroke="#ffc633" stroke-width="2"/><circle cx="35" cy="60" r="3.5" fill="#ffc633"/>'
   },
@@ -36,14 +38,17 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "pattern-match-coverage", name: "パターンマッチの最前線", part: "後編" },
     tags: [
-        { slug: "blitz", name: "ブリッツ" },
         { slug: "box", name: "ボックス" },
-        { slug: "coverage", name: "カバレッジ" },
-        { slug: "defense", name: "ディフェンス" },
         { slug: "offense", name: "オフェンス" },
-        { slug: "pass-rush", name: "パスラッシュ" },
+        { slug: "coverage", name: "カバレッジ" },
         { slug: "match-coverage", name: "パターンマッチカバレッジ" },
-        { slug: "receiver", name: "レシーバー" }
+        { slug: "defense", name: "ディフェンス" },
+        { slug: "receiver", name: "レシーバー" },
+        { slug: "pass-rush", name: "パスラッシュ" },
+        { slug: "blitz", name: "ブリッツ" },
+        { slug: "mesh", name: "メッシュ" },
+        { slug: "snap", name: "スナップ" },
+        { slug: "defender", name: "ディフェンダー" }
       ],
     thumb: '<circle cx="35" cy="46" r="8" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><path d="M35,38 Q35,26 35,18" fill="none" stroke="#eceee9" stroke-width="1.8" stroke-dasharray="4,3"/><circle cx="35" cy="18" r="4" fill="#eceee9"/><path d="M35,52 L35,60" fill="none" stroke="#ffc633" stroke-width="2"/><circle cx="35" cy="60" r="3.5" fill="#ffc633"/>'
   },
@@ -56,13 +61,20 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "presnap-motion", name: "プレスナップモーションの浸透", part: "前編" },
     tags: [
-        { slug: "cornerback", name: "コーナーバック" },
-        { slug: "defender", name: "ディフェンダー" },
-        { slug: "offense", name: "オフェンス" },
-        { slug: "quarter", name: "クォーター" },
         { slug: "snap", name: "スナップ" },
+        { slug: "offense", name: "オフェンス" },
+        { slug: "cornerback", name: "コーナーバック" },
         { slug: "wide-receiver", name: "ワイドレシーバー" },
-        { slug: "zone", name: "ゾーン" }
+        { slug: "zone", name: "ゾーン" },
+        { slug: "defender", name: "ディフェンダー" },
+        { slug: "box", name: "ボックス" },
+        { slug: "touchdown", name: "タッチダウン" },
+        { slug: "turnover", name: "ターンオーバー" },
+        { slug: "head-coach", name: "ヘッドコーチ" },
+        { slug: "quarter", name: "クォーター" },
+        { slug: "defense", name: "ディフェンス" },
+        { slug: "yard", name: "ヤード" },
+        { slug: "route", name: "ルート" }
       ],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="45" cy="50" r="3.5" fill="#eceee9"/><path d="M45,50 L20,50" fill="none" stroke="#ffc633" stroke-width="2" stroke-dasharray="3,2"/><path d="M24,46 L18,50 L24,54" fill="none" stroke="#ffc633" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18" cy="50" r="3.5" fill="#ffc633"/>'
   },
@@ -75,11 +87,20 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "presnap-motion", name: "プレスナップモーションの浸透", part: "後編" },
     tags: [
+        { slug: "snap", name: "スナップ" },
+        { slug: "safety", name: "セーフティ" },
         { slug: "coverage", name: "カバレッジ" },
         { slug: "defense", name: "ディフェンス" },
         { slug: "offense", name: "オフェンス" },
-        { slug: "safety", name: "セーフティ" },
-        { slug: "snap", name: "スナップ" }
+        { slug: "cover-3", name: "カバー3" },
+        { slug: "touchdown", name: "タッチダウン" },
+        { slug: "defensive-coordinator", name: "ディフェンスコーディネーター" },
+        { slug: "rover", name: "ロバー" },
+        { slug: "quarter", name: "クォーター" },
+        { slug: "zone", name: "ゾーン" },
+        { slug: "defender", name: "ディフェンダー" },
+        { slug: "yard", name: "ヤード" },
+        { slug: "run", name: "ラン" }
       ],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="45" cy="50" r="3.5" fill="#eceee9"/><path d="M45,50 L20,50" fill="none" stroke="#ffc633" stroke-width="2" stroke-dasharray="3,2"/><path d="M24,46 L18,50 L24,54" fill="none" stroke="#ffc633" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18" cy="50" r="3.5" fill="#ffc633"/>'
   },
@@ -92,14 +113,21 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "13-personnel", name: "13パーソネルの台頭", part: "前編" },
     tags: [
-        { slug: "pass", name: "パス" },
         { slug: "personnel", name: "パーソネル" },
         { slug: "quarterback", name: "クォーターバック" },
-        { slug: "run", name: "ラン" },
-        { slug: "running-back", name: "ランニングバック" },
-        { slug: "snap", name: "スナップ" },
         { slug: "tight-end", name: "タイトエンド" },
-        { slug: "wide-receiver", name: "ワイドレシーバー" }
+        { slug: "running-back", name: "ランニングバック" },
+        { slug: "wide-receiver", name: "ワイドレシーバー" },
+        { slug: "pass", name: "パス" },
+        { slug: "run", name: "ラン" },
+        { slug: "box", name: "ボックス" },
+        { slug: "end-zone", name: "エンドゾーン" },
+        { slug: "touchdown", name: "タッチダウン" },
+        { slug: "offense", name: "オフェンス" },
+        { slug: "snap", name: "スナップ" },
+        { slug: "defense", name: "ディフェンス" },
+        { slug: "block", name: "ブロック" },
+        { slug: "route", name: "ルート" }
       ],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="20" cy="50" r="3.5" fill="#ffc633"/><circle cx="30" cy="50" r="3.5" fill="#ffc633"/><circle cx="40" cy="50" r="3.5" fill="#ffc633"/><circle cx="55" cy="50" r="3.5" fill="#eceee9"/><circle cx="30" cy="60" r="3.5" fill="#eceee9"/>'
   },
@@ -112,10 +140,14 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "13-personnel", name: "13パーソネルの台頭", part: "後編" },
     tags: [
+        { slug: "personnel", name: "パーソネル" },
+        { slug: "nickel-package", name: "ニッケル" },
         { slug: "defense", name: "ディフェンス" },
         { slug: "pass", name: "パス" },
-        { slug: "personnel", name: "パーソネル" },
-        { slug: "safety", name: "セーフティ" }
+        { slug: "safety", name: "セーフティ" },
+        { slug: "offense", name: "オフェンス" },
+        { slug: "run", name: "ラン" },
+        { slug: "route", name: "ルート" }
       ],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="20" cy="50" r="3.5" fill="#ffc633"/><circle cx="30" cy="50" r="3.5" fill="#ffc633"/><circle cx="40" cy="50" r="3.5" fill="#ffc633"/><circle cx="55" cy="50" r="3.5" fill="#eceee9"/><circle cx="30" cy="60" r="3.5" fill="#eceee9"/>'
   }
@@ -129,16 +161,23 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "real-play-explained", name: "実戦プレー解説", part: "#001" },
     tags: [
-        { slug: "box", name: "ボックス" },
-        { slug: "defender", name: "ディフェンダー" },
-        { slug: "down", name: "ダウン" },
-        { slug: "formation", name: "フォーメーション" },
-        { slug: "offense", name: "オフェンス" },
         { slug: "personnel", name: "パーソネル" },
+        { slug: "formation", name: "フォーメーション" },
+        { slug: "run", name: "ラン" },
+        { slug: "offense", name: "オフェンス" },
         { slug: "post-route", name: "ポストルート" },
         { slug: "quarterback", name: "クォーターバック" },
-        { slug: "run", name: "ラン" },
-        { slug: "yard", name: "ヤード" }
+        { slug: "down", name: "ダウン" },
+        { slug: "yard", name: "ヤード" },
+        { slug: "handoff", name: "ハンドオフ" },
+        { slug: "punt", name: "パント" },
+        { slug: "box", name: "ボックス" },
+        { slug: "read", name: "リード" },
+        { slug: "end-zone", name: "エンドゾーン" },
+        { slug: "touchdown", name: "タッチダウン" },
+        { slug: "head-coach", name: "ヘッドコーチ" },
+        { slug: "defender", name: "ディフェンダー" },
+        { slug: "pass", name: "パス" }
       ],
     thumb: '<circle cx="35" cy="35" r="16" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="46" y1="46" x2="58" y2="58" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="38" r="3.5" fill="#eceee9"/><path d="M30,38 L40,28" stroke="#ffc633" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="28" r="3.5" fill="#ffc633"/>'
   },
@@ -151,14 +190,23 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "real-play-explained", name: "実戦プレー解説", part: "#002" },
     tags: [
-        { slug: "coverage", name: "カバレッジ" },
-        { slug: "formation", name: "フォーメーション" },
         { slug: "interception", name: "インターセプト" },
         { slug: "pass", name: "パス" },
-        { slug: "quarterback", name: "クォーターバック" },
+        { slug: "formation", name: "フォーメーション" },
         { slug: "run", name: "ラン" },
+        { slug: "quarterback", name: "クォーターバック" },
         { slug: "snap", name: "スナップ" },
-        { slug: "yard", name: "ヤード" }
+        { slug: "huddle", name: "ハドル" },
+        { slug: "handoff", name: "ハンドオフ" },
+        { slug: "cornerback", name: "コーナーバック" },
+        { slug: "head-coach", name: "ヘッドコーチ" },
+        { slug: "coverage", name: "カバレッジ" },
+        { slug: "down", name: "ダウン" },
+        { slug: "defense", name: "ディフェンス" },
+        { slug: "defender", name: "ディフェンダー" },
+        { slug: "field", name: "フィールド" },
+        { slug: "yard", name: "ヤード" },
+        { slug: "route", name: "ルート" }
       ],
     thumb: '<circle cx="35" cy="35" r="16" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="46" y1="46" x2="58" y2="58" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="38" r="3.5" fill="#eceee9"/><path d="M30,38 L40,28" stroke="#ffc633" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="28" r="3.5" fill="#ffc633"/>'
   }
@@ -172,18 +220,29 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "real-play-explained", name: "実戦プレー解説", part: "#003" },
     tags: [
-        { slug: "assignment", name: "アサイメント" },
         { slug: "blitz", name: "ブリッツ" },
-        { slug: "defense", name: "ディフェンス" },
-        { slug: "down", name: "ダウン" },
-        { slug: "formation", name: "フォーメーション" },
         { slug: "guard", name: "ガード" },
-        { slug: "offense", name: "オフェンス" },
-        { slug: "quarterback", name: "クォーターバック" },
         { slug: "sack", name: "サック" },
-        { slug: "snap", name: "スナップ" },
+        { slug: "offense", name: "オフェンス" },
         { slug: "tackle", name: "タックル" },
-        { slug: "yard", name: "ヤード" }
+        { slug: "pass", name: "パス" },
+        { slug: "formation", name: "フォーメーション" },
+        { slug: "quarterback", name: "クォーターバック" },
+        { slug: "nickel-back", name: "ニッケルバック" },
+        { slug: "snap", name: "スナップ" },
+        { slug: "down", name: "ダウン" },
+        { slug: "defense", name: "ディフェンス" },
+        { slug: "assignment", name: "アサイメント" },
+        { slug: "pass-protection", name: "パスプロテクション" },
+        { slug: "pass-rush", name: "パスラッシュ" },
+        { slug: "edge", name: "エッジ" },
+        { slug: "offensive-coordinator", name: "オフェンスコーディネーター" },
+        { slug: "offensive-line", name: "オフェンスライン" },
+        { slug: "cornerback", name: "コーナーバック" },
+        { slug: "blocker", name: "ブロッカー" },
+        { slug: "head-coach", name: "ヘッドコーチ" },
+        { slug: "yard", name: "ヤード" },
+        { slug: "route", name: "ルート" }
       ],
     thumb: '<circle cx="35" cy="35" r="16" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="46" y1="46" x2="58" y2="58" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="38" r="3.5" fill="#eceee9"/><path d="M30,38 L40,28" stroke="#ffc633" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="28" r="3.5" fill="#ffc633"/>'
   }
