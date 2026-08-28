@@ -146,7 +146,7 @@ window.TACTICS_DATA = [
       slug: 'offense-pass',
       url: 'tactics/offense-pass.html',
       title: 'パスコンセプトまとめ',
-      excerpt: 'フォー・バーティカルズ、レベルズ、ダガーなどの代表的なパスコンセプトを、 フィールド図とルート表つきで解説。',
+      excerpt: 'フォー・バーティカルズ、ダガー、レベルズなどの代表的なパスコンセプトを、 フィールド図とルート表つきで解説。',
       meta: '全12コンセプト',
       tags: [
         { slug: 'pass', name: 'パス' },
