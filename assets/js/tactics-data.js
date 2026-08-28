@@ -457,6 +457,7 @@ window.TACTICS_DATA = [
         { slug: 'dime-package', name: 'ダイム' },
         { slug: 'box', name: 'ボックス' },
         { slug: 'mesh', name: 'メッシュ' },
+        { slug: 'run-after-catch', name: 'ランアフターキャッチ' },
         { slug: 'read', name: 'リード' },
         { slug: 'leverage', name: 'レバレッジ' },
         { slug: 'levels', name: 'レベルズ' },
