@@ -189,8 +189,8 @@ window.BASICS_DATA = [
       readMin: 7,
       tags: [
         { slug: 'run', name: 'ラン' },
-        { slug: 'hole', name: 'ホール' },
         { slug: 'offense', name: 'オフェンス' },
+        { slug: 'hole', name: 'ホール' },
         { slug: 'zone-scheme', name: 'ゾーンスキーム' },
         { slug: 'man-scheme', name: 'マンスキーム' },
         { slug: 'read', name: 'リード' },
@@ -434,8 +434,8 @@ window.BASICS_DATA = [
       excerpt: '11人でパスを封じる設計図 ― マンツーマンとゾーン、カバレッジのパターンを解説。',
       readMin: 10,
       tags: [
-        { slug: 'deep', name: 'ディープ' },
         { slug: 'coverage', name: 'カバレッジ' },
+        { slug: 'deep', name: 'ディープ' },
         { slug: 'pass', name: 'パス' },
         { slug: 'zone', name: 'ゾーン' },
         { slug: 'defense', name: 'ディフェンス' },
@@ -618,8 +618,8 @@ window.BASICS_DATA = [
       readMin: 7,
       tags: [
         { slug: 'field-goal-2', name: 'フィールドゴール' },
-        { slug: 'kicker', name: 'キッカー' },
         { slug: 'field', name: 'フィールド' },
+        { slug: 'kicker', name: 'キッカー' },
         { slug: 'blocked-kick', name: 'ブロックキック' },
         { slug: 'hole', name: 'ホール' },
         { slug: 'edge', name: 'エッジ' },
