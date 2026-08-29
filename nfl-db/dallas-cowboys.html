@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon-192.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180.png?v=2">
+<title>ダラス・カウボーイズ | NFL.DB（プロトタイプ） | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="ダラス・カウボーイズの戦術・プレーのトレンド変化を、チームスタッツをもとにチャート化したダッシュボード">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=26">
+<link rel="stylesheet" href="../assets/css/nfl-db.css?v=1">
+<!-- Google tag (gtag.js) -->
+<script>
+(function () {
+  // 本番ドメインでのみ計測する(staging.footballtactics.club・localhost では送信しない)
+  var hosts = ['footballtactics.club', 'www.footballtactics.club'];
+  if (hosts.indexOf(location.hostname) === -1) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-NHS351TN8E';
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', 'G-NHS351TN8E');
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><img src="../assets/img/logo-combined.svg" class="brand-logo" alt="FOOTBALLTACTICS.CLUB"></a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../nfl-db.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="20" x2="21" y2="20"/><rect x="5" y="14" width="3" height="6"/><rect x="11" y="9" width="3" height="11"/><rect x="17" y="4" width="3" height="16"/></svg>NFL.DB</a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../nfl-db.html">NFL.DB</a></li>
+      <li><span class="current">ダラス・カウボーイズ</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="page-head">
+  <div class="container">
+    <span class="tag tag-flag">チーム別DB</span>
+    <div class="page-head-title-row">
+      <h1>ダラス・カウボーイズ<br><span class="en" style="font-size:0.5em;">DALLAS COWBOYS</span></h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="4" y="4" width="62" height="62" rx="10" fill="#002244"/>
+        <rect x="4" y="4" width="62" height="62" rx="10" fill="none" stroke="#ACC0C6" stroke-width="1.5" opacity="0.5"/>
+        <text x="35" y="41" text-anchor="middle" font-family="'Oswald', sans-serif" font-weight="700" font-size="19" fill="#ffffff" letter-spacing="1">DAL</text>
+        <rect x="16" y="50" width="38" height="5" rx="2.5" fill="#B0B7BC"/>
+      </svg>
+    </div>
+    <p>ダラス・カウボーイズの戦術・プレーのトレンド変化を、チームスタッツをもとにチャート化したダッシュボード。</p>
+  </div>
+</section>
+
+<div class="container">
+
+  <nav class="nfldb-toc" aria-label="目次">
+    <p class="nfldb-toc-label">目次</p>
+    <ol>
+      <li><span class="index">01</span><a href="#chart-points-scored">得点数</a></li>
+      <li><span class="index">02</span><a href="#chart-points-allowed">失点数</a></li>
+      <li><span class="index">03</span><a href="#chart-yards-gained">獲得ヤード数</a></li>
+      <li><span class="index">04</span><a href="#chart-yards-allowed">被獲得ヤード数</a></li>
+    </ol>
+  </nav>
+
+  <section class="nfldb-chart-section" id="chart-points-scored">
+    <h2><span class="index">01</span> 得点数</h2>
+    <p class="nfldb-chart-desc">得点パターン（TD/FG）ごとの得点数（試合平均/総数）のチャート。</p>
+
+    <div class="nfldb-controls">
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-points-scored-canvas" role="img" aria-label="得点数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note">出典: nflverse（nfl_data_py）のPlay-by-Playデータを集計（集計対象: レギュラーシーズンのみ）。</p>
+    </div>
+  </section>
+
+  <section class="nfldb-chart-section" id="chart-points-allowed">
+    <h2><span class="index">02</span> 失点数</h2>
+    <p class="nfldb-chart-desc">得点パターン（TD/FG）ごとの失点数（試合平均/総数）のチャート。</p>
+
+    <div class="nfldb-controls">
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-points-allowed-canvas" role="img" aria-label="失点数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note">出典: nflverse（nfl_data_py）のPlay-by-Playデータを集計（集計対象: レギュラーシーズンのみ）。</p>
+    </div>
+  </section>
+
+  <section class="nfldb-chart-section" id="chart-yards-gained">
+    <h2><span class="index">03</span> 獲得ヤード数</h2>
+    <p class="nfldb-chart-desc">プレー種別（ラン/パス）ごとの獲得ヤード数（試合平均/総数）のチャート。</p>
+
+    <div class="nfldb-controls">
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-yards-gained-canvas" role="img" aria-label="獲得ヤード数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note">出典: nflverse（nfl_data_py）のPlay-by-Playデータを集計（集計対象: レギュラーシーズンのみ）。</p>
+    </div>
+  </section>
+
+  <section class="nfldb-chart-section" id="chart-yards-allowed">
+    <h2><span class="index">04</span> 被獲得ヤード数</h2>
+    <p class="nfldb-chart-desc">プレー種別（ラン/パス）ごとの被獲得ヤード数（試合平均/総数）のチャート。</p>
+
+    <div class="nfldb-controls">
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-yards-allowed-canvas" role="img" aria-label="被獲得ヤード数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note">出典: nflverse（nfl_data_py）のPlay-by-Playデータを集計（集計対象: レギュラーシーズンのみ）。</p>
+    </div>
+  </section>
+
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../nfl-db.html">NFL.DB</a></li>
+      <li><span class="current">ダラス・カウボーイズ</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; <a href="https://www.crosshack.jp/" target="_blank" rel="noopener">CROSSHACK Inc.</a> All rights reserved.</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="../assets/js/main.js" defer></script>
+<script>
+(function () {
+  var DATA_URL = '../assets/data/nfl-db/dallas-cowboys.json';
+  var QTR_ORDER = ['1', '2', '3', '4', 'OT'];
+  var QTR_LABELS = { '1': '1Q', '2': '2Q', '3': '3Q', '4': '4Q', OT: 'OT' };
+
+  // チャートごとの設定。棒グラフは、従来の色(緑/黄)をベースに少し明度を落とした色。
+  // 折れ線(比率)は、従来の棒グラフの色をそのまま使う。4チャートとも同じ配色パターンを踏襲する。
+  var METRICS = [
+    {
+      metricKey: 'points_scored',
+      sectionId: 'chart-points-scored',
+      canvasId: 'chart-points-scored-canvas',
+      categories: ['td', 'fg'],
+      labels: { td: 'TD', fg: 'FG' },
+      barColors: { td: '#33aa5a', fg: '#d1a22a' },
+      ratioColors: { td: '#3ecf6e', fg: '#ffc633' },
+      ratioDash: { td: [6, 4], fg: [6, 4] },
+      unitLabel: '得点数',
+      ratioAxisLabel: 'TD/FG合計得点数に対する比率'
+    },
+    {
+      metricKey: 'points_allowed',
+      sectionId: 'chart-points-allowed',
+      canvasId: 'chart-points-allowed-canvas',
+      categories: ['td', 'fg'],
+      labels: { td: 'TD', fg: 'FG' },
+      barColors: { td: '#33aa5a', fg: '#d1a22a' },
+      ratioColors: { td: '#3ecf6e', fg: '#ffc633' },
+      ratioDash: { td: [6, 4], fg: [6, 4] },
+      unitLabel: '失点数',
+      ratioAxisLabel: 'TD/FG合計失点数に対する比率'
+    },
+    {
+      metricKey: 'yards_gained',
+      sectionId: 'chart-yards-gained',
+      canvasId: 'chart-yards-gained-canvas',
+      categories: ['run', 'pass'],
+      labels: { run: 'ラン', pass: 'パス' },
+      barColors: { run: '#33aa5a', pass: '#d1a22a' },
+      ratioColors: { run: '#3ecf6e', pass: '#ffc633' },
+      ratioDash: { run: [6, 4], pass: [6, 4] },
+      unitLabel: '獲得ヤード数',
+      ratioAxisLabel: 'ラン/パス合計獲得ヤード数に対する比率'
+    },
+    {
+      metricKey: 'yards_allowed',
+      sectionId: 'chart-yards-allowed',
+      canvasId: 'chart-yards-allowed-canvas',
+      categories: ['run', 'pass'],
+      labels: { run: 'ラン', pass: 'パス' },
+      barColors: { run: '#33aa5a', pass: '#d1a22a' },
+      ratioColors: { run: '#3ecf6e', pass: '#ffc633' },
+      ratioDash: { run: [6, 4], pass: [6, 4] },
+      unitLabel: '被獲得ヤード数',
+      ratioAxisLabel: 'ラン/パス合計被獲得ヤード数に対する比率'
+    }
+  ];
+
+  // 1チャート分のコントローラ(状態・描画・イベント)を生成する。4チャートとも同じロジックだが、
+  // 状態(state)とDOM参照(section配下に限定したquerySelector)はチャートごとに独立させる。
+  function createController(cfg, dataset) {
+    var section = document.getElementById(cfg.sectionId);
+    var metric = dataset.metrics[cfg.metricKey];
+    var state = { granularity: 'season', season: null, viewMode: 'avg' };
+    var chart = null;
+
+    function seasonCategories() {
+      var bySeason = metric.by_season;
+      var seasons = dataset.seasons_covered.map(String);
+      return seasons.map(function (s) {
+        var row = bySeason[s] || {};
+        var games = (dataset.games[s] || {}).games_played || 0;
+        return { label: s, raw: row, divisor: games };
+      });
+    }
+
+    function weekCategories(season) {
+      var byWeek = metric.by_week[season] || {};
+      var weeks = Object.keys(byWeek).map(Number).sort(function (a, b) { return a - b; });
+      return weeks.map(function (w) {
+        return { label: 'Wk' + w, raw: byWeek[String(w)], divisor: 1 };
+      });
+    }
+
+    function quarterCategories(season) {
+      var byQtr = metric.by_quarter[season] || {};
+      var games = dataset.games[season] || {};
+      var present = QTR_ORDER.filter(function (q) { return byQtr[q]; });
+      return present.map(function (q) {
+        var divisor = q === 'OT' ? (games.games_with_ot || 0) : (games.games_played || 0);
+        return { label: QTR_LABELS[q], raw: byQtr[q], divisor: divisor };
+      });
+    }
+
+    function currentCategories() {
+      if (state.granularity === 'season') return seasonCategories();
+      if (state.granularity === 'week') return weekCategories(state.season);
+      return quarterCategories(state.season);
+    }
+
+    function buildChartData(categories) {
+      var labels = categories.map(function (c) { return c.label; });
+      var cats = cfg.categories;
+
+      var barDatasets = cats.map(function (b) {
+        return {
+          type: 'bar',
+          label: cfg.labels[b],
+          data: categories.map(function (c) {
+            var v = (c.raw && c.raw[b]) || 0;
+            if (state.viewMode === 'avg' && c.divisor > 0) return v / c.divisor;
+            if (state.viewMode === 'avg') return 0;
+            return v;
+          }),
+          backgroundColor: cfg.barColors[b],
+          stack: 'main',
+          yAxisID: 'yMain',
+          // Chart.jsは描画時にorder昇順ソート後のメタセット配列を「逆順」で描画するため、
+          // orderの数値が小さいほど後で(前面に)描画される。棒グラフは折れ線より背面にしたいので大きい値。
+          order: 2
+        };
+      });
+
+      // カテゴリ間の比率(%)。母数は表示中の2カテゴリの合計(チャートに表示されている棒の合計と一致させるため)。
+      // 平均/総数どちらでも同じ値になる(スケール不変)。
+      var lineDatasets = cats.map(function (b) {
+        return {
+          type: 'line',
+          label: cfg.labels[b] + '比率',
+          data: categories.map(function (c) {
+            var raw = c.raw || {};
+            var denom = cats.reduce(function (sum, key) { return sum + (raw[key] || 0); }, 0);
+            if (!denom) return 0;
+            return Math.round((raw[b] || 0) / denom * 1000) / 10;
+          }),
+          borderColor: cfg.ratioColors[b],
+          backgroundColor: cfg.ratioColors[b],
+          borderDash: cfg.ratioDash[b],
+          borderWidth: 2.5,
+          pointRadius: 2,
+          tension: 0.3,
+          yAxisID: 'yRatio',
+          fill: false,
+          order: 1
+        };
+      });
+
+      return { labels: labels, datasets: barDatasets.concat(lineDatasets) };
+    }
+
+    function updateChart() {
+      var chartCfg = buildChartData(currentCategories());
+      var yMainTitle = cfg.unitLabel + '（' + (state.viewMode === 'avg' ? '試合平均' : '総数') + '）';
+      if (!chart) {
+        var ctx = document.getElementById(cfg.canvasId).getContext('2d');
+        chart = new Chart(ctx, {
+          type: 'bar',
+          data: chartCfg,
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            scales: {
+              x: { stacked: true, ticks: { color: '#a8afa2' }, grid: { color: '#2a2e28' } },
+              yMain: {
+                stacked: true, position: 'left',
+                title: { display: true, text: yMainTitle, color: '#a8afa2' },
+                ticks: { color: '#a8afa2' }, grid: { color: '#2a2e28' }
+              },
+              yRatio: {
+                position: 'right', min: 0, max: 100,
+                title: { display: true, text: cfg.ratioAxisLabel, color: '#a8afa2' },
+                ticks: { color: '#a8afa2', callback: function (v) { return v + '%'; } },
+                grid: { drawOnChartArea: false }
+              }
+            },
+            plugins: {
+              // 凡例はusePointStyle+pointStyleWidthを使用。
+              // 棒グラフ(左側の2カテゴリ)はpointStyle:'rect'を明示することで、pointStyleWidthの効果により
+              // 従来どおりの横長矩形として描画される(正方形/円形化はしない)。
+              // 折れ線(比率)はpointStyle:'line'を指定することで、凡例アイコン自体が
+              // 「線」として描画され、lineDashの設定もそのまま反映される(実線/破線の描き分けが可能)。
+              legend: {
+                labels: {
+                  color: '#eceee9',
+                  usePointStyle: true,
+                  pointStyleWidth: 34,
+                  generateLabels: function (chart) {
+                    var base = Chart.defaults.plugins.legend.labels.generateLabels(chart);
+                    // データセットのorder(描画のz-order制御用)によって凡例の並び順まで変わってしまうため、
+                    // 凡例表示だけは常にデータセット本来の並び(棒2つ→折れ線2つ)に固定する。
+                    base.sort(function (a, b) { return a.datasetIndex - b.datasetIndex; });
+                    base.forEach(function (item) {
+                      var ds = chart.data.datasets[item.datasetIndex];
+                      if (ds && ds.type === 'line') {
+                        item.pointStyle = 'line';
+                        item.rotation = 0;
+                        item.strokeStyle = ds.borderColor;
+                        item.fillStyle = 'transparent';
+                        item.lineWidth = 2.5;
+                        item.lineDash = ds.borderDash || [];
+                      } else if (ds) {
+                        item.pointStyle = 'rect';
+                      }
+                    });
+                    return base;
+                  }
+                }
+              }
+            }
+          }
+        });
+      } else {
+        chart.data = chartCfg;
+        chart.options.scales.yMain.title.text = yMainTitle;
+        chart.update();
+      }
+    }
+
+    function updateSeasonSelectVisibility() {
+      var sel = section.querySelector('[data-role="season-select"]');
+      sel.hidden = state.granularity === 'season';
+    }
+
+    var seasons = dataset.seasons_covered.map(String);
+    state.season = seasons[seasons.length - 1];
+
+    var sel = section.querySelector('[data-role="season-select"]');
+    sel.innerHTML = seasons.slice().reverse().map(function (s) {
+      return '<option value="' + s + '">' + s + '年シーズン</option>';
+    }).join('');
+    sel.value = state.season;
+    sel.addEventListener('change', function () {
+      state.season = sel.value;
+      updateChart();
+    });
+
+    section.querySelectorAll('[data-granularity]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        section.querySelectorAll('[data-granularity]').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        state.granularity = btn.getAttribute('data-granularity');
+        updateSeasonSelectVisibility();
+        updateChart();
+      });
+    });
+
+    section.querySelectorAll('[data-viewmode]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        section.querySelectorAll('[data-viewmode]').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        state.viewMode = btn.getAttribute('data-viewmode');
+        updateChart();
+      });
+    });
+
+    updateSeasonSelectVisibility();
+    updateChart();
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    fetch(DATA_URL).then(function (r) { return r.json(); }).then(function (dataset) {
+      METRICS.forEach(function (cfg) { createController(cfg, dataset); });
+    });
+  });
+})();
+</script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>
