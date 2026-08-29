@@ -9,7 +9,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon-192.png?v=2">
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180.png?v=2">
 <title>ペイトリオッツ | NFL.DB(プロトタイプ) | FOOTBALLTACTICS.CLUB</title>
-<meta name="description" content="ニューイングランド・ペイトリオッツのチームスタッツをシーズン別・ウィーク別・クォーター別にクロス集計して見られるダッシュボード(NFL.DBサンプル実装)。">
+<meta name="description" content="ニューイングランド・ペイトリオッツの戦術・プレーのトレンド変化を、チームスタッツをもとにチャート化したダッシュボード">
 <meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -65,7 +65,7 @@
   <div class="container">
     <span class="tag tag-flag">NFL.DB(プロトタイプ)</span>
     <div class="page-head-title-row">
-      <h1>ペイトリオッツ <span class="en" style="font-size:0.5em;">NEW ENGLAND PATRIOTS</span></h1>
+      <h1>ニューイングランド・ペイトリオッツ <span class="en" style="font-size:0.5em;">NEW ENGLAND PATRIOTS</span></h1>
       <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <rect x="12" y="40" width="10" height="20" fill="#3ecf6e"/>
         <rect x="26" y="28" width="10" height="32" fill="#3ecf6e"/>
@@ -73,7 +73,7 @@
         <rect x="54" y="34" width="10" height="26" fill="#3ecf6e"/>
       </svg>
     </div>
-    <p>ニューイングランド・ペイトリオッツのチームスタッツを、シーズン別・ウィーク別・クォーター別に切り替えてクロス集計で見られるダッシュボード。データソースは<a href="https://github.com/nflverse" target="_blank" rel="noopener" class="plain-link">nflverse</a>(nfl_data_py)のPlay-by-Playデータを独自に集計。※このページはNFL.DB企画のサンプルチーム検討フェーズにおけるプロトタイプで、デザイン・実装は今後変更される可能性があります。</p>
+    <p>ニューイングランド・ペイトリオッツの戦術・プレーのトレンド変化を、チームスタッツをもとにチャート化したダッシュボード。</p>
   </div>
 </section>
 
@@ -82,13 +82,13 @@
   <nav class="nfldb-toc" aria-label="目次">
     <p class="nfldb-toc-label">目次</p>
     <ol>
-      <li><span class="index">01</span><a href="#chart-yards-gained">獲得ヤード数(ラン/パス/その他)</a></li>
+      <li><span class="index">01</span><a href="#chart-yards-gained">獲得ヤード数</a></li>
     </ol>
   </nav>
 
   <section class="nfldb-chart-section" id="chart-yards-gained">
-    <h2><span class="index">01</span>獲得ヤード数</h2>
-    <p class="nfldb-chart-desc">ラン/パス/その他のプレー種別ごとの獲得ヤード数。シーズン別・ウィーク別・クォーター別で切り替え可能。</p>
+    <h2><span class="index">01</span> 獲得ヤード数</h2>
+    <p class="nfldb-chart-desc">プレー種別（ラン/パス）ごとの獲得ヤード数（試合平均/総数）のチャート。</p>
 
     <div class="nfldb-controls">
       <div class="nfldb-pill-group" data-role="granularity-group">
@@ -96,7 +96,11 @@
         <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
         <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
       </div>
-      <select class="nfldb-season-select" data-role="season-select" disabled aria-label="シーズンを選択"></select>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
     </div>
 
     <div class="nfldb-chart-box">
@@ -136,50 +140,91 @@
   var QTR_ORDER = ['1', '2', '3', '4', 'OT'];
   var QTR_LABELS = { '1': '1Q', '2': '2Q', '3': '3Q', '4': '4Q', OT: 'OT' };
 
-  var state = { granularity: 'season', season: null };
+  var state = { granularity: 'season', season: null, viewMode: 'avg' };
   var chart = null;
   var dataset = null;
 
-  function buildDatasets(buckets) {
-    return ['run', 'pass', 'other'].map(function (b) {
-      return {
-        label: BUCKET_LABELS[b],
-        data: buckets.map(function (row) { return row[b] || 0; }),
-        backgroundColor: BUCKET_COLORS[b],
-        stack: 'yards'
-      };
+  // --- カテゴリ配列(ラベル・生の合計値・平均換算用の分母)を粒度別に組み立てる ---
+
+  function seasonCategories() {
+    var bySeason = dataset.metrics.yards_gained.by_season;
+    var seasons = dataset.seasons_covered.map(String);
+    return seasons.map(function (s) {
+      var row = bySeason[s] || { run: 0, pass: 0, other: 0, total: 0 };
+      var games = (dataset.games[s] || {}).games_played || 0;
+      return { label: s, raw: row, divisor: games };
     });
   }
 
-  function renderSeason() {
-    var bySeason = dataset.metrics.yards_gained.by_season;
-    var seasons = dataset.seasons_covered.map(String);
-    var buckets = seasons.map(function (s) { return bySeason[s] || { run: 0, pass: 0, other: 0 }; });
-    return { labels: seasons, datasets: buildDatasets(buckets) };
-  }
-
-  function renderWeek(season) {
+  function weekCategories(season) {
     var byWeek = dataset.metrics.yards_gained.by_week[season] || {};
     var weeks = Object.keys(byWeek).map(Number).sort(function (a, b) { return a - b; });
-    var buckets = weeks.map(function (w) { return byWeek[String(w)]; });
-    return { labels: weeks.map(function (w) { return 'Wk' + w; }), datasets: buildDatasets(buckets) };
+    return weeks.map(function (w) {
+      return { label: 'Wk' + w, raw: byWeek[String(w)], divisor: 1 };
+    });
   }
 
-  function renderQuarter(season) {
+  function quarterCategories(season) {
     var byQtr = dataset.metrics.yards_gained.by_quarter[season] || {};
+    var games = dataset.games[season] || {};
     var present = QTR_ORDER.filter(function (q) { return byQtr[q]; });
-    var buckets = present.map(function (q) { return byQtr[q]; });
-    return { labels: present.map(function (q) { return QTR_LABELS[q]; }), datasets: buildDatasets(buckets) };
+    return present.map(function (q) {
+      var divisor = q === 'OT' ? (games.games_with_ot || 0) : (games.games_played || 0);
+      return { label: QTR_LABELS[q], raw: byQtr[q], divisor: divisor };
+    });
   }
 
-  function currentChartData() {
-    if (state.granularity === 'season') return renderSeason();
-    if (state.granularity === 'week') return renderWeek(state.season);
-    return renderQuarter(state.season);
+  function currentCategories() {
+    if (state.granularity === 'season') return seasonCategories();
+    if (state.granularity === 'week') return weekCategories(state.season);
+    return quarterCategories(state.season);
+  }
+
+  function buildChartData(categories) {
+    var labels = categories.map(function (c) { return c.label; });
+
+    var barDatasets = ['run', 'pass', 'other'].map(function (b) {
+      return {
+        type: 'bar',
+        label: BUCKET_LABELS[b],
+        data: categories.map(function (c) {
+          var v = c.raw[b] || 0;
+          if (state.viewMode === 'avg' && c.divisor > 0) return v / c.divisor;
+          if (state.viewMode === 'avg') return 0;
+          return v;
+        }),
+        backgroundColor: BUCKET_COLORS[b],
+        stack: 'yards',
+        yAxisID: 'yYards'
+      };
+    });
+
+    // ラン/パスの比率(総獲得ヤード数に対する%)は平均/総数どちらでも同じ値になる(スケール不変)
+    var lineDatasets = ['run', 'pass'].map(function (b) {
+      return {
+        type: 'line',
+        label: BUCKET_LABELS[b] + '比率',
+        data: categories.map(function (c) {
+          var total = c.raw.total || 0;
+          if (!total) return 0;
+          return Math.round((c.raw[b] || 0) / total * 1000) / 10;
+        }),
+        borderColor: BUCKET_COLORS[b],
+        backgroundColor: BUCKET_COLORS[b],
+        borderDash: [4, 3],
+        borderWidth: 2,
+        pointRadius: 2,
+        tension: 0.3,
+        yAxisID: 'yRatio'
+      };
+    });
+
+    return { labels: labels, datasets: barDatasets.concat(lineDatasets) };
   }
 
   function updateChart() {
-    var cfg = currentChartData();
+    var cfg = buildChartData(currentCategories());
+    var yYardsTitle = '獲得ヤード数(' + (state.viewMode === 'avg' ? '試合平均' : '総数') + ')';
     if (!chart) {
       var ctx = document.getElementById('chart-yards-gained-canvas').getContext('2d');
       chart = new Chart(ctx, {
@@ -188,9 +233,20 @@
         options: {
           responsive: true,
           maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
           scales: {
             x: { stacked: true, ticks: { color: '#a8afa2' }, grid: { color: '#2a2e28' } },
-            y: { stacked: true, ticks: { color: '#a8afa2' }, grid: { color: '#2a2e28' } }
+            yYards: {
+              stacked: true, position: 'left',
+              title: { display: true, text: yYardsTitle, color: '#a8afa2' },
+              ticks: { color: '#a8afa2' }, grid: { color: '#2a2e28' }
+            },
+            yRatio: {
+              position: 'right', min: 0, max: 100,
+              title: { display: true, text: '総獲得ヤードに対する比率', color: '#a8afa2' },
+              ticks: { color: '#a8afa2', callback: function (v) { return v + '%'; } },
+              grid: { drawOnChartArea: false }
+            }
           },
           plugins: {
             legend: { labels: { color: '#eceee9' } }
@@ -199,13 +255,14 @@
       });
     } else {
       chart.data = cfg;
+      chart.options.scales.yYards.title.text = yYardsTitle;
       chart.update();
     }
   }
 
   function updateSeasonSelectVisibility() {
     var sel = document.querySelector('[data-role="season-select"]');
-    sel.disabled = state.granularity === 'season';
+    sel.hidden = state.granularity === 'season';
   }
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -230,6 +287,15 @@
           btn.classList.add('active');
           state.granularity = btn.getAttribute('data-granularity');
           updateSeasonSelectVisibility();
+          updateChart();
+        });
+      });
+
+      document.querySelectorAll('[data-viewmode]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('[data-viewmode]').forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          state.viewMode = btn.getAttribute('data-viewmode');
           updateChart();
         });
       });
