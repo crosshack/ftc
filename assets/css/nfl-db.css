@@ -50,6 +50,9 @@
 .nfldb-chart-section h2 {
   margin-bottom: 4px;
 }
+.nfldb-chart-section h2 .index {
+  color: var(--accent);
+}
 .nfldb-chart-desc {
   color: var(--text-dim);
   font-size: 14px;
