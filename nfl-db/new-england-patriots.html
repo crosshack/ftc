@@ -136,11 +136,10 @@
 (function () {
   var DATA_URL = '../assets/data/nfl-db/new-england-patriots.json';
   var BUCKET_LABELS = { run: 'ラン', pass: 'パス' };
-  var BUCKET_COLORS = { run: '#3ecf6e', pass: '#ffc633' };
-  // 比率の折れ線は、棒グラフ(緑/黄)と同系色を明暗で変えても、ダーク背景では暗くするほど背景に溶けて見えなくなるため、
-  // 棒とも背景とも異なる高コントラストな色相(白/水色)を採用し、実線・破線でも区別する。
-  var RATIO_COLORS = { run: '#eceee9', pass: '#4fc3f7' };
-  var RATIO_DASH = { run: [], pass: [6, 4] };
+  // 棒グラフは、従来の色(緑/黄)をベースに少し明度を落とした色。折れ線(比率)は、従来の棒グラフの色をそのまま使う。
+  var BUCKET_COLORS = { run: '#33aa5a', pass: '#d1a22a' };
+  var RATIO_COLORS = { run: '#3ecf6e', pass: '#ffc633' };
+  var RATIO_DASH = { run: [6, 4], pass: [6, 4] };
   var QTR_ORDER = ['1', '2', '3', '4', 'OT'];
   var QTR_LABELS = { '1': '1Q', '2': '2Q', '3': '3Q', '4': '4Q', OT: 'OT' };
 
