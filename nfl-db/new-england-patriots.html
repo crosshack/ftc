@@ -83,8 +83,9 @@
     <p class="nfldb-toc-label">目次</p>
     <ol>
       <li><span class="index">01</span><a href="#chart-points-scored">得点数</a></li>
-      <li><span class="index">02</span><a href="#chart-yards-gained">オフェンス獲得ヤード数</a></li>
-      <li><span class="index">03</span><a href="#chart-yards-allowed">ディフェンス被獲得ヤード数</a></li>
+      <li><span class="index">02</span><a href="#chart-points-allowed">失点数</a></li>
+      <li><span class="index">03</span><a href="#chart-yards-gained">オフェンス獲得ヤード数</a></li>
+      <li><span class="index">04</span><a href="#chart-yards-allowed">ディフェンス被獲得ヤード数</a></li>
     </ol>
   </nav>
 
@@ -113,8 +114,33 @@
     </div>
   </section>
 
+  <section class="nfldb-chart-section" id="chart-points-allowed">
+    <h2><span class="index">02</span> 失点数</h2>
+    <p class="nfldb-chart-desc">得点パターン（TD/FG）ごとの失点数（試合平均/総数）のチャート。</p>
+
+    <div class="nfldb-controls">
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-points-allowed-canvas" role="img" aria-label="失点数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note">出典: nflverse（nfl_data_py）のPlay-by-Playデータを集計（集計対象: レギュラーシーズンのみ）。</p>
+    </div>
+  </section>
+
   <section class="nfldb-chart-section" id="chart-yards-gained">
-    <h2><span class="index">02</span> オフェンス獲得ヤード数</h2>
+    <h2><span class="index">03</span> オフェンス獲得ヤード数</h2>
     <p class="nfldb-chart-desc">プレー種別（ラン/パス）ごとの獲得ヤード数（試合平均/総数）のチャート。</p>
 
     <div class="nfldb-controls">
@@ -139,7 +165,7 @@
   </section>
 
   <section class="nfldb-chart-section" id="chart-yards-allowed">
-    <h2><span class="index">03</span> ディフェンス被獲得ヤード数</h2>
+    <h2><span class="index">04</span> ディフェンス被獲得ヤード数</h2>
     <p class="nfldb-chart-desc">プレー種別（ラン/パス）ごとの被獲得ヤード数（試合平均/総数）のチャート。</p>
 
     <div class="nfldb-controls">
@@ -191,7 +217,7 @@
   var QTR_LABELS = { '1': '1Q', '2': '2Q', '3': '3Q', '4': '4Q', OT: 'OT' };
 
   // チャートごとの設定。棒グラフは、従来の色(緑/黄)をベースに少し明度を落とした色。
-  // 折れ線(比率)は、従来の棒グラフの色をそのまま使う。3チャートとも同じ配色パターンを踏襲する。
+  // 折れ線(比率)は、従来の棒グラフの色をそのまま使う。4チャートとも同じ配色パターンを踏襲する。
   var METRICS = [
     {
       metricKey: 'points_scored',
@@ -204,6 +230,18 @@
       ratioDash: { td: [6, 4], fg: [6, 4] },
       unitLabel: '得点数',
       ratioAxisLabel: '総得点（TD+FG）に対する比率'
+    },
+    {
+      metricKey: 'points_allowed',
+      sectionId: 'chart-points-allowed',
+      canvasId: 'chart-points-allowed-canvas',
+      categories: ['td', 'fg'],
+      labels: { td: 'TD', fg: 'FG' },
+      barColors: { td: '#33aa5a', fg: '#d1a22a' },
+      ratioColors: { td: '#3ecf6e', fg: '#ffc633' },
+      ratioDash: { td: [6, 4], fg: [6, 4] },
+      unitLabel: '失点数',
+      ratioAxisLabel: '総失点（TD+FG）に対する比率'
     },
     {
       metricKey: 'yards_gained',
@@ -231,7 +269,7 @@
     }
   ];
 
-  // 1チャート分のコントローラ(状態・描画・イベント)を生成する。3チャートとも同じロジックだが、
+  // 1チャート分のコントローラ(状態・描画・イベント)を生成する。4チャートとも同じロジックだが、
   // 状態(state)とDOM参照(section配下に限定したquerySelector)はチャートごとに独立させる。
   function createController(cfg, dataset) {
     var section = document.getElementById(cfg.sectionId);
