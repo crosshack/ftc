@@ -272,6 +272,9 @@
                       item.lineWidth = ds.borderWidth || 2;
                       item.strokeStyle = ds.borderColor;
                       item.fillStyle = ds.borderColor;
+                    } else {
+                      // 棒グラフ側はusePointStyle指定時の既定形状(丸)ではなく、元の四角に固定する
+                      item.pointStyle = 'rect';
                     }
                   });
                   return base;
