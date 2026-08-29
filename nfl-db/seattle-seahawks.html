@@ -88,6 +88,8 @@
       <li><span class="index">02</span><a href="#chart-points-allowed">失点数</a></li>
       <li><span class="index">03</span><a href="#chart-yards-gained">獲得ヤード数</a></li>
       <li><span class="index">04</span><a href="#chart-yards-allowed">被獲得ヤード数</a></li>
+      <li><span class="index">05</span><a href="#chart-offense-personnel">オフェンス編成別プレー回数</a></li>
+      <li><span class="index">06</span><a href="#chart-defense-formation">ディフェンス編成別プレー回数</a></li>
     </ol>
   </nav>
 
@@ -211,6 +213,65 @@
     </div>
   </section>
 
+  <section class="nfldb-chart-section" id="chart-offense-personnel">
+    <h2><span class="index">05</span> オフェンス編成別プレー回数</h2>
+    <p class="nfldb-chart-desc">オフェンスの各プレーで採用されているパーソネル(11パーソネルなど)ごとのプレー回数(試合平均/総数)のチャート。</p>
+
+    <div class="nfldb-controls">
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <div class="nfldb-year-range" data-role="year-range-group">
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-start-select" aria-label="表示開始年を選択"></select>
+        <span class="nfldb-year-range-sep">〜</span>
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-end-select" aria-label="表示終了年を選択"></select>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-offense-personnel-canvas" role="img" aria-label="オフェンス編成別プレー回数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note">出典: nflverse(nfl_data_py)のPlay-by-Playデータを集計(集計対象: レギュラーシーズンのみ。パーソネルデータの提供開始年である2016年シーズン以降のみ集計可能)。</p>
+    </div>
+  </section>
+
+  <section class="nfldb-chart-section" id="chart-defense-formation">
+    <h2><span class="index">06</span> ディフェンス編成別プレー回数</h2>
+    <p class="nfldb-chart-desc">ディフェンスの各プレーで採用されているフォーメーション(ベース4-3など)ごとのプレー回数(試合平均/総数)のチャート。</p>
+
+    <div class="nfldb-controls">
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <div class="nfldb-year-range" data-role="year-range-group">
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-start-select" aria-label="表示開始年を選択"></select>
+        <span class="nfldb-year-range-sep">〜</span>
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-end-select" aria-label="表示終了年を選択"></select>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-defense-formation-canvas" role="img" aria-label="ディフェンス編成別プレー回数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note">出典: nflverse(nfl_data_py)のPlay-by-Playデータを集計(集計対象: レギュラーシーズンのみ。パーソネルデータの提供開始年である2016年シーズン以降のみ集計可能)。</p>
+    </div>
+  </section>
 </div>
 
 <nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
@@ -350,6 +411,30 @@
       unitLabel: '被獲得ヤード数',
       ratioAxisLabel: 'ラン/パス合計被獲得ヤード数に対する比率'
     }
+    {
+      metricKey: 'offense_personnel',
+      sectionId: 'chart-offense-personnel',
+      canvasId: 'chart-offense-personnel-canvas',
+      categories: ['21', '12', '11', '13', 'other'],
+      labels: { '21': '21パーソネル', '12': '12パーソネル', '11': '11パーソネル', '13': '13パーソネル', other: 'その他' },
+      barColors: { '21': '#2e8f52', '12': '#2f7aa8', '11': '#b8860b', '13': '#7b4397', other: '#5c6570' },
+      ratioColors: { '21': '#3ecf6e', '12': '#4fc3f7', '11': '#ffc633', '13': '#ba68c8', other: '#a8afa2' },
+      ratioDash: { '21': [6, 4], '12': [6, 4], '11': [6, 4], '13': [6, 4], other: [6, 4] },
+      unitLabel: 'プレー回数',
+      ratioAxisLabel: '全編成合計プレー回数に対する比率'
+    },
+    {
+      metricKey: 'defense_formation',
+      sectionId: 'chart-defense-formation',
+      canvasId: 'chart-defense-formation-canvas',
+      categories: ['base_4_3', 'base_3_4', 'nickel', 'dime', 'other'],
+      labels: { base_4_3: 'ベース4-3', base_3_4: 'ベース3-4', nickel: 'ニッケル', dime: 'ダイム', other: 'その他' },
+      barColors: { base_4_3: '#2e8f52', base_3_4: '#2f7aa8', nickel: '#b8860b', dime: '#7b4397', other: '#5c6570' },
+      ratioColors: { base_4_3: '#3ecf6e', base_3_4: '#4fc3f7', nickel: '#ffc633', dime: '#ba68c8', other: '#a8afa2' },
+      ratioDash: { base_4_3: [6, 4], base_3_4: [6, 4], nickel: [6, 4], dime: [6, 4], other: [6, 4] },
+      unitLabel: 'プレー回数',
+      ratioAxisLabel: '全編成合計プレー回数に対する比率'
+    }
   ];
 
   // 1チャート分のコントローラ(状態・描画・イベント)を生成する。4チャートとも同じロジックだが、
@@ -357,12 +442,16 @@
   function createController(cfg, dataset) {
     var section = document.getElementById(cfg.sectionId);
     var metric = dataset.metrics[cfg.metricKey];
+    // 一部の指標(パーソネル/フォーメーション系)はnflverseの提供開始年の都合上、
+    // dataset全体のシーズン範囲(1999〜)より短い独自の対象範囲を持つ。metric.seasons_coveredが
+    // あればそちらを優先し、無ければ従来通りdataset全体の範囲を使う。
+    var seasonsCovered = metric.seasons_covered || dataset.seasons_covered;
     var state = { granularity: 'season', season: null, viewMode: 'avg', yearStart: null, yearEnd: null };
     var chart = null;
 
     function seasonCategories() {
       var bySeason = metric.by_season;
-      var seasons = dataset.seasons_covered.map(String).filter(function (s) {
+      var seasons = seasonsCovered.map(String).filter(function (s) {
         return Number(s) >= Number(state.yearStart) && Number(s) <= Number(state.yearEnd);
       });
       return seasons.map(function (s) {
@@ -535,7 +624,7 @@
       group.hidden = state.granularity !== 'season';
     }
 
-    var seasons = dataset.seasons_covered.map(String);
+    var seasons = seasonsCovered.map(String);
     state.season = seasons[seasons.length - 1];
 
     var sel = section.querySelector('[data-role="season-select"]');
