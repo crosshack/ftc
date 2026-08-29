@@ -218,6 +218,67 @@
   var QTR_ORDER = ['1', '2', '3', '4', 'OT'];
   var QTR_LABELS = { '1': '1Q', '2': '2Q', '3': '3Q', '4': '4Q', OT: 'OT' };
 
+  // ツールチップはChart.js標準の描画だと、比率(折れ線)の凡例アイコンを「線」にしても
+  // 点線(borderDash)が反映されず(usePointStyle利用時はdrawPointに渡らないため)、
+  // 比率でない方(棒)にも常に白い縁取りが入ってしまう。上の凡例(legend)と見た目を厳密に揃えるため、
+  // Chart.js標準のツールチップは無効化し(enabled:false)、HTML独自のツールチップを描画する。
+  function nfldbExternalTooltip(context) {
+    var chart = context.chart;
+    var tooltipModel = context.tooltip;
+    var wrap = chart.canvas.closest('.nfldb-chart-canvas-wrap');
+    var tooltipEl = wrap.querySelector('.nfldb-tooltip');
+    if (!tooltipEl) {
+      tooltipEl = document.createElement('div');
+      tooltipEl.className = 'nfldb-tooltip';
+      wrap.appendChild(tooltipEl);
+    }
+
+    if (tooltipModel.opacity === 0) {
+      tooltipEl.style.opacity = 0;
+      return;
+    }
+
+    if (tooltipModel.body) {
+      var titleLines = tooltipModel.title || [];
+      var bodyLines = tooltipModel.body || [];
+      var dataPoints = tooltipModel.dataPoints || [];
+      var html = titleLines.map(function (t) {
+        return '<div class="nfldb-tooltip-title">' + t + '</div>';
+      }).join('');
+      html += '<div class="nfldb-tooltip-body">';
+      bodyLines.forEach(function (b, i) {
+        var dp = dataPoints[i];
+        var ds = dp ? chart.data.datasets[dp.datasetIndex] : null;
+        var swatch;
+        if (ds && ds.type === 'line') {
+          swatch = '<span class="nfldb-tooltip-swatch nfldb-tooltip-swatch-line" style="border-top-color:' + ds.borderColor + ';"></span>';
+        } else {
+          swatch = '<span class="nfldb-tooltip-swatch" style="background:' + (ds ? ds.backgroundColor : '#fff') + ';"></span>';
+        }
+        html += '<div class="nfldb-tooltip-row">' + swatch + '<span>' + b.lines.join(' ') + '</span></div>';
+      });
+      html += '</div>';
+      tooltipEl.innerHTML = html;
+    }
+
+    var xAlign = tooltipModel.xAlign;
+    var yAlign = tooltipModel.yAlign;
+    var translateX = xAlign === 'left' ? '0%' : xAlign === 'right' ? '-100%' : '-50%';
+    var translateY = yAlign === 'top' ? '0%' : yAlign === 'bottom' ? '-100%' : '-50%';
+
+    tooltipEl.classList.remove('caret-left', 'caret-right', 'caret-top', 'caret-bottom');
+    if (yAlign === 'center') {
+      tooltipEl.classList.add(xAlign === 'left' ? 'caret-left' : 'caret-right');
+    } else {
+      tooltipEl.classList.add(yAlign === 'top' ? 'caret-top' : 'caret-bottom');
+    }
+
+    tooltipEl.style.opacity = 1;
+    tooltipEl.style.left = tooltipModel.caretX + 'px';
+    tooltipEl.style.top = tooltipModel.caretY + 'px';
+    tooltipEl.style.transform = 'translate(' + translateX + ', ' + translateY + ')';
+  }
+
   // チャートごとの設定。棒グラフは、従来の色(緑/黄)をベースに少し明度を落とした色。
   // 折れ線(比率)は、従来の棒グラフの色をそのまま使う。4チャートとも同じ配色パターンを踏襲する。
   var METRICS = [
@@ -422,38 +483,13 @@
                   }
                 }
               },
-              // ツールチップの凡例アイコンも、上の凡例(legend)と見た目を揃える。
-              // ・比率(折れ線)は単純な点線/実線として描画(usePointStyle+labelPointStyle:'line'、labelColorのborderDashで実現)。
-              // ・比率でない方(棒)は白枠なしの単色矩形にする(labelColorでborderWidth:0を指定)。
-              // ・itemSortでデータセット本来の並び(棒2つ→折れ線2つ)に固定し、凡例と表示順を揃える。
+              // ツールチップは上のnfldbExternalTooltip関数によるHTML独自描画に切り替え、
+              // 上の凡例(legend)と見た目(比率=点線、棒=白枠なしの単色矩形、表示順)を揃える。
+              // itemSortでデータセット本来の並び(棒2つ→折れ線2つ)に固定し、凡例と表示順を揃える。
               tooltip: {
-                usePointStyle: true,
+                enabled: false,
                 itemSort: function (a, b) { return a.datasetIndex - b.datasetIndex; },
-                callbacks: {
-                  labelPointStyle: function (context) {
-                    var ds = context.dataset;
-                    if (ds.type === 'line') {
-                      return { pointStyle: 'line', rotation: 0 };
-                    }
-                    return { pointStyle: 'rect', rotation: 0 };
-                  },
-                  labelColor: function (context) {
-                    var ds = context.dataset;
-                    if (ds.type === 'line') {
-                      return {
-                        borderColor: ds.borderColor,
-                        backgroundColor: 'transparent',
-                        borderWidth: 2.5,
-                        borderDash: ds.borderDash || []
-                      };
-                    }
-                    return {
-                      borderColor: ds.backgroundColor,
-                      backgroundColor: ds.backgroundColor,
-                      borderWidth: 0
-                    };
-                  }
-                }
+                external: nfldbExternalTooltip
               }
             }
           }

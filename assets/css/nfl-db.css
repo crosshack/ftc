@@ -115,3 +115,120 @@
   font-size: 13px;
   margin-top: 14px;
 }
+
+.nfldb-tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: var(--bg-card);
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+.nfldb-tooltip-title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.nfldb-tooltip-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.nfldb-tooltip-row + .nfldb-tooltip-row {
+  margin-top: 3px;
+}
+.nfldb-tooltip-swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex: none;
+}
+.nfldb-tooltip-swatch-line {
+  width: 14px;
+  height: 0;
+  border-radius: 0;
+  background: none;
+  border-top: 2px dashed;
+}
+
+.nfldb-tooltip.caret-top::before,
+.nfldb-tooltip.caret-bottom::before,
+.nfldb-tooltip.caret-left::before,
+.nfldb-tooltip.caret-right::before,
+.nfldb-tooltip.caret-top::after,
+.nfldb-tooltip.caret-bottom::after,
+.nfldb-tooltip.caret-left::after,
+.nfldb-tooltip.caret-right::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.nfldb-tooltip.caret-top::before {
+  top: -7px;
+  left: 50%;
+  margin-left: -7px;
+  border-width: 0 7px 7px 7px;
+  border-color: transparent transparent var(--line-strong) transparent;
+}
+.nfldb-tooltip.caret-top::after {
+  top: -6px;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent var(--bg-card) transparent;
+}
+.nfldb-tooltip.caret-bottom::before {
+  bottom: -7px;
+  left: 50%;
+  margin-left: -7px;
+  border-width: 7px 7px 0 7px;
+  border-color: var(--line-strong) transparent transparent transparent;
+}
+.nfldb-tooltip.caret-bottom::after {
+  bottom: -6px;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px 6px 0 6px;
+  border-color: var(--bg-card) transparent transparent transparent;
+}
+.nfldb-tooltip.caret-left::before {
+  left: -7px;
+  top: 50%;
+  margin-top: -7px;
+  border-width: 7px 7px 7px 0;
+  border-color: transparent var(--line-strong) transparent transparent;
+}
+.nfldb-tooltip.caret-left::after {
+  left: -6px;
+  top: 50%;
+  margin-top: -6px;
+  border-width: 6px 6px 6px 0;
+  border-color: transparent var(--bg-card) transparent transparent;
+}
+.nfldb-tooltip.caret-right::before {
+  right: -7px;
+  top: 50%;
+  margin-top: -7px;
+  border-width: 7px 0 7px 7px;
+  border-color: transparent transparent transparent var(--line-strong);
+}
+.nfldb-tooltip.caret-right::after {
+  right: -6px;
+  top: 50%;
+  margin-top: -6px;
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent var(--bg-card);
+}
