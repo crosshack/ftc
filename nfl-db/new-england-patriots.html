@@ -411,6 +411,30 @@
       ratioDash: { run: [6, 4], pass: [6, 4] },
       unitLabel: '被獲得ヤード数',
       ratioAxisLabel: 'ラン/パス合計被獲得ヤード数に対する比率'
+    },
+    {
+      metricKey: 'offense_personnel',
+      sectionId: 'chart-offense-personnel',
+      canvasId: 'chart-offense-personnel-canvas',
+      categories: ['11', '12', '21', '13', 'other'],
+      labels: { '11': '11パーソネル', '12': '12パーソネル', '21': '21パーソネル', '13': '13パーソネル', other: 'その他' },
+      barColors: { '11': '#2e8f52', '12': '#2f7aa8', '21': '#b8860b', '13': '#7b4397', other: '#5c6570' },
+      ratioColors: { '11': '#3ecf6e', '12': '#4fc3f7', '21': '#ffc633', '13': '#ba68c8', other: '#a8afa2' },
+      ratioDash: { '11': [6, 4], '12': [6, 4], '21': [6, 4], '13': [6, 4], other: [6, 4] },
+      unitLabel: 'プレー回数',
+      ratioAxisLabel: '全編成合計プレー回数に対する比率'
+    },
+    {
+      metricKey: 'defense_formation',
+      sectionId: 'chart-defense-formation',
+      canvasId: 'chart-defense-formation-canvas',
+      categories: ['base_4_3', 'base_3_4', 'nickel_4_2_5', 'nickel_3_3_5', 'other'],
+      labels: { base_4_3: 'ベース4-3', base_3_4: 'ベース3-4', nickel_4_2_5: 'ニッケル4-2-5', nickel_3_3_5: 'ニッケル3-3-5', other: 'その他' },
+      barColors: { base_4_3: '#2e8f52', base_3_4: '#2f7aa8', nickel_4_2_5: '#b8860b', nickel_3_3_5: '#7b4397', other: '#5c6570' },
+      ratioColors: { base_4_3: '#3ecf6e', base_3_4: '#4fc3f7', nickel_4_2_5: '#ffc633', nickel_3_3_5: '#ba68c8', other: '#a8afa2' },
+      ratioDash: { base_4_3: [6, 4], base_3_4: [6, 4], nickel_4_2_5: [6, 4], nickel_3_3_5: [6, 4], other: [6, 4] },
+      unitLabel: 'プレー回数',
+      ratioAxisLabel: '全編成合計プレー回数に対する比率'
     }
   ];
 
@@ -419,12 +443,16 @@
   function createController(cfg, dataset) {
     var section = document.getElementById(cfg.sectionId);
     var metric = dataset.metrics[cfg.metricKey];
+    // 一部の指標(パーソネル/フォーメーション系)はnflverseの提供開始年の都合上、
+    // dataset全体のシーズン範囲(1999〜)より短い独自の対象範囲を持つ。metric.seasons_coveredが
+    // あればそちらを優先し、無ければ従来通りdataset全体の範囲を使う。
+    var seasonsCovered = metric.seasons_covered || dataset.seasons_covered;
     var state = { granularity: 'season', season: null, viewMode: 'avg', yearStart: null, yearEnd: null };
     var chart = null;
 
     function seasonCategories() {
       var bySeason = metric.by_season;
-      var seasons = dataset.seasons_covered.map(String).filter(function (s) {
+      var seasons = seasonsCovered.map(String).filter(function (s) {
         return Number(s) >= Number(state.yearStart) && Number(s) <= Number(state.yearEnd);
       });
       return seasons.map(function (s) {
@@ -597,7 +625,7 @@
       group.hidden = state.granularity !== 'season';
     }
 
-    var seasons = dataset.seasons_covered.map(String);
+    var seasons = seasonsCovered.map(String);
     state.season = seasons[seasons.length - 1];
 
     var sel = section.querySelector('[data-role="season-select"]');
