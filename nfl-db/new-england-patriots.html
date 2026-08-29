@@ -199,7 +199,9 @@
         backgroundColor: BUCKET_COLORS[b],
         stack: 'yards',
         yAxisID: 'yYards',
-        order: 1
+        // Chart.jsは描画時にorder昇順ソート後のメタセット配列を「逆順」で描画するため、
+        // orderの数値が小さいほど後で(前面に)描画される。棒グラフは折れ線より背面にしたいので大きい値。
+        order: 2
       };
     });
 
@@ -222,7 +224,7 @@
         tension: 0.3,
         yAxisID: 'yRatio',
         fill: false,
-        order: 2
+        order: 1
       };
     });
 
@@ -268,8 +270,11 @@
                 pointStyleWidth: 34,
                 generateLabels: function (chart) {
                   var base = Chart.defaults.plugins.legend.labels.generateLabels(chart);
-                  base.forEach(function (item, i) {
-                    var ds = chart.data.datasets[i];
+                  // データセットのorder(描画のz-order制御用)によって凡例の並び順まで変わってしまうため、
+                  // 凡例表示だけは常にデータセット本来の並び(ラン/パス/ラン比率/パス比率)に固定する。
+                  base.sort(function (a, b) { return a.datasetIndex - b.datasetIndex; });
+                  base.forEach(function (item) {
+                    var ds = chart.data.datasets[item.datasetIndex];
                     if (ds && ds.type === 'line') {
                       item.pointStyle = 'line';
                       item.rotation = 0;
