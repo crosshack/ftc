@@ -63,9 +63,9 @@
 
 <section class="page-head">
   <div class="container">
-    <span class="tag tag-flag">NFL.DB(プロトタイプ)</span>
+    <span class="tag tag-flag">チーム別DB</span>
     <div class="page-head-title-row">
-      <h1>ニューイングランド・ペイトリオッツ <span class="en" style="font-size:0.5em;">NEW ENGLAND PATRIOTS</span></h1>
+      <h1>ニューイングランド・ペイトリオッツ<br><span class="en" style="font-size:0.5em;">NEW ENGLAND PATRIOTS</span></h1>
       <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <rect x="12" y="40" width="10" height="20" fill="#3ecf6e"/>
         <rect x="26" y="28" width="10" height="32" fill="#3ecf6e"/>
@@ -135,8 +135,9 @@
 <script>
 (function () {
   var DATA_URL = '../assets/data/nfl-db/new-england-patriots.json';
-  var BUCKET_LABELS = { run: 'ラン', pass: 'パス', other: 'その他' };
-  var BUCKET_COLORS = { run: '#3ecf6e', pass: '#ffc633', other: '#a8afa2' };
+  var BUCKET_LABELS = { run: 'ラン', pass: 'パス' };
+  var BUCKET_COLORS = { run: '#3ecf6e', pass: '#ffc633' };
+  var RATIO_COLORS = { run: '#1f8a49', pass: '#b8860b' };
   var QTR_ORDER = ['1', '2', '3', '4', 'OT'];
   var QTR_LABELS = { '1': '1Q', '2': '2Q', '3': '3Q', '4': '4Q', OT: 'OT' };
 
@@ -183,7 +184,7 @@
   function buildChartData(categories) {
     var labels = categories.map(function (c) { return c.label; });
 
-    var barDatasets = ['run', 'pass', 'other'].map(function (b) {
+    var barDatasets = ['run', 'pass'].map(function (b) {
       return {
         type: 'bar',
         label: BUCKET_LABELS[b],
@@ -199,21 +200,23 @@
       };
     });
 
-    // ラン/パスの比率(総獲得ヤード数に対する%)は平均/総数どちらでも同じ値になる(スケール不変)
+    // ラン/パスの比率(%)。母数はラン+パスの獲得ヤード数の合計(チャートに表示されている棒の合計と一致させるため)。
+    // 平均/総数どちらでも同じ値になる(スケール不変)。
     var lineDatasets = ['run', 'pass'].map(function (b) {
       return {
         type: 'line',
         label: BUCKET_LABELS[b] + '比率',
         data: categories.map(function (c) {
-          var total = c.raw.total || 0;
-          if (!total) return 0;
-          return Math.round((c.raw[b] || 0) / total * 1000) / 10;
+          var denom = (c.raw.run || 0) + (c.raw.pass || 0);
+          if (!denom) return 0;
+          return Math.round((c.raw[b] || 0) / denom * 1000) / 10;
         }),
-        borderColor: BUCKET_COLORS[b],
-        backgroundColor: BUCKET_COLORS[b],
+        borderColor: RATIO_COLORS[b],
+        backgroundColor: RATIO_COLORS[b],
         borderDash: [4, 3],
         borderWidth: 2,
         pointRadius: 2,
+        pointStyle: 'line',
         tension: 0.3,
         yAxisID: 'yRatio'
       };
@@ -243,13 +246,33 @@
             },
             yRatio: {
               position: 'right', min: 0, max: 100,
-              title: { display: true, text: '総獲得ヤードに対する比率', color: '#a8afa2' },
+              title: { display: true, text: 'ラン+パスに対する比率', color: '#a8afa2' },
               ticks: { color: '#a8afa2', callback: function (v) { return v + '%'; } },
               grid: { drawOnChartArea: false }
             }
           },
           plugins: {
-            legend: { labels: { color: '#eceee9' } }
+            legend: {
+              labels: {
+                color: '#eceee9',
+                usePointStyle: true,
+                generateLabels: function (chart) {
+                  return chart.data.datasets.map(function (ds, i) {
+                    var isLine = ds.type === 'line';
+                    return {
+                      text: ds.label,
+                      fillStyle: ds.backgroundColor,
+                      strokeStyle: ds.borderColor || ds.backgroundColor,
+                      lineWidth: isLine ? 2 : 0,
+                      lineDash: isLine ? (ds.borderDash || []) : [],
+                      pointStyle: isLine ? 'line' : 'rect',
+                      hidden: !chart.isDatasetVisible(i),
+                      datasetIndex: i
+                    };
+                  });
+                }
+              }
+            }
           }
         }
       });
