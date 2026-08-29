@@ -105,6 +105,11 @@
         <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
         <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
       </div>
+      <div class="nfldb-year-range" data-role="year-range-group">
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-start-select" aria-label="表示開始年を選択"></select>
+        <span class="nfldb-year-range-sep">〜</span>
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-end-select" aria-label="表示終了年を選択"></select>
+      </div>
       <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
     </div>
 
@@ -129,6 +134,11 @@
       <div class="nfldb-pill-group" data-role="viewmode-group">
         <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
         <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <div class="nfldb-year-range" data-role="year-range-group">
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-start-select" aria-label="表示開始年を選択"></select>
+        <span class="nfldb-year-range-sep">〜</span>
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-end-select" aria-label="表示終了年を選択"></select>
       </div>
       <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
     </div>
@@ -155,6 +165,11 @@
         <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
         <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
       </div>
+      <div class="nfldb-year-range" data-role="year-range-group">
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-start-select" aria-label="表示開始年を選択"></select>
+        <span class="nfldb-year-range-sep">〜</span>
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-end-select" aria-label="表示終了年を選択"></select>
+      </div>
       <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
     </div>
 
@@ -179,6 +194,11 @@
       <div class="nfldb-pill-group" data-role="viewmode-group">
         <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
         <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <div class="nfldb-year-range" data-role="year-range-group">
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-start-select" aria-label="表示開始年を選択"></select>
+        <span class="nfldb-year-range-sep">〜</span>
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-end-select" aria-label="表示終了年を選択"></select>
       </div>
       <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
     </div>
@@ -337,12 +357,14 @@
   function createController(cfg, dataset) {
     var section = document.getElementById(cfg.sectionId);
     var metric = dataset.metrics[cfg.metricKey];
-    var state = { granularity: 'season', season: null, viewMode: 'avg' };
+    var state = { granularity: 'season', season: null, viewMode: 'avg', yearStart: null, yearEnd: null };
     var chart = null;
 
     function seasonCategories() {
       var bySeason = metric.by_season;
-      var seasons = dataset.seasons_covered.map(String);
+      var seasons = dataset.seasons_covered.map(String).filter(function (s) {
+        return Number(s) >= Number(state.yearStart) && Number(s) <= Number(state.yearEnd);
+      });
       return seasons.map(function (s) {
         var row = bySeason[s] || {};
         var games = (dataset.games[s] || {}).games_played || 0;
@@ -506,6 +528,13 @@
       sel.hidden = state.granularity === 'season';
     }
 
+    // 開始年/終了年の表示範囲セレクタは、シーズン別表示のときのみ意味を持つ(ウィーク別/クォーター別は
+    // 既存の単一シーズン選択で対象を絞り込むため、対象外)。
+    function updateYearRangeVisibility() {
+      var group = section.querySelector('[data-role="year-range-group"]');
+      group.hidden = state.granularity !== 'season';
+    }
+
     var seasons = dataset.seasons_covered.map(String);
     state.season = seasons[seasons.length - 1];
 
@@ -519,12 +548,52 @@
       updateChart();
     });
 
+    // シーズン別表示の対象年(開始年〜終了年)。集計対象期間そのものは変更せず、
+    // スマートフォン等での見やすさのため表示範囲だけを絞り込む。デフォルトは2006〜2025年。
+    var yearOptionsHtml = seasons.map(function (s) {
+      return '<option value="' + s + '">' + s + '</option>';
+    }).join('');
+    var yearStartSel = section.querySelector('[data-role="year-start-select"]');
+    var yearEndSel = section.querySelector('[data-role="year-end-select"]');
+    yearStartSel.innerHTML = yearOptionsHtml;
+    yearEndSel.innerHTML = yearOptionsHtml;
+
+    function clampToAvailable(year) {
+      var n = Number(year);
+      var min = Number(seasons[0]);
+      var max = Number(seasons[seasons.length - 1]);
+      return String(Math.max(min, Math.min(max, n)));
+    }
+
+    state.yearStart = seasons.indexOf('2006') !== -1 ? '2006' : clampToAvailable('2006');
+    state.yearEnd = seasons.indexOf('2025') !== -1 ? '2025' : clampToAvailable('2025');
+    yearStartSel.value = state.yearStart;
+    yearEndSel.value = state.yearEnd;
+
+    yearStartSel.addEventListener('change', function () {
+      state.yearStart = yearStartSel.value;
+      if (Number(state.yearStart) > Number(state.yearEnd)) {
+        state.yearEnd = state.yearStart;
+        yearEndSel.value = state.yearEnd;
+      }
+      updateChart();
+    });
+    yearEndSel.addEventListener('change', function () {
+      state.yearEnd = yearEndSel.value;
+      if (Number(state.yearEnd) < Number(state.yearStart)) {
+        state.yearStart = state.yearEnd;
+        yearStartSel.value = state.yearStart;
+      }
+      updateChart();
+    });
+
     section.querySelectorAll('[data-granularity]').forEach(function (btn) {
       btn.addEventListener('click', function () {
         section.querySelectorAll('[data-granularity]').forEach(function (b) { b.classList.remove('active'); });
         btn.classList.add('active');
         state.granularity = btn.getAttribute('data-granularity');
         updateSeasonSelectVisibility();
+        updateYearRangeVisibility();
         updateChart();
       });
     });
@@ -539,6 +608,7 @@
     });
 
     updateSeasonSelectVisibility();
+    updateYearRangeVisibility();
     updateChart();
   }
 

@@ -99,6 +99,22 @@
   border-radius: 6px;
 }
 
+.nfldb-year-range {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.nfldb-year-range[hidden] {
+  display: none;
+}
+.nfldb-year-select {
+  padding: 6px 10px;
+}
+.nfldb-year-range-sep {
+  color: var(--text-dim);
+  font-size: 13px;
+}
+
 .nfldb-chart-box {
   background: var(--bg-card);
   border: 1px solid var(--line);
