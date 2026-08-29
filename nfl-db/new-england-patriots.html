@@ -254,21 +254,29 @@
             }
           },
           plugins: {
-            // 棒グラフ(ラン/パス)の凡例は触らない(usePointStyleは使わない = 標準の長方形塗りつぶしのまま)。
-            // 折れ線(ラン比率/パス比率)の凡例だけ、塗りをtransparentにしてボーダーをlineDash付きで描かせることで、
-            // 「破線の枠」として区別する。usePointStyleを使う方式は棒グラフ側の形状を壊す副作用があったため不使用。
+            // 凡例はusePointStyle+pointStyleWidthを使用。
+            // 棒グラフ(ラン/パス)はpointStyle:'rect'を明示することで、pointStyleWidthの効果により
+            // 従来どおりの横長矩形として描画される(正方形/円形化はしない)。
+            // 折れ線(ラン比率/パス比率)はpointStyle:'line'を指定することで、凡例アイコン自体が
+            // 「線」として描画され、lineDashの設定もそのまま反映される(実線/破線の描き分けが可能)。
             legend: {
               labels: {
                 color: '#eceee9',
+                usePointStyle: true,
+                pointStyleWidth: 34,
                 generateLabels: function (chart) {
                   var base = Chart.defaults.plugins.legend.labels.generateLabels(chart);
                   base.forEach(function (item, i) {
                     var ds = chart.data.datasets[i];
                     if (ds && ds.type === 'line') {
-                      item.fillStyle = 'transparent';
+                      item.pointStyle = 'line';
+                      item.rotation = 0;
                       item.strokeStyle = ds.borderColor;
-                      item.lineWidth = 2;
+                      item.fillStyle = 'transparent';
+                      item.lineWidth = 2.5;
                       item.lineDash = ds.borderDash || [];
+                    } else if (ds) {
+                      item.pointStyle = 'rect';
                     }
                   });
                   return base;
