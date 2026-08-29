@@ -137,7 +137,10 @@
   var DATA_URL = '../assets/data/nfl-db/new-england-patriots.json';
   var BUCKET_LABELS = { run: 'ラン', pass: 'パス' };
   var BUCKET_COLORS = { run: '#3ecf6e', pass: '#ffc633' };
-  var RATIO_COLORS = { run: '#0c3d1e', pass: '#5c3a00' };
+  // 比率の折れ線は、棒グラフ(緑/黄)と同系色を明暗で変えても、ダーク背景では暗くするほど背景に溶けて見えなくなるため、
+  // 棒とも背景とも異なる高コントラストな色相(白/水色)を採用し、実線・破線でも区別する。
+  var RATIO_COLORS = { run: '#eceee9', pass: '#4fc3f7' };
+  var RATIO_DASH = { run: [], pass: [6, 4] };
   var QTR_ORDER = ['1', '2', '3', '4', 'OT'];
   var QTR_LABELS = { '1': '1Q', '2': '2Q', '3': '3Q', '4': '4Q', OT: 'OT' };
 
@@ -213,9 +216,10 @@
         }),
         borderColor: RATIO_COLORS[b],
         backgroundColor: RATIO_COLORS[b],
-        borderDash: [4, 3],
-        borderWidth: 2,
+        borderDash: RATIO_DASH[b],
+        borderWidth: 2.5,
         pointRadius: 2,
+        pointStyle: 'line',
         tension: 0.3,
         yAxisID: 'yRatio'
       };
@@ -245,13 +249,35 @@
             },
             yRatio: {
               position: 'right', min: 0, max: 100,
-              title: { display: true, text: '総獲得数（ラン+パス）に対する比率', color: '#a8afa2' },
+              title: { display: true, text: '総獲得ヤード数（ラン+パス）に対する比率', color: '#a8afa2' },
               ticks: { color: '#a8afa2', callback: function (v) { return v + '%'; } },
               grid: { drawOnChartArea: false }
             }
           },
           plugins: {
-            legend: { labels: { color: '#eceee9' } }
+            legend: {
+              labels: {
+                color: '#eceee9',
+                usePointStyle: true,
+                // Chart.js標準のgenerateLabelsの結果(テキスト・クリックでの表示切替等はそのまま)をベースにして、
+                // 折れ線データセットの項目だけ「点線」の見た目になるよう上書きする(全項目を作り直すと
+                // 標準の挙動を壊してしまい凡例テキストが消える不具合が起きたため、差分パッチ方式に変更)。
+                generateLabels: function (chart) {
+                  var base = Chart.defaults.plugins.legend.labels.generateLabels(chart);
+                  base.forEach(function (item, i) {
+                    var ds = chart.data.datasets[i];
+                    if (ds && ds.type === 'line') {
+                      item.pointStyle = 'line';
+                      item.lineDash = ds.borderDash || [];
+                      item.lineWidth = ds.borderWidth || 2;
+                      item.strokeStyle = ds.borderColor;
+                      item.fillStyle = ds.borderColor;
+                    }
+                  });
+                  return base;
+                }
+              }
+            }
           }
         }
       });
