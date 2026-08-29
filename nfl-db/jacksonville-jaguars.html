@@ -367,25 +367,25 @@
       metricKey: 'points_scored',
       sectionId: 'chart-points-scored',
       canvasId: 'chart-points-scored-canvas',
-      categories: ['td', 'fg'],
-      labels: { td: 'TD', fg: 'FG' },
-      barColors: { td: '#2e8f52', fg: '#b8860b' },
-      ratioColors: { td: '#3ecf6e', fg: '#ffc633' },
-      ratioDash: { td: [6, 4], fg: [6, 4] },
+      categories: ['td', 'fg', 'other'],
+      labels: { td: 'TD', fg: 'FG', other: 'その他' },
+      barColors: { td: '#2e8f52', fg: '#b8860b', other: '#5c6570' },
+      ratioColors: { td: '#3ecf6e', fg: '#ffc633', other: '#a8afa2' },
+      ratioDash: { td: [6, 4], fg: [6, 4], other: [6, 4] },
       unitLabel: '得点数',
-      ratioAxisLabel: 'TD/FG合計得点数に対する比率'
+      ratioAxisLabel: 'TD/FG/その他合計得点数に対する比率'
     },
     {
       metricKey: 'points_allowed',
       sectionId: 'chart-points-allowed',
       canvasId: 'chart-points-allowed-canvas',
-      categories: ['td', 'fg'],
-      labels: { td: 'TD', fg: 'FG' },
-      barColors: { td: '#2e8f52', fg: '#b8860b' },
-      ratioColors: { td: '#3ecf6e', fg: '#ffc633' },
-      ratioDash: { td: [6, 4], fg: [6, 4] },
+      categories: ['td', 'fg', 'other'],
+      labels: { td: 'TD', fg: 'FG', other: 'その他' },
+      barColors: { td: '#2e8f52', fg: '#b8860b', other: '#5c6570' },
+      ratioColors: { td: '#3ecf6e', fg: '#ffc633', other: '#a8afa2' },
+      ratioDash: { td: [6, 4], fg: [6, 4], other: [6, 4] },
       unitLabel: '失点数',
-      ratioAxisLabel: 'TD/FG合計失点数に対する比率'
+      ratioAxisLabel: 'TD/FG/その他合計失点数に対する比率'
     },
     {
       metricKey: 'yards_gained',
