@@ -254,10 +254,27 @@
             }
           },
           plugins: {
-            // 凡例はChart.js標準の見た目(長方形スウォッチ)のまま。ラン/パス比率の項目だけ点線アイコンにしようと
-            // usePointStyle系のカスタマイズを何度か試みたが、bar側の長方形が崩れる副作用が繰り返し起きたため、
-            // ここでは安全側に倒してカスタマイズなしに戻している(ラン/パスの凡例と比率の凡例は色で区別)。
-            legend: { labels: { color: '#eceee9' } }
+            // 棒グラフ(ラン/パス)の凡例は触らない(usePointStyleは使わない = 標準の長方形塗りつぶしのまま)。
+            // 折れ線(ラン比率/パス比率)の凡例だけ、塗りをtransparentにしてボーダーをlineDash付きで描かせることで、
+            // 「破線の枠」として区別する。usePointStyleを使う方式は棒グラフ側の形状を壊す副作用があったため不使用。
+            legend: {
+              labels: {
+                color: '#eceee9',
+                generateLabels: function (chart) {
+                  var base = Chart.defaults.plugins.legend.labels.generateLabels(chart);
+                  base.forEach(function (item, i) {
+                    var ds = chart.data.datasets[i];
+                    if (ds && ds.type === 'line') {
+                      item.fillStyle = 'transparent';
+                      item.strokeStyle = ds.borderColor;
+                      item.lineWidth = 2;
+                      item.lineDash = ds.borderDash || [];
+                    }
+                  });
+                  return base;
+                }
+              }
+            }
           }
         }
       });
