@@ -59,6 +59,9 @@
   text-transform: none;
   color: var(--text);
 }
+.tactics-body section.concept h2 .index {
+  color: var(--accent);
+}
 .tactics-body section.concept h2 .en {
   font-size: 0.7rem;
   font-weight: 600;
