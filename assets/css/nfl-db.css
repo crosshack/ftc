@@ -1,4 +1,10 @@
-/* NFL.DB (プロトタイプ / サンプルチーム検討フェーズ) 専用スタイル */
+/* NFL.DB 専用スタイル */
+
+.page-head .meta {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
 
 .nfldb-toc {
   background: var(--bg-card);

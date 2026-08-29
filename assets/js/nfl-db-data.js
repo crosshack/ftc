@@ -249,7 +249,7 @@ window.NFLDB_DATA = [
         "meta": "レギュラーシーズン 1999〜2025年"
       },
       {
-        "thumb": "<rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"#003594\"/><rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"none\" stroke=\"#001532\" stroke-width=\"1.5\" opacity=\"0.5\"/><text x=\"35\" y=\"41\" text-anchor=\"middle\" font-family=\"'Oswald', sans-serif\" font-weight=\"700\" font-size=\"26\" fill=\"#ffffff\" letter-spacing=\"1\">LA</text><rect x=\"16\" y=\"50\" width=\"38\" height=\"5\" rx=\"2.5\" fill=\"#FFD100\"/>",
+        "thumb": "<rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"#003594\"/><rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"none\" stroke=\"#001532\" stroke-width=\"1.5\" opacity=\"0.5\"/><text x=\"35\" y=\"41\" text-anchor=\"middle\" font-family=\"'Oswald', sans-serif\" font-weight=\"700\" font-size=\"19\" fill=\"#ffffff\" letter-spacing=\"1\">LAR</text><rect x=\"16\" y=\"50\" width=\"38\" height=\"5\" rx=\"2.5\" fill=\"#FFD100\"/>",
         "url": "nfl-db/los-angeles-rams.html",
         "title": "ロサンゼルス・ラムズ",
         "excerpt": "得点数・失点数・獲得ヤード数・被獲得ヤード数をシーズン別・ウィーク別・クォーター別にクロス集計。",
