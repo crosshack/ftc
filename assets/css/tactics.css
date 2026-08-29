@@ -38,7 +38,7 @@
   font-family: var(--font-head);
   margin-right: 8px;
 }
-.tactics-body nav.toc a { color: var(--text); font-weight: 600; text-decoration: none; }
+.tactics-body nav.toc a { color: var(--text); text-decoration: none; }
 .tactics-body nav.toc a:hover { color: var(--accent); }
 
 /* ---------- Concept card ---------- */
