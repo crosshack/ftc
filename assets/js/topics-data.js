@@ -268,7 +268,7 @@ window.TOPICS_DATA = [
     url: "topics/zone-coverage-1.html",
     date: "2026-08-30",
     readMin: 5,
-    theme: { slug: "zone-coverage", name: "ゾーンカバレッジの回帰", part: "前編" },
+    theme: { slug: "zone-coverage", name: "ゾーンカバレッジの拡大", part: "前編" },
     tags: [
         { slug: "zone", name: "ゾーン" },
         { slug: "zone-coverage", name: "ゾーンカバレッジ" },
@@ -293,7 +293,7 @@ window.TOPICS_DATA = [
     url: "topics/zone-coverage-2.html",
     date: "2026-08-30",
     readMin: 5,
-    theme: { slug: "zone-coverage", name: "ゾーンカバレッジの回帰", part: "後編" },
+    theme: { slug: "zone-coverage", name: "ゾーンカバレッジの拡大", part: "後編" },
     tags: [
         { slug: "zone", name: "ゾーン" },
         { slug: "zone-coverage", name: "ゾーンカバレッジ" },
