@@ -32,7 +32,7 @@ window.TOPICS_DATA = [
   {
     slug: "pattern-match-coverage-2",
     title: "パターンマッチ導入チームの実例と今後",
-    excerpt: "ライトボックスを採用する実例チームと、スーパーボウルLIXでの実証、オフェンス側の対抗策を見ていく。",
+    excerpt: "ライトボックスを採用するフィラデルフィア・イーグルスなどの実例チームと、スーパーボウルLIXでの実証、オフェンス側の対抗策を見ていく。",
     url: "topics/pattern-match-coverage-2.html",
     date: "2026-08-21",
     readMin: 5,
@@ -50,7 +50,8 @@ window.TOPICS_DATA = [
         { slug: "blitz", name: "ブリッツ" },
         { slug: "mesh", name: "メッシュ" },
         { slug: "snap", name: "スナップ" },
-        { slug: "defender", name: "ディフェンダー" }
+        { slug: "defender", name: "ディフェンダー" },
+        { slug: "philadelphia-eagles", name: "フィラデルフィア・イーグルス" }
       ],
     thumb: '<circle cx="35" cy="46" r="8" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><path d="M35,38 Q35,26 35,18" fill="none" stroke="#eceee9" stroke-width="1.8" stroke-dasharray="4,3"/><circle cx="35" cy="18" r="4" fill="#eceee9"/><path d="M35,52 L35,60" fill="none" stroke="#ffc633" stroke-width="2"/><circle cx="35" cy="60" r="3.5" fill="#ffc633"/>'
   },
@@ -307,7 +308,9 @@ window.TOPICS_DATA = [
         { slug: "defensive-coordinator", name: "ディフェンスコーディネーター" },
         { slug: "base-4-3", name: "ベース4-3" },
         { slug: "front", name: "フロント" },
-        { slug: "route", name: "ルート" }
+        { slug: "route", name: "ルート" },
+        { slug: "houston-texans", name: "ヒューストン・テキサンズ" },
+        { slug: "minnesota-vikings", name: "ミネソタ・バイキングス" }
       ],
     thumb: '<rect x="6" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="14" cy="37" r="3" fill="#eceee9"/><rect x="27" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="35" cy="37" r="3" fill="#eceee9"/><rect x="48" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="56" cy="37" r="3" fill="#eceee9"/>'
   }
