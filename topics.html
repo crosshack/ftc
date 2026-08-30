@@ -128,11 +128,19 @@
   }
 
   function uniqueTags() {
-    var seen = {}, list = [];
+    var counts = {}, lastDate = {}, first = {};
     TOPICS.forEach(function (t) {
       t.tags.forEach(function (tag) {
-        if (!seen[tag.slug]) { seen[tag.slug] = true; list.push(tag); }
+        if (!first[tag.slug]) { first[tag.slug] = tag; counts[tag.slug] = 0; }
+        counts[tag.slug]++;
+        if (!lastDate[tag.slug] || t.date > lastDate[tag.slug]) lastDate[tag.slug] = t.date;
       });
+    });
+    var list = Object.keys(first).map(function (slug) { return first[slug]; });
+    list.sort(function (a, b) {
+      if (counts[b.slug] !== counts[a.slug]) return counts[b.slug] - counts[a.slug];
+      if (lastDate[b.slug] !== lastDate[a.slug]) return lastDate[b.slug] < lastDate[a.slug] ? -1 : 1;
+      return a.slug < b.slug ? -1 : 1;
     });
     return list;
   }
@@ -154,10 +162,13 @@
     });
 
     var tagContainer = document.getElementById("tag-filter");
-    uniqueTags().forEach(function (tag) {
+    var TAG_LIMIT = 20;
+    var allTags = uniqueTags();
+    allTags.forEach(function (tag, i) {
       var btn = document.createElement("button");
       btn.type = "button";
       btn.className = "tag-pill";
+      if (i >= TAG_LIMIT) btn.classList.add("tag-pill-hidden");
       btn.textContent = "#" + tag.name;
       btn.dataset.slug = tag.slug;
       btn.addEventListener("click", function () {
@@ -168,6 +179,19 @@
       });
       tagContainer.appendChild(btn);
     });
+    if (allTags.length > TAG_LIMIT) {
+      var tagMore = document.createElement("button");
+      tagMore.type = "button";
+      tagMore.className = "tag-more-toggle";
+      tagMore.textContent = "...すべて表示";
+      tagMore.addEventListener("click", function () {
+        tagContainer.querySelectorAll(".tag-pill-hidden").forEach(function (el) {
+          el.classList.remove("tag-pill-hidden");
+        });
+        tagMore.remove();
+      });
+      tagContainer.appendChild(tagMore);
+    }
 
     function resetFilters() {
       state.theme = ""; state.tags = []; state.page = 1;

@@ -431,6 +431,17 @@ h1, h2, h3, h4 {
 }
 .tag-pill:hover { border-color: var(--accent); color: var(--accent); }
 .tag-pill.is-active { background: var(--accent-dim); border-color: var(--accent); color: var(--accent); }
+.tag-pill-hidden { display: none; }
+.tag-more-toggle {
+  font-size: 0.82rem;
+  color: var(--accent);
+  background: none;
+  border: none;
+  padding: 4px 2px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.tag-more-toggle:hover { text-decoration: underline; }
 #theme-filter .tag-pill:hover { border-color: var(--flag); color: var(--flag); }
 #theme-filter .tag-pill.is-active { background: rgba(255, 198, 51, 0.15); border-color: var(--flag); color: var(--flag); }
 .filter-reset {
