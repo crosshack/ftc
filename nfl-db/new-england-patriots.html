@@ -624,7 +624,7 @@
 
     function updateChart() {
       var chartCfg = buildChartData(currentCategories());
-      var yMainTitle = cfg.unitLabel + '（' + (state.viewMode === 'avg' ? '試合平均' : '総数') + '）';
+      var yMainTitle = cfg.unitLabel + '（' + (state.viewMode === 'avg' ? '試合平均' : '合計') + '）';
       if (!chart) {
         var ctx = document.getElementById(cfg.canvasId).getContext('2d');
         chart = new Chart(ctx, {
