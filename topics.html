@@ -180,16 +180,20 @@
       tagContainer.appendChild(btn);
     });
     if (allTags.length > TAG_LIMIT) {
-      var tagMore = document.createElement("button");
-      tagMore.type = "button";
-      tagMore.className = "tag-more-toggle";
-      tagMore.textContent = "...すべて表示";
-      tagMore.addEventListener("click", function () {
+      var tagMore = document.createElement("span");
+      tagMore.className = "tag-more";
+      tagMore.appendChild(document.createTextNode("..."));
+      var tagMoreBtn = document.createElement("button");
+      tagMoreBtn.type = "button";
+      tagMoreBtn.className = "tag-more-label";
+      tagMoreBtn.textContent = "すべて表示";
+      tagMoreBtn.addEventListener("click", function () {
         tagContainer.querySelectorAll(".tag-pill-hidden").forEach(function (el) {
           el.classList.remove("tag-pill-hidden");
         });
         tagMore.remove();
       });
+      tagMore.appendChild(tagMoreBtn);
       tagContainer.appendChild(tagMore);
     }
 
