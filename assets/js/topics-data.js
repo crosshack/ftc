@@ -260,5 +260,55 @@ window.TOPICS_DATA = [
         { slug: "new-england-patriots", name: "ニューイングランド・ペイトリオッツ" }
       ],
     thumb: '<circle cx="35" cy="35" r="16" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="46" y1="46" x2="58" y2="58" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="38" r="3.5" fill="#eceee9"/><path d="M30,38 L40,28" stroke="#ffc633" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="28" r="3.5" fill="#ffc633"/>'
+  },
+  {
+    slug: "zone-coverage-1",
+    title: "なぜNFLでゾーンカバレッジが主流になったのか",
+    excerpt: "マンカバレッジ使用率が22.6%まで低下したNFL。ディフェンスがゾーンを主流に選ぶ理由を、パーソネル・スペーシング・モーション対策の3つの観点から解説する。",
+    url: "topics/zone-coverage-1.html",
+    date: "2026-08-30",
+    readMin: 5,
+    theme: { slug: "zone-coverage", name: "ゾーンカバレッジの回帰", part: "前編" },
+    tags: [
+        { slug: "zone", name: "ゾーン" },
+        { slug: "zone-coverage", name: "ゾーンカバレッジ" },
+        { slug: "man-to-man-coverage", name: "マンツーマンカバレッジ" },
+        { slug: "coverage", name: "カバレッジ" },
+        { slug: "defense", name: "ディフェンス" },
+        { slug: "personnel", name: "パーソネル" },
+        { slug: "linebacker", name: "ラインバッカー" },
+        { slug: "safety", name: "セーフティ" },
+        { slug: "nickel-package", name: "ニッケル" },
+        { slug: "dime-package", name: "ダイム" },
+        { slug: "wide-receiver", name: "ワイドレシーバー" },
+        { slug: "tight-end", name: "タイトエンド" },
+        { slug: "quarterback", name: "クォーターバック" }
+      ],
+    thumb: '<rect x="6" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="14" cy="37" r="3" fill="#eceee9"/><rect x="27" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="35" cy="37" r="3" fill="#eceee9"/><rect x="48" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="56" cy="37" r="3" fill="#eceee9"/>'
+  },
+  {
+    slug: "zone-coverage-2",
+    title: "ゾーン重視ディフェンスの実例と今後",
+    excerpt: "ヒューストン・テキサンズのスプリットフィールドと、ミネソタ・バイキングスのブリッツ×ゾーン。ゾーン偏重ディフェンスが抱える落とし穴と、観戦時に見分けるポイントを見ていく。",
+    url: "topics/zone-coverage-2.html",
+    date: "2026-08-30",
+    readMin: 5,
+    theme: { slug: "zone-coverage", name: "ゾーンカバレッジの回帰", part: "後編" },
+    tags: [
+        { slug: "zone", name: "ゾーン" },
+        { slug: "zone-coverage", name: "ゾーンカバレッジ" },
+        { slug: "defense", name: "ディフェンス" },
+        { slug: "coverage", name: "カバレッジ" },
+        { slug: "single-high", name: "シングルハイ" },
+        { slug: "cover-3", name: "カバー3" },
+        { slug: "cover-4", name: "カバー4" },
+        { slug: "box", name: "ボックス" },
+        { slug: "blitz", name: "ブリッツ" },
+        { slug: "defensive-coordinator", name: "ディフェンスコーディネーター" },
+        { slug: "base-4-3", name: "ベース4-3" },
+        { slug: "front", name: "フロント" },
+        { slug: "route", name: "ルート" }
+      ],
+    thumb: '<rect x="6" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="14" cy="37" r="3" fill="#eceee9"/><rect x="27" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="35" cy="37" r="3" fill="#eceee9"/><rect x="48" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="56" cy="37" r="3" fill="#eceee9"/>'
   }
 ];
