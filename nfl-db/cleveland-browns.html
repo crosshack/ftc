@@ -90,6 +90,8 @@
       <li><span class="index">04</span><a href="#chart-yards-allowed">被獲得ヤード数</a></li>
       <li><span class="index">05</span><a href="#chart-offense-personnel">オフェンス編成別プレー回数</a></li>
       <li><span class="index">06</span><a href="#chart-defense-formation">ディフェンス編成別プレー回数</a></li>
+      <li><span class="index">07</span><a href="#chart-play-type">プレータイプ別プレー回数</a></li>
+      <li><span class="index">08</span><a href="#chart-coverage-type">カバレッジタイプ別プレー回数</a></li>
     </ol>
   </nav>
 
@@ -155,7 +157,7 @@
 
   <section class="nfldb-chart-section" id="chart-yards-gained">
     <h2><span class="index">03</span> 獲得ヤード数</h2>
-    <p class="nfldb-chart-desc">プレー種別（ラン/パス）ごとの獲得ヤード数（試合平均/総数）のチャート。</p>
+    <p class="nfldb-chart-desc">プレータイプ（ラン/パス）ごとの獲得ヤード数（試合平均/総数）のチャート。</p>
 
     <div class="nfldb-controls">
       <div class="nfldb-pill-group" data-role="granularity-group">
@@ -185,7 +187,7 @@
 
   <section class="nfldb-chart-section" id="chart-yards-allowed">
     <h2><span class="index">04</span> 被獲得ヤード数</h2>
-    <p class="nfldb-chart-desc">プレー種別（ラン/パス）ごとの被獲得ヤード数（試合平均/総数）のチャート。</p>
+    <p class="nfldb-chart-desc">プレータイプ（ラン/パス）ごとの被獲得ヤード数（試合平均/総数）のチャート。</p>
 
     <div class="nfldb-controls">
       <div class="nfldb-pill-group" data-role="granularity-group">
@@ -215,7 +217,7 @@
 
   <section class="nfldb-chart-section" id="chart-offense-personnel">
     <h2><span class="index">05</span> オフェンス編成別プレー回数</h2>
-    <p class="nfldb-chart-desc">オフェンスの各プレーで採用されているパーソネル(11パーソネルなど)ごとのプレー回数(試合平均/総数)のチャート。</p>
+    <p class="nfldb-chart-desc">オフェンスの各プレーのパーソネル(11パーソネルなど)ごとのプレー回数(試合平均/総数)のチャート。</p>
 
     <div class="nfldb-controls">
       <div class="nfldb-pill-group" data-role="granularity-group">
@@ -245,7 +247,7 @@
 
   <section class="nfldb-chart-section" id="chart-defense-formation">
     <h2><span class="index">06</span> ディフェンス編成別プレー回数</h2>
-    <p class="nfldb-chart-desc">ディフェンスの各プレーで採用されているフォーメーション(ベース4-3など)ごとのプレー回数(試合平均/総数)のチャート。</p>
+    <p class="nfldb-chart-desc">ディフェンスの各プレーのフォーメーション(ベース4-3など)ごとのプレー回数(試合平均/総数)のチャート。</p>
 
     <div class="nfldb-controls">
       <div class="nfldb-pill-group" data-role="granularity-group">
@@ -270,6 +272,66 @@
         <canvas id="chart-defense-formation-canvas" role="img" aria-label="ディフェンス編成別プレー回数のクロス集計チャート"></canvas>
       </div>
       <p class="nfldb-legend-note">出典: nflverse(nfl_data_py)のPlay-by-Playデータを集計(集計対象: レギュラーシーズンのみ。パーソネルデータの提供開始年である2016年シーズン以降のみ集計可能)。</p>
+    </div>
+  </section>
+
+  <section class="nfldb-chart-section" id="chart-play-type">
+    <h2><span class="index">07</span> プレータイプ別プレー回数</h2>
+    <p class="nfldb-chart-desc">オフェンスの各プレーのプレータイプ(ラン/パス)ごとのプレー回数(試合平均/総数)のチャート。</p>
+
+    <div class="nfldb-controls">
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <div class="nfldb-year-range" data-role="year-range-group">
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-start-select" aria-label="表示開始年を選択"></select>
+        <span class="nfldb-year-range-sep">〜</span>
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-end-select" aria-label="表示終了年を選択"></select>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-play-type-canvas" role="img" aria-label="プレータイプ別プレー回数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note">出典: nflverse(nfl_data_py)のPlay-by-Playデータを集計(集計対象: レギュラーシーズンのみ)。</p>
+    </div>
+  </section>
+
+  <section class="nfldb-chart-section" id="chart-coverage-type">
+    <h2><span class="index">08</span> カバレッジタイプ別プレー回数</h2>
+    <p class="nfldb-chart-desc">ディフェンスの各プレーのカバレッジタイプ(マンツーマン/ゾーン)ごとのプレー回数(試合平均/総数)のチャート。</p>
+
+    <div class="nfldb-controls">
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <div class="nfldb-year-range" data-role="year-range-group">
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-start-select" aria-label="表示開始年を選択"></select>
+        <span class="nfldb-year-range-sep">〜</span>
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-end-select" aria-label="表示終了年を選択"></select>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-coverage-type-canvas" role="img" aria-label="カバレッジタイプ別プレー回数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note">出典: nflverse(nfl_data_py)のPlay-by-Playデータを集計(集計対象: レギュラーシーズンのみ。カバレッジタイプデータの提供開始年である2018年シーズン以降のみ集計可能)。</p>
     </div>
   </section>
 </div>
@@ -434,6 +496,30 @@
       ratioDash: { base_4_3: [6, 4], base_3_4: [6, 4], nickel: [6, 4], dime: [6, 4], other: [6, 4] },
       unitLabel: 'プレー回数',
       ratioAxisLabel: '合計プレー回数に対する比率'
+    },
+    {
+      metricKey: 'play_type',
+      sectionId: 'chart-play-type',
+      canvasId: 'chart-play-type-canvas',
+      categories: ['run', 'pass'],
+      labels: { run: 'ラン', pass: 'パス' },
+      barColors: { run: '#2e8f52', pass: '#b8860b' },
+      ratioColors: { run: '#3ecf6e', pass: '#ffc633' },
+      ratioDash: { run: [6, 4], pass: [6, 4] },
+      unitLabel: 'プレー回数',
+      ratioAxisLabel: 'ラン/パス合計プレー回数に対する比率'
+    },
+    {
+      metricKey: 'coverage_type',
+      sectionId: 'chart-coverage-type',
+      canvasId: 'chart-coverage-type-canvas',
+      categories: ['man', 'zone'],
+      labels: { man: 'マンツーマン', zone: 'ゾーン' },
+      barColors: { man: '#2e8f52', zone: '#b8860b' },
+      ratioColors: { man: '#3ecf6e', zone: '#ffc633' },
+      ratioDash: { man: [6, 4], zone: [6, 4] },
+      unitLabel: 'プレー回数',
+      ratioAxisLabel: 'マンツーマン/ゾーン合計プレー回数に対する比率'
     }
   ];
 
