@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon-192.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180.png?v=2">
+<title>NFL | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="NFLの得点・失点・獲得ヤードなどのシーズン別チームスタッツを、チャートで可視化したNFL.DBダッシュボード。">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=26">
+<link rel="stylesheet" href="../assets/css/nfl-db.css?v=1">
+<!-- Google tag (gtag.js) -->
+<script>
+(function () {
+  // 本番ドメインでのみ計測する(staging.footballtactics.club・localhost では送信しない)
+  var hosts = ['footballtactics.club', 'www.footballtactics.club'];
+  if (hosts.indexOf(location.hostname) === -1) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-NHS351TN8E';
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', 'G-NHS351TN8E');
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><img src="../assets/img/logo-combined.svg" class="brand-logo" alt="FOOTBALLTACTICS.CLUB"></a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../nfl-db.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="20" x2="21" y2="20"/><rect x="5" y="14" width="3" height="6"/><rect x="11" y="9" width="3" height="11"/><rect x="17" y="4" width="3" height="16"/></svg><span>NFL.<span style="color: var(--accent);">DB</span></span></a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../nfl-db.html">NFL.DB</a></li>
+      <li><span class="current">NFL</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="page-head">
+  <div class="container">
+    <span class="tag tag-flag">NFL</span>
+    <div class="page-head-title-row">
+      <h1>NFL</h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="4" y="4" width="62" height="62" rx="10" fill="#013369"/>
+        <rect x="4" y="4" width="62" height="62" rx="10" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.4"/>
+        <text x="35" y="41" text-anchor="middle" font-family="'Oswald', sans-serif" font-weight="700" font-size="19" fill="#ffffff" letter-spacing="1">NFL</text>
+        <rect x="16" y="50" width="38" height="5" rx="2.5" fill="#D50A0A"/>
+      </svg>
+    </div>
+    <p>NFLの戦術・プレーのトレンド変化を、チームスタッツをもとにチャート化したダッシュボード。</p>
+    <div class="meta">レギュラーシーズン/プレーオフ/スーパーボウル 1999〜2025年</div>
+  </div>
+</section>
+
+<div class="container">
+
+  <nav class="nfldb-toc" aria-label="目次">
+    <p class="nfldb-toc-label">目次</p>
+    <ol>
+      <li><span class="index">01</span><a href="#chart-points-scored">得点数</a></li>
+      <li><span class="index">02</span><a href="#chart-points-allowed">失点数</a></li>
+      <li><span class="index">03</span><a href="#chart-yards-gained">獲得ヤード数</a></li>
+      <li><span class="index">04</span><a href="#chart-yards-allowed">被獲得ヤード数</a></li>
+      <li><span class="index">05</span><a href="#chart-offense-personnel">オフェンス編成別プレー回数</a></li>
+      <li><span class="index">06</span><a href="#chart-defense-formation">ディフェンス編成別プレー回数</a></li>
+    </ol>
+  </nav>
+
+  <section class="nfldb-chart-section" id="chart-points-scored">
+    <h2><span class="index">01</span> 得点数</h2>
+    <p class="nfldb-chart-desc">得点パターン（TD/FG）ごとの得点数（試合平均/総数）のチャート。NFL全32チームの合計値。</p>
+
+    <div class="nfldb-controls">
+      <select class="nfldb-season-select" data-role="weektype-select" aria-label="表示対象のウィークを選択">
+        <option value="regular">レギュラーシーズン</option>
+        <option value="playoffs">プレーオフ</option>
+        <option value="superbowl">スーパーボウル</option>
+      </select>
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <div class="nfldb-year-range" data-role="year-range-group">
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-start-select" aria-label="表示開始年を選択"></select>
+        <span class="nfldb-year-range-sep">〜</span>
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-end-select" aria-label="表示終了年を選択"></select>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-points-scored-canvas" role="img" aria-label="得点数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note" data-role="legend-note"></p>
+    </div>
+  </section>
+
+  <section class="nfldb-chart-section" id="chart-points-allowed">
+    <h2><span class="index">02</span> 失点数</h2>
+    <p class="nfldb-chart-desc">失点パターン（TD/FG）ごとの失点数（試合平均/総数）のチャート。NFL全32チームの合計値。</p>
+
+    <div class="nfldb-controls">
+      <select class="nfldb-season-select" data-role="weektype-select" aria-label="表示対象のウィークを選択">
+        <option value="regular">レギュラーシーズン</option>
+        <option value="playoffs">プレーオフ</option>
+        <option value="superbowl">スーパーボウル</option>
+      </select>
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <div class="nfldb-year-range" data-role="year-range-group">
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-start-select" aria-label="表示開始年を選択"></select>
+        <span class="nfldb-year-range-sep">〜</span>
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-end-select" aria-label="表示終了年を選択"></select>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-points-allowed-canvas" role="img" aria-label="失点数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note" data-role="legend-note"></p>
+    </div>
+  </section>
+
+  <section class="nfldb-chart-section" id="chart-yards-gained">
+    <h2><span class="index">03</span> 獲得ヤード数</h2>
+    <p class="nfldb-chart-desc">プレー種別（ラン/パス）ごとの獲得ヤード数（試合平均/総数）のチャート。NFL全32チームの合計値。</p>
+
+    <div class="nfldb-controls">
+      <select class="nfldb-season-select" data-role="weektype-select" aria-label="表示対象のウィークを選択">
+        <option value="regular">レギュラーシーズン</option>
+        <option value="playoffs">プレーオフ</option>
+        <option value="superbowl">スーパーボウル</option>
+      </select>
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <div class="nfldb-year-range" data-role="year-range-group">
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-start-select" aria-label="表示開始年を選択"></select>
+        <span class="nfldb-year-range-sep">〜</span>
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-end-select" aria-label="表示終了年を選択"></select>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-yards-gained-canvas" role="img" aria-label="獲得ヤード数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note" data-role="legend-note"></p>
+    </div>
+  </section>
+
+  <section class="nfldb-chart-section" id="chart-yards-allowed">
+    <h2><span class="index">04</span> 被獲得ヤード数</h2>
+    <p class="nfldb-chart-desc">プレー種別（ラン/パス）ごとの被獲得ヤード数（試合平均/総数）のチャート。NFL全32チームの合計値。</p>
+
+    <div class="nfldb-controls">
+      <select class="nfldb-season-select" data-role="weektype-select" aria-label="表示対象のウィークを選択">
+        <option value="regular">レギュラーシーズン</option>
+        <option value="playoffs">プレーオフ</option>
+        <option value="superbowl">スーパーボウル</option>
+      </select>
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <div class="nfldb-year-range" data-role="year-range-group">
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-start-select" aria-label="表示開始年を選択"></select>
+        <span class="nfldb-year-range-sep">〜</span>
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-end-select" aria-label="表示終了年を選択"></select>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-yards-allowed-canvas" role="img" aria-label="被獲得ヤード数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note" data-role="legend-note"></p>
+    </div>
+  </section>
+
+  <section class="nfldb-chart-section" id="chart-offense-personnel">
+    <h2><span class="index">05</span> オフェンス編成別プレー回数</h2>
+    <p class="nfldb-chart-desc">オフェンスの各プレーで採用されているパーソネル（11パーソネルなど）ごとのプレー回数（試合平均/総数）のチャート。NFL全32チームの合計値。</p>
+
+    <div class="nfldb-controls">
+      <select class="nfldb-season-select" data-role="weektype-select" aria-label="表示対象のウィークを選択">
+        <option value="regular">レギュラーシーズン</option>
+        <option value="playoffs">プレーオフ</option>
+        <option value="superbowl">スーパーボウル</option>
+      </select>
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <div class="nfldb-year-range" data-role="year-range-group">
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-start-select" aria-label="表示開始年を選択"></select>
+        <span class="nfldb-year-range-sep">〜</span>
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-end-select" aria-label="表示終了年を選択"></select>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-offense-personnel-canvas" role="img" aria-label="オフェンス編成別プレー回数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note" data-role="legend-note"></p>
+    </div>
+  </section>
+
+  <section class="nfldb-chart-section" id="chart-defense-formation">
+    <h2><span class="index">06</span> ディフェンス編成別プレー回数</h2>
+    <p class="nfldb-chart-desc">ディフェンスの各プレーで採用されているフォーメーション（ベース4-3など）ごとのプレー回数（試合平均/総数）のチャート。NFL全32チームの合計値。</p>
+
+    <div class="nfldb-controls">
+      <select class="nfldb-season-select" data-role="weektype-select" aria-label="表示対象のウィークを選択">
+        <option value="regular">レギュラーシーズン</option>
+        <option value="playoffs">プレーオフ</option>
+        <option value="superbowl">スーパーボウル</option>
+      </select>
+      <div class="nfldb-pill-group" data-role="granularity-group">
+        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
+        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
+      </div>
+      <div class="nfldb-pill-group" data-role="viewmode-group">
+        <button type="button" class="nfldb-pill active" data-viewmode="avg">試合平均</button>
+        <button type="button" class="nfldb-pill" data-viewmode="total">総数</button>
+      </div>
+      <div class="nfldb-year-range" data-role="year-range-group">
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-start-select" aria-label="表示開始年を選択"></select>
+        <span class="nfldb-year-range-sep">〜</span>
+        <select class="nfldb-season-select nfldb-year-select" data-role="year-end-select" aria-label="表示終了年を選択"></select>
+      </div>
+      <select class="nfldb-season-select" data-role="season-select" aria-label="シーズンを選択"></select>
+    </div>
+
+    <div class="nfldb-chart-box">
+      <div class="nfldb-chart-canvas-wrap">
+        <canvas id="chart-defense-formation-canvas" role="img" aria-label="ディフェンス編成別プレー回数のクロス集計チャート"></canvas>
+      </div>
+      <p class="nfldb-legend-note" data-role="legend-note"></p>
+    </div>
+  </section>
+
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../nfl-db.html">NFL.DB</a></li>
+      <li><span class="current">NFL</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; <a href="https://www.crosshack.jp/" target="_blank" rel="noopener">CROSSHACK Inc.</a> All rights reserved.</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="../assets/js/main.js" defer></script>
+<script>
+(function () {
+  var DATA_URL = '../assets/data/nfl-db/nfl.json';
+  var QTR_ORDER = ['1', '2', '3', '4', 'OT'];
+  var QTR_LABELS = { '1': '1Q', '2': '2Q', '3': '3Q', '4': '4Q', OT: 'OT' };
+  var ROUND_LABELS = { R1: 'ワイルドカード', R2: 'ディビジョナル', R3: 'カンファレンス' };
+  var WEEKTYPE_LABELS = { regular: 'レギュラーシーズン', playoffs: 'プレーオフ', superbowl: 'スーパーボウル' };
+
+  // ツールチップはChart.js標準の描画だと、比率(折れ線)の凡例アイコンを「線」にしても
+  // 点線(borderDash)が反映されず(usePointStyle利用時はdrawPointに渡らないため)、
+  // 比率でない方(棒)にも常に白い縁取りが入ってしまう。上の凡例(legend)と見た目を厳密に揃えるため、
+  // Chart.js標準のツールチップは無効化し(enabled:false)、HTML独自のツールチップを描画する。
+  // (チーム別詳細ページと同一の実装)
+  function nfldbExternalTooltip(context) {
+    var chart = context.chart;
+    var tooltipModel = context.tooltip;
+    var wrap = chart.canvas.closest('.nfldb-chart-canvas-wrap');
+    var tooltipEl = wrap.querySelector('.nfldb-tooltip');
+    if (!tooltipEl) {
+      tooltipEl = document.createElement('div');
+      tooltipEl.className = 'nfldb-tooltip';
+      wrap.appendChild(tooltipEl);
+    }
+
+    if (tooltipModel.opacity === 0) {
+      tooltipEl.style.opacity = 0;
+      return;
+    }
+
+    if (tooltipModel.body) {
+      var titleLines = tooltipModel.title || [];
+      var bodyLines = tooltipModel.body || [];
+      var dataPoints = tooltipModel.dataPoints || [];
+      var html = titleLines.map(function (t) {
+        return '<div class="nfldb-tooltip-title">' + t + '</div>';
+      }).join('');
+      html += '<div class="nfldb-tooltip-body">';
+      bodyLines.forEach(function (b, i) {
+        var dp = dataPoints[i];
+        var ds = dp ? chart.data.datasets[dp.datasetIndex] : null;
+        var swatch;
+        if (ds && ds.type === 'line') {
+          swatch = '<span class="nfldb-tooltip-swatch nfldb-tooltip-swatch-line" style="border-top-color:' + ds.borderColor + ';"></span>';
+        } else {
+          swatch = '<span class="nfldb-tooltip-swatch" style="background:' + (ds ? ds.backgroundColor : '#fff') + ';"></span>';
+        }
+        html += '<div class="nfldb-tooltip-row">' + swatch + '<span>' + b.lines.join(' ') + '</span></div>';
+      });
+      html += '</div>';
+      tooltipEl.innerHTML = html;
+    }
+
+    var xAlign = tooltipModel.xAlign;
+    var yAlign = tooltipModel.yAlign;
+    var translateX = xAlign === 'left' ? '0%' : xAlign === 'right' ? '-100%' : '-50%';
+    var translateY = yAlign === 'top' ? '0%' : yAlign === 'bottom' ? '-100%' : '-50%';
+
+    tooltipEl.classList.remove('caret-left', 'caret-right', 'caret-top', 'caret-bottom');
+    if (yAlign === 'center') {
+      tooltipEl.classList.add(xAlign === 'left' ? 'caret-left' : 'caret-right');
+    } else {
+      tooltipEl.classList.add(yAlign === 'top' ? 'caret-top' : 'caret-bottom');
+    }
+
+    tooltipEl.style.opacity = 1;
+    tooltipEl.style.left = tooltipModel.caretX + 'px';
+    tooltipEl.style.top = tooltipModel.caretY + 'px';
+    tooltipEl.style.transform = 'translate(' + translateX + ', ' + translateY + ')';
+  }
+
+  // チャートごとの設定。チーム別詳細ページと同一の分類・配色を使用(NFL全32チーム合計版)。
+  var METRICS = [
+    {
+      metricKey: 'points_scored',
+      sectionId: 'chart-points-scored',
+      canvasId: 'chart-points-scored-canvas',
+      categories: ['td', 'fg', 'other'],
+      labels: { td: 'TD', fg: 'FG', other: 'その他' },
+      barColors: { td: '#2e8f52', fg: '#b8860b', other: '#5c6570' },
+      ratioColors: { td: '#3ecf6e', fg: '#ffc633', other: '#a8afa2' },
+      ratioDash: { td: [6, 4], fg: [6, 4], other: [6, 4] },
+      unitLabel: '得点数',
+      ratioAxisLabel: '合計得点数に対する比率'
+    },
+    {
+      metricKey: 'points_allowed',
+      sectionId: 'chart-points-allowed',
+      canvasId: 'chart-points-allowed-canvas',
+      categories: ['td', 'fg', 'other'],
+      labels: { td: 'TD', fg: 'FG', other: 'その他' },
+      barColors: { td: '#2e8f52', fg: '#b8860b', other: '#5c6570' },
+      ratioColors: { td: '#3ecf6e', fg: '#ffc633', other: '#a8afa2' },
+      ratioDash: { td: [6, 4], fg: [6, 4], other: [6, 4] },
+      unitLabel: '失点数',
+      ratioAxisLabel: '合計失点数に対する比率'
+    },
+    {
+      metricKey: 'yards_gained',
+      sectionId: 'chart-yards-gained',
+      canvasId: 'chart-yards-gained-canvas',
+      categories: ['run', 'pass'],
+      labels: { run: 'ラン', pass: 'パス' },
+      barColors: { run: '#2e8f52', pass: '#b8860b' },
+      ratioColors: { run: '#3ecf6e', pass: '#ffc633' },
+      ratioDash: { run: [6, 4], pass: [6, 4] },
+      unitLabel: '獲得ヤード数',
+      ratioAxisLabel: 'ラン/パス合計獲得ヤード数に対する比率'
+    },
+    {
+      metricKey: 'yards_allowed',
+      sectionId: 'chart-yards-allowed',
+      canvasId: 'chart-yards-allowed-canvas',
+      categories: ['run', 'pass'],
+      labels: { run: 'ラン', pass: 'パス' },
+      barColors: { run: '#2e8f52', pass: '#b8860b' },
+      ratioColors: { run: '#3ecf6e', pass: '#ffc633' },
+      ratioDash: { run: [6, 4], pass: [6, 4] },
+      unitLabel: '被獲得ヤード数',
+      ratioAxisLabel: 'ラン/パス合計被獲得ヤード数に対する比率'
+    },
+    {
+      metricKey: 'offense_personnel',
+      sectionId: 'chart-offense-personnel',
+      canvasId: 'chart-offense-personnel-canvas',
+      categories: ['21', '12', '11', '13', 'other'],
+      labels: { '21': '21パーソネル', '12': '12パーソネル', '11': '11パーソネル', '13': '13パーソネル', other: 'その他' },
+      barColors: { '21': '#2e8f52', '12': '#2f7aa8', '11': '#b8860b', '13': '#7b4397', other: '#5c6570' },
+      ratioColors: { '21': '#3ecf6e', '12': '#4fc3f7', '11': '#ffc633', '13': '#ba68c8', other: '#a8afa2' },
+      ratioDash: { '21': [6, 4], '12': [6, 4], '11': [6, 4], '13': [6, 4], other: [6, 4] },
+      unitLabel: 'プレー回数',
+      ratioAxisLabel: '全編成合計プレー回数に対する比率'
+    },
+    {
+      metricKey: 'defense_formation',
+      sectionId: 'chart-defense-formation',
+      canvasId: 'chart-defense-formation-canvas',
+      categories: ['base_4_3', 'base_3_4', 'nickel', 'dime', 'other'],
+      labels: { base_4_3: 'ベース4-3', base_3_4: 'ベース3-4', nickel: 'ニッケル', dime: 'ダイム', other: 'その他' },
+      barColors: { base_4_3: '#2e8f52', base_3_4: '#2f7aa8', nickel: '#b8860b', dime: '#7b4397', other: '#5c6570' },
+      ratioColors: { base_4_3: '#3ecf6e', base_3_4: '#4fc3f7', nickel: '#ffc633', dime: '#ba68c8', other: '#a8afa2' },
+      ratioDash: { base_4_3: [6, 4], base_3_4: [6, 4], nickel: [6, 4], dime: [6, 4], other: [6, 4] },
+      unitLabel: 'プレー回数',
+      ratioAxisLabel: '全編成合計プレー回数に対する比率'
+    }
+  ];
+
+  // 1チャート分のコントローラ(状態・描画・イベント)を生成する。チーム別詳細ページと同じロジックをベースに、
+  // 「表示対象のウィーク種別(レギュラーシーズン/プレーオフ/スーパーボウル)」の選択軸を追加している。
+  // データ集計はNFL全32チーム合計であり、チーム別ページと異なり試合数の分母も「全32チーム分の延べ試合数」
+  // (=対象試合数×2、両チーム分をカウント)であるため、games情報もweekType×season(×week)単位で持つ。
+  function createController(cfg, dataset) {
+    var section = document.getElementById(cfg.sectionId);
+    var metric = dataset.metrics[cfg.metricKey];
+    var seasonsCovered = metric.seasons_covered || dataset.seasons_covered;
+    var state = { weekType: 'regular', granularity: 'season', season: null, viewMode: 'avg', yearStart: null, yearEnd: null };
+    var chart = null;
+
+    function weekTypeGames() {
+      return dataset.games[state.weekType] || { by_season: {}, by_week: {} };
+    }
+
+    function seasonCategories() {
+      var bySeason = metric.by_week_type[state.weekType].by_season;
+      var gamesBySeason = weekTypeGames().by_season;
+      var seasons = seasonsCovered.map(String).filter(function (s) {
+        return Number(s) >= Number(state.yearStart) && Number(s) <= Number(state.yearEnd);
+      });
+      return seasons.map(function (s) {
+        var row = bySeason[s] || {};
+        var games = (gamesBySeason[s] || {}).games_played || 0;
+        return { label: s, raw: row, divisor: games };
+      });
+    }
+
+    function weekCategories(season) {
+      var byWeek = (metric.by_week_type[state.weekType].by_week[season]) || {};
+      var gamesByWeek = (weekTypeGames().by_week[season]) || {};
+      var wt = state.weekType;
+      var keys;
+      var labelFor;
+      if (wt === 'regular') {
+        keys = Object.keys(byWeek).map(Number).sort(function (a, b) { return a - b; }).map(String);
+        labelFor = function (k) { return 'Wk' + k; };
+      } else if (wt === 'playoffs') {
+        keys = ['R1', 'R2', 'R3'].filter(function (k) { return byWeek[k]; });
+        labelFor = function (k) { return ROUND_LABELS[k] || k; };
+      } else {
+        keys = Object.keys(byWeek);
+        labelFor = function () { return 'スーパーボウル'; };
+      }
+      return keys.map(function (k) {
+        var games = (gamesByWeek[k] || {}).games_played || 0;
+        return { label: labelFor(k), raw: byWeek[k], divisor: games };
+      });
+    }
+
+    function quarterCategories(season) {
+      var byQtr = (metric.by_week_type[state.weekType].by_quarter[season]) || {};
+      var games = (weekTypeGames().by_season[season]) || {};
+      var present = QTR_ORDER.filter(function (q) { return byQtr[q]; });
+      return present.map(function (q) {
+        var divisor = q === 'OT' ? (games.games_with_ot || 0) : (games.games_played || 0);
+        return { label: QTR_LABELS[q], raw: byQtr[q], divisor: divisor };
+      });
+    }
+
+    function currentCategories() {
+      if (state.granularity === 'season') return seasonCategories();
+      if (state.granularity === 'week') return weekCategories(state.season);
+      return quarterCategories(state.season);
+    }
+
+    function buildChartData(categories) {
+      var labels = categories.map(function (c) { return c.label; });
+      var cats = cfg.categories;
+
+      var barDatasets = cats.map(function (b) {
+        return {
+          type: 'bar',
+          label: cfg.labels[b],
+          data: categories.map(function (c) {
+            var v = (c.raw && c.raw[b]) || 0;
+            if (state.viewMode === 'avg' && c.divisor > 0) return v / c.divisor;
+            if (state.viewMode === 'avg') return 0;
+            return v;
+          }),
+          backgroundColor: cfg.barColors[b],
+          stack: 'main',
+          yAxisID: 'yMain',
+          order: 2
+        };
+      });
+
+      var lineDatasets = cats.map(function (b) {
+        return {
+          type: 'line',
+          label: cfg.labels[b] + '比率',
+          data: categories.map(function (c) {
+            var raw = c.raw || {};
+            var denom = cats.reduce(function (sum, key) { return sum + (raw[key] || 0); }, 0);
+            if (!denom) return 0;
+            return Math.round((raw[b] || 0) / denom * 1000) / 10;
+          }),
+          borderColor: cfg.ratioColors[b],
+          backgroundColor: cfg.ratioColors[b],
+          borderDash: cfg.ratioDash[b],
+          borderWidth: 2.5,
+          pointRadius: 2,
+          tension: 0.3,
+          yAxisID: 'yRatio',
+          fill: false,
+          order: 1
+        };
+      });
+
+      return { labels: labels, datasets: barDatasets.concat(lineDatasets) };
+    }
+
+    function updateLegendNote() {
+      var note = section.querySelector('[data-role="legend-note"]');
+      note.textContent = '出典: nflverse（nfl_data_py）のPlay-by-Playデータを集計（集計対象: NFL全32チーム合計、' + WEEKTYPE_LABELS[state.weekType] + '）。';
+    }
+
+    function updateChart() {
+      var chartCfg = buildChartData(currentCategories());
+      var yMainTitle = cfg.unitLabel + '（' + (state.viewMode === 'avg' ? '試合平均' : '総数') + '）';
+      updateLegendNote();
+      if (!chart) {
+        var ctx = document.getElementById(cfg.canvasId).getContext('2d');
+        chart = new Chart(ctx, {
+          type: 'bar',
+          data: chartCfg,
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            scales: {
+              x: { stacked: true, ticks: { color: '#a8afa2' }, grid: { color: '#2a2e28' } },
+              yMain: {
+                stacked: true, position: 'left',
+                title: { display: true, text: yMainTitle, color: '#a8afa2' },
+                ticks: { color: '#a8afa2' }, grid: { color: '#2a2e28' }
+              },
+              yRatio: {
+                position: 'right', min: 0, max: 100,
+                title: { display: true, text: cfg.ratioAxisLabel, color: '#a8afa2' },
+                ticks: { color: '#a8afa2', callback: function (v) { return v + '%'; } },
+                grid: { drawOnChartArea: false }
+              }
+            },
+            plugins: {
+              legend: {
+                labels: {
+                  color: '#eceee9',
+                  usePointStyle: true,
+                  pointStyleWidth: 34,
+                  generateLabels: function (chart) {
+                    var base = Chart.defaults.plugins.legend.labels.generateLabels(chart);
+                    base.sort(function (a, b) { return a.datasetIndex - b.datasetIndex; });
+                    base.forEach(function (item) {
+                      var ds = chart.data.datasets[item.datasetIndex];
+                      if (ds && ds.type === 'line') {
+                        item.pointStyle = 'line';
+                        item.rotation = 0;
+                        item.strokeStyle = ds.borderColor;
+                        item.fillStyle = 'transparent';
+                        item.lineWidth = 2.5;
+                        item.lineDash = ds.borderDash || [];
+                      } else if (ds) {
+                        item.pointStyle = 'rect';
+                      }
+                    });
+                    return base;
+                  }
+                }
+              },
+              tooltip: {
+                enabled: false,
+                itemSort: function (a, b) { return a.datasetIndex - b.datasetIndex; },
+                external: nfldbExternalTooltip
+              }
+            }
+          }
+        });
+      } else {
+        chart.data = chartCfg;
+        chart.options.scales.yMain.title.text = yMainTitle;
+        chart.update();
+      }
+    }
+
+    function updateSeasonSelectVisibility() {
+      var sel = section.querySelector('[data-role="season-select"]');
+      sel.hidden = state.granularity === 'season';
+    }
+
+    function updateYearRangeVisibility() {
+      var group = section.querySelector('[data-role="year-range-group"]');
+      group.hidden = state.granularity !== 'season';
+    }
+
+    var seasons = seasonsCovered.map(String);
+    state.season = seasons[seasons.length - 1];
+
+    var weekTypeSel = section.querySelector('[data-role="weektype-select"]');
+    weekTypeSel.value = state.weekType;
+    weekTypeSel.addEventListener('change', function () {
+      state.weekType = weekTypeSel.value;
+      updateChart();
+    });
+
+    var sel = section.querySelector('[data-role="season-select"]');
+    sel.innerHTML = seasons.slice().reverse().map(function (s) {
+      return '<option value="' + s + '">' + s + '年シーズン</option>';
+    }).join('');
+    sel.value = state.season;
+    sel.addEventListener('change', function () {
+      state.season = sel.value;
+      updateChart();
+    });
+
+    var yearOptionsHtml = seasons.map(function (s) {
+      return '<option value="' + s + '">' + s + '</option>';
+    }).join('');
+    var yearStartSel = section.querySelector('[data-role="year-start-select"]');
+    var yearEndSel = section.querySelector('[data-role="year-end-select"]');
+    yearStartSel.innerHTML = yearOptionsHtml;
+    yearEndSel.innerHTML = yearOptionsHtml;
+
+    function clampToAvailable(year) {
+      var n = Number(year);
+      var min = Number(seasons[0]);
+      var max = Number(seasons[seasons.length - 1]);
+      return String(Math.max(min, Math.min(max, n)));
+    }
+
+    state.yearStart = seasons.indexOf('2006') !== -1 ? '2006' : clampToAvailable('2006');
+    state.yearEnd = seasons.indexOf('2025') !== -1 ? '2025' : clampToAvailable('2025');
+    yearStartSel.value = state.yearStart;
+    yearEndSel.value = state.yearEnd;
+
+    yearStartSel.addEventListener('change', function () {
+      state.yearStart = yearStartSel.value;
+      if (Number(state.yearStart) > Number(state.yearEnd)) {
+        state.yearEnd = state.yearStart;
+        yearEndSel.value = state.yearEnd;
+      }
+      updateChart();
+    });
+    yearEndSel.addEventListener('change', function () {
+      state.yearEnd = yearEndSel.value;
+      if (Number(state.yearEnd) < Number(state.yearStart)) {
+        state.yearStart = state.yearEnd;
+        yearStartSel.value = state.yearStart;
+      }
+      updateChart();
+    });
+
+    section.querySelectorAll('[data-granularity]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        section.querySelectorAll('[data-granularity]').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        state.granularity = btn.getAttribute('data-granularity');
+        updateSeasonSelectVisibility();
+        updateYearRangeVisibility();
+        updateChart();
+      });
+    });
+
+    section.querySelectorAll('[data-viewmode]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        section.querySelectorAll('[data-viewmode]').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        state.viewMode = btn.getAttribute('data-viewmode');
+        updateChart();
+      });
+    });
+
+    updateSeasonSelectVisibility();
+    updateYearRangeVisibility();
+    updateChart();
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    fetch(DATA_URL).then(function (r) { return r.json(); }).then(function (dataset) {
+      METRICS.forEach(function (cfg) { createController(cfg, dataset); });
+    });
+  });
+})();
+</script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>

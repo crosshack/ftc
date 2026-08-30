@@ -1,5 +1,18 @@
 window.NFLDB_DATA = [
   {
+    "id": "nfl",
+    "title": "NFL",
+    "entries": [
+      {
+        "thumb": "<rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"#013369\"/><rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"1.5\" opacity=\"0.4\"/><text x=\"35\" y=\"41\" text-anchor=\"middle\" font-family=\"'Oswald', sans-serif\" font-weight=\"700\" font-size=\"19\" fill=\"#ffffff\" letter-spacing=\"1\">NFL</text><rect x=\"16\" y=\"50\" width=\"38\" height=\"5\" rx=\"2.5\" fill=\"#D50A0A\"/>",
+        "url": "nfl-db/nfl.html",
+        "title": "NFL",
+        "excerpt": "得点数・失点数・獲得ヤード数・被獲得ヤード数・オフェンス編成別/ディフェンス編成別プレー回数を、NFL全32チーム合計でシーズン別・ウィーク別・クォーター別にクロス集計。",
+        "meta": "レギュラーシーズン/プレーオフ/スーパーボウル 1999〜2025年"
+      }
+    ]
+  },
+  {
     "id": "afc-east",
     "title": "AFC East",
     "entries": [
