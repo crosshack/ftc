@@ -264,7 +264,7 @@ window.TOPICS_DATA = [
   },
   {
     slug: "zone-coverage-1",
-    title: "なぜNFLでゾーンカバレッジがここまで拡大したのか",
+    title: "なぜゾーンカバレッジがここまで拡大したのか",
     excerpt: "マンカバレッジ使用率が22.6%まで低下したNFL。元々優勢だったゾーンがさらに拡大した理由を、パーソネル・スペーシング・モーション対策の3つの観点から解説する。",
     url: "topics/zone-coverage-1.html",
     date: "2026-08-30",
