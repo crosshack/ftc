@@ -25,9 +25,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  columns: 2;
+}
+.nfldb-toc li {
+  margin-bottom: 6px;
+  break-inside: avoid;
 }
 .nfldb-toc li a {
   color: var(--text);
@@ -250,4 +252,8 @@
   margin-top: -6px;
   border-width: 6px 0 6px 6px;
   border-color: transparent transparent transparent var(--bg-card);
+}
+
+@media (max-width: 640px) {
+  .nfldb-toc ol { columns: 1; }
 }
