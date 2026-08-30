@@ -277,7 +277,7 @@
 
   <section class="nfldb-chart-section" id="chart-play-type">
     <h2><span class="index">07</span> プレータイプ別プレー回数</h2>
-    <p class="nfldb-chart-desc">オフェンスの各プレーのプレータイプ（ラン/パスなど）ごとのプレー回数（試合平均/総数）のチャート。</p>
+    <p class="nfldb-chart-desc">オフェンスの各プレーのプレータイプ（ラン/パス）ごとのプレー回数（試合平均/総数）のチャート。</p>
 
     <div class="nfldb-controls">
       <div class="nfldb-pill-group" data-role="granularity-group">
@@ -307,7 +307,7 @@
 
   <section class="nfldb-chart-section" id="chart-coverage-type">
     <h2><span class="index">08</span> カバレッジタイプ別プレー回数</h2>
-    <p class="nfldb-chart-desc">ディフェンスの各プレーで採用されているカバレッジタイプ（マンツーマン/ゾーンなど）ごとのプレー回数（試合平均/総数）のチャート。</p>
+    <p class="nfldb-chart-desc">ディフェンスの各プレーで採用されているカバレッジタイプ（マンツーマン/ゾーン）ごとのプレー回数（試合平均/総数）のチャート。</p>
 
     <div class="nfldb-controls">
       <div class="nfldb-pill-group" data-role="granularity-group">
@@ -502,25 +502,25 @@
       metricKey: 'play_type',
       sectionId: 'chart-play-type',
       canvasId: 'chart-play-type-canvas',
-      categories: ['run', 'pass', 'other'],
-      labels: { run: 'ラン', pass: 'パス', other: 'その他' },
-      barColors: { run: '#2e8f52', pass: '#b8860b', other: '#5c6570' },
-      ratioColors: { run: '#3ecf6e', pass: '#ffc633', other: '#a8afa2' },
-      ratioDash: { run: [6, 4], pass: [6, 4], other: [6, 4] },
+      categories: ['run', 'pass'],
+      labels: { run: 'ラン', pass: 'パス' },
+      barColors: { run: '#2e8f52', pass: '#b8860b' },
+      ratioColors: { run: '#3ecf6e', pass: '#ffc633' },
+      ratioDash: { run: [6, 4], pass: [6, 4] },
       unitLabel: 'プレー回数',
-      ratioAxisLabel: '合計プレー回数に対する比率'
+      ratioAxisLabel: 'ラン/パス合計プレー回数に対する比率'
     },
     {
       metricKey: 'coverage_type',
       sectionId: 'chart-coverage-type',
       canvasId: 'chart-coverage-type-canvas',
-      categories: ['man', 'zone', 'other'],
-      labels: { man: 'マンツーマン', zone: 'ゾーン', other: 'その他' },
-      barColors: { man: '#2e8f52', zone: '#b8860b', other: '#5c6570' },
-      ratioColors: { man: '#3ecf6e', zone: '#ffc633', other: '#a8afa2' },
-      ratioDash: { man: [6, 4], zone: [6, 4], other: [6, 4] },
+      categories: ['man', 'zone'],
+      labels: { man: 'マンツーマン', zone: 'ゾーン' },
+      barColors: { man: '#2e8f52', zone: '#b8860b' },
+      ratioColors: { man: '#3ecf6e', zone: '#ffc633' },
+      ratioDash: { man: [6, 4], zone: [6, 4] },
       unitLabel: 'プレー回数',
-      ratioAxisLabel: '合計プレー回数に対する比率'
+      ratioAxisLabel: 'マンツーマン/ゾーン合計プレー回数に対する比率'
     }
   ];
 
