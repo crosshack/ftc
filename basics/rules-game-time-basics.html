@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon-192.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180.png?v=2">
+<title>試合時間・進行管理の基礎 | 基礎知識 | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="コイントスでの選択に始まり、クォーターやハーフタイムという時間区分、チームが試合を止められるタイムアウト、各ハーフ終盤に自動で時計が止まるツーミニッツウォーニングを経て、決着がつかなければオーバータイムに入るという、試合全体の時間の仕組みを解説する基礎知識ページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=26">
+<!-- Google tag (gtag.js) -->
+<script>
+(function () {
+  // 本番ドメインでのみ計測する(staging.footballtactics.club・localhost では送信しない)
+  var hosts = ['footballtactics.club', 'www.footballtactics.club'];
+  if (hosts.indexOf(location.hostname) === -1) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-NHS351TN8E';
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', 'G-NHS351TN8E');
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><img src="../assets/img/logo-combined.svg" class="brand-logo" alt="FOOTBALLTACTICS.CLUB"></a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../nfl-db.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="20" x2="21" y2="20"/><rect x="5" y="14" width="3" height="6"/><rect x="11" y="9" width="3" height="11"/><rect x="17" y="4" width="3" height="16"/></svg><span>NFL.<span style="color: var(--accent);">DB</span></span></a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">試合時間・進行管理の基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="article-head">
+  <div class="container">
+    <span class="tag tag-flag">ルール</span>
+    <div class="page-head-title-row">
+      <h1>試合時間・進行管理の基礎<br><span class="subtitle">― コイントスからオーバータイムまで、試合を進行させる時間の仕組み</span></h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="35" cy="30" r="17" fill="#eceee9" stroke="#a8afa2" stroke-width="1.4"/>
+        <line x1="35" y1="30" x2="35" y2="18" stroke="#3d4238" stroke-width="1.6" stroke-linecap="round"/>
+        <line x1="35" y1="30" x2="44" y2="24" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="35" cy="30" r="1.6" fill="#3d4238"/>
+      </svg>
+    </div>
+    <div class="meta">読了目安 6分</div>
+    <div class="topic-tags">
+      <a href="../glossary/quarter.html">#クォーター</a>
+      <a href="../glossary/half.html">#ハーフ</a>
+      <a href="../glossary/halftime.html">#ハーフタイム</a>
+      <a href="../glossary/timeout.html">#タイムアウト</a>
+      <a href="../glossary/two-minute-warning.html">#ツーミニッツウォーニング</a>
+      <a href="../glossary/overtime.html">#オーバータイム</a>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>試合は、コイントスでの選択から始まり、「クォーター」という時間区分の中で進行する。前半・後半の間の休憩である「ハーフタイム」、チームが試合を一時的に止められる「タイムアウト」、そして各ハーフ終盤に自動的に時計が止まる「ツーミニッツウォーニング」を経て、既定の時間内に決着がつかなければ「オーバータイム」に入る。ここでは、試合がどのような時間の単位・手続きで進行していくのかを整理する。</p>
+
+  <h2>試合の始まり ― コイントス</h2>
+  <p>試合開始前、両チームのキャプテンがフィールド中央に集まり、審判が投げるコインの表裏を予想する「コイントス」が行われる。勝ったチームは、前半に自分たちが先にボールを持ってプレーを始めるか（レシーブ）、それとも相手にボールを持たせて自分たちは陣地（攻める方向）を選ぶかを選択できる。あるいは、その選択自体を後半に持ち越す（デファー）ことも可能である。負けたチームは、勝ったチームが選ばなかった残りの選択肢を得る。</p>
+
+  <h2>試合の時間区分 ― クォーターとハーフタイム</h2>
+  <p>NFLの試合は、15分ずつ4つの「クォーター」に分けて進行する。陣地（攻める方向）は各クォーターの終わりごとに入れ替わり、両チームが風向きなどの条件を均等に経験できるようになっている。前半（第1・第2クォーター）を終えると、両チームが休憩を取る「ハーフタイム」を挟んで後半（第3・第4クォーター）に入り、このタイミングでは陣地の入れ替えに加えて、前半にキックオフを受けなかった側のチームが後半のキックオフを受けて試合を再開する。</p>
+
+  <h2>タイムアウト ― チームが試合を一時的に止められる権利</h2>
+  <p>各チームには、前半・後半それぞれ3回ずつ、任意のタイミングで試合を一時的に止められる「タイムアウト」が与えられている。本来の役割は、プレーとプレーの間にコーチが選手へ指示を出したり、混乱した状況を整理したりする、戦術的な確認の時間を作ることにある。同時に、勢いに乗る相手チームの流れを一度断ち切る目的でも使われる。試合終盤、時間を残り少なくして負けているチームは、時計を止めて自分たちの攻撃時間を確保するためにタイムアウトを使うこともある。</p>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    試合終盤、両チームの残りタイムアウト数に注目すると、その後の攻防がどれだけ切迫しているかが見えてくる。残りが少ないほど時計を止める手段が限られ、緊張感の高い展開になりやすい。
+  </div>
+
+  <h2>ツーミニッツウォーニング ― 各ハーフ残り2分で自動的に時計が止まるタイミング</h2>
+  <p>前半・後半それぞれの残り時間が2分になった瞬間、時計は自動的に一度止まる。これを「ツーミニッツウォーニング」と呼ぶ。タイムアウトとは異なりチームの意思とは無関係に発生し、両チームのタイムアウトを消費せずに試合を一時停止できる。この中断によって、両チームは残り2分間の作戦を整理する時間を得る。とくに攻撃側は、タイムアウトを使い切っていても、この一度きりの停止を利用して逆転を狙う攻撃の組み立てを見直せる。</p>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    ツーミニッツウォーニングは、1942年、NFL草創期にまで遡る仕組みである。当時は公式な計時を審判団が行い、スタジアムの時計は選手にも観客にも公開されていなかったため、「残り2分」を知らせる合図として導入された。1960年代にスタジアムの時計表示が一般化した後も、CM枠の確保や演出上の理由から制度としてそのまま存続している。大学フットボール（NCAA）は2024年シーズンから同様の仕組みを導入したが、あえて「ウォーニング」ではなく「2分間のタイムアウト」という名称を採用した（現代はスコアボードが当たり前であり、NFLとの違いを示す意図もあるとされる）。カナダンフットボール（CFL）には「3分間のウォーニング」という類似の制度がある。
+  </div>
+
+  <h2>決着がつかない場合 ― オーバータイム</h2>
+  <p>既定の4クォーターを終えて同点の場合、「オーバータイム」と呼ばれる延長戦に入る。開始前に改めてコイントスが行われ、勝ったチームは先にボールを持つ側になるか、その選択を相手に譲るかを選べる。両チームには、必ず一度はポゼッション（攻撃権）を得る機会が与えられ、最初のポゼッションでタッチダウンを決めても、その時点でただちに勝敗が決まるわけではない。両チームが一度ずつポゼッションを得たあとは、次にどちらかが得点した時点で試合が終了する。レギュラーシーズンのオーバータイムは10分間の1ピリオド制で、この時間内に決着がつかなければ試合は引き分けとして記録される。プレーオフでは、決着がつくまで15分間のピリオドが繰り返され、引き分けという結果はない。</p>
+
+  <h2>まとめ</h2>
+  <p>試合は、コイントスでの選択に始まり、クォーターという単位とハーフタイムを挟んで進行する。その中でチームはタイムアウトを使って試合の流れを自ら止めることができ、各ハーフ終盤にはツーミニッツウォーニングが自動的に時計を止める。既定の時間で決着がつかなければ、オーバータイムに突入する。</p>
+
+</article>
+
+<div class="page-nav container">
+  <a class="page-nav-card prev" href="rules-turnover-basics.html">
+    <span class="nav-label">前のページ</span>
+    <span class="nav-title"><svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M9,0 L4,7 L9,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>ターンオーバーの基礎</span>
+    <span class="nav-desc">インターセプト・ファンブルロストによる、力ずくの攻守交代を整理。</span>
+  </a>
+  <a class="page-nav-card next" href="rules-penalties-basics.html">
+    <span class="nav-label">次のページ</span>
+    <span class="nav-title">判定・反則・ペナルティの基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span class="nav-desc">プレーの判定の仕組みと、反則・ペナルティの基本を整理。</span>
+  </a>
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">試合時間・進行管理の基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; <a href="https://www.crosshack.jp/" target="_blank" rel="noopener">CROSSHACK Inc.</a> All rights reserved.</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>
