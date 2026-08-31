@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -117,6 +117,24 @@
   <url>
     <loc>https://footballtactics.club/basics/offense-run-basics</loc>
     <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/basics/rules-downs-basics</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/basics/rules-field-basics</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/basics/rules-units-basics</loc>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -260,7 +278,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/area</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -308,7 +326,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/ball-carrier</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -356,7 +374,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/boundary-side</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -554,7 +572,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/defense</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -656,7 +674,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/downfield</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -698,7 +716,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/end-zone</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -752,13 +770,13 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/field-side</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/field</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -865,8 +883,14 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://footballtactics.club/glossary/goal-line</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://footballtactics.club/glossary/goalpost</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -920,7 +944,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/hash-marks</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1154,7 +1178,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/line-of-scrimmage</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1173,6 +1197,12 @@
   <url>
     <loc>https://footballtactics.club/glossary/long-snapper</loc>
     <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/glossary/long-yardage</loc>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1268,7 +1298,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/neutral-zone</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1328,7 +1358,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/offense</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1514,7 +1544,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/pocket</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1591,6 +1621,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://footballtactics.club/glossary/pylon</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://footballtactics.club/glossary/qb-sneak</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -1634,7 +1670,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/red-zone</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1820,7 +1856,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/sideline</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1892,7 +1928,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/special-teams</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
