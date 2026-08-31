@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon-192.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180.png?v=2">
+<title>判定・反則・ペナルティの基礎 | 基礎知識 | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="プレーの結果を判定するという仕組み全体の位置づけと、判定に異議を唱える「チャレンジ」、反則（ペナルティ）の基本的な仕組み、オフサイド・ホールディング・パーソナルファウルなど代表的な反則を解説する基礎知識ページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=26">
+<!-- Google tag (gtag.js) -->
+<script>
+(function () {
+  // 本番ドメインでのみ計測する(staging.footballtactics.club・localhost では送信しない)
+  var hosts = ['footballtactics.club', 'www.footballtactics.club'];
+  if (hosts.indexOf(location.hostname) === -1) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-NHS351TN8E';
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', 'G-NHS351TN8E');
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><img src="../assets/img/logo-combined.svg" class="brand-logo" alt="FOOTBALLTACTICS.CLUB"></a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../nfl-db.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="20" x2="21" y2="20"/><rect x="5" y="14" width="3" height="6"/><rect x="11" y="9" width="3" height="11"/><rect x="17" y="4" width="3" height="16"/></svg><span>NFL.<span style="color: var(--accent);">DB</span></span></a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">判定・反則・ペナルティの基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="article-head">
+  <div class="container">
+    <span class="tag tag-flag">ルール</span>
+    <div class="page-head-title-row">
+      <h1>判定・反則・ペナルティの基礎<br><span class="subtitle">― プレーの判定から、代表的な反則まで</span></h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <line x1="35" y1="50" x2="35" y2="14" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/>
+        <path d="M35,14 L55,14 L48,22 L55,30 L35,30 Z" fill="#ffc633"/>
+      </svg>
+    </div>
+    <div class="meta">読了目安 8分</div>
+    <div class="topic-tags">
+      <a href="../glossary/challenge.html">#チャレンジ</a>
+      <a href="../glossary/offside.html">#オフサイド</a>
+      <a href="../glossary/false-start.html">#フォルススタート</a>
+      <a href="../glossary/holding.html">#ホールディング</a>
+      <a href="../glossary/pass-interference.html">#パスインターフェアレンス</a>
+      <a href="../glossary/personal-foul.html">#パーソナルファウル</a>
+      <a href="../glossary/roughing-the-passer.html">#ラフィング・ザ・パサー</a>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>アメリカンフットボールでは、1つのプレーが終わるたびに、その結果が正しいかどうかを審判団がルールに基づいて判断する。反則（ペナルティ）が起きたかどうかを見極めることも、この判定の一部である。ここでは、判定という仕組み全体の位置づけと、代表的な反則の種類を整理する。</p>
+
+  <h2>判定とは ― プレーのあらゆる結果をルールに基づいて判断する仕組み</h2>
+  <p>判定の対象は反則だけにとどまらない。あらゆるプレーの結果は、審判団の判定によって確定する。</p>
+  <ul>
+    <li><strong>キャッチの成否</strong>：パスが正しくキャッチされたかどうか。</li>
+    <li><strong>ファンブルの発生</strong>：ボールが正しく保持されていたかどうか。</li>
+    <li><strong>ダウンの更新</strong>：規定の距離を前進できたかどうか。</li>
+    <li><strong>タッチダウンの成立</strong>：ボールがエンドゾーンに達したかどうか。</li>
+    <li><strong>反則の有無</strong>：ルールに反する行為がなかったかどうか。</li>
+  </ul>
+  <p>反則の有無を見極めることは、この幅広い判定業務の一部という位置づけである。</p>
+
+  <h2>チャレンジ ― 判定に異議を唱える仕組み</h2>
+  <p>審判の判定に納得がいかない場合、各チームのヘッドコーチは赤い旗（チャレンジフラッグ）を投げることで、ビデオ映像による再検証を要求できる。この仕組みを「チャレンジ」と呼ぶ。</p>
+  <ul>
+    <li><strong>回数の上限</strong>：1試合につき2回まで。いずれかが成功すれば3回目の権利を得られる。</li>
+    <li><strong>失敗した場合</strong>：要求が退けられると、タイムアウトを1つ消費する。</li>
+    <li><strong>自動検証</strong>：得点に関わるプレーなど一部の重要な判定は、コーチの要求を待たずにリプレー担当の審判が自動的に検証する。</li>
+  </ul>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    NFLにビデオ判定が導入されたのは1986年のことだが、試合のテンポを損なうという批判を受けて1992年に一度廃止された。1999年、コーチが判定に異議を唱える現在の「チャレンジ」方式として復活し、以降定着している。
+  </div>
+
+  <h2>反則とペナルティの基本的な仕組み ― フラッグとその内容</h2>
+  <p>反則が起きると、審判は黄色い旗（フラッグ）を投げてプレーの続行を示す。プレー終了後、反則の内容に応じて決められたヤード数が反則を犯したチームから科され、反則の種類によっては相手に自動的にファーストダウンが与えられることもある。反則を受けた側のチームは、ペナルティを受け入れるか、そのプレーの結果をそのまま採用するかを選べる場合もある。</p>
+  <p>反則は、起きるタイミングや性質によっていくつかに分類できる。</p>
+  <ul>
+    <li><strong>プレスナップの反則</strong>：プレー開始（スナップ）前に起きるもの。</li>
+    <li><strong>プレー中の反則</strong>：プレーが進行している最中に起きるもの。</li>
+    <li><strong>安全に関わる反則</strong>：選手の安全や試合の品位を損なう、とくに重く扱われるもの。</li>
+  </ul>
+  <p>代表的な反則には、以下のようなものがある。</p>
+  <table class="compare-table">
+    <tr><th>分類</th><th>反則名</th><th>概要</th><th>罰退ヤード</th></tr>
+    <tr><td>プレスナップ</td><td>オフサイド</td><td>スナップ前にディフェンスの選手がニュートラルゾーンに侵入する反則。</td><td>5ヤード</td></tr>
+    <tr><td>プレスナップ</td><td>フォルススタート</td><td>スナップ前にオフェンスの選手が動いてしまう反則。</td><td>5ヤード</td></tr>
+    <tr><td>プレー中</td><td>ホールディング</td><td>相手選手のジャージや体を不正に掴んで動きを止める反則。</td><td>10ヤード（オフェンス）／5ヤード+自動更新（ディフェンス）</td></tr>
+    <tr><td>プレー中</td><td>パスインターフェアレンス</td><td>パスを受けようとする選手の妨害となる不正な接触。</td><td>反則が起きた地点まで+自動更新</td></tr>
+    <tr><td>安全に関わるもの</td><td>パーソナルファウル</td><td>選手の安全を脅かす危険なプレーに科される重い反則。</td><td>15ヤード+自動更新</td></tr>
+    <tr><td>安全に関わるもの</td><td>ラフィング・ザ・パサー</td><td>パスを投げ終えたQBに対して不必要な強さで接触する反則。</td><td>15ヤード+自動更新</td></tr>
+  </table>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    「ラフィング・ザ・パサー」は、選手のケガのリスクを減らす目的で、近年とくに厳格に適用されるようになった反則の一つである。頭や首への接触、全体重を浴びせるような当たり方など、以前は許容されていた接触も次々とペナルティの対象に加えられており、QBを守るためのルール強化が続いている。
+  </div>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    フラッグが投げられると、審判はマイクを通じて反則の内容と対象の選手を場内に説明する。この実況アナウンスを聞くと、何が起きたのかを把握しやすい。
+  </div>
+
+  <h2>まとめ</h2>
+  <p>プレーのあらゆる結果は、審判団の判定によって成立する。判定に納得がいかない場合はチャレンジという形で異議を唱えることができ、反則が起きればフラッグとペナルティによって試合が調整される。プレスナップ・プレー中・安全に関わるものなど、反則にはさまざまな種類があるが、いずれもフェアな試合進行と選手の安全を守るために存在している。</p>
+
+</article>
+
+<div class="page-nav container">
+  <a class="page-nav-card prev" href="rules-game-time-basics.html">
+    <span class="nav-label">前のページ</span>
+    <span class="nav-title"><svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M9,0 L4,7 L9,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>試合時間・進行管理の基礎</span>
+    <span class="nav-desc">コイントスから試合終了まで、試合を進行させる時間のルールを整理。</span>
+  </a>
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">判定・反則・ペナルティの基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; <a href="https://www.crosshack.jp/" target="_blank" rel="noopener">CROSSHACK Inc.</a> All rights reserved.</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>
