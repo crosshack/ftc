@@ -21,10 +21,7 @@ window.BASICS_DATA = [
         { slug: 'touchdown', name: 'タッチダウン' },
         { slug: 'field-goal', name: 'フィールドゴール' }
       ],
-      thumb: '<line x1="5" y1="35" x2="65" y2="35" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
-        <circle cx="18" cy="35" r="5" fill="#eceee9"/>
-        <circle cx="35" cy="35" r="5" fill="#3d4238" stroke="#a8afa2" stroke-width="1"/>
-        <circle cx="52" cy="35" r="5" fill="none" stroke="#ffc633" stroke-width="1.4"/>'
+      thumb: '<line x1="5" y1="35" x2="65" y2="35" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="18" cy="35" r="5" fill="#eceee9"/> <circle cx="35" cy="35" r="5" fill="#3d4238" stroke="#a8afa2" stroke-width="1"/> <circle cx="52" cy="35" r="5" fill="none" stroke="#ffc633" stroke-width="1.4"/>'
     },
     {
       slug: 'rules-field-basics',
@@ -49,10 +46,7 @@ window.BASICS_DATA = [
         { slug: 'red-zone', name: 'レッドゾーン' },
         { slug: 'sideline', name: 'サイドライン' }
       ],
-      thumb: '<line x1="0" y1="35" x2="70" y2="35" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
-        <line x1="10" y1="8" x2="10" y2="62" stroke="#a8afa2" stroke-width="1"/>
-        <circle cx="38" cy="45" r="3.5" fill="#eceee9"/>
-        <circle cx="38" cy="25" r="3.5" fill="none" stroke="#ffc633" stroke-width="1.4"/>'
+      thumb: '<line x1="0" y1="35" x2="70" y2="35" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <line x1="10" y1="8" x2="10" y2="62" stroke="#a8afa2" stroke-width="1"/> <circle cx="38" cy="45" r="3.5" fill="#eceee9"/> <circle cx="38" cy="25" r="3.5" fill="none" stroke="#ffc633" stroke-width="1.4"/>'
     },
     {
       slug: 'rules-scoring-basics',
@@ -67,9 +61,7 @@ window.BASICS_DATA = [
         { slug: 'extra-point-point-after-touchdown', name: 'エクストラポイント' },
         { slug: 'two-point-conversion', name: 'ツーポイントコンバージョン' }
       ],
-      thumb: '<line x1="20" y1="8" x2="20" y2="62" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
-        <circle cx="34" cy="35" r="5" fill="#eceee9"/>
-        <path d="M52,50 L52,32 M43,32 L61,32 M43,32 L43,6 M61,32 L61,6" stroke="#a8afa2" stroke-width="2" fill="none" stroke-linecap="round"/>'
+      thumb: '<line x1="20" y1="8" x2="20" y2="62" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="34" cy="35" r="5" fill="#eceee9"/> <path d="M52,50 L52,32 M43,32 L61,32 M43,32 L43,6 M61,32 L61,6" stroke="#a8afa2" stroke-width="2" fill="none" stroke-linecap="round"/>'
     },
     {
       slug: 'rules-possession-basics',
@@ -91,13 +83,7 @@ window.BASICS_DATA = [
         { slug: 'gamble', name: 'ギャンブル' },
         { slug: 'turnover-on-downs', name: 'ターンオーバーオンダウンズ' }
       ],
-      thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
-        <circle cx="16" cy="46" r="5" fill="#eceee9"/>
-        <path d="M24,40 Q35,20 46,40" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#possThumbArrow)"/>
-        <circle cx="54" cy="46" r="5" fill="none" stroke="#a8afa2" stroke-width="1.4"/>
-        <defs>
-          <marker id="possThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker>
-        </defs>'
+      thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="16" cy="46" r="5" fill="#eceee9"/> <path d="M24,40 Q35,20 46,40" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#possThumbArrow)"/> <circle cx="54" cy="46" r="5" fill="none" stroke="#a8afa2" stroke-width="1.4"/> <defs> <marker id="possThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker> </defs>'
     },
     {
       slug: 'rules-play-deadball-basics',
@@ -121,13 +107,7 @@ window.BASICS_DATA = [
         { slug: 'fumble-lost', name: 'ファンブルロスト' },
         { slug: 'tackle-for-loss', name: 'タックル・フォー・ロス' }
       ],
-      thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
-        <circle cx="16" cy="44" r="5" fill="#eceee9"/>
-        <path d="M24,42 L46,42" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#playThumbArrow)"/>
-        <line x1="54" y1="26" x2="54" y2="46" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/>
-        <defs>
-          <marker id="playThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker>
-        </defs>'
+      thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="16" cy="44" r="5" fill="#eceee9"/> <path d="M24,42 L46,42" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#playThumbArrow)"/> <line x1="54" y1="26" x2="54" y2="46" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/> <defs> <marker id="playThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker> </defs>'
     },
     {
       slug: 'rules-turnover-basics',
@@ -144,14 +124,7 @@ window.BASICS_DATA = [
         { slug: 'fumble-return-touchdown', name: 'ファンブル・リターン・タッチダウン' },
         { slug: 'turnover-margin', name: 'ターンオーバーマージン' }
       ],
-      thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
-        <circle cx="16" cy="28" r="5" fill="#eceee9"/>
-        <path d="M24,30 L46,42" stroke="#a8afa2" stroke-width="1.6" stroke-linecap="round" fill="none" stroke-dasharray="3,3"/>
-        <circle cx="54" cy="44" r="5" fill="none" stroke="#a8afa2" stroke-width="1.4"/>
-        <path d="M50,40 L20,26" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#toThumbArrow)"/>
-        <defs>
-          <marker id="toThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker>
-        </defs>'
+      thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="16" cy="28" r="5" fill="#eceee9"/> <path d="M24,30 L46,42" stroke="#a8afa2" stroke-width="1.6" stroke-linecap="round" fill="none" stroke-dasharray="3,3"/> <circle cx="54" cy="44" r="5" fill="none" stroke="#a8afa2" stroke-width="1.4"/> <path d="M50,40 L20,26" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#toThumbArrow)"/> <defs> <marker id="toThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker> </defs>'
     },
     {
       slug: 'rules-game-time-basics',
@@ -167,11 +140,7 @@ window.BASICS_DATA = [
         { slug: 'two-minute-warning', name: 'ツーミニッツウォーニング' },
         { slug: 'overtime', name: 'オーバータイム' }
       ],
-      thumb: '<line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
-        <circle cx="35" cy="30" r="17" fill="#eceee9" stroke="#a8afa2" stroke-width="1.4"/>
-        <line x1="35" y1="30" x2="35" y2="18" stroke="#3d4238" stroke-width="1.6" stroke-linecap="round"/>
-        <line x1="35" y1="30" x2="44" y2="24" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round"/>
-        <circle cx="35" cy="30" r="1.6" fill="#3d4238"/>'
+      thumb: '<line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="35" cy="30" r="17" fill="#eceee9" stroke="#a8afa2" stroke-width="1.4"/> <line x1="35" y1="30" x2="35" y2="18" stroke="#3d4238" stroke-width="1.6" stroke-linecap="round"/> <line x1="35" y1="30" x2="44" y2="24" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round"/> <circle cx="35" cy="30" r="1.6" fill="#3d4238"/>'
     },
     {
       slug: 'rules-penalties-basics',
@@ -190,9 +159,7 @@ window.BASICS_DATA = [
         { slug: 'personal-foul', name: 'パーソナルファウル' },
         { slug: 'roughing-the-passer', name: 'ラフィング・ザ・パサー' }
       ],
-      thumb: '<line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
-        <line x1="35" y1="50" x2="35" y2="14" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/>
-        <path d="M35,14 L55,14 L48,22 L55,30 L35,30 Z" fill="#ffc633"/>'
+      thumb: '<line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <line x1="35" y1="50" x2="35" y2="14" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/> <path d="M35,14 L55,14 L48,22 L55,30 L35,30 Z" fill="#ffc633"/>'
     }
     ]
   },
