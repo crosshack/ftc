@@ -86,6 +86,42 @@
 
   <p>アメリカンフットボールの得点方法には、タッチダウン・フィールドゴール・セーフティの3種類がある。それぞれ得点も、成立する条件も異なり、なかでもタッチダウンを決めたチームには、続けて追加点を狙う機会が与えられる。</p>
 
+  <figure class="diagram">
+    <svg viewBox="0 0 800 210" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="scoreArrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#eceee9"/></marker>
+      </defs>
+      <rect x="0" y="0" width="800" height="210" fill="#141713" rx="4"/>
+      <line x1="40" y1="30" x2="760" y2="30" stroke="#3d4238" stroke-width="1.5"/>
+      <line x1="40" y1="170" x2="760" y2="170" stroke="#3d4238" stroke-width="1.5"/>
+      <line x1="40" y1="30" x2="40" y2="170" stroke="#3d4238" stroke-width="1.5"/>
+      <line x1="760" y1="30" x2="760" y2="170" stroke="#3d4238" stroke-width="1.5"/>
+      <line x1="100" y1="30" x2="100" y2="170" stroke="#3d4238" stroke-width="1.5"/>
+      <line x1="700" y1="30" x2="700" y2="170" stroke="#3d4238" stroke-width="1.5"/>
+      <rect x="40" y="30" width="60" height="140" fill="#ffc633" opacity="0.25"/>
+      <rect x="700" y="30" width="60" height="140" fill="#3ecf6e" opacity="0.3"/>
+      <line x1="775" y1="100" x2="775" y2="140" stroke="#eceee9" stroke-width="2"/>
+      <line x1="758" y1="100" x2="792" y2="100" stroke="#eceee9" stroke-width="2"/>
+      <line x1="758" y1="100" x2="758" y2="55" stroke="#eceee9" stroke-width="2"/>
+      <line x1="792" y1="100" x2="792" y2="55" stroke="#eceee9" stroke-width="2"/>
+      <circle cx="670" cy="100" r="5" fill="#eceee9"/>
+      <path d="M670,100 L715,100" stroke="#eceee9" stroke-width="2" marker-end="url(#scoreArrow)"/>
+      <circle cx="65" cy="90" r="5" fill="#a8afa2"/>
+      <circle cx="75" cy="100" r="5" fill="#a8afa2"/>
+      <line x1="60" y1="85" x2="80" y2="105" stroke="#ffc633" stroke-width="2"/>
+      <line x1="80" y1="85" x2="60" y2="105" stroke="#ffc633" stroke-width="2"/>
+      <text x="70" y="188" fill="#ffc633" font-size="11" text-anchor="middle" font-family="Oswald">セーフティ（2点）</text>
+      <line x1="70" y1="183" x2="70" y2="172" stroke="#ffc633" stroke-width="1"/>
+      <text x="730" y="188" fill="#3ecf6e" font-size="11" text-anchor="middle" font-family="Oswald">タッチダウン（6点）</text>
+      <text x="730" y="200" fill="#a8afa2" font-size="9" text-anchor="middle" font-family="Oswald">（2点コンバージョンも同じ場所）</text>
+      <line x1="730" y1="183" x2="730" y2="172" stroke="#3ecf6e" stroke-width="1"/>
+      <text x="775" y="15" fill="#eceee9" font-size="10" text-anchor="middle" font-family="Oswald">フィールドゴール（3点）</text>
+      <text x="775" y="27" fill="#eceee9" font-size="10" text-anchor="middle" font-family="Oswald">エクストラポイント（1点）</text>
+      <line x1="775" y1="30" x2="775" y2="55" stroke="#eceee9" stroke-width="1"/>
+    </svg>
+    <figcaption>タッチダウンは相手エンドゾーンに入ると成立し6点（ツーポイントコンバージョンも同じ場所で2点）。フィールドゴールとエクストラポイントはゴールポストを通すキックで成立し、それぞれ3点・1点。セーフティは、自陣エンドゾーン内でオフェンスがタックルされるなどした場合にディフェンス側に2点が入る。</figcaption>
+  </figure>
+
   <h2>タッチダウン ― 6点、最も基本的な得点方法</h2>
   <p>最も基本的な得点方法が「タッチダウン」で、ボールを持って相手エンドゾーンに入る、またはエンドゾーン内でパスをキャッチすることで成立し、6点が入る。</p>
 
@@ -96,6 +132,47 @@
 
   <h3>ツーポイントコンバージョン ― ランかパスによる2点</h3>
   <p>エクストラポイントの代わりに、ランかパスで再びエンドゾーンに入ることに挑戦する「ツーポイントコンバージョン」を選ぶこともできる。成功すれば2点が加わるが、エクストラポイントより難易度が高いため、選ばれる場面は限られる。</p>
+
+  <div class="play-diagrams">
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 90" width="260" height="90" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="xpArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker>
+        </defs>
+        <rect x="0" y="0" width="260" height="90" fill="#141713" rx="4"/>
+        <line x1="10" y1="66" x2="250" y2="66" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <rect x="215" y="20" width="30" height="50" fill="#3ecf6e" opacity="0.25"/>
+        <line x1="215" y1="20" x2="215" y2="70" stroke="#3d4238" stroke-width="1.5"/>
+        <line x1="254" y1="40" x2="254" y2="55" stroke="#eceee9" stroke-width="1.5"/>
+        <line x1="250" y1="40" x2="258" y2="40" stroke="#eceee9" stroke-width="1.5"/>
+        <line x1="250" y1="40" x2="250" y2="25" stroke="#eceee9" stroke-width="1.5"/>
+        <line x1="258" y1="40" x2="258" y2="25" stroke="#eceee9" stroke-width="1.5"/>
+        <circle cx="165" cy="45" r="4" fill="#eceee9"/>
+        <path d="M165,45 Q205,10 246,38" stroke="#ffc633" stroke-width="2" fill="none" marker-end="url(#xpArrow)"/>
+        <text x="165" y="80" fill="#a8afa2" font-size="9" text-anchor="middle" font-family="Oswald">15ヤード</text>
+      </svg>
+      <figcaption>エクストラポイント ― 相手陣15ヤードラインからのキック（約33ヤード）</figcaption>
+    </figure>
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 90" width="260" height="90" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="fgArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker>
+        </defs>
+        <rect x="0" y="0" width="260" height="90" fill="#141713" rx="4"/>
+        <line x1="10" y1="66" x2="250" y2="66" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <rect x="215" y="20" width="30" height="50" fill="#3ecf6e" opacity="0.25"/>
+        <line x1="215" y1="20" x2="215" y2="70" stroke="#3d4238" stroke-width="1.5"/>
+        <line x1="254" y1="40" x2="254" y2="55" stroke="#eceee9" stroke-width="1.5"/>
+        <line x1="250" y1="40" x2="258" y2="40" stroke="#eceee9" stroke-width="1.5"/>
+        <line x1="250" y1="40" x2="250" y2="25" stroke="#eceee9" stroke-width="1.5"/>
+        <line x1="258" y1="40" x2="258" y2="25" stroke="#eceee9" stroke-width="1.5"/>
+        <circle cx="80" cy="45" r="4" fill="#eceee9"/>
+        <path d="M80,45 Q170,0 246,38" stroke="#ffc633" stroke-width="2" fill="none" marker-end="url(#fgArrow)"/>
+        <text x="80" y="80" fill="#a8afa2" font-size="8.5" text-anchor="middle" font-family="Oswald">LOS（位置は状況次第）</text>
+      </svg>
+      <figcaption>フィールドゴール ― LOSの位置によってキック距離が変わる</figcaption>
+    </figure>
+  </div>
 
   <div class="callout flag">
     <strong>背景・トレンド：</strong>
