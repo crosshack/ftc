@@ -109,34 +109,143 @@
   <p>フィールドの左右を区切る線がサイドラインで、ボールを持った選手がここを出るとプレーは終了する。フィールド中央寄りには、サイドラインと平行に2本のハッシュマークが引かれており、ハッシュマークの外側でボールデッドになった場合、次のプレーは近い方のハッシュマークの位置からスナップされる。このハッシュマークを基準に、サイドラインに近い狭い方を「バウンダリサイド」、逆に広い方を「フィールドサイド」と呼ぶ。</p>
 
   <figure class="diagram">
-    <svg viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
-      <rect x="0" y="0" width="800" height="220" fill="#141713" rx="4"/>
-      <rect x="40" y="30" width="60" height="160" fill="#234d33" opacity="0.5"/>
-      <rect x="700" y="30" width="60" height="160" fill="#234d33" opacity="0.5"/>
-      <line x1="40" y1="30" x2="760" y2="30" stroke="#eceee9" stroke-width="2"/>
-      <line x1="40" y1="190" x2="760" y2="190" stroke="#eceee9" stroke-width="2"/>
-      <line x1="40" y1="30" x2="40" y2="190" stroke="#eceee9" stroke-width="2"/>
-      <line x1="760" y1="30" x2="760" y2="190" stroke="#eceee9" stroke-width="2"/>
-      <line x1="100" y1="30" x2="100" y2="190" stroke="#3ecf6e" stroke-width="2.5"/>
-      <line x1="700" y1="30" x2="700" y2="190" stroke="#3ecf6e" stroke-width="2.5"/>
-      <line x1="100" y1="80" x2="700" y2="80" stroke="#3d4238" stroke-width="1.5" stroke-dasharray="3,11"/>
-      <line x1="100" y1="140" x2="700" y2="140" stroke="#3d4238" stroke-width="1.5" stroke-dasharray="3,11"/>
-      <circle cx="100" cy="30" r="4" fill="#ffc633"/>
-      <circle cx="100" cy="190" r="4" fill="#ffc633"/>
-      <circle cx="700" cy="30" r="4" fill="#ffc633"/>
-      <circle cx="700" cy="190" r="4" fill="#ffc633"/>
-      <text x="70" y="18" fill="#a8afa2" font-size="11" text-anchor="middle" font-family="Oswald">エンドゾーン</text>
-      <line x1="70" y1="21" x2="70" y2="30" stroke="#a8afa2" stroke-width="1"/>
-      <text x="150" y="10" fill="#ffc633" font-size="11" text-anchor="middle" font-family="Oswald">パイロン</text>
-      <line x1="150" y1="13" x2="103" y2="27" stroke="#ffc633" stroke-width="1"/>
-      <text x="130" y="212" fill="#3ecf6e" font-size="11" text-anchor="middle" font-family="Oswald">ゴールライン</text>
-      <line x1="130" y1="207" x2="105" y2="192" stroke="#3ecf6e" stroke-width="1"/>
-      <text x="430" y="212" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">サイドライン</text>
-      <line x1="430" y1="207" x2="430" y2="192" stroke="#eceee9" stroke-width="1"/>
-      <text x="630" y="65" fill="#a8afa2" font-size="11" text-anchor="middle" font-family="Oswald">ハッシュマーク</text>
-      <line x1="630" y1="68" x2="600" y2="78" stroke="#a8afa2" stroke-width="1"/>
+    <svg viewBox="0 0 1000 480" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="1000" height="480" fill="#141713" rx="4"/>
+      <rect x="50.0" y="40" width="37.5" height="400" fill="#1f3d29"/>
+      <rect x="87.5" y="40" width="37.5" height="400" fill="#193121"/>
+      <rect x="125.0" y="40" width="37.5" height="400" fill="#1f3d29"/>
+      <rect x="162.5" y="40" width="37.5" height="400" fill="#193121"/>
+      <rect x="200.0" y="40" width="37.5" height="400" fill="#1f3d29"/>
+      <rect x="237.5" y="40" width="37.5" height="400" fill="#193121"/>
+      <rect x="275.0" y="40" width="37.5" height="400" fill="#1f3d29"/>
+      <rect x="312.5" y="40" width="37.5" height="400" fill="#193121"/>
+      <rect x="350.0" y="40" width="37.5" height="400" fill="#1f3d29"/>
+      <rect x="387.5" y="40" width="37.5" height="400" fill="#193121"/>
+      <rect x="425.0" y="40" width="37.5" height="400" fill="#1f3d29"/>
+      <rect x="462.5" y="40" width="37.5" height="400" fill="#193121"/>
+      <rect x="500.0" y="40" width="37.5" height="400" fill="#1f3d29"/>
+      <rect x="537.5" y="40" width="37.5" height="400" fill="#193121"/>
+      <rect x="575.0" y="40" width="37.5" height="400" fill="#1f3d29"/>
+      <rect x="612.5" y="40" width="37.5" height="400" fill="#193121"/>
+      <rect x="650.0" y="40" width="37.5" height="400" fill="#1f3d29"/>
+      <rect x="687.5" y="40" width="37.5" height="400" fill="#193121"/>
+      <rect x="725.0" y="40" width="37.5" height="400" fill="#1f3d29"/>
+      <rect x="762.5" y="40" width="37.5" height="400" fill="#193121"/>
+      <rect x="800.0" y="40" width="37.5" height="400" fill="#1f3d29"/>
+      <rect x="837.5" y="40" width="37.5" height="400" fill="#193121"/>
+      <rect x="875.0" y="40" width="37.5" height="400" fill="#1f3d29"/>
+      <rect x="912.5" y="40" width="37.5" height="400" fill="#193121"/>
+      <rect x="50" y="40" width="75" height="400" fill="#234d33" opacity="0.55"/>
+      <rect x="875" y="40" width="75" height="400" fill="#234d33" opacity="0.55"/>
+      <line x1="162.5" y1="40" x2="162.5" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="200.0" y1="40" x2="200.0" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="237.5" y1="40" x2="237.5" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="275.0" y1="40" x2="275.0" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="312.5" y1="40" x2="312.5" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="350.0" y1="40" x2="350.0" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="387.5" y1="40" x2="387.5" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="425.0" y1="40" x2="425.0" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="462.5" y1="40" x2="462.5" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="500.0" y1="40" x2="500.0" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="537.5" y1="40" x2="537.5" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="575.0" y1="40" x2="575.0" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="612.5" y1="40" x2="612.5" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="650.0" y1="40" x2="650.0" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="687.5" y1="40" x2="687.5" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="725.0" y1="40" x2="725.0" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="762.5" y1="40" x2="762.5" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="800.0" y1="40" x2="800.0" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="837.5" y1="40" x2="837.5" y2="440" stroke="#eceee9" stroke-width="1" opacity="0.85"/>
+      <line x1="125.0" y1="164.5" x2="125.0" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="125.0" y1="308.5" x2="125.0" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="162.5" y1="164.5" x2="162.5" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="162.5" y1="308.5" x2="162.5" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="200.0" y1="164.5" x2="200.0" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="200.0" y1="308.5" x2="200.0" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="237.5" y1="164.5" x2="237.5" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="237.5" y1="308.5" x2="237.5" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="275.0" y1="164.5" x2="275.0" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="275.0" y1="308.5" x2="275.0" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="312.5" y1="164.5" x2="312.5" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="312.5" y1="308.5" x2="312.5" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="350.0" y1="164.5" x2="350.0" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="350.0" y1="308.5" x2="350.0" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="387.5" y1="164.5" x2="387.5" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="387.5" y1="308.5" x2="387.5" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="425.0" y1="164.5" x2="425.0" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="425.0" y1="308.5" x2="425.0" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="462.5" y1="164.5" x2="462.5" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="462.5" y1="308.5" x2="462.5" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="500.0" y1="164.5" x2="500.0" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="500.0" y1="308.5" x2="500.0" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="537.5" y1="164.5" x2="537.5" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="537.5" y1="308.5" x2="537.5" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="575.0" y1="164.5" x2="575.0" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="575.0" y1="308.5" x2="575.0" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="612.5" y1="164.5" x2="612.5" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="612.5" y1="308.5" x2="612.5" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="650.0" y1="164.5" x2="650.0" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="650.0" y1="308.5" x2="650.0" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="687.5" y1="164.5" x2="687.5" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="687.5" y1="308.5" x2="687.5" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="725.0" y1="164.5" x2="725.0" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="725.0" y1="308.5" x2="725.0" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="762.5" y1="164.5" x2="762.5" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="762.5" y1="308.5" x2="762.5" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="800.0" y1="164.5" x2="800.0" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="800.0" y1="308.5" x2="800.0" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="837.5" y1="164.5" x2="837.5" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="837.5" y1="308.5" x2="837.5" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="875.0" y1="164.5" x2="875.0" y2="171.5" stroke="#eceee9" stroke-width="1.6"/>
+      <line x1="875.0" y1="308.5" x2="875.0" y2="315.5" stroke="#eceee9" stroke-width="1.6"/>
+      <text x="200.0" y="74" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">10</text>
+      <text x="200.0" y="420" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">10</text>
+      <text x="275.0" y="74" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">20</text>
+      <text x="275.0" y="420" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">20</text>
+      <text x="350.0" y="74" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">30</text>
+      <text x="350.0" y="420" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">30</text>
+      <text x="425.0" y="74" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">40</text>
+      <text x="425.0" y="420" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">40</text>
+      <text x="500.0" y="74" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">50</text>
+      <text x="500.0" y="420" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">50</text>
+      <text x="575.0" y="74" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">40</text>
+      <text x="575.0" y="420" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">40</text>
+      <text x="650.0" y="74" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">30</text>
+      <text x="650.0" y="420" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">30</text>
+      <text x="725.0" y="74" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">20</text>
+      <text x="725.0" y="420" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">20</text>
+      <text x="800.0" y="74" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">10</text>
+      <text x="800.0" y="420" fill="#eceee9" font-size="20" font-weight="700" text-anchor="middle" font-family="Oswald">10</text>
+      <line x1="50" y1="40" x2="950" y2="40" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="50" y1="440" x2="950" y2="440" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="50" y1="40" x2="50" y2="440" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="950" y1="40" x2="950" y2="440" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="125" y1="40" x2="125" y2="440" stroke="#3ecf6e" stroke-width="3"/>
+      <line x1="875" y1="40" x2="875" y2="440" stroke="#3ecf6e" stroke-width="3"/>
+      <circle cx="50" cy="40" r="4.5" fill="#ffc633"/>
+      <circle cx="50" cy="440" r="4.5" fill="#ffc633"/>
+      <circle cx="125" cy="40" r="4.5" fill="#ffc633"/>
+      <circle cx="125" cy="440" r="4.5" fill="#ffc633"/>
+      <circle cx="875" cy="40" r="4.5" fill="#ffc633"/>
+      <circle cx="875" cy="440" r="4.5" fill="#ffc633"/>
+      <circle cx="950" cy="40" r="4.5" fill="#ffc633"/>
+      <circle cx="950" cy="440" r="4.5" fill="#ffc633"/>
+      <text x="87.5" y="240.0" fill="#a8afa2" font-size="14" text-anchor="middle" font-family="Oswald" transform="rotate(-90 87.5 240.0)">エンドゾーン</text>
+      <text x="912.5" y="240.0" fill="#a8afa2" font-size="14" text-anchor="middle" font-family="Oswald" transform="rotate(-90 912.5 240.0)">エンドゾーン</text>
+      <line x1="30.0" y1="280.0" x2="30.0" y2="220.0" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="30.0" y1="220.0" x2="50.0" y2="170.0" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="30.0" y1="220.0" x2="10.0" y2="170.0" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="50.0" y1="170.0" x2="50.0" y2="90.0" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="10.0" y1="170.0" x2="10.0" y2="90.0" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="50.0" y1="170.0" x2="10.0" y2="170.0" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="970.0" y1="280.0" x2="970.0" y2="220.0" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="970.0" y1="220.0" x2="950.0" y2="170.0" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="970.0" y1="220.0" x2="990.0" y2="170.0" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="950.0" y1="170.0" x2="950.0" y2="90.0" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="990.0" y1="170.0" x2="990.0" y2="90.0" stroke="#eceee9" stroke-width="2.5"/>
+      <line x1="950.0" y1="170.0" x2="990.0" y2="170.0" stroke="#eceee9" stroke-width="2.5"/>
     </svg>
-    <figcaption>図1：フィールドは、両端の「エンドゾーン」を含めて縦120ヤード。「ゴールライン」がエンドゾーンとの境界、四隅の「パイロン」が得点判定の目印になる。「サイドライン」が左右の境界で、中央寄りの2本の「ハッシュマーク」がスナップ位置の基準になる。</figcaption>
+    <figcaption>図1：実際のフィールドを縮尺どおりに再現。両端の「エンドゾーン」を含めて縦120ヤード、5ヤードごとにラインが引かれ、10ヤードごとに番号が振られる。「ゴールライン」がエンドゾーンとの境界、四隅の「パイロン」が得点判定の目印、「ハッシュマーク」が中央寄りのスナップ位置の基準、「ゴールポスト」がキックの成否を判定する。</figcaption>
   </figure>
 
   <div class="callout flag">
