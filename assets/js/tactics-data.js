@@ -239,7 +239,8 @@ window.TACTICS_DATA = [
         { slug: 'rover', name: 'ロバー' },
         { slug: 'snap', name: 'スナップ' },
         { slug: 'block', name: 'ブロック' },
-        { slug: 'yard', name: 'ヤード' }
+        { slug: 'yard', name: 'ヤード' },
+        { slug: 'match-coverage', name: 'パターンマッチ' }
       ],
       thumb: '<line x1="0" y1="55" x2="70" y2="55" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="14" cy="55" r="3" fill="#eceee9"/><circle cx="32" cy="55" r="3" fill="#eceee9"/><circle cx="50" cy="55" r="3" fill="#eceee9"/> <path d="M14,55 L8,10" stroke="#e53935" stroke-width="2" fill="none"/> <path d="M32,55 L34,12" stroke="#1e88e5" stroke-width="2" fill="none"/> <path d="M50,55 L54,18" stroke="#8e24aa" stroke-width="2" fill="none"/>'
     },
@@ -464,7 +465,8 @@ window.TACTICS_DATA = [
         { slug: 'long-pass', name: 'ロングパス' },
         { slug: 'rover', name: 'ロバー' },
         { slug: 'snap', name: 'スナップ' },
-        { slug: 'area', name: 'エリア' }
+        { slug: 'area', name: 'エリア' },
+        { slug: 'match-coverage', name: 'パターンマッチ' }
       ],
       thumb: '<path d="M8,50 Q35,15 62,50" fill="rgba(62,207,110,0.12)" stroke="#3ecf6e" stroke-width="1.5"/> <path d="M8,50 Q35,58 62,50" fill="rgba(30,136,229,0.12)" stroke="#1e88e5" stroke-width="1.5"/> <circle cx="35" cy="50" r="3" fill="#eceee9"/>'
     }

@@ -77,7 +77,8 @@ window.TOPICS_DATA = [
         { slug: "quarter", name: "クォーター" },
         { slug: "defense", name: "ディフェンス" },
         { slug: "yard", name: "ヤード" },
-        { slug: "route", name: "ルート" }
+        { slug: "route", name: "ルート" },
+        { slug: 'match-coverage', name: 'パターンマッチ' }
       ],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="45" cy="50" r="3.5" fill="#eceee9"/><path d="M45,50 L20,50" fill="none" stroke="#ffc633" stroke-width="2" stroke-dasharray="3,2"/><path d="M24,46 L18,50 L24,54" fill="none" stroke="#ffc633" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18" cy="50" r="3.5" fill="#ffc633"/>'
   },
