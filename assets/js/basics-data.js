@@ -67,7 +67,7 @@ window.BASICS_DATA = [
       slug: 'rules-possession-basics',
       url: 'basics/rules-possession-basics.html',
       title: 'ポゼッションの基礎',
-      excerpt: '攻撃権を保持する条件、手放す条件 ― ダウン&amp;ディスタンスの仕組みと、パント・ギャンブルという選択を解説。',
+      excerpt: '攻撃権を維持する条件、手放す条件 ― ダウン&amp;ディスタンスの仕組みと、パント・ギャンブルという選択を解説。',
       readMin: 7,
       tags: [
         { slug: 'possession', name: 'ポゼッション' },
