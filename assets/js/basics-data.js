@@ -10,7 +10,7 @@ window.BASICS_DATA = [
       slug: 'rules-units-basics',
       url: 'basics/rules-units-basics.html',
       title: '3つのユニットの基礎',
-      excerpt: 'オフェンス・ディフェンス・スペシャルチームの役割分担 ― 試合の目的と、3つのユニットがどう入れ替わるかを解説。',
+      excerpt: 'オフェンス・ディフェンス・スペシャルチームの役割分担 ― 得点という目的に対する役割の違いを解説。',
       readMin: 6,
       tags: [
         { slug: 'offense', name: 'オフェンス' },
@@ -27,7 +27,7 @@ window.BASICS_DATA = [
       slug: 'rules-field-basics',
       url: 'basics/rules-field-basics.html',
       title: 'フィールドの基礎',
-      excerpt: '試合の舞台となる、境界線と区画 ― エンドゾーン・ゴールライン・ハッシュマークなどフィールドの基本構造を解説。',
+      excerpt: '試合の舞台となる、境界線と区画 ― エンドゾーン・ゴールラインなどフィールドの基本構造を解説。',
       readMin: 7,
       tags: [
         { slug: 'area', name: 'エリア' },
@@ -67,7 +67,7 @@ window.BASICS_DATA = [
       slug: 'rules-possession-basics',
       url: 'basics/rules-possession-basics.html',
       title: 'ポゼッションの基礎',
-      excerpt: '攻撃権を維持する条件、手放す条件 ― ダウン&amp;ディスタンスの仕組みと、パント・ギャンブルという選択を解説。',
+      excerpt: '攻撃権を維持する条件、手放す条件 ― ポゼッションとは何か、その維持と手放す条件を解説。',
       readMin: 7,
       tags: [
         { slug: 'possession', name: 'ポゼッション' },
@@ -89,7 +89,7 @@ window.BASICS_DATA = [
       slug: 'rules-play-deadball-basics',
       url: 'basics/rules-play-deadball-basics.html',
       title: 'プレーとボールデッドの基礎',
-      excerpt: '1つのプレーの始まりから終わりまで ― スナップからボールデッドまで、プレーの成り立ちを解説。',
+      excerpt: '1つのプレーの始まりから終わりまで ― ボールデッドまでのプレーの流れを、分類ごとに解説。',
       readMin: 7,
       tags: [
         { slug: 'run', name: 'ラン' },
