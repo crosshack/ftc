@@ -212,7 +212,6 @@ window.BASICS_DATA = [
         { slug: 'skill-position', name: 'スキルポジション' },
         { slug: 'split-end', name: 'スプリットエンド' },
         { slug: 'slot-receiver', name: 'スロットレシーバー' },
-        { slug: 'tailback', name: 'テールバック' },
         { slug: 'defensive-line', name: 'ディフェンスライン' },
         { slug: 'half', name: 'ハーフ' },
         { slug: 'backfield', name: 'バックフィールド' },
