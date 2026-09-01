@@ -108,6 +108,33 @@
   <h3>ディスタンス ― ファーストダウン更新までの残り距離</h3>
   <p>「ダウン」がプレーの機会の回数を表すのに対して、「ディスタンス」は次のファーストダウン更新までに残っている距離（ヤード数）を指す。開始時点では10ヤードだが、プレーで前進するたびに減っていき、逆に前進できなければ次のダウンでも同じ距離が引き継がれる。実況や記録では「セカンドダウン、残り7ヤード」のように、ダウンとディスタンスをセットにして表すのが基本形である。</p>
 
+  <figure class="diagram">
+    <svg viewBox="0 0 820 170" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="dnArrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#3ecf6e"/></marker>
+      </defs>
+      <rect x="0" y="0" width="820" height="170" fill="#141713" rx="4"/>
+      <line x1="40" y1="90" x2="800" y2="90" stroke="#3d4238" stroke-width="2"/>
+      <line x1="50" y1="60" x2="50" y2="120" stroke="#eceee9" stroke-width="2"/>
+      <text x="50" y="145" fill="#a8afa2" font-size="10" text-anchor="middle" font-family="Oswald">LOS（攻撃開始）</text>
+      <line x1="650" y1="50" x2="650" y2="130" stroke="#ffc633" stroke-width="2" stroke-dasharray="4,4"/>
+      <text x="650" y="145" fill="#ffc633" font-size="10" text-anchor="middle" font-family="Oswald">10ヤード先＝更新ライン</text>
+      <path d="M56,90 L224,90" stroke="#3ecf6e" stroke-width="2" marker-end="url(#dnArrow)"/>
+      <path d="M236,90 L464,90" stroke="#3ecf6e" stroke-width="2" marker-end="url(#dnArrow)"/>
+      <path d="M476,90 L764,90" stroke="#3ecf6e" stroke-width="2" marker-end="url(#dnArrow)"/>
+      <circle cx="50" cy="90" r="6" fill="#eceee9"/>
+      <text x="50" y="45" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">1st &amp; 10</text>
+      <circle cx="230" cy="90" r="6" fill="#eceee9"/>
+      <text x="230" y="45" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">2nd &amp; 7</text>
+      <circle cx="470" cy="90" r="6" fill="#eceee9"/>
+      <text x="470" y="45" fill="#eceee9" font-size="11" text-anchor="middle" font-family="Oswald">3rd &amp; 3</text>
+      <circle cx="770" cy="90" r="6" fill="#3ecf6e"/>
+      <text x="770" y="45" fill="#3ecf6e" font-size="11" text-anchor="middle" font-family="Oswald">1st &amp; 10</text>
+      <text x="770" y="30" fill="#3ecf6e" font-size="9" text-anchor="middle" font-family="Oswald">（更新）</text>
+    </svg>
+    <figcaption>オフェンスは4回のダウンで10ヤード前進を目指す。1st&amp;10からプレーごとに残りディスタンスが減り、更新ラインに到達すればダウンは再び1st&amp;10に戻る（ファーストダウン更新）。</figcaption>
+  </figure>
+
   <div class="callout">
     <strong>観戦のヒント：</strong>
     実況の「セカンドダウン、残り7ヤード」といったダウン&amp;ディスタンスの表示から、その後のプレーコールの傾向をある程度予測できる。残り距離が短ければランや短めのパス、長ければ大きなゲインを狙うパスが選ばれやすくなる。
