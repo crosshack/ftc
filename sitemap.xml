@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -122,13 +122,49 @@
   </url>
   <url>
     <loc>https://footballtactics.club/basics/rules-downs-basics</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://footballtactics.club/basics/rules-field-basics</loc>
     <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/basics/rules-game-time-basics</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/basics/rules-penalties-basics</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/basics/rules-play-deadball-basics</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/basics/rules-possession-basics</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/basics/rules-scoring-basics</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/basics/rules-turnover-basics</loc>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -415,8 +451,14 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://footballtactics.club/glossary/challenge-flag</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://footballtactics.club/glossary/challenge</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -566,13 +608,13 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/defender</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/defense</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -649,6 +691,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://footballtactics.club/glossary/distance</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://footballtactics.club/glossary/double-team</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -662,13 +710,13 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/down-by-contact</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/down</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -752,7 +800,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/false-start</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -781,8 +829,20 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://footballtactics.club/glossary/first-down-conversion</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://footballtactics.club/glossary/first-down</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/glossary/flag</loc>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -836,7 +896,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/fourth-down</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -853,8 +913,20 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://footballtactics.club/glossary/fumble-lost</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/glossary/fumble-return-touchdown</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://footballtactics.club/glossary/fumble</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -866,7 +938,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/gamble</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -968,7 +1040,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/holding</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1034,7 +1106,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/incomplete-pass</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1075,8 +1147,14 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://footballtactics.club/glossary/interception-return-touchdown</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://footballtactics.club/glossary/interception</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1190,7 +1268,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/long-pass</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1202,7 +1280,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/long-yardage</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1358,7 +1436,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/offense</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1382,7 +1460,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/offside</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1400,7 +1478,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/out-of-bounds</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1448,7 +1526,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/pass-interference</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1472,7 +1550,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/personal-foul</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1549,6 +1627,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://footballtactics.club/glossary/possession</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://footballtactics.club/glossary/post-route</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -1580,7 +1664,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/prevent-defense</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1610,7 +1694,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/punt</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1700,7 +1784,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/roughing-the-passer</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1814,7 +1898,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/second-down</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1844,7 +1928,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/short-yardage</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2060,7 +2144,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/third-down</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2072,7 +2156,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/timeout</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2084,13 +2168,13 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/touchback</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/touchdown</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2101,8 +2185,20 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://footballtactics.club/glossary/turnover-margin</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/glossary/turnover-on-downs</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://footballtactics.club/glossary/turnover</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2198,7 +2294,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/yard</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
