@@ -146,7 +146,7 @@ window.BASICS_DATA = [
       slug: 'rules-penalties-basics',
       url: 'basics/rules-penalties-basics.html',
       title: '判定・反則・ペナルティの基礎',
-      excerpt: 'プレーの判定から、代表的な反則まで ― チャレンジ制度と主な反則の種類を解説。',
+      excerpt: 'プレーの判定から、代表的な反則まで ― 判定の対象、主な反則の種類と科されるペナルティーを解説。',
       readMin: 8,
       tags: [
         { slug: 'challenge', name: 'チャレンジ' },
