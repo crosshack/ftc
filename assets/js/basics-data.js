@@ -555,7 +555,8 @@ window.BASICS_DATA = [
         { slug: 'backfield', name: 'バックフィールド' },
         { slug: 'blocker', name: 'ブロッカー' },
         { slug: 'mike', name: 'マイク' },
-        { slug: 'receiver', name: 'レシーバー' }
+        { slug: 'receiver', name: 'レシーバー' },
+        { slug: 'pass-breakup', name: 'パスカット' }
       ],
       thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="20" cy="42" r="3.5" fill="#3ecf6e"/><circle cx="35" cy="42" r="3.5" fill="#3ecf6e"/><circle cx="50" cy="42" r="3.5" fill="#3ecf6e"/> <circle cx="27" cy="30" r="3.5" fill="#eceee9"/><circle cx="43" cy="30" r="3.5" fill="#eceee9"/> <circle cx="10" cy="42" r="3.5" fill="#ffc633"/><circle cx="60" cy="42" r="3.5" fill="#ffc633"/>'
     },
