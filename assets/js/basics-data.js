@@ -3,6 +3,200 @@
 // tags: reserved for future glossary-term hashtags (Phase 3), empty for now.
 window.BASICS_DATA = [
   {
+    id: 'rules-basics',
+    label: 'ルール',
+    entries: [
+    {
+      slug: 'rules-units-basics',
+      url: 'basics/rules-units-basics.html',
+      title: '3つのユニットの基礎',
+      excerpt: 'オフェンス・ディフェンス・スペシャルチームの役割分担 ― 試合の目的と、3つのユニットがどう入れ替わるかを解説。',
+      readMin: 6,
+      tags: [
+        { slug: 'offense', name: 'オフェンス' },
+        { slug: 'defense', name: 'ディフェンス' },
+        { slug: 'special-teams', name: 'スペシャルチーム' },
+        { slug: 'ball-carrier', name: 'ボールキャリアー' },
+        { slug: 'end-zone', name: 'エンドゾーン' },
+        { slug: 'touchdown', name: 'タッチダウン' },
+        { slug: 'field-goal', name: 'フィールドゴール' }
+      ],
+      thumb: '<line x1="5" y1="35" x2="65" y2="35" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="18" cy="35" r="5" fill="#eceee9"/>
+        <circle cx="35" cy="35" r="5" fill="#3d4238" stroke="#a8afa2" stroke-width="1"/>
+        <circle cx="52" cy="35" r="5" fill="none" stroke="#ffc633" stroke-width="1.4"/>'
+    },
+    {
+      slug: 'rules-field-basics',
+      url: 'basics/rules-field-basics.html',
+      title: 'フィールドの基礎',
+      excerpt: '試合の舞台となる、境界線と区画 ― エンドゾーン・ゴールライン・ハッシュマークなどフィールドの基本構造を整理。',
+      readMin: 7,
+      tags: [
+        { slug: 'area', name: 'エリア' },
+        { slug: 'boundary-side', name: 'バウンダリサイド' },
+        { slug: 'downfield', name: 'ダウンフィールド' },
+        { slug: 'end-zone', name: 'エンドゾーン' },
+        { slug: 'field', name: 'フィールド' },
+        { slug: 'field-side', name: 'フィールドサイド' },
+        { slug: 'goalpost', name: 'ゴールポスト' },
+        { slug: 'goal-line', name: 'ゴールライン' },
+        { slug: 'pylon', name: 'パイロン' },
+        { slug: 'hash-marks', name: 'ハッシュマーク' },
+        { slug: 'line-of-scrimmage', name: 'ライン・オブ・スクリメージ' },
+        { slug: 'neutral-zone', name: 'ニュートラルゾーン' },
+        { slug: 'pocket', name: 'ポケット' },
+        { slug: 'red-zone', name: 'レッドゾーン' },
+        { slug: 'sideline', name: 'サイドライン' }
+      ],
+      thumb: '<line x1="0" y1="35" x2="70" y2="35" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <line x1="10" y1="8" x2="10" y2="62" stroke="#a8afa2" stroke-width="1"/>
+        <circle cx="38" cy="45" r="3.5" fill="#eceee9"/>
+        <circle cx="38" cy="25" r="3.5" fill="none" stroke="#ffc633" stroke-width="1.4"/>'
+    },
+    {
+      slug: 'rules-scoring-basics',
+      url: 'basics/rules-scoring-basics.html',
+      title: '得点方法の基礎',
+      excerpt: 'タッチダウン・フィールドゴール・セーフティの3つ ― それぞれの得点条件と点数を解説。',
+      readMin: 5,
+      tags: [
+        { slug: 'touchdown', name: 'タッチダウン' },
+        { slug: 'field-goal', name: 'フィールドゴール' },
+        { slug: 'safety-2', name: 'セーフティ' },
+        { slug: 'extra-point-point-after-touchdown', name: 'エクストラポイント' },
+        { slug: 'two-point-conversion', name: 'ツーポイントコンバージョン' }
+      ],
+      thumb: '<line x1="20" y1="8" x2="20" y2="62" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="34" cy="35" r="5" fill="#eceee9"/>
+        <path d="M52,50 L52,32 M43,32 L61,32 M43,32 L43,6 M61,32 L61,6" stroke="#a8afa2" stroke-width="2" fill="none" stroke-linecap="round"/>'
+    },
+    {
+      slug: 'rules-possession-basics',
+      url: 'basics/rules-possession-basics.html',
+      title: 'ポゼッションの基礎',
+      excerpt: '攻撃権を保持する条件、手放す条件 ― ダウン&amp;ディスタンスの仕組みと、パント・ギャンブルという選択を解説。',
+      readMin: 7,
+      tags: [
+        { slug: 'possession', name: 'ポゼッション' },
+        { slug: 'down', name: 'ダウン' },
+        { slug: 'first-down', name: 'ファーストダウン' },
+        { slug: 'second-down', name: 'セカンドダウン' },
+        { slug: 'third-down', name: 'サードダウン' },
+        { slug: 'fourth-down', name: 'フォースダウン' },
+        { slug: 'first-down-conversion', name: 'ファーストダウン更新' },
+        { slug: 'distance', name: 'ディスタンス' },
+        { slug: 'yard', name: 'ヤード' },
+        { slug: 'punt', name: 'パント' },
+        { slug: 'gamble', name: 'ギャンブル' },
+        { slug: 'turnover-on-downs', name: 'ターンオーバーオンダウンズ' }
+      ],
+      thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="16" cy="46" r="5" fill="#eceee9"/>
+        <path d="M24,40 Q35,20 46,40" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#possThumbArrow)"/>
+        <circle cx="54" cy="46" r="5" fill="none" stroke="#a8afa2" stroke-width="1.4"/>
+        <defs>
+          <marker id="possThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker>
+        </defs>'
+    },
+    {
+      slug: 'rules-play-deadball-basics',
+      url: 'basics/rules-play-deadball-basics.html',
+      title: 'プレーとボールデッドの基礎',
+      excerpt: '1つのプレーの始まりから終わりまで ― スナップからボールデッドまで、プレーの成り立ちを解説。',
+      readMin: 7,
+      tags: [
+        { slug: 'run', name: 'ラン' },
+        { slug: 'pass', name: 'パス' },
+        { slug: 'snap', name: 'スナップ' },
+        { slug: 'kickoff', name: 'キックオフ' },
+        { slug: 'kickoff-return', name: 'キックオフリターン' },
+        { slug: 'punt', name: 'パント' },
+        { slug: 'punt-return', name: 'パントリターン' },
+        { slug: 'down', name: 'ダウン' },
+        { slug: 'incomplete-pass', name: 'インコンプリートパス' },
+        { slug: 'out-of-bounds', name: 'アウトオブバウンズ' },
+        { slug: 'touchback', name: 'タッチバック' },
+        { slug: 'interception', name: 'インターセプト' },
+        { slug: 'fumble-lost', name: 'ファンブルロスト' },
+        { slug: 'tackle-for-loss', name: 'タックル・フォー・ロス' }
+      ],
+      thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="16" cy="44" r="5" fill="#eceee9"/>
+        <path d="M24,42 L46,42" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#playThumbArrow)"/>
+        <line x1="54" y1="26" x2="54" y2="46" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/>
+        <defs>
+          <marker id="playThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker>
+        </defs>'
+    },
+    {
+      slug: 'rules-turnover-basics',
+      url: 'basics/rules-turnover-basics.html',
+      title: 'ターンオーバーの基礎',
+      excerpt: '力ずくで入れ替わる攻撃権 ― インターセプトとファンブルロスト、2つのターンオーバーを解説。',
+      readMin: 5,
+      tags: [
+        { slug: 'interception', name: 'インターセプト' },
+        { slug: 'fumble', name: 'ファンブル' },
+        { slug: 'fumble-lost', name: 'ファンブルロスト' },
+        { slug: 'turnover', name: 'ターンオーバー' },
+        { slug: 'interception-return-touchdown', name: 'インターセプト・リターン・タッチダウン' },
+        { slug: 'fumble-return-touchdown', name: 'ファンブル・リターン・タッチダウン' },
+        { slug: 'turnover-margin', name: 'ターンオーバーマージン' }
+      ],
+      thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="16" cy="28" r="5" fill="#eceee9"/>
+        <path d="M24,30 L46,42" stroke="#a8afa2" stroke-width="1.6" stroke-linecap="round" fill="none" stroke-dasharray="3,3"/>
+        <circle cx="54" cy="44" r="5" fill="none" stroke="#a8afa2" stroke-width="1.4"/>
+        <path d="M50,40 L20,26" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#toThumbArrow)"/>
+        <defs>
+          <marker id="toThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker>
+        </defs>'
+    },
+    {
+      slug: 'rules-game-time-basics',
+      url: 'basics/rules-game-time-basics.html',
+      title: '試合時間・進行管理の基礎',
+      excerpt: '試合を進行させる時間の仕組み ― クォーター・タイムアウト・オーバータイムのルールを解説。',
+      readMin: 7,
+      tags: [
+        { slug: 'quarter', name: 'クォーター' },
+        { slug: 'half', name: 'ハーフ' },
+        { slug: 'halftime', name: 'ハーフタイム' },
+        { slug: 'timeout', name: 'タイムアウト' },
+        { slug: 'two-minute-warning', name: 'ツーミニッツウォーニング' },
+        { slug: 'overtime', name: 'オーバータイム' }
+      ],
+      thumb: '<line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="35" cy="30" r="17" fill="#eceee9" stroke="#a8afa2" stroke-width="1.4"/>
+        <line x1="35" y1="30" x2="35" y2="18" stroke="#3d4238" stroke-width="1.6" stroke-linecap="round"/>
+        <line x1="35" y1="30" x2="44" y2="24" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="35" cy="30" r="1.6" fill="#3d4238"/>'
+    },
+    {
+      slug: 'rules-penalties-basics',
+      url: 'basics/rules-penalties-basics.html',
+      title: '判定・反則・ペナルティの基礎',
+      excerpt: 'プレーの判定から、代表的な反則まで ― チャレンジ制度と主な反則の種類を解説。',
+      readMin: 8,
+      tags: [
+        { slug: 'challenge', name: 'チャレンジ' },
+        { slug: 'challenge-flag', name: 'チャレンジフラッグ' },
+        { slug: 'flag', name: 'フラッグ' },
+        { slug: 'offside', name: 'オフサイド' },
+        { slug: 'false-start', name: 'フォルススタート' },
+        { slug: 'holding', name: 'ホールディング' },
+        { slug: 'pass-interference', name: 'パスインターフェアレンス' },
+        { slug: 'personal-foul', name: 'パーソナルファウル' },
+        { slug: 'roughing-the-passer', name: 'ラフィング・ザ・パサー' }
+      ],
+      thumb: '<line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <line x1="35" y1="50" x2="35" y2="14" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/>
+        <path d="M35,14 L55,14 L48,22 L55,30 L35,30 Z" fill="#ffc633"/>'
+    }
+    ]
+  },
+  {
     id: 'offense-basics',
     label: 'オフェンス',
     entries: [
