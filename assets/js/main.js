@@ -111,6 +111,48 @@
   });
 })();
 
+// Related-content card-list truncation on glossary term pages -
+// "関連する基礎知識" / "関連する戦術まとめ" / "関連するトピックス" sections only.
+// If the card-list following one of these headings has more than LIMIT
+// cards, hide the rest behind a "すべて表示" link. Scoped purely by
+// heading text (these three headings only ever appear on glossary term
+// pages), so no changes to individual glossary/*.html files are needed.
+(function () {
+  var LIMIT = 5;
+  var TARGET_HEADINGS = ['関連する基礎知識', '関連する戦術まとめ', '関連するトピックス'];
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.article-body > h2').forEach(function (h2) {
+      if (TARGET_HEADINGS.indexOf(h2.textContent.trim()) === -1) return;
+      var list = h2.nextElementSibling;
+      if (!list || !list.classList.contains('card-list')) return;
+
+      var cards = Array.prototype.slice.call(list.querySelectorAll(':scope > .card'));
+      if (cards.length <= LIMIT) return;
+
+      var hidden = cards.slice(LIMIT);
+      hidden.forEach(function (card) {
+        card.classList.add('card-hidden');
+      });
+
+      var more = document.createElement('div');
+      more.className = 'card-list-more';
+      var moreLink = document.createElement('a');
+      moreLink.href = '#';
+      moreLink.textContent = 'すべて表示（' + cards.length + '件）';
+      moreLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        hidden.forEach(function (card) {
+          card.classList.remove('card-hidden');
+        });
+        more.remove();
+      });
+      more.appendChild(moreLink);
+      list.insertAdjacentElement('afterend', more);
+    });
+  });
+})();
+
 // Hashtag list truncation - if a .topic-tags block has more than LIMIT
 // tags, hide the rest behind a "...すべて表示" link that reveals them on click.
 // Card contexts (home/list page cards, glossary hub preview cards) use a

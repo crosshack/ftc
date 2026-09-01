@@ -361,6 +361,10 @@ h1, h2, h3, h4 {
 
 /* ---------- Article cards ---------- */
 .card-list { display: flex; flex-direction: column; }
+.card-list .card.card-hidden { display: none; }
+.card-list-more { padding: 14px 0 4px; }
+.card-list-more a { font-size: 0.85rem; color: var(--accent); text-decoration: none; }
+.card-list-more a:hover { text-decoration: underline; }
 .card {
   display: grid;
   grid-template-columns: 56px 1fr;
