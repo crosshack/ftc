@@ -899,6 +899,9 @@ h1, h2, h3, h4 {
 .term-def { margin: 0 0 10px; color: var(--text-dim); font-size: 0.94rem; max-width: 640px; }
 .term-def a { color: var(--text-dim); text-decoration: none; border-bottom: 1px solid var(--line-strong); padding-bottom: 0; }
 .term-def a:hover { color: var(--accent); border-bottom-color: var(--accent); text-decoration: none; }
+.term-alias { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px; font-size: 0.82rem; max-width: 640px; margin: 0 0 10px; }
+.term-alias .label { color: var(--text-dim); opacity: 0.7; letter-spacing: 0.02em; }
+.term-alias .term-alias-item { color: #868c82; }
 .term-related { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px; font-size: 0.82rem; max-width: 640px; }
 .term-related .label { color: var(--text-dim); opacity: 0.7; letter-spacing: 0.02em; }
 .term-related a { color: #868c82; text-decoration: none; border-bottom: 1px solid var(--line-strong); padding-bottom: 0; }
