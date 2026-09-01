@@ -139,7 +139,7 @@
       more.className = 'card-list-more';
       var moreLink = document.createElement('a');
       moreLink.href = '#';
-      moreLink.textContent = 'すべて表示（' + cards.length + '件）';
+      moreLink.textContent = 'すべて表示（残り' + hidden.length + '件）';
       moreLink.addEventListener('click', function (e) {
         e.preventDefault();
         hidden.forEach(function (card) {
