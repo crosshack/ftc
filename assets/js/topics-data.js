@@ -258,7 +258,8 @@ window.TOPICS_DATA = [
         { slug: "yard", name: "ヤード" },
         { slug: "route", name: "ルート" },
         { slug: "seattle-seahawks", name: "シアトル・シーホークス" },
-        { slug: "new-england-patriots", name: "ニューイングランド・ペイトリオッツ" }
+        { slug: "new-england-patriots", name: "ニューイングランド・ペイトリオッツ" },
+        { slug: "interception-return-touchdown", name: "ピックシックス" }
       ],
     thumb: '<circle cx="35" cy="35" r="16" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="46" y1="46" x2="58" y2="58" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="38" r="3.5" fill="#eceee9"/><path d="M30,38 L40,28" stroke="#ffc633" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="28" r="3.5" fill="#ffc633"/>'
   },
