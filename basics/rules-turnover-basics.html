@@ -106,6 +106,7 @@
         <line x1="10" y1="70" x2="250" y2="70" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
         <circle cx="30" cy="55" r="6" fill="#3ecf6e"/>
         <path d="M36,50 Q120,15 200,40" stroke="#3ecf6e" stroke-width="2" fill="none" stroke-dasharray="4,4"/>
+        <circle cx="228" cy="52" r="6" fill="#3ecf6e"/>
         <circle cx="210" cy="40" r="6" fill="#a8afa2"/>
         <text x="129" y="80" fill="#a8afa2" font-size="9" text-anchor="middle" font-family="Oswald">パスを守備選手がキャッチ</text>
       </svg>
@@ -115,9 +116,14 @@
       <svg viewBox="0 0 260 90" width="260" height="90" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="0" width="260" height="90" fill="#141713" rx="4"/>
         <line x1="10" y1="70" x2="250" y2="70" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <defs>
+          <marker id="turnFumbleArrow" markerWidth="6" markerHeight="6" refX="2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 Z" fill="#a8afa2"/></marker>
+        </defs>
         <circle cx="60" cy="45" r="6" fill="#3ecf6e"/>
+        <path d="M66,48 Q83,54 95,59" stroke="#3ecf6e" stroke-width="1.5" fill="none" stroke-dasharray="3,3"/>
         <ellipse cx="100" cy="60" rx="4" ry="3" fill="#ffc633"/>
         <circle cx="145" cy="68" r="6" fill="#a8afa2"/>
+        <path d="M139,66 Q122,63 106,61" stroke="#a8afa2" stroke-width="1.5" fill="none" marker-end="url(#turnFumbleArrow)"/>
         <text x="129" y="80" fill="#a8afa2" font-size="9" text-anchor="middle" font-family="Oswald">落球したボールを相手が回収</text>
       </svg>
       <figcaption>ファンブルロスト ― ボールを落として奪われる</figcaption>
