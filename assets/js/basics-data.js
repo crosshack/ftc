@@ -100,7 +100,7 @@ window.BASICS_DATA = [
         { slug: 'punt', name: 'パント' },
         { slug: 'punt-return', name: 'パントリターン' },
         { slug: 'down', name: 'ダウン' },
-        { slug: 'incomplete-pass', name: 'インコンプリートパス' },
+        { slug: 'incomplete-pass', name: 'パスインコンプリート' },
         { slug: 'out-of-bounds', name: 'アウトオブバウンズ' },
         { slug: 'touchback', name: 'タッチバック' },
         { slug: 'interception', name: 'インターセプト' },
