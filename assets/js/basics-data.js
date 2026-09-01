@@ -27,7 +27,7 @@ window.BASICS_DATA = [
       slug: 'rules-field-basics',
       url: 'basics/rules-field-basics.html',
       title: 'フィールドの基礎',
-      excerpt: '試合の舞台となる、境界線と区画 ― エンドゾーン・ゴールライン・ハッシュマークなどフィールドの基本構造を整理。',
+      excerpt: '試合の舞台となる、境界線と区画 ― エンドゾーン・ゴールライン・ハッシュマークなどフィールドの基本構造を解説。',
       readMin: 7,
       tags: [
         { slug: 'area', name: 'エリア' },
