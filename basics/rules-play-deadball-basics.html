@@ -108,6 +108,39 @@
   <h3>ポゼッションが移動するプレー</h3>
   <p>ボールを蹴ることで、その時点のポゼッションが相手チームに移るプレー。キックオフとパントがある。</p>
 
+  <div class="play-diagrams">
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 90" width="260" height="90" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="pdaArrow1" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#3ecf6e"/></marker>
+        </defs>
+        <rect x="0" y="0" width="260" height="90" fill="#141713" rx="4"/>
+        <line x1="10" y1="66" x2="250" y2="66" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="30" cy="42" r="6" fill="#3ecf6e"/>
+        <path d="M38,42 L216,42" stroke="#3ecf6e" stroke-width="2" marker-end="url(#pdaArrow1)"/>
+        <circle cx="228" cy="42" r="6" fill="#3ecf6e"/>
+        <text x="129" y="78" fill="#a8afa2" font-size="9" text-anchor="middle" font-family="Oswald">同じチームのまま前進</text>
+      </svg>
+      <figcaption>ポゼッションを維持するプレー ― ラン・パス</figcaption>
+    </figure>
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 90" width="260" height="90" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="pdaArrow2" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#eceee9"/></marker>
+        </defs>
+        <rect x="0" y="0" width="260" height="90" fill="#141713" rx="4"/>
+        <line x1="10" y1="66" x2="250" y2="66" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="30" cy="42" r="6" fill="#3ecf6e"/>
+        <path d="M38,42 L130,42" stroke="#3ecf6e" stroke-width="2"/>
+        <ellipse cx="140" cy="42" rx="5" ry="3" fill="#ffc633"/>
+        <path d="M150,42 L216,42" stroke="#eceee9" stroke-width="2" marker-end="url(#pdaArrow2)"/>
+        <circle cx="228" cy="42" r="6" fill="#eceee9"/>
+        <text x="129" y="78" fill="#a8afa2" font-size="9" text-anchor="middle" font-family="Oswald">ボールが相手チームに移る</text>
+      </svg>
+      <figcaption>ポゼッションが移動するプレー ― キックオフ・パント</figcaption>
+    </figure>
+  </div>
+
   <h2>ポゼッションを維持するプレー ― ラン・パス</h2>
   <p>センターがスナップしたボールを、通常はクォーターバックが受け取ることで、プレーが始まる。</p>
 
@@ -128,6 +161,31 @@
   <h3>パント&amp;リターン</h3>
   <p>フォースダウンなど、すでに始まっているドライブの中で前進を諦め、あえてボールを蹴って相手にポゼッションを渡す場面で、ロングスナッパーが約13〜15ヤード後方の「パンター」へスナップすることから「パント」が始まる。蹴られたボールを相手チームの「リターナー」が受け取った時点で、ポゼッションはそのチームに移る。リターナーは、オフェンスの開始地点を少しでも有利にするため、ボールを持って走る。これを「パントリターン」と呼ぶ。</p>
 
+  <figure class="diagram">
+    <svg viewBox="0 0 780 210" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="pdbArrow1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffc633"/></marker>
+        <marker id="pdbArrow2" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#a8afa2"/></marker>
+      </defs>
+      <rect x="0" y="0" width="780" height="210" fill="#141713" rx="4"/>
+      <line x1="20" y1="55" x2="760" y2="55" stroke="#3d4238" stroke-width="1.5" stroke-dasharray="2,6"/>
+      <circle cx="90" cy="55" r="6" fill="#ffc633"/>
+      <text x="90" y="35" fill="#a8afa2" font-size="10" text-anchor="middle" font-family="Oswald">自陣35ヤードライン</text>
+      <path d="M96,55 Q400,10 680,50" stroke="#ffc633" stroke-width="2" fill="none" marker-end="url(#pdbArrow1)"/>
+      <text x="710" y="38" fill="#a8afa2" font-size="10" text-anchor="middle" font-family="Oswald">キックオフ</text>
+      <line x1="20" y1="150" x2="760" y2="150" stroke="#3d4238" stroke-width="1.5" stroke-dasharray="2,6"/>
+      <line x1="350" y1="120" x2="350" y2="180" stroke="#eceee9" stroke-width="2"/>
+      <text x="350" y="112" fill="#a8afa2" font-size="10" text-anchor="middle" font-family="Oswald">LOS</text>
+      <circle cx="350" cy="150" r="5" fill="#3ecf6e"/>
+      <circle cx="260" cy="150" r="6" fill="#ffc633"/>
+      <path d="M344,150 L268,150" stroke="#a8afa2" stroke-width="1.5" marker-end="url(#pdbArrow2)"/>
+      <text x="305" y="172" fill="#a8afa2" font-size="9" text-anchor="middle" font-family="Oswald">約13〜15ヤード</text>
+      <path d="M266,150 Q450,110 680,145" stroke="#ffc633" stroke-width="2" fill="none" marker-end="url(#pdbArrow1)"/>
+      <text x="710" y="133" fill="#a8afa2" font-size="10" text-anchor="middle" font-family="Oswald">パント</text>
+    </svg>
+    <figcaption>キックオフは自陣35ヤードラインから、パントはロングスナッパーから約13〜15ヤード後方のパンターへスナップしてから、それぞれボールを蹴り出す。</figcaption>
+  </figure>
+
   <h2>プレーが終わる条件 ― ボールデッドの基準</h2>
   <p>プレーは、以下のいずれかの状態になった時点で終了する。</p>
   <ul>
@@ -136,6 +194,55 @@
     <li><strong>アウトオブバウンズ</strong>：ボールを持った選手やボール自体が、サイドラインの外に出ること。</li>
     <li><strong>タッチバック</strong>：キックされたボールが、リターンされずに自陣エンドゾーン内でボールデッドとなること。</li>
   </ul>
+
+  <div class="play-diagrams">
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 90" width="260" height="90" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="260" height="90" fill="#141713" rx="4"/>
+        <line x1="10" y1="70" x2="250" y2="70" stroke="#3d4238" stroke-width="1.5"/>
+        <circle cx="110" cy="50" r="7" fill="#eceee9"/>
+        <circle cx="140" cy="55" r="7" fill="#a8afa2"/>
+        <line x1="110" y1="57" x2="110" y2="70" stroke="#eceee9" stroke-width="2" stroke-dasharray="2,2"/>
+        <circle cx="110" cy="70" r="2.5" fill="#ffc633"/>
+      </svg>
+      <figcaption>ダウン ― 膝や体の一部が地面に着く</figcaption>
+    </figure>
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 90" width="260" height="90" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="260" height="90" fill="#141713" rx="4"/>
+        <line x1="10" y1="70" x2="250" y2="70" stroke="#3d4238" stroke-width="1.5"/>
+        <circle cx="40" cy="55" r="6" fill="#eceee9"/>
+        <path d="M46,50 Q140,15 220,55" stroke="#eceee9" stroke-width="2" fill="none" stroke-dasharray="4,4"/>
+        <ellipse cx="220" cy="56" rx="4" ry="3" fill="#ffc633"/>
+        <line x1="220" y1="59" x2="220" y2="70" stroke="#ffc633" stroke-width="1.5"/>
+      </svg>
+      <figcaption>インコンプリートパス ― パスが地面に落ちる</figcaption>
+    </figure>
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 90" width="260" height="90" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="pdcArrow" markerWidth="6" markerHeight="6" refX="2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 Z" fill="#3ecf6e"/></marker>
+        </defs>
+        <rect x="0" y="0" width="260" height="90" fill="#141713" rx="4"/>
+        <line x1="10" y1="70" x2="250" y2="70" stroke="#3d4238" stroke-width="1.5"/>
+        <line x1="180" y1="15" x2="180" y2="75" stroke="#eceee9" stroke-width="2"/>
+        <circle cx="140" cy="50" r="6" fill="#3ecf6e"/>
+        <path d="M146,50 L204,50" stroke="#3ecf6e" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#pdcArrow)"/>
+        <circle cx="210" cy="50" r="6" fill="#3ecf6e" fill-opacity="0.5"/>
+      </svg>
+      <figcaption>アウトオブバウンズ ― サイドラインの外に出る</figcaption>
+    </figure>
+    <figure class="diagram-item">
+      <svg viewBox="0 0 260 90" width="260" height="90" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="260" height="90" fill="#141713" rx="4"/>
+        <line x1="10" y1="70" x2="250" y2="70" stroke="#3d4238" stroke-width="1.5"/>
+        <rect x="170" y="15" width="70" height="60" fill="#3ecf6e" opacity="0.2"/>
+        <line x1="170" y1="15" x2="170" y2="75" stroke="#3d4238" stroke-width="1.5"/>
+        <circle cx="205" cy="45" r="6" fill="#ffc633"/>
+      </svg>
+      <figcaption>タッチバック ― エンドゾーン内でリターンされず終わる</figcaption>
+    </figure>
+  </div>
 
   <div class="callout flag">
     <strong>背景・トレンド：</strong>
