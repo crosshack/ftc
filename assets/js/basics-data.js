@@ -826,7 +826,9 @@ window.BASICS_DATA = [
         { slug: 'tackle-2', name: 'タックル' },
         { slug: 'down', name: 'ダウン' },
         { slug: 'field', name: 'フィールド' },
-        { slug: 'block', name: 'ブロック' }
+        { slug: 'block', name: 'ブロック' },
+        { slug: 'kickoff-returner', name: 'キックオフリターナー' },
+        { slug: 'punt-returner', name: 'パントリターナー' }
       ],
       thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="20" cy="42" r="3.5" fill="#ffc633"/><circle cx="35" cy="42" r="3.5" fill="#ffc633"/><circle cx="50" cy="42" r="3.5" fill="#ffc633"/> <circle cx="27" cy="30" r="3.5" fill="#eceee9"/><circle cx="43" cy="30" r="3.5" fill="#eceee9"/> <circle cx="10" cy="42" r="3.5" fill="#a8afa2"/><circle cx="60" cy="42" r="3.5" fill="#a8afa2"/>'
     },
