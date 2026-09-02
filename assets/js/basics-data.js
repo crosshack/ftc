@@ -258,6 +258,7 @@ window.BASICS_DATA = [
         { slug: 'formation', name: 'フォーメーション' },
         { slug: 'personnel', name: 'パーソネル' },
         { slug: 'backfield', name: 'バックフィールド' },
+        { slug: 'play-action-pass', name: 'プレーアクション' },
         { slug: 'snap', name: 'スナップ' },
         { slug: 'field', name: 'フィールド' },
         { slug: 'receiver', name: 'レシーバー' },

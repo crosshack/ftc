@@ -336,6 +336,7 @@ window.TACTICS_DATA = [
         { slug: 'hook', name: 'フック' },
         { slug: 'flat', name: 'フラット' },
         { slug: 'field', name: 'フィールド' },
+        { slug: 'play-action-pass', name: 'プレーアクション' },
         { slug: 'underneath', name: 'アンダーニース' },
         { slug: 'cover-0', name: 'カバー0' },
         { slug: 'cover-2', name: 'カバー2' },
