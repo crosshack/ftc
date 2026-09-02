@@ -138,7 +138,8 @@ window.TOPICS_DATA = [
         { slug: "block", name: "ブロック" },
         { slug: "route", name: "ルート" },
         { slug: "los-angeles-rams", name: "ロサンゼルス・ラムズ" }
-      ],
+      ,
+        { slug: 'slot-receiver', name: 'スロット' }],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="20" cy="50" r="3.5" fill="#ffc633"/><circle cx="30" cy="50" r="3.5" fill="#ffc633"/><circle cx="40" cy="50" r="3.5" fill="#ffc633"/><circle cx="55" cy="50" r="3.5" fill="#eceee9"/><circle cx="30" cy="60" r="3.5" fill="#eceee9"/>'
   },
   {
@@ -161,7 +162,8 @@ window.TOPICS_DATA = [
         { slug: "route", name: "ルート" },
         { slug: "los-angeles-rams", name: "ロサンゼルス・ラムズ" }
       ,
-        { slug: 'pass-coverage', name: 'カバー' }],
+        { slug: 'pass-coverage', name: 'カバー' },
+        { slug: 'slot-receiver', name: 'スロット' }],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="20" cy="50" r="3.5" fill="#ffc633"/><circle cx="30" cy="50" r="3.5" fill="#ffc633"/><circle cx="40" cy="50" r="3.5" fill="#ffc633"/><circle cx="55" cy="50" r="3.5" fill="#eceee9"/><circle cx="30" cy="60" r="3.5" fill="#eceee9"/>'
   }
   ,
