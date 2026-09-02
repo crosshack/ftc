@@ -142,7 +142,7 @@ window.BASICS_DATA = [
         { slug: 'two-minute-warning', name: 'ツーミニッツウォーニング' },
         { slug: 'overtime', name: 'オーバータイム' }
       ],
-      thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="12" cy="30" r="4" fill="#eceee9"/> <path d="M18,30 L52,30" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#flowThumbArrow)"/> <line x1="26" y1="24" x2="26" y2="36" stroke="#a8afa2" stroke-width="1.3"/> <line x1="36" y1="24" x2="36" y2="36" stroke="#a8afa2" stroke-width="1.3"/> <line x1="46" y1="24" x2="46" y2="36" stroke="#a8afa2" stroke-width="1.3"/> <defs> <marker id="flowThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker> </defs>'
+      thumb: '<path d="M20,14 L50,14 L35,34 Z" fill="none" stroke="#eceee9" stroke-width="1.6" stroke-linejoin="round"/> <path d="M20,56 L50,56 L35,34 Z" fill="none" stroke="#eceee9" stroke-width="1.6" stroke-linejoin="round"/> <line x1="16" y1="14" x2="54" y2="14" stroke="#a8afa2" stroke-width="2.2" stroke-linecap="round"/> <line x1="16" y1="56" x2="54" y2="56" stroke="#a8afa2" stroke-width="2.2" stroke-linecap="round"/> <circle cx="35" cy="28" r="1.4" fill="#ffc633"/> <circle cx="35" cy="38" r="1.4" fill="#ffc633"/> <circle cx="35" cy="45" r="1.4" fill="#ffc633"/>'
     },
     {
       slug: 'rules-clock-basics',

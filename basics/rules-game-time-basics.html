@@ -66,15 +66,13 @@
     <div class="page-head-title-row">
       <h1>試合進行の基礎<br><span class="subtitle">― コイントスから試合終了までの流れ</span></h1>
       <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
-        <line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
-        <circle cx="12" cy="30" r="4" fill="#eceee9"/>
-        <path d="M18,30 L52,30" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#flowThumbArrow)"/>
-        <line x1="26" y1="24" x2="26" y2="36" stroke="#a8afa2" stroke-width="1.3"/>
-        <line x1="36" y1="24" x2="36" y2="36" stroke="#a8afa2" stroke-width="1.3"/>
-        <line x1="46" y1="24" x2="46" y2="36" stroke="#a8afa2" stroke-width="1.3"/>
-        <defs>
-          <marker id="flowThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker>
-        </defs>
+        <path d="M20,14 L50,14 L35,34 Z" fill="none" stroke="#eceee9" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M20,56 L50,56 L35,34 Z" fill="none" stroke="#eceee9" stroke-width="1.6" stroke-linejoin="round"/>
+        <line x1="16" y1="14" x2="54" y2="14" stroke="#a8afa2" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="16" y1="56" x2="54" y2="56" stroke="#a8afa2" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="35" cy="28" r="1.4" fill="#ffc633"/>
+        <circle cx="35" cy="38" r="1.4" fill="#ffc633"/>
+        <circle cx="35" cy="45" r="1.4" fill="#ffc633"/>
       </svg>
     </div>
     <div class="meta">読了目安 7分</div>
@@ -91,6 +89,32 @@
 <article class="article-body">
 
   <p>試合は、コイントスでの選択から始まり、「クォーター」という時間区分の中で進行する。前半・後半の間の休憩である「ハーフタイム」、そして各ハーフ終盤に訪れる「ツーミニッツウォーニング」を経て、既定の時間内に決着がつかなければ「オーバータイム」に入る。ここでは、試合がどのような単位・順序で進んでいくのかという、試合全体の流れを整理する。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 820 150" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="820" height="150" fill="#141713" rx="4"/>
+      <rect x="40" y="55" width="150" height="40" fill="#191d18" stroke="#3d4238" stroke-width="1.5" rx="2"/>
+      <text x="115" y="79" fill="#eceee9" font-size="13" text-anchor="middle" font-family="Oswald">第1Q</text>
+      <rect x="200" y="55" width="150" height="40" fill="#191d18" stroke="#3d4238" stroke-width="1.5" rx="2"/>
+      <text x="275" y="79" fill="#eceee9" font-size="13" text-anchor="middle" font-family="Oswald">第2Q</text>
+      <line x1="335" y1="45" x2="335" y2="55" stroke="#ffc633" stroke-width="2"/>
+      <circle cx="335" cy="42" r="3" fill="#ffc633"/>
+      <text x="335" y="30" fill="#ffc633" font-size="9" text-anchor="middle" font-family="Oswald">ツーミニッツウォーニング</text>
+      <rect x="362" y="55" width="26" height="40" fill="#0c0e0c" stroke="#2a2e28" stroke-width="1.5" stroke-dasharray="3,3" rx="2"/>
+      <text x="375" y="120" fill="#a8afa2" font-size="10" text-anchor="middle" font-family="Oswald">ハーフタイム</text>
+      <line x1="375" y1="113" x2="375" y2="95" stroke="#a8afa2" stroke-width="1"/>
+      <rect x="400" y="55" width="150" height="40" fill="#191d18" stroke="#3d4238" stroke-width="1.5" rx="2"/>
+      <text x="475" y="79" fill="#eceee9" font-size="13" text-anchor="middle" font-family="Oswald">第3Q</text>
+      <rect x="560" y="55" width="150" height="40" fill="#191d18" stroke="#3d4238" stroke-width="1.5" rx="2"/>
+      <text x="635" y="79" fill="#eceee9" font-size="13" text-anchor="middle" font-family="Oswald">第4Q</text>
+      <line x1="695" y1="45" x2="695" y2="55" stroke="#ffc633" stroke-width="2"/>
+      <circle cx="695" cy="42" r="3" fill="#ffc633"/>
+      <rect x="735" y="55" width="70" height="40" fill="none" stroke="#3ecf6e" stroke-width="1.5" stroke-dasharray="4,3" rx="2"/>
+      <text x="770" y="79" fill="#3ecf6e" font-size="12" text-anchor="middle" font-family="Oswald">OT</text>
+      <text x="770" y="115" fill="#a8afa2" font-size="9" text-anchor="middle" font-family="Oswald">（同点の場合）</text>
+    </svg>
+    <figcaption>試合は15分×4クォーターで進み、前半（第1・第2Q）と後半（第3・第4Q）の間に「ハーフタイム」を挟む。各ハーフ残り2分では「ツーミニッツウォーニング」で時計が自動的に止まり、同点なら「オーバータイム」に入る。</figcaption>
+  </figure>
 
   <h2>試合の始まり ― コイントス</h2>
   <p>試合開始前、両チームのキャプテンがフィールド中央に集まり、審判が投げるコインの表裏を予想する「コイントス」が行われる。勝ったチームは、前半に自分たちが先にボールを持ってプレーを始めるか（レシーブ）、それとも相手にボールを持たせて自分たちは陣地（攻める方向）を選ぶかを選択できる。あるいは、その選択自体を後半に持ち越す（デファー）ことも可能である。負けたチームは、勝ったチームが選ばなかった残りの選択肢を得る。</p>
@@ -129,32 +153,6 @@
     <strong>観戦のヒント：</strong>
     オーバータイムは、たった一つのプレーが勝敗を分けることもあり、レギュラータイム以上に緊張感の高い展開になりやすい。最初のポゼッションでどちらのチームが何を選ぶか、そこからどんな攻防が生まれるかに注目すると、オーバータイムならではの劇的な結末を楽しめる。
   </div>
-
-  <figure class="diagram">
-    <svg viewBox="0 0 820 150" xmlns="http://www.w3.org/2000/svg">
-      <rect x="0" y="0" width="820" height="150" fill="#141713" rx="4"/>
-      <rect x="40" y="55" width="150" height="40" fill="#191d18" stroke="#3d4238" stroke-width="1.5" rx="2"/>
-      <text x="115" y="79" fill="#eceee9" font-size="13" text-anchor="middle" font-family="Oswald">第1Q</text>
-      <rect x="200" y="55" width="150" height="40" fill="#191d18" stroke="#3d4238" stroke-width="1.5" rx="2"/>
-      <text x="275" y="79" fill="#eceee9" font-size="13" text-anchor="middle" font-family="Oswald">第2Q</text>
-      <line x1="335" y1="45" x2="335" y2="55" stroke="#ffc633" stroke-width="2"/>
-      <circle cx="335" cy="42" r="3" fill="#ffc633"/>
-      <text x="335" y="30" fill="#ffc633" font-size="9" text-anchor="middle" font-family="Oswald">ツーミニッツウォーニング</text>
-      <rect x="362" y="55" width="26" height="40" fill="#0c0e0c" stroke="#2a2e28" stroke-width="1.5" stroke-dasharray="3,3" rx="2"/>
-      <text x="375" y="120" fill="#a8afa2" font-size="10" text-anchor="middle" font-family="Oswald">ハーフタイム</text>
-      <line x1="375" y1="113" x2="375" y2="95" stroke="#a8afa2" stroke-width="1"/>
-      <rect x="400" y="55" width="150" height="40" fill="#191d18" stroke="#3d4238" stroke-width="1.5" rx="2"/>
-      <text x="475" y="79" fill="#eceee9" font-size="13" text-anchor="middle" font-family="Oswald">第3Q</text>
-      <rect x="560" y="55" width="150" height="40" fill="#191d18" stroke="#3d4238" stroke-width="1.5" rx="2"/>
-      <text x="635" y="79" fill="#eceee9" font-size="13" text-anchor="middle" font-family="Oswald">第4Q</text>
-      <line x1="695" y1="45" x2="695" y2="55" stroke="#ffc633" stroke-width="2"/>
-      <circle cx="695" cy="42" r="3" fill="#ffc633"/>
-      <rect x="735" y="55" width="70" height="40" fill="none" stroke="#3ecf6e" stroke-width="1.5" stroke-dasharray="4,3" rx="2"/>
-      <text x="770" y="79" fill="#3ecf6e" font-size="12" text-anchor="middle" font-family="Oswald">OT</text>
-      <text x="770" y="115" fill="#a8afa2" font-size="9" text-anchor="middle" font-family="Oswald">（同点の場合）</text>
-    </svg>
-    <figcaption>試合は15分×4クォーターで進み、前半（第1・第2Q）と後半（第3・第4Q）の間に「ハーフタイム」を挟む。各ハーフ残り2分では「ツーミニッツウォーニング」で時計が自動的に止まり、同点なら「オーバータイム」に入る。</figcaption>
-  </figure>
 
   <h2>まとめ</h2>
   <p>試合は、コイントスでの選択に始まり、クォーターという単位とハーフタイムを挟んで進行する。各ハーフ終盤にはツーミニッツウォーニングという自動的な区切りが訪れ、既定の時間で決着がつかなければ、オーバータイムに突入する。</p>
