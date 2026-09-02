@@ -132,18 +132,17 @@ window.BASICS_DATA = [
     {
       slug: 'rules-game-time-basics',
       url: 'basics/rules-game-time-basics.html',
-      title: '試合時間・進行管理の基礎',
-      excerpt: '試合を進行させる時間の仕組み ― クォーター・タイムアウト・オーバータイムのルールを解説。',
+      title: '試合進行の基礎',
+      excerpt: 'コイントスから試合終了までの流れ ― クォーター・ハーフタイム・オーバータイムのルールを解説。',
       readMin: 7,
       tags: [
         { slug: 'quarter', name: 'クォーター' },
         { slug: 'half', name: 'ハーフ' },
         { slug: 'halftime', name: 'ハーフタイム' },
-        { slug: 'timeout', name: 'タイムアウト' },
         { slug: 'two-minute-warning', name: 'ツーミニッツウォーニング' },
         { slug: 'overtime', name: 'オーバータイム' }
       ],
-      thumb: '<line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="35" cy="30" r="17" fill="#eceee9" stroke="#a8afa2" stroke-width="1.4"/> <line x1="35" y1="30" x2="35" y2="18" stroke="#3d4238" stroke-width="1.6" stroke-linecap="round"/> <line x1="35" y1="30" x2="44" y2="24" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round"/> <circle cx="35" cy="30" r="1.6" fill="#3d4238"/>'
+      thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="12" cy="30" r="4" fill="#eceee9"/> <path d="M18,30 L52,30" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#flowThumbArrow)"/> <line x1="26" y1="24" x2="26" y2="36" stroke="#a8afa2" stroke-width="1.3"/> <line x1="36" y1="24" x2="36" y2="36" stroke="#a8afa2" stroke-width="1.3"/> <line x1="46" y1="24" x2="46" y2="36" stroke="#a8afa2" stroke-width="1.3"/> <defs> <marker id="flowThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker> </defs>'
     },
     {
       slug: 'rules-clock-basics',
