@@ -151,6 +151,7 @@ window.BASICS_DATA = [
       excerpt: 'ゲームクロックとプレークロックの仕組み ― クロックが止まる3パターンと40秒ルールを解説。',
       readMin: 6,
       tags: [
+        { slug: 'game-clock', name: 'ゲームクロック' },
         { slug: 'timeout', name: 'タイムアウト' },
         { slug: 'two-minute-warning', name: 'ツーミニッツウォーニング' },
         { slug: 'quarter', name: 'クォーター' },
