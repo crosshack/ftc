@@ -95,6 +95,7 @@ window.BASICS_DATA = [
       tags: [
         { slug: 'run', name: 'ラン' },
         { slug: 'pass', name: 'パス' },
+        { slug: 'forward-pass', name: 'フォワードパス' },
         { slug: 'snap', name: 'スナップ' },
         { slug: 'kickoff', name: 'キックオフ' },
         { slug: 'kickoff-return', name: 'キックオフリターン' },
@@ -106,7 +107,8 @@ window.BASICS_DATA = [
         { slug: 'touchback', name: 'タッチバック' },
         { slug: 'interception', name: 'インターセプト' },
         { slug: 'fumble-lost', name: 'ファンブルロスト' },
-        { slug: 'tackle-for-loss', name: 'ロスタックル' }
+        { slug: 'tackle-for-loss', name: 'ロスタックル' },
+        { slug: 'illegal-forward-pass', name: 'イリーガル・フォワードパス' }
       ],
       thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="16" cy="44" r="5" fill="#eceee9"/> <path d="M24,42 L46,42" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#playThumbArrow)"/> <line x1="54" y1="26" x2="54" y2="46" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/> <defs> <marker id="playThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker> </defs>'
     },
