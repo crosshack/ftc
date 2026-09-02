@@ -181,6 +181,7 @@ window.TOPICS_DATA = [
         { slug: "personnel", name: "パーソネル" },
         { slug: "formation", name: "フォーメーション" },
         { slug: "offense", name: "オフェンス" },
+        { slug: "play-action-pass", name: "プレーアクション" },
         { slug: "run", name: "ラン" },
         { slug: "post-route", name: "ポストルート" },
         { slug: "quarterback", name: "クォーターバック" },
