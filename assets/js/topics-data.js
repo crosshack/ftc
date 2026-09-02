@@ -325,5 +325,52 @@ window.TOPICS_DATA = [
         { slug: "minnesota-vikings", name: "ミネソタ・バイキングス" }
       ],
     thumb: '<rect x="6" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="14" cy="37" r="3" fill="#eceee9"/><rect x="27" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="35" cy="37" r="3" fill="#eceee9"/><rect x="48" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="56" cy="37" r="3" fill="#eceee9"/>'
+  },
+  {
+    slug: "play-action-1",
+    title: "なぜプレーアクションパスは使われてこなかったのか",
+    excerpt: "プレーアクションを使ったパスはYPAで1ヤード以上、QBレーティングで15以上も上回るのに、なぜNFL全体の使用率は10年近く2割前後で足踏みしてきたのか。その理由と直近の変化を解説する。",
+    url: "topics/play-action-1.html",
+    date: "2026-09-02",
+    readMin: 5,
+    theme: { slug: "play-action", name: "プレーアクションパスの伸びしろ", part: "前編" },
+    tags: [
+        { slug: "play-action-pass", name: "プレーアクションパス" },
+        { slug: "pass", name: "パス" },
+        { slug: "run", name: "ラン" },
+        { slug: "quarterback", name: "クォーターバック" },
+        { slug: "running-back", name: "ランニングバック" },
+        { slug: "offensive-line", name: "オフェンスライン" },
+        { slug: "pass-protection", name: "パスプロテクション" },
+        { slug: "dropback", name: "ドロップバック" },
+        { slug: "play-call", name: "プレーコール" },
+        { slug: "offensive-coordinator", name: "オフェンスコーディネーター" },
+        { slug: "head-coach", name: "ヘッドコーチ" },
+        { slug: "offense", name: "オフェンス" }
+      ],
+    thumb: '<circle cx="35" cy="52" r="4" fill="#eceee9"/><path d="M35,52 L20,52" fill="none" stroke="#a8afa2" stroke-width="2" stroke-dasharray="3,2" stroke-linecap="round"/><circle cx="20" cy="52" r="3.5" fill="#a8afa2"/><path d="M35,52 Q45,30 58,20" fill="none" stroke="#3ecf6e" stroke-width="2" stroke-linecap="round"/><circle cx="58" cy="20" r="3.5" fill="#3ecf6e"/>'
+  },
+  {
+    slug: "play-action-2",
+    title: "プレーアクション活用の実例と今後",
+    excerpt: "ベン・ジョンソンの就任でプレーアクション使用率が跳ね上がったシカゴ・ベアーズの実例と、2025年シーズンでも17ポイント以上残るチーム間の差、プレーアクションの伸びしろの今後を解説する。",
+    url: "topics/play-action-2.html",
+    date: "2026-09-02",
+    readMin: 5,
+    theme: { slug: "play-action", name: "プレーアクションパスの伸びしろ", part: "後編" },
+    tags: [
+        { slug: "play-action-pass", name: "プレーアクションパス" },
+        { slug: "quarterback", name: "クォーターバック" },
+        { slug: "offensive-coordinator", name: "オフェンスコーディネーター" },
+        { slug: "head-coach", name: "ヘッドコーチ" },
+        { slug: "offense", name: "オフェンス" },
+        { slug: "running-back", name: "ランニングバック" },
+        { slug: "pass", name: "パス" },
+        { slug: "chicago-bears", name: "シカゴ・ベアーズ" },
+        { slug: "detroit-lions", name: "デトロイト・ライオンズ" },
+        { slug: "los-angeles-rams", name: "ロサンゼルス・ラムズ" },
+        { slug: "cincinnati-bengals", name: "シンシナティ・ベンガルズ" }
+      ],
+    thumb: '<circle cx="35" cy="52" r="4" fill="#eceee9"/><path d="M35,52 L20,52" fill="none" stroke="#a8afa2" stroke-width="2" stroke-dasharray="3,2" stroke-linecap="round"/><circle cx="20" cy="52" r="3.5" fill="#a8afa2"/><path d="M35,52 Q45,30 58,20" fill="none" stroke="#3ecf6e" stroke-width="2" stroke-linecap="round"/><circle cx="58" cy="20" r="3.5" fill="#3ecf6e"/>'
   }
 ];

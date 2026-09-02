@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon-192.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180.png?v=2">
+<title>なぜプレーアクションパスは使われてこなかったのか | トピックス | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="プレーアクションを使ったパスはYPAで1ヤード以上、QBレーティングで15以上も上回るのに、なぜNFL全体の使用率は10年近く2割前後で足踏みしてきたのか。その理由と直近の変化を解説する。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=26">
+<!-- Google tag (gtag.js) -->
+<script>
+(function () {
+  // 本番ドメインでのみ計測する(staging.footballtactics.club・localhost では送信しない)
+  var hosts = ['footballtactics.club', 'www.footballtactics.club'];
+  if (hosts.indexOf(location.hostname) === -1) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-NHS351TN8E';
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', 'G-NHS351TN8E');
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><img src="../assets/img/logo-combined.svg" class="brand-logo" alt="FOOTBALLTACTICS.CLUB"></a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../nfl-db.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="20" x2="21" y2="20"/><rect x="5" y="14" width="3" height="6"/><rect x="11" y="9" width="3" height="11"/><rect x="17" y="4" width="3" height="16"/></svg><span>NFL.<span style="color: var(--accent);">DB</span></span></a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../topics.html">トピックス</a></li>
+      <li><span class="current">なぜプレーアクションパスは使われてこなかったのか</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="article-head">
+  <div class="container">
+    <span class="theme-tag"><a href="../topics.html?theme=play-action">プレーアクションパスの伸びしろ</a><span class="part">前編</span></span>
+    <div class="page-head-title-row">
+      <h1>なぜプレーアクションパスは使われてこなかったのか</h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="55" r="4" fill="#eceee9"/>
+        <path d="M20,55 L45,55" fill="none" stroke="#3ecf6e" stroke-width="2.5" stroke-linecap="round" marker-end="url(#thumbRunArrow1)"/>
+        <path d="M20,55 Q38,18 58,22" fill="none" stroke="#ffc633" stroke-width="2.5" stroke-linecap="round" marker-end="url(#thumbPassArrow1)"/>
+        <defs>
+          <marker id="thumbRunArrow1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#3ecf6e"/></marker>
+          <marker id="thumbPassArrow1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffc633"/></marker>
+        </defs>
+      </svg>
+    </div>
+    <div class="meta">読了目安 5分 ・ 2026.09.02 公開</div>
+    <div class="topic-tags">
+      <a href="../glossary/play-action-pass.html">#プレーアクションパス</a>
+      <a href="../glossary/pass.html">#パス</a>
+      <a href="../glossary/run.html">#ラン</a>
+      <a href="../glossary/quarterback.html">#クォーターバック</a>
+      <a href="../glossary/running-back.html">#ランニングバック</a>
+      <a href="../glossary/offensive-line.html">#オフェンスライン</a>
+      <a href="../glossary/pass-protection.html">#パスプロテクション</a>
+      <a href="../glossary/dropback.html">#ドロップバック</a>
+      <a href="../glossary/play-call.html">#プレーコール</a>
+      <a href="../glossary/offensive-coordinator.html">#オフェンスコーディネーター</a>
+      <a href="../glossary/head-coach.html">#ヘッドコーチ</a>
+      <a href="../glossary/offense.html">#オフェンス</a>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>プレーアクションを使ったパスは、使わなかった場合よりYPAで1ヤード以上、QBレーティングで15以上も高い。2013年の調査ですでにこの差は明らかになっていたにもかかわらず、NFL全体の使用率はその後10年近く、ずっと2割前後で足踏みを続けてきた。数字が示す効果と、実際の使用率のギャップ ― この「伸びしろ」は、なぜこれほど長く放置されてきたのだろうか。</p>
+
+  <h2>数字で見る「伸びしろ」</h2>
+  <p>2013年、PFFが行った調査では、プレーアクションを伴うパスは、伴わないパスに比べてQBレーティングで99.2対83.3、YPAで8.6対6.8、タッチダウン率で6.1%対3.9%と、いずれの指標でも明確に上回っていた。この効果は一時的なものではない。2024年シーズン（11月時点）の調査でも、プレーアクションを使ったパスは8.13YPA、使わなかったパスは6.3YPAと、10年以上経った今も同じ規模の差が続いている。にもかかわらず、リーグ全体の使用率は2013年から2023年まで、おおよそ21%前後でほとんど動かなかった。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="600" height="200" fill="#141713" rx="4"/>
+      <line x1="40" y1="170" x2="560" y2="170" stroke="#3d4238" stroke-width="1"/>
+      <rect x="160" y="40" width="90" height="130" fill="#3ecf6e" fill-opacity="0.9"/>
+      <text x="205" y="30" fill="#eceee9" font-size="14" text-anchor="middle" font-family="Oswald">8.13 YPA</text>
+      <text x="205" y="188" fill="#a8afa2" font-size="11" text-anchor="middle" font-family="Noto Sans JP">プレーアクションあり</text>
+      <rect x="360" y="75" width="90" height="95" fill="#3ecf6e" fill-opacity="0.35"/>
+      <text x="405" y="65" fill="#a8afa2" font-size="14" text-anchor="middle" font-family="Oswald">6.3 YPA</text>
+      <text x="405" y="188" fill="#a8afa2" font-size="11" text-anchor="middle" font-family="Noto Sans JP">プレーアクションなし</text>
+    </svg>
+    <figcaption>図: 2024年シーズン（11月時点）の調査でも、プレーアクションを使ったパスは8.13YPA、使わなかったパスは6.3YPAと、明確な差が続いている。</figcaption>
+  </figure>
+
+  <h2>理由１：「ランが機能していないと使えない」という思い込み</h2>
+  <p>この長年の低使用率の背景には、コーチたちの間に根強くあった一つの思い込みがある。プレーアクションは、地上戦がうまくいっている試合でこそ機能する、という考え方だ。ニューイングランド・ペイトリオッツのオフェンスコーディネーター、アレック・ヴァンペルトも2024年に「まずランをもっとうまく機能させる必要がある」と述べており、同チームがプレーアクションを毎週10〜12プレー程度しかコールしない理由の一つとして、この考え方を挙げている。</p>
+
+  <h2>理由２：数字が示す、その思い込みの誤り</h2>
+  <p>しかしアナリストのアーロン・シャッツは、この前提そのものに異を唱える。シャッツの分析によれば、直近数プレーでランがどれだけ成功していたか、そしてそのシーズンのラン全体の成功率がどうだったかは、プレーアクションの効果とはほとんど関係がない。ディフェンスがランフェイクに反応する度合いは、実際のランの出来不出来とは独立している、という指摘だ。シャッツは「プレーアクションを使いすぎて効果がなくなる水準に、まだ到達したチームがあるとは思えない」とまで述べている。</p>
+
+  <h2>理由３：直近2〜3年でようやく動き始めた変化</h2>
+  <p>この状況に、直近になってわずかな変化が見え始めている。リーグ全体の使用率は2023年23.36%から、2024年24.94%、2025年25.65%と、2年連続で上昇した。10年近くほとんど動かなかった数字が動き出した背景の一つに、後編で取り上げる、ある1人のコーチの存在がある。</p>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    オフェンスラインの動きに注目したい。プレーアクションでは、実際にはパスを投げるプレーであっても、ラインマンは一瞬ランブロックのように前に出る動きを見せる。この「ランを装う」動きが大きいほど、ディフェンスのランへの反応も強くなり、フェイクの効果が高まる。
+  </div>
+
+  <div class="reference-links">
+    <span class="label">出典</span>
+    <ul>
+      <li><a href="https://www.pff.com/news/signature-stats-play-action-deep-passing" target="_blank" rel="noopener">PFF ― Signature Stats: Play Action & Deep Passing</a></li>
+      <li><a href="https://www.bostonglobe.com/2024/11/23/sports/sunday-football-notes-patriots-nfl-play-action-passes/" target="_blank" rel="noopener">Boston Globe ― Why the Patriots, and all NFL teams, need to call more play-action passes</a></li>
+      <li><a href="https://www.pff.com/news/fantasy-football-2026-how-play-action-pre-snap-motion-and-rpo-rates-define-2026-fantasy-value" target="_blank" rel="noopener">PFF ― Fantasy Football 2026: How play action, pre-snap motion, and RPO rates define 2026 fantasy value</a></li>
+    </ul>
+  </div>
+
+</article>
+
+<div class="page-nav container next-only">
+  <a class="page-nav-card next" href="play-action-2.html">
+    <span class="nav-label">次のページ</span>
+    <span class="nav-title">プレーアクション活用の実例と今後<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span class="nav-desc">コーチ交代で使用率が跳ね上がった実例と、今も残るチーム間の差を見ていく。</span>
+  </a>
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../topics.html">トピックス</a></li>
+      <li><span class="current">なぜプレーアクションパスは使われてこなかったのか</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; <a href="https://www.crosshack.jp/" target="_blank" rel="noopener">CROSSHACK Inc.</a> All rights reserved.</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>
