@@ -8,8 +8,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png?v=2">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon-192.png?v=2">
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180.png?v=2">
-<title>試合時間・進行管理の基礎 | 基礎知識 | FOOTBALLTACTICS.CLUB</title>
-<meta name="description" content="コイントスでの選択に始まり、クォーターやハーフタイムという時間区分、チームが試合を止められるタイムアウト、各ハーフ終盤に自動で時計が止まるツーミニッツウォーニングを経て、決着がつかなければオーバータイムに入るという、試合全体の時間の仕組みを解説する基礎知識ページ。">
+<title>試合進行の基礎 | 基礎知識 | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="コイントスでの選択に始まり、クォーターやハーフタイムという時間区分、各ハーフ終盤のツーミニッツウォーニングを経て、決着がつかなければオーバータイムに入るという、試合が進んでいく流れを解説する基礎知識ページ。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css?v=26">
@@ -55,7 +55,7 @@
     <ol>
       <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
       <li><a href="../basics.html">基礎知識</a></li>
-      <li><span class="current">試合時間・進行管理の基礎</span></li>
+      <li><span class="current">試合進行の基礎</span></li>
     </ol>
   </div>
 </nav>
@@ -64,13 +64,17 @@
   <div class="container">
     <span class="tag tag-flag">ルール</span>
     <div class="page-head-title-row">
-      <h1>試合時間・進行管理の基礎<br><span class="subtitle">― 試合を進行させる時間の仕組み</span></h1>
+      <h1>試合進行の基礎<br><span class="subtitle">― コイントスから試合終了までの流れ</span></h1>
       <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
-        <line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
-        <circle cx="35" cy="30" r="17" fill="#eceee9" stroke="#a8afa2" stroke-width="1.4"/>
-        <line x1="35" y1="30" x2="35" y2="18" stroke="#3d4238" stroke-width="1.6" stroke-linecap="round"/>
-        <line x1="35" y1="30" x2="44" y2="24" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round"/>
-        <circle cx="35" cy="30" r="1.6" fill="#3d4238"/>
+        <line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="12" cy="30" r="4" fill="#eceee9"/>
+        <path d="M18,30 L52,30" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#flowThumbArrow)"/>
+        <line x1="26" y1="24" x2="26" y2="36" stroke="#a8afa2" stroke-width="1.3"/>
+        <line x1="36" y1="24" x2="36" y2="36" stroke="#a8afa2" stroke-width="1.3"/>
+        <line x1="46" y1="24" x2="46" y2="36" stroke="#a8afa2" stroke-width="1.3"/>
+        <defs>
+          <marker id="flowThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker>
+        </defs>
       </svg>
     </div>
     <div class="meta">読了目安 7分</div>
@@ -78,7 +82,6 @@
       <a href="../glossary/quarter.html">#クォーター</a>
       <a href="../glossary/half.html">#ハーフ</a>
       <a href="../glossary/halftime.html">#ハーフタイム</a>
-      <a href="../glossary/timeout.html">#タイムアウト</a>
       <a href="../glossary/two-minute-warning.html">#ツーミニッツウォーニング</a>
       <a href="../glossary/overtime.html">#オーバータイム</a>
     </div>
@@ -87,10 +90,15 @@
 
 <article class="article-body">
 
-  <p>試合は、コイントスでの選択から始まり、「クォーター」という時間区分の中で進行する。前半・後半の間の休憩である「ハーフタイム」、チームが試合を一時的に止められる「タイムアウト」、そして各ハーフ終盤に自動的に時計が止まる「ツーミニッツウォーニング」を経て、既定の時間内に決着がつかなければ「オーバータイム」に入る。ここでは、試合がどのような時間の単位・手続きで進行していくのかを整理する。</p>
+  <p>試合は、コイントスでの選択から始まり、「クォーター」という時間区分の中で進行する。前半・後半の間の休憩である「ハーフタイム」、そして各ハーフ終盤に訪れる「ツーミニッツウォーニング」を経て、既定の時間内に決着がつかなければ「オーバータイム」に入る。ここでは、試合がどのような単位・順序で進んでいくのかという、試合全体の流れを整理する。</p>
 
   <h2>試合の始まり ― コイントス</h2>
   <p>試合開始前、両チームのキャプテンがフィールド中央に集まり、審判が投げるコインの表裏を予想する「コイントス」が行われる。勝ったチームは、前半に自分たちが先にボールを持ってプレーを始めるか（レシーブ）、それとも相手にボールを持たせて自分たちは陣地（攻める方向）を選ぶかを選択できる。あるいは、その選択自体を後半に持ち越す（デファー）ことも可能である。負けたチームは、勝ったチームが選ばなかった残りの選択肢を得る。</p>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    コイントスに勝ったチームは、前半に自分たちがボールを持つ「レシーブ」を選ぶこともできるが、近年はその選択権を後半に持ち越す「デファー」を選ぶチームが多い。後半の入りに主導権を握りやすいという考え方があるためで、コイントスの結果放送でどちらを選んだかにも注目してみると面白い。
+  </div>
 
   <h2>試合の時間区分 ― クォーターとハーフタイム</h2>
 
@@ -100,21 +108,8 @@
   <h3>ハーフタイム ― 前半と後半の間の休憩</h3>
   <p>前半（第1・第2クォーター）を終えると、両チームが休憩を取る「ハーフタイム」を挟んで後半（第3・第4クォーター）に入る。このタイミングでは陣地の入れ替えに加えて、前半にキックオフを受けなかった側のチームが後半のキックオフを受けて試合を再開する。</p>
 
-  <h2>タイムアウト ― チームが試合を一時的に止められる権利</h2>
-  <p>各チームには、前半・後半それぞれ3回ずつ、任意のタイミングで試合を一時的に止められる「タイムアウト」が与えられている。主な用途は次の通りである。</p>
-  <ul>
-    <li><strong>戦術確認</strong>：プレーとプレーの間にコーチが選手へ指示を出したり、混乱した状況を整理したりする。</li>
-    <li><strong>流れを断ち切る</strong>：勢いに乗る相手チームの流れを一度止める。</li>
-    <li><strong>時間の確保</strong>：試合終盤、時間を残り少なくして負けているチームが、時計を止めて自分たちの攻撃時間を確保する。</li>
-  </ul>
-
-  <div class="callout">
-    <strong>観戦のヒント：</strong>
-    試合終盤、両チームの残りタイムアウト数に注目すると、その後の攻防がどれだけ切迫しているかが見えてくる。残りが少ないほど時計を止める手段が限られ、緊張感の高い展開になりやすい。
-  </div>
-
-  <h2>ツーミニッツウォーニング ― 各ハーフ残り2分で自動的に時計が止まるタイミング</h2>
-  <p>前半・後半それぞれの残り時間が2分になった瞬間、時計は自動的に一度止まる。これを「ツーミニッツウォーニング」と呼ぶ。タイムアウトとは異なりチームの意思とは無関係に発生し、両チームのタイムアウトを消費せずに試合を一時停止できる。この中断によって、両チームは残り2分間の作戦を整理する時間を得る。とくに攻撃側は、タイムアウトを使い切っていても、この一度きりの停止を利用して逆転を狙う攻撃の組み立てを見直せる。</p>
+  <h2>ツーミニッツウォーニング ― 各ハーフ終盤に訪れる自動的な区切り</h2>
+  <p>前半・後半それぞれの残り時間が2分になった瞬間、試合は「ツーミニッツウォーニング」と呼ばれる一度きりの区切りを迎える。チームの意思とは無関係に訪れるこの区切りによって、両チームは残り2分間の作戦を整理する時間を得る。</p>
 
   <div class="callout flag">
     <strong>背景・トレンド：</strong>
@@ -122,7 +117,7 @@
   </div>
 
   <h2>決着がつかない場合 ― オーバータイム</h2>
-  <p>既定の4クォーターを終えて同点の場合、「オーバータイム」と呼ばれる延長戦に入る。開始前に改めてコイントスが行われ、勝ったチームは先にボールを持つ側になるか、その選択を相手に譲るかを選べる。</p>
+  <p>既定の4クォーターを終えて同点の場合、「オーバータイム」と呼ばれる延長戦に入る。2025年のルール改正により、レギュラーシーズンもプレーオフと同様、両チームに必ず一度はポゼッションを得る機会を与える方式に統一された。開始前に改めてコイントスが行われ、勝ったチームは先にボールを持つ側になるか、その選択を相手に譲るかを選べる。</p>
   <ul>
     <li><strong>両チームに一度ずつ機会</strong>：必ず一度はポゼッション（攻撃権）を得る機会が与えられ、最初のポゼッションでタッチダウンを決めても、その時点でただちに勝敗が決まるわけではない。</li>
     <li><strong>その後は先に得点した方が勝ち</strong>：両チームが一度ずつポゼッションを得たあとは、次にどちらかが得点した時点で試合が終了する。</li>
@@ -162,7 +157,7 @@
   </figure>
 
   <h2>まとめ</h2>
-  <p>試合は、コイントスでの選択に始まり、クォーターという単位とハーフタイムを挟んで進行する。その中でチームはタイムアウトを使って試合の流れを自ら止めることができ、各ハーフ終盤にはツーミニッツウォーニングが自動的に時計を止める。既定の時間で決着がつかなければ、オーバータイムに突入する。</p>
+  <p>試合は、コイントスでの選択に始まり、クォーターという単位とハーフタイムを挟んで進行する。各ハーフ終盤にはツーミニッツウォーニングという自動的な区切りが訪れ、既定の時間で決着がつかなければ、オーバータイムに突入する。</p>
 
 </article>
 
@@ -184,7 +179,7 @@
     <ol>
       <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
       <li><a href="../basics.html">基礎知識</a></li>
-      <li><span class="current">試合時間・進行管理の基礎</span></li>
+      <li><span class="current">試合進行の基礎</span></li>
     </ol>
   </div>
 </nav>
