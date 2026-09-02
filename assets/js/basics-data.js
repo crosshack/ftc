@@ -146,6 +146,25 @@ window.BASICS_DATA = [
       thumb: '<line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="35" cy="30" r="17" fill="#eceee9" stroke="#a8afa2" stroke-width="1.4"/> <line x1="35" y1="30" x2="35" y2="18" stroke="#3d4238" stroke-width="1.6" stroke-linecap="round"/> <line x1="35" y1="30" x2="44" y2="24" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round"/> <circle cx="35" cy="30" r="1.6" fill="#3d4238"/>'
     },
     {
+      slug: 'rules-clock-basics',
+      url: 'basics/rules-clock-basics.html',
+      title: 'クロックの基礎',
+      excerpt: 'ゲームクロックとプレークロック、2種類の時計の仕組み ― 止まる3パターンと40秒ルールを解説。',
+      readMin: 6,
+      tags: [
+        { slug: 'timeout', name: 'タイムアウト' },
+        { slug: 'two-minute-warning', name: 'ツーミニッツウォーニング' },
+        { slug: 'quarter', name: 'クォーター' },
+        { slug: 'down', name: 'ダウン' },
+        { slug: 'incomplete-pass', name: 'パスインコンプリート' },
+        { slug: 'out-of-bounds', name: 'アウトオブバウンズ' },
+        { slug: 'touchback', name: 'タッチバック' },
+        { slug: 'play-clock', name: 'プレークロック' },
+        { slug: 'delay-of-game', name: 'ディレイ・オブ・ゲーム' }
+      ],
+      thumb: '<line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="35" cy="30" r="17" fill="#eceee9" stroke="#a8afa2" stroke-width="1.4"/> <line x1="35" y1="30" x2="35" y2="18" stroke="#3d4238" stroke-width="1.6" stroke-linecap="round"/> <line x1="35" y1="30" x2="27" y2="22" stroke="#e57373" stroke-width="1.8" stroke-linecap="round"/> <circle cx="35" cy="30" r="1.6" fill="#3d4238"/> <circle cx="35" cy="13" r="2" fill="#e57373"/>'
+    },
+    {
       slug: 'rules-penalties-basics',
       url: 'basics/rules-penalties-basics.html',
       title: '判定・反則・ペナルティの基礎',
