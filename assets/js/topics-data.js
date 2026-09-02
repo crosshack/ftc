@@ -27,7 +27,8 @@ window.TOPICS_DATA = [
         { slug: "safety", name: "セーフティ" },
         { slug: "area", name: "エリア" },
         { slug: "pass", name: "パス" }
-      ],
+      ,
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
     thumb: '<circle cx="35" cy="46" r="8" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><path d="M35,38 Q35,26 35,18" fill="none" stroke="#eceee9" stroke-width="1.8" stroke-dasharray="4,3"/><circle cx="35" cy="18" r="4" fill="#eceee9"/><path d="M35,52 L35,60" fill="none" stroke="#ffc633" stroke-width="2"/><circle cx="35" cy="60" r="3.5" fill="#ffc633"/>'
   },
   {
@@ -80,7 +81,8 @@ window.TOPICS_DATA = [
         { slug: "yard", name: "ヤード" },
         { slug: "route", name: "ルート" },
         { slug: 'match-coverage', name: 'パターンマッチ' }
-      ],
+      ,
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="45" cy="50" r="3.5" fill="#eceee9"/><path d="M45,50 L20,50" fill="none" stroke="#ffc633" stroke-width="2" stroke-dasharray="3,2"/><path d="M24,46 L18,50 L24,54" fill="none" stroke="#ffc633" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18" cy="50" r="3.5" fill="#ffc633"/>'
   },
   {
@@ -222,7 +224,8 @@ window.TOPICS_DATA = [
         { slug: "yard", name: "ヤード" },
         { slug: "route", name: "ルート" },
         { slug: "new-england-patriots", name: "ニューイングランド・ペイトリオッツ" }
-      ],
+      ,
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
     thumb: '<circle cx="35" cy="35" r="16" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="46" y1="46" x2="58" y2="58" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="38" r="3.5" fill="#eceee9"/><path d="M30,38 L40,28" stroke="#ffc633" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="28" r="3.5" fill="#ffc633"/>'
   }
   ,

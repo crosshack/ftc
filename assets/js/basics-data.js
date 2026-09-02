@@ -259,7 +259,8 @@ window.BASICS_DATA = [
         { slug: 'defender', name: 'ディフェンダー' },
         { slug: 'yard', name: 'ヤード' },
         { slug: 'area', name: 'エリア' }
-      ],
+      ,
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
       thumb: '<line x1="0" y1="26" x2="70" y2="26" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="25" cy="26" r="3.5" fill="#3ecf6e"/><circle cx="35" cy="26" r="3.5" fill="#3ecf6e"/><circle cx="45" cy="26" r="3.5" fill="#3ecf6e"/> <circle cx="10" cy="26" r="3.5" fill="#ffc633"/><circle cx="60" cy="26" r="3.5" fill="#ffc633"/> <circle cx="31" cy="34" r="3.5" fill="#eceee9"/><circle cx="41" cy="38" r="3.5" fill="#eceee9"/>'
     },
     {
@@ -442,7 +443,8 @@ window.BASICS_DATA = [
         { slug: 'field', name: 'フィールド' },
         { slug: 'block', name: 'ブロック' },
         { slug: 'yard', name: 'ヤード' }
-      ],
+      ,
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
       thumb: '<line x1="0" y1="55" x2="70" y2="55" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="20" cy="50" r="3.5" fill="#eceee9"/> <path d="M20,50 L20,20" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#passBasicsCardA)"/> <path d="M20,50 L45,50 L52,28" stroke="#ffc633" stroke-width="1.8" fill="none" stroke-linecap="round" marker-end="url(#passBasicsCardB)"/> <defs> <marker id="passBasicsCardA" markerWidth="8" markerHeight="8" refX="3" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffc633"/></marker> <marker id="passBasicsCardB" markerWidth="8" markerHeight="8" refX="3" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffc633"/></marker> </defs>'
     },
     {
@@ -492,7 +494,8 @@ window.BASICS_DATA = [
         { slug: 'block', name: 'ブロック' },
         { slug: 'receiver', name: 'レシーバー' },
         { slug: 'area', name: 'エリア' }
-      ],
+      ,
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
       thumb: '<circle cx="35" cy="52" r="3.5" fill="#eceee9"/> <path d="M20,52 A15,15 0 0 1 50,52" fill="none" stroke="#3ecf6e" stroke-width="1" opacity="0.5"/> <path d="M25,52 A10,10 0 0 1 45,52" fill="none" stroke="#3ecf6e" stroke-width="1" opacity="0.4"/> <circle cx="46" cy="24" r="4" fill="none" stroke="#ffc633" stroke-width="1.4"/> <circle cx="46" cy="24" r="1.8" fill="#ffc633"/>'
     }
     ]
@@ -670,7 +673,8 @@ window.BASICS_DATA = [
         { slug: 'defender', name: 'ディフェンダー' },
         { slug: 'run', name: 'ラン' },
         { slug: 'match-coverage', name: 'パターンマッチ' }
-      ],
+      ,
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
       thumb: '<path d="M8,50 Q35,15 62,50" fill="rgba(62,207,110,0.12)" stroke="#3ecf6e" stroke-width="1.5"/> <path d="M8,50 Q35,58 62,50" fill="rgba(30,136,229,0.12)" stroke="#1e88e5" stroke-width="1.5"/> <circle cx="35" cy="50" r="3" fill="#eceee9"/>'
     },
     {
@@ -787,7 +791,8 @@ window.BASICS_DATA = [
         { slug: 'yard', name: 'ヤード' },
         { slug: 'route', name: 'ルート' },
         { slug: 'receiver', name: 'レシーバー' }
-      ],
+      ,
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
       thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="35" cy="42" r="3.5" fill="#eceee9"/> <path d="M35,42 L20,20" stroke="#a8afa2" stroke-width="1" stroke-dasharray="2,3"/> <path d="M35,42 L50,22" stroke="#a8afa2" stroke-width="1" stroke-dasharray="2,3"/> <circle cx="20" cy="20" r="3" fill="none" stroke="#ffc633" stroke-width="1.3"/> <circle cx="50" cy="22" r="3" fill="none" stroke="#ffc633" stroke-width="1.3"/>'
     }
     ]
@@ -955,7 +960,8 @@ window.BASICS_DATA = [
         { slug: 'block', name: 'ブロック' },
         { slug: 'yard', name: 'ヤード' },
         { slug: 'run', name: 'ラン' }
-      ],
+      ,
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
       thumb: '<line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="14" cy="54" r="4" fill="#eceee9"/> <path d="M14,54 C14,30 46,34 46,8" stroke="#3ecf6e" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#retCardArrow)"/> <defs> <marker id="retCardArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#3ecf6e"/></marker> </defs>'
     }
     ]
