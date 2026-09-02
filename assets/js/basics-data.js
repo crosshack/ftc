@@ -148,7 +148,7 @@ window.BASICS_DATA = [
       slug: 'rules-clock-basics',
       url: 'basics/rules-clock-basics.html',
       title: 'クロックの基礎',
-      excerpt: 'ゲームクロックとプレークロックの仕組み ― 止まる3パターンと40秒ルールを解説。',
+      excerpt: 'ゲームクロックとプレークロックの仕組み ― クロックが止まる3パターンと40秒ルールを解説。',
       readMin: 6,
       tags: [
         { slug: 'timeout', name: 'タイムアウト' },
