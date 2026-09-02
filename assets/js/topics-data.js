@@ -329,12 +329,12 @@ window.TOPICS_DATA = [
   },
   {
     slug: "play-action-1",
-    title: "なぜプレーアクションパスは使われてこなかったのか",
-    excerpt: "プレーアクションを使ったパスはYPAで1ヤード以上、QBレーティングで15以上も上回るのに、なぜNFL全体の使用率は10年近く2割前後で足踏みしてきたのか。その理由と直近の変化を解説する。",
+    title: "なぜプレーアクションは使われてこなかったのか",
+    excerpt: "プレーアクションを使ったパスはYPA（ヤード・パー・アテンプト）で1ヤード以上、QBレーティングで15以上も上回るのに、なぜNFL全体の使用率は10年近く2割前後で足踏みしてきたのか。その理由と直近の変化を解説する。",
     url: "topics/play-action-1.html",
     date: "2026-09-02",
     readMin: 5,
-    theme: { slug: "play-action", name: "プレーアクションパスの伸びしろ", part: "前編" },
+    theme: { slug: "play-action", name: "プレーアクションの伸びしろ", part: "前編" },
     tags: [
         { slug: "play-action-pass", name: "プレーアクションパス" },
         { slug: "pass", name: "パス" },
@@ -358,7 +358,7 @@ window.TOPICS_DATA = [
     url: "topics/play-action-2.html",
     date: "2026-09-02",
     readMin: 5,
-    theme: { slug: "play-action", name: "プレーアクションパスの伸びしろ", part: "後編" },
+    theme: { slug: "play-action", name: "プレーアクションの伸びしろ", part: "後編" },
     tags: [
         { slug: "play-action-pass", name: "プレーアクションパス" },
         { slug: "quarterback", name: "クォーターバック" },
