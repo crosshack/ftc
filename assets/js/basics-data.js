@@ -444,7 +444,8 @@ window.BASICS_DATA = [
         { slug: 'block', name: 'ブロック' },
         { slug: 'yard', name: 'ヤード' }
       ,
-        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' },
+        { slug: 'pass-coverage', name: 'カバー' }],
       thumb: '<line x1="0" y1="55" x2="70" y2="55" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="20" cy="50" r="3.5" fill="#eceee9"/> <path d="M20,50 L20,20" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#passBasicsCardA)"/> <path d="M20,50 L45,50 L52,28" stroke="#ffc633" stroke-width="1.8" fill="none" stroke-linecap="round" marker-end="url(#passBasicsCardB)"/> <defs> <marker id="passBasicsCardA" markerWidth="8" markerHeight="8" refX="3" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffc633"/></marker> <marker id="passBasicsCardB" markerWidth="8" markerHeight="8" refX="3" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffc633"/></marker> </defs>'
     },
     {
@@ -674,7 +675,8 @@ window.BASICS_DATA = [
         { slug: 'run', name: 'ラン' },
         { slug: 'match-coverage', name: 'パターンマッチ' }
       ,
-        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' },
+        { slug: 'pass-coverage', name: 'カバー' }],
       thumb: '<path d="M8,50 Q35,15 62,50" fill="rgba(62,207,110,0.12)" stroke="#3ecf6e" stroke-width="1.5"/> <path d="M8,50 Q35,58 62,50" fill="rgba(30,136,229,0.12)" stroke="#1e88e5" stroke-width="1.5"/> <circle cx="35" cy="50" r="3" fill="#eceee9"/>'
     },
     {
@@ -745,7 +747,8 @@ window.BASICS_DATA = [
         { slug: 'block', name: 'ブロック' },
         { slug: 'yard', name: 'ヤード' },
         { slug: 'match-coverage', name: 'パターンマッチ' }
-      ],
+      ,
+        { slug: 'pass-coverage', name: 'カバー' }],
       thumb: '<line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="16" cy="56" r="4" fill="#a8afa2"/> <path d="M16,56 C24,40 32,26 42,12" stroke="#a8afa2" stroke-width="1.6" stroke-dasharray="2,3" stroke-linecap="round" fill="none" marker-end="url(#passDefCardB)"/> <circle cx="24" cy="54" r="4" fill="#eceee9"/> <path d="M24,54 C32,38 40,24 50,14" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#passDefCardA)"/> <defs> <marker id="passDefCardA" markerWidth="8" markerHeight="8" refX="3" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffc633"/></marker> <marker id="passDefCardB" markerWidth="6" markerHeight="6" refX="2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 Z" fill="#a8afa2"/></marker> </defs>'
     },
     {

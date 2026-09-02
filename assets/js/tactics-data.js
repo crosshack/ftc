@@ -242,7 +242,8 @@ window.TACTICS_DATA = [
         { slug: 'block', name: 'ブロック' },
         { slug: 'yard', name: 'ヤード' },
         { slug: 'match-coverage', name: 'パターンマッチ' }
-      ],
+      ,
+        { slug: 'pass-coverage', name: 'カバー' }],
       thumb: '<line x1="0" y1="55" x2="70" y2="55" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="14" cy="55" r="3" fill="#eceee9"/><circle cx="32" cy="55" r="3" fill="#eceee9"/><circle cx="50" cy="55" r="3" fill="#eceee9"/> <path d="M14,55 L8,10" stroke="#e53935" stroke-width="2" fill="none"/> <path d="M32,55 L34,12" stroke="#1e88e5" stroke-width="2" fill="none"/> <path d="M50,55 L54,18" stroke="#8e24aa" stroke-width="2" fill="none"/>'
     },
     {
@@ -300,7 +301,8 @@ window.TACTICS_DATA = [
         { slug: 'run-support', name: 'ランサポート' },
         { slug: 'overhang', name: 'オーバーハング' },
         { slug: 'yard', name: 'ヤード' }
-      ],
+      ,
+        { slug: 'pass-coverage', name: 'カバー' }],
       thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="35" cy="50" r="3.5" fill="#eceee9"/> <path d="M35,50 L20,40" stroke="#424242" stroke-width="4" stroke-linecap="round"/> <path d="M35,50 L35,20" stroke="#e53935" stroke-width="2" fill="none"/> <path d="M35,50 L50,32" stroke="#1e88e5" stroke-width="2.4" fill="none"/> <circle cx="50" cy="32" r="6" fill="none" stroke="#ffc633" stroke-width="1.4" stroke-dasharray="2,2"/>'
     }
     ]
@@ -390,7 +392,8 @@ window.TACTICS_DATA = [
         { slug: 'halftime', name: 'ハーフタイム' },
         { slug: 'rover', name: 'ロバー' }
       ,
-        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' },
+        { slug: 'pass-coverage', name: 'カバー' }],
       thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="20" cy="42" r="3.5" fill="#3ecf6e"/><circle cx="35" cy="42" r="3.5" fill="#3ecf6e"/><circle cx="50" cy="42" r="3.5" fill="#3ecf6e"/> <circle cx="27" cy="27" r="3.5" fill="#eceee9"/><circle cx="43" cy="27" r="3.5" fill="#eceee9"/> <circle cx="10" cy="38" r="3.5" fill="#ffc633"/><circle cx="60" cy="38" r="3.5" fill="#ffc633"/>'
     },
     {
@@ -471,7 +474,8 @@ window.TACTICS_DATA = [
         { slug: 'area', name: 'エリア' },
         { slug: 'match-coverage', name: 'パターンマッチ' }
       ,
-        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' },
+        { slug: 'pass-coverage', name: 'カバー' }],
       thumb: '<path d="M8,50 Q35,15 62,50" fill="rgba(62,207,110,0.12)" stroke="#3ecf6e" stroke-width="1.5"/> <path d="M8,50 Q35,58 62,50" fill="rgba(30,136,229,0.12)" stroke="#1e88e5" stroke-width="1.5"/> <circle cx="35" cy="50" r="3" fill="#eceee9"/>'
     }
     ]

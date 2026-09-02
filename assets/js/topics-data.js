@@ -160,7 +160,8 @@ window.TOPICS_DATA = [
         { slug: "run", name: "ラン" },
         { slug: "route", name: "ルート" },
         { slug: "los-angeles-rams", name: "ロサンゼルス・ラムズ" }
-      ],
+      ,
+        { slug: 'pass-coverage', name: 'カバー' }],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="20" cy="50" r="3.5" fill="#ffc633"/><circle cx="30" cy="50" r="3.5" fill="#ffc633"/><circle cx="40" cy="50" r="3.5" fill="#ffc633"/><circle cx="55" cy="50" r="3.5" fill="#eceee9"/><circle cx="30" cy="60" r="3.5" fill="#eceee9"/>'
   }
   ,
@@ -290,7 +291,8 @@ window.TOPICS_DATA = [
         { slug: "wide-receiver", name: "ワイドレシーバー" },
         { slug: "tight-end", name: "タイトエンド" },
         { slug: "quarterback", name: "クォーターバック" }
-      ],
+      ,
+        { slug: 'pass-coverage', name: 'カバー' }],
     thumb: '<rect x="6" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="14" cy="37" r="3" fill="#eceee9"/><rect x="27" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="35" cy="37" r="3" fill="#eceee9"/><rect x="48" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="56" cy="37" r="3" fill="#eceee9"/>'
   },
   {
