@@ -14,8 +14,8 @@ window.TOPICS_DATA = [
     theme: { slug: "pattern-match-coverage", name: "パターンマッチの最前線", part: "前編" },
     tags: [
         { slug: "match-coverage", name: "パターンマッチカバレッジ" },
-        { slug: "zone", name: "ゾーン(エリア)" },
-        { slug: "zone-coverage", name: "ゾーン(カバレッジ)" },
+        { slug: "zone", name: "ゾーン（エリア）" },
+        { slug: "zone-coverage", name: "ゾーン（カバレッジ）" },
         { slug: "snap", name: "スナップ" },
         { slug: "coverage", name: "カバレッジ" },
         { slug: "defense", name: "ディフェンス" },
