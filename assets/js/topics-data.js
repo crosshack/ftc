@@ -14,7 +14,8 @@ window.TOPICS_DATA = [
     theme: { slug: "pattern-match-coverage", name: "パターンマッチの最前線", part: "前編" },
     tags: [
         { slug: "match-coverage", name: "パターンマッチカバレッジ" },
-        { slug: "zone", name: "ゾーン" },
+        { slug: "zone", name: "ゾーン(エリア)" },
+        { slug: "zone-coverage", name: "ゾーン(カバレッジ)" },
         { slug: "snap", name: "スナップ" },
         { slug: "coverage", name: "カバレッジ" },
         { slug: "defense", name: "ディフェンス" },
@@ -68,7 +69,7 @@ window.TOPICS_DATA = [
         { slug: "offense", name: "オフェンス" },
         { slug: "cornerback", name: "コーナーバック" },
         { slug: "wide-receiver", name: "ワイドレシーバー" },
-        { slug: "zone", name: "ゾーン" },
+        { slug: "zone-coverage", name: "ゾーン" },
         { slug: "defender", name: "ディフェンダー" },
         { slug: "box", name: "ボックス" },
         { slug: "touchdown", name: "タッチダウン" },
@@ -102,7 +103,7 @@ window.TOPICS_DATA = [
         { slug: "defensive-coordinator", name: "ディフェンスコーディネーター" },
         { slug: "rover", name: "ロバー" },
         { slug: "quarter", name: "クォーター" },
-        { slug: "zone", name: "ゾーン" },
+        { slug: "zone-coverage", name: "ゾーン" },
         { slug: "defender", name: "ディフェンダー" },
         { slug: "yard", name: "ヤード" },
         { slug: "run", name: "ラン" }
