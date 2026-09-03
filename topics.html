@@ -106,6 +106,7 @@
 </footer>
 
 <script src="assets/js/topics-data.js"></script>
+<script src="assets/js/glossary-canonical.js"></script>
 <script src="assets/js/main.js" defer></script>
 <script>
 (function () {
@@ -127,11 +128,21 @@
     return list;
   }
 
+  function canonicalTagName(tag) {
+    // 絞り込みタグは、記事ごとの別称・略称表記(表示ルールA)に関わらず、
+    // 常にカノニカル名(glossary.htmlの用語名)に統一して表示する。
+    var canonical = window.GLOSSARY_CANONICAL && window.GLOSSARY_CANONICAL[tag.slug];
+    return canonical || tag.name;
+  }
+
   function uniqueTags() {
     var counts = {}, lastDate = {}, first = {};
     TOPICS.forEach(function (t) {
       t.tags.forEach(function (tag) {
-        if (!first[tag.slug]) { first[tag.slug] = tag; counts[tag.slug] = 0; }
+        if (!first[tag.slug]) {
+          first[tag.slug] = { slug: tag.slug, name: canonicalTagName(tag) };
+          counts[tag.slug] = 0;
+        }
         counts[tag.slug]++;
         if (!lastDate[tag.slug] || t.date > lastDate[tag.slug]) lastDate[tag.slug] = t.date;
       });
