@@ -190,6 +190,7 @@ window.GLOSSARY_CANONICAL = {
   "new-orleans-saints": "ニューオーリンズ・セインツ",
   "new-york-giants": "ニューヨーク・ジャイアンツ",
   "new-york-jets": "ニューヨーク・ジェッツ",
+  "nfl": "ナショナル・フットボール・リーグ",
   "nickel-back": "ニッケルバック",
   "nickel-package": "ニッケルパッケージ",
   "no-huddle": "ノーハドル",
