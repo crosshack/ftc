@@ -92,7 +92,8 @@ window.TACTICS_DATA = [
         { slug: 'yard', name: 'ヤード' },
         { slug: 'area', name: 'エリア' }
       ,
-        { slug: 'slot-receiver', name: 'スロット' }],
+        { slug: 'slot-receiver', name: 'スロット' },
+        { slug: 'goal-line', name: 'ゴールライン' }],
       thumb: '<line x1="0" y1="26" x2="70" y2="26" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="25" cy="26" r="3.5" fill="#3ecf6e"/><circle cx="35" cy="26" r="3.5" fill="#3ecf6e"/><circle cx="45" cy="26" r="3.5" fill="#3ecf6e"/> <circle cx="10" cy="26" r="3.5" fill="#ffc633"/><circle cx="60" cy="26" r="3.5" fill="#ffc633"/> <circle cx="31" cy="34" r="3.5" fill="#eceee9"/><circle cx="41" cy="38" r="3.5" fill="#eceee9"/>'
     },
     {
@@ -246,7 +247,9 @@ window.TACTICS_DATA = [
       ,
         { slug: 'pass-coverage', name: 'カバー' },
         { slug: 'slot-receiver', name: 'スロット' },
-        { slug: 'hash-marks', name: 'ハッシュ' }],
+        { slug: 'hash-marks', name: 'ハッシュ' },
+        { slug: 'line-of-scrimmage', name: 'ライン・オブ・スクリメージ' },
+        { slug: 'zone-blitz', name: 'ゾーンブリッツ' }],
       thumb: '<line x1="0" y1="55" x2="70" y2="55" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="14" cy="55" r="3" fill="#eceee9"/><circle cx="32" cy="55" r="3" fill="#eceee9"/><circle cx="50" cy="55" r="3" fill="#eceee9"/> <path d="M14,55 L8,10" stroke="#e53935" stroke-width="2" fill="none"/> <path d="M32,55 L34,12" stroke="#1e88e5" stroke-width="2" fill="none"/> <path d="M50,55 L54,18" stroke="#8e24aa" stroke-width="2" fill="none"/>'
     },
     {
@@ -399,7 +402,9 @@ window.TACTICS_DATA = [
       ,
         { slug: 'man-to-man-coverage', name: 'マンツーマン' },
         { slug: 'pass-coverage', name: 'カバー' },
-        { slug: 'slot-receiver', name: 'スロット' }],
+        { slug: 'slot-receiver', name: 'スロット' },
+        { slug: 'goal-line', name: 'ゴールライン' },
+        { slug: 'run-pass-option', name: 'ラン・パス・オプション' }],
       thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="20" cy="42" r="3.5" fill="#3ecf6e"/><circle cx="35" cy="42" r="3.5" fill="#3ecf6e"/><circle cx="50" cy="42" r="3.5" fill="#3ecf6e"/> <circle cx="27" cy="27" r="3.5" fill="#eceee9"/><circle cx="43" cy="27" r="3.5" fill="#eceee9"/> <circle cx="10" cy="38" r="3.5" fill="#ffc633"/><circle cx="60" cy="38" r="3.5" fill="#ffc633"/>'
     },
     {
