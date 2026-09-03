@@ -53,8 +53,10 @@ window.TOPICS_DATA = [
         { slug: "mesh", name: "メッシュ" },
         { slug: "snap", name: "スナップ" },
         { slug: "defender", name: "ディフェンダー" },
-        { slug: "philadelphia-eagles", name: "フィラデルフィア・イーグルス" }
-      ],
+        { slug: "philadelphia-eagles", name: "フィラデルフィア・イーグルス" },
+        { slug: "linebacker", name: "ラインバッカー" },
+        { slug: "quarterback", name: "クォーターバック" },
+        { slug: "defensive-back", name: "ディフェンスバック" }],
     thumb: '<circle cx="35" cy="46" r="8" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><path d="M35,38 Q35,26 35,18" fill="none" stroke="#eceee9" stroke-width="1.8" stroke-dasharray="4,3"/><circle cx="35" cy="18" r="4" fill="#eceee9"/><path d="M35,52 L35,60" fill="none" stroke="#ffc633" stroke-width="2"/><circle cx="35" cy="60" r="3.5" fill="#ffc633"/>'
   },
   {
@@ -82,7 +84,8 @@ window.TOPICS_DATA = [
         { slug: "route", name: "ルート" },
         { slug: 'match-coverage', name: 'パターンマッチ' }
       ,
-        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' },
+        { slug: "line-of-scrimmage", name: "ライン・オブ・スクリメージ" }],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="45" cy="50" r="3.5" fill="#eceee9"/><path d="M45,50 L20,50" fill="none" stroke="#ffc633" stroke-width="2" stroke-dasharray="3,2"/><path d="M24,46 L18,50 L24,54" fill="none" stroke="#ffc633" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18" cy="50" r="3.5" fill="#ffc633"/>'
   },
   {
@@ -111,7 +114,10 @@ window.TOPICS_DATA = [
         { slug: "run", name: "ラン" }
       ,
         { slug: 'hash-marks', name: 'ハッシュ' },
-        { slug: 'cover-4', name: 'クォーターズ' }],
+        { slug: 'cover-4', name: 'クォーターズ' },
+        { slug: "quarterback", name: "クォーターバック" },
+        { slug: "defensive-back", name: "ディフェンスバック" },
+        { slug: "linebacker", name: "ラインバッカー" }],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="45" cy="50" r="3.5" fill="#eceee9"/><path d="M45,50 L20,50" fill="none" stroke="#ffc633" stroke-width="2" stroke-dasharray="3,2"/><path d="M24,46 L18,50 L24,54" fill="none" stroke="#ffc633" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18" cy="50" r="3.5" fill="#ffc633"/>'
   },
   {
@@ -141,7 +147,8 @@ window.TOPICS_DATA = [
         { slug: "route", name: "ルート" },
         { slug: "los-angeles-rams", name: "ロサンゼルス・ラムズ" }
       ,
-        { slug: 'slot-receiver', name: 'スロット' }],
+        { slug: 'slot-receiver', name: 'スロット' },
+        { slug: "defensive-back", name: "ディフェンスバック" }],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="20" cy="50" r="3.5" fill="#ffc633"/><circle cx="30" cy="50" r="3.5" fill="#ffc633"/><circle cx="40" cy="50" r="3.5" fill="#ffc633"/><circle cx="55" cy="50" r="3.5" fill="#eceee9"/><circle cx="30" cy="60" r="3.5" fill="#eceee9"/>'
   },
   {
@@ -165,7 +172,10 @@ window.TOPICS_DATA = [
         { slug: "los-angeles-rams", name: "ロサンゼルス・ラムズ" }
       ,
         { slug: 'pass-coverage', name: 'カバー' },
-        { slug: 'slot-receiver', name: 'スロット' }],
+        { slug: 'slot-receiver', name: 'スロット' },
+        { slug: "cornerback", name: "コーナーバック" },
+        { slug: "tight-end", name: "タイトエンド" },
+        { slug: "linebacker", name: "ラインバッカー" }],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="20" cy="50" r="3.5" fill="#ffc633"/><circle cx="30" cy="50" r="3.5" fill="#ffc633"/><circle cx="40" cy="50" r="3.5" fill="#ffc633"/><circle cx="55" cy="50" r="3.5" fill="#eceee9"/><circle cx="30" cy="60" r="3.5" fill="#eceee9"/>'
   }
   ,
@@ -198,8 +208,10 @@ window.TOPICS_DATA = [
         { slug: "defender", name: "ディフェンダー" },
         { slug: "pass", name: "パス" },
         { slug: "los-angeles-rams", name: "ロサンゼルス・ラムズ" },
-        { slug: "jacksonville-jaguars", name: "ジャクソンビル・ジャガーズ" }
-      ],
+        { slug: "jacksonville-jaguars", name: "ジャクソンビル・ジャガーズ" },
+        { slug: "distance", name: "ディスタンス" },
+        { slug: "tight-end", name: "タイトエンド" },
+        { slug: "running-back", name: "ランニングバック" }],
     thumb: '<circle cx="35" cy="35" r="16" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="46" y1="46" x2="58" y2="58" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="38" r="3.5" fill="#eceee9"/><path d="M30,38 L40,28" stroke="#ffc633" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="28" r="3.5" fill="#ffc633"/>'
   },
   {
@@ -231,7 +243,10 @@ window.TOPICS_DATA = [
         { slug: "route", name: "ルート" },
         { slug: "new-england-patriots", name: "ニューイングランド・ペイトリオッツ" }
       ,
-        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' },
+        { slug: "wide-receiver", name: "ワイドレシーバー" },
+        { slug: "linebacker", name: "ラインバッカー" },
+        { slug: "goal-line", name: "ゴールライン" }],
     thumb: '<circle cx="35" cy="35" r="16" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="46" y1="46" x2="58" y2="58" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="38" r="3.5" fill="#eceee9"/><path d="M30,38 L40,28" stroke="#ffc633" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="28" r="3.5" fill="#ffc633"/>'
   }
   ,
@@ -270,8 +285,10 @@ window.TOPICS_DATA = [
         { slug: "route", name: "ルート" },
         { slug: "seattle-seahawks", name: "シアトル・シーホークス" },
         { slug: "new-england-patriots", name: "ニューイングランド・ペイトリオッツ" },
-        { slug: "interception-return-touchdown", name: "ピックシックス" }
-      ],
+        { slug: "interception-return-touchdown", name: "ピックシックス" },
+        { slug: "middle-linebacker", name: "ミドルラインバッカー" },
+        { slug: "running-back", name: "ランニングバック" },
+        { slug: "defensive-back", name: "ディフェンスバック" }],
     thumb: '<circle cx="35" cy="35" r="16" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="46" y1="46" x2="58" y2="58" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="38" r="3.5" fill="#eceee9"/><path d="M30,38 L40,28" stroke="#ffc633" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="28" r="3.5" fill="#ffc633"/>'
   },
   {
@@ -297,7 +314,12 @@ window.TOPICS_DATA = [
         { slug: "tight-end", name: "タイトエンド" },
         { slug: "quarterback", name: "クォーターバック" }
       ,
-        { slug: 'pass-coverage', name: 'カバー' }],
+        { slug: 'pass-coverage', name: 'カバー' },
+        { slug: "matchup", name: "マッチアップ" },
+        { slug: "snap", name: "スナップ" },
+        { slug: "offense", name: "オフェンス" },
+        { slug: "area", name: "エリア" },
+        { slug: "defensive-back", name: "ディフェンスバック" }],
     thumb: '<rect x="6" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="14" cy="37" r="3" fill="#eceee9"/><rect x="27" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="35" cy="37" r="3" fill="#eceee9"/><rect x="48" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="56" cy="37" r="3" fill="#eceee9"/>'
   },
   {
@@ -323,8 +345,17 @@ window.TOPICS_DATA = [
         { slug: "front", name: "フロント" },
         { slug: "route", name: "ルート" },
         { slug: "houston-texans", name: "ヒューストン・テキサンズ" },
-        { slug: "minnesota-vikings", name: "ミネソタ・バイキングス" }
-      ],
+        { slug: "minnesota-vikings", name: "ミネソタ・バイキングス" },
+        { slug: "head-coach", name: "ヘッドコーチ" },
+        { slug: "offense", name: "オフェンス" },
+        { slug: "field", name: "フィールド" },
+        { slug: "linebacker", name: "ラインバッカー" },
+        { slug: "receiver", name: "レシーバー" },
+        { slug: "nickel-package", name: "ニッケルパッケージ" },
+        { slug: "run", name: "ラン" },
+        { slug: "split", name: "スプリット" },
+        { slug: "defender", name: "ディフェンダー" },
+        { slug: "tackle-box", name: "タックルボックス" }],
     thumb: '<rect x="6" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="14" cy="37" r="3" fill="#eceee9"/><rect x="27" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="35" cy="37" r="3" fill="#eceee9"/><rect x="48" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="56" cy="37" r="3" fill="#eceee9"/>'
   },
   {
@@ -347,8 +378,12 @@ window.TOPICS_DATA = [
         { slug: "play-call", name: "プレーコール" },
         { slug: "offensive-coordinator", name: "オフェンスコーディネーター" },
         { slug: "head-coach", name: "ヘッドコーチ" },
-        { slug: "offense", name: "オフェンス" }
-      ],
+        { slug: "offense", name: "オフェンス" },
+        { slug: "yards-per-attempt", name: "ヤード・パー・アテンプト" },
+        { slug: "gap", name: "ギャップ" },
+        { slug: "defense", name: "ディフェンス" },
+        { slug: "yard", name: "ヤード" },
+        { slug: "passer-rating", name: "パサーレーティング" }],
     thumb: '<circle cx="35" cy="52" r="4" fill="#eceee9"/><path d="M35,52 L20,52" fill="none" stroke="#a8afa2" stroke-width="2" stroke-dasharray="3,2" stroke-linecap="round"/><circle cx="20" cy="52" r="3.5" fill="#a8afa2"/><path d="M35,52 Q45,30 58,20" fill="none" stroke="#3ecf6e" stroke-width="2" stroke-linecap="round"/><circle cx="58" cy="20" r="3.5" fill="#3ecf6e"/>'
   },
   {
