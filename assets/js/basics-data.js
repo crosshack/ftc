@@ -798,7 +798,7 @@ window.BASICS_DATA = [
         { slug: 'defender', name: 'ディフェンダー' },
         { slug: 'sub-package', name: 'サブパッケージ' },
         { slug: 'shell', name: 'シェル' },
-        { slug: 'dime-package', name: 'ダイム' },
+        { slug: "dime-package", name: "ダイムパッケージ" },
         { slug: 'tempo', name: 'テンポ' },
         { slug: 'dropback', name: 'ドロップバック' },
         { slug: 'nickel-package', name: 'ニッケル' },

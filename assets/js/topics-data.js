@@ -302,7 +302,7 @@ window.TOPICS_DATA = [
     tags: [
         { slug: "zone", name: "ゾーン" },
         { slug: "zone-coverage", name: "ゾーンカバレッジ" },
-        { slug: "man-to-man-coverage", name: "マンツーマンカバレッジ" },
+        { slug: "man-to-man-coverage", name: "マンツーマン" },
         { slug: "coverage", name: "カバレッジ" },
         { slug: "defense", name: "ディフェンス" },
         { slug: "personnel", name: "パーソネル" },
@@ -367,7 +367,7 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "play-action", name: "プレーアクションの伸びしろ", part: "前編" },
     tags: [
-        { slug: "play-action-pass", name: "プレーアクションパス" },
+        { slug: "play-action-pass", name: "プレーアクション" },
         { slug: "pass", name: "パス" },
         { slug: "run", name: "ラン" },
         { slug: "quarterback", name: "クォーターバック" },
@@ -383,7 +383,7 @@ window.TOPICS_DATA = [
         { slug: "gap", name: "ギャップ" },
         { slug: "defense", name: "ディフェンス" },
         { slug: "yard", name: "ヤード" },
-        { slug: "passer-rating", name: "パサーレーティング" }],
+        { slug: "passer-rating", name: "QBレーティング" }],
     thumb: '<circle cx="35" cy="52" r="4" fill="#eceee9"/><path d="M35,52 L20,52" fill="none" stroke="#a8afa2" stroke-width="2" stroke-dasharray="3,2" stroke-linecap="round"/><circle cx="20" cy="52" r="3.5" fill="#a8afa2"/><path d="M35,52 Q45,30 58,20" fill="none" stroke="#3ecf6e" stroke-width="2" stroke-linecap="round"/><circle cx="58" cy="20" r="3.5" fill="#3ecf6e"/>'
   },
   {

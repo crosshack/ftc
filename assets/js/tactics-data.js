@@ -25,7 +25,7 @@ window.TACTICS_DATA = [
         { slug: 'power', name: 'パワー' },
         { slug: 'center', name: 'センター' },
         { slug: 'offset', name: 'オフセット' },
-        { slug: 'jumbo-package', name: 'ジャンボ' },
+        { slug: "jumbo-package", name: "ジャンボパッケージ" },
         { slug: 'stick', name: 'スティック' },
         { slug: 'dagger', name: 'ダガー' },
         { slug: 'post-wheel', name: 'ポスト・ホイール' },
