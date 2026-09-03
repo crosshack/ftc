@@ -28,7 +28,8 @@ window.TOPICS_DATA = [
         { slug: "area", name: "エリア" },
         { slug: "pass", name: "パス" }
       ,
-        { slug: 'man-to-man-coverage', name: 'マンツーマン' }],
+        { slug: 'man-to-man-coverage', name: 'マンツーマン' },
+        { slug: 'presnap-motion', name: 'プレスナップモーション' }],
     thumb: '<circle cx="35" cy="46" r="8" fill="none" stroke="#a8afa2" stroke-width="1.5" stroke-dasharray="3,3"/><path d="M35,38 Q35,26 35,18" fill="none" stroke="#eceee9" stroke-width="1.8" stroke-dasharray="4,3"/><circle cx="35" cy="18" r="4" fill="#eceee9"/><path d="M35,52 L35,60" fill="none" stroke="#ffc633" stroke-width="2"/><circle cx="35" cy="60" r="3.5" fill="#ffc633"/>'
   },
   {
@@ -85,7 +86,8 @@ window.TOPICS_DATA = [
         { slug: 'match-coverage', name: 'パターンマッチ' }
       ,
         { slug: 'man-to-man-coverage', name: 'マンツーマン' },
-        { slug: "line-of-scrimmage", name: "ライン・オブ・スクリメージ" }],
+        { slug: "line-of-scrimmage", name: "ライン・オブ・スクリメージ" },
+        { slug: 'presnap-motion', name: 'プレスナップモーション' }],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="45" cy="50" r="3.5" fill="#eceee9"/><path d="M45,50 L20,50" fill="none" stroke="#ffc633" stroke-width="2" stroke-dasharray="3,2"/><path d="M24,46 L18,50 L24,54" fill="none" stroke="#ffc633" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18" cy="50" r="3.5" fill="#ffc633"/>'
   },
   {
@@ -117,7 +119,8 @@ window.TOPICS_DATA = [
         { slug: 'cover-4', name: 'クォーターズ' },
         { slug: "quarterback", name: "クォーターバック" },
         { slug: "defensive-back", name: "ディフェンスバック" },
-        { slug: "linebacker", name: "ラインバッカー" }],
+        { slug: "linebacker", name: "ラインバッカー" },
+        { slug: 'presnap-motion', name: 'プレスナップモーション' }],
     thumb: '<line x1="8" y1="50" x2="62" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="45" cy="50" r="3.5" fill="#eceee9"/><path d="M45,50 L20,50" fill="none" stroke="#ffc633" stroke-width="2" stroke-dasharray="3,2"/><path d="M24,46 L18,50 L24,54" fill="none" stroke="#ffc633" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18" cy="50" r="3.5" fill="#ffc633"/>'
   },
   {
@@ -319,7 +322,8 @@ window.TOPICS_DATA = [
         { slug: "snap", name: "スナップ" },
         { slug: "offense", name: "オフェンス" },
         { slug: "area", name: "エリア" },
-        { slug: "defensive-back", name: "ディフェンスバック" }],
+        { slug: "defensive-back", name: "ディフェンスバック" },
+        { slug: 'presnap-motion', name: 'プレスナップモーション' }],
     thumb: '<rect x="6" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="14" cy="37" r="3" fill="#eceee9"/><rect x="27" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="35" cy="37" r="3" fill="#eceee9"/><rect x="48" y="22" width="16" height="30" rx="2" fill="#3ecf6e" fill-opacity="0.18" stroke="#3ecf6e" stroke-width="1.2" stroke-dasharray="3,2"/><circle cx="56" cy="37" r="3" fill="#eceee9"/>'
   },
   {
