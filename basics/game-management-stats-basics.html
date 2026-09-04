@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon-192.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180.png?v=2">
+<title>スタッツ | 基礎知識 | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="コーチが試合前の準備で確認する客観的な数字であるスタッツについて、頻度・傾向、効率・結果、チームの状態という3種類の分類と、週内の準備でいつ確認するかを解説する基礎知識ページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=27">
+<!-- Google tag (gtag.js) -->
+<script>
+(function () {
+  // 本番ドメインでのみ計測する(staging.footballtactics.club・localhost では送信しない)
+  var hosts = ['footballtactics.club', 'www.footballtactics.club'];
+  if (hosts.indexOf(location.hostname) === -1) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-NHS351TN8E';
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', 'G-NHS351TN8E');
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><img src="../assets/img/logo-combined.svg" class="brand-logo" alt="FOOTBALLTACTICS.CLUB"></a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../nfl-db.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="20" x2="21" y2="20"/><rect x="5" y="14" width="3" height="6"/><rect x="11" y="9" width="3" height="11"/><rect x="17" y="4" width="3" height="16"/></svg><span>NFL.<span style="color: var(--accent);">DB</span></span></a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">スタッツ</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="article-head">
+  <div class="container">
+    <span class="tag tag-flag">ゲームマネジメント</span>
+    <div class="page-head-title-row">
+      <h1>スタッツ<br><span class="subtitle">― 感覚ではなく、数字で試合を捉える</span></h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <rect x="14" y="16" width="14" height="14" rx="2" fill="#a8afa2"/>
+        <rect x="30" y="16" width="14" height="14" rx="2" fill="#a8afa2"/>
+        <rect x="46" y="16" width="14" height="14" rx="2" fill="#ffc633"/>
+        <rect x="14" y="34" width="14" height="14" rx="2" fill="none" stroke="#3ecf6e" stroke-width="2"/>
+        <rect x="30" y="34" width="14" height="14" rx="2" fill="#a8afa2"/>
+        <rect x="46" y="34" width="14" height="14" rx="2" fill="#a8afa2"/>
+        <line x1="10" y1="54" x2="60" y2="54" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+      </svg>
+    </div>
+    <div class="meta">読了目安 7分</div>
+    <div class="topic-tags">
+      <a href="../glossary/distance.html">#ディスタンス</a>
+      <a href="../glossary/down.html">#ダウン</a>
+      <a href="../glossary/formation.html">#フォーメーション</a>
+      <a href="../glossary/pass.html">#パス</a>
+      <a href="../glossary/personnel.html">#パーソネル</a>
+      <a href="../glossary/red-zone.html">#レッドゾーン</a>
+      <a href="../glossary/run.html">#ラン</a>
+      <a href="../glossary/turnover.html">#ターンオーバー</a>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>スタッツとは、プレーの結果や選択を客観的な数字として記録したものである。試合前の準備では、コーチが自分たちや相手チームの傾向・成果を把握するための基本的な道具として使われる。</p>
+
+  <h2>なぜ数字で確認する必要があるのか</h2>
+
+  <p>コーチや選手の体感だけでは、実際のプレー選択や結果を正確に把握できないことは珍しくない。「ランとパスはだいたい半々のはずだ」といった感覚が、実際の比率とはかけ離れていることは珍しくなく、思い込みだけでは正確な評価はできない。だからこそ、体感に頼らず、客観的な数字で状況を確認しておくことが、試合前の準備の土台になる。</p>
+
+  <h2>スタッツの種類</h2>
+
+  <p>試合前の準備で確認するスタッツは、大きく「頻度・傾向を示すスタッツ」「効率・結果を示すスタッツ」「チームの状態を示すスタッツ」の3つに分けられる。</p>
+
+  <h3>頻度・傾向を示すスタッツ</h3>
+  <p>頻度・傾向を示すスタッツとは、特定の状況でどのプレーやコールをどのくらいの割合で選んでいるかを表す数字である。フォーメーションやパーソネルの使い方も含めて、具体的には以下の項目がある。</p>
+  <table class="compare-table" style="table-layout:fixed">
+    <colgroup><col style="width:170px"><col></colgroup>
+    <tr><th style="white-space:nowrap">項目</th><th>概要</th></tr>
+    <tr><td style="white-space:nowrap">ダウン&ディスタンス別のラン・パス比率</td><td>同じダウン&ディスタンスで、ランとパスのどちらを選ぶ比率がどの程度偏っているか。</td></tr>
+    <tr><td style="white-space:nowrap">フォーメーション・パーソネル別のコール割合</td><td>特定のフォーメーションやパーソネルから、同じプレーを選びやすくなっていないか。</td></tr>
+    <tr><td style="white-space:nowrap">方向・サイド別の傾向</td><td>フィールドサイド・バウンダリサイドのどちらにプレーを展開しやすいか。</td></tr>
+  </table>
+
+  <h3>効率・結果を示すスタッツ</h3>
+  <p>効率・結果を示すスタッツとは、選んだプレーがどの程度機能したかを表す数字である。具体的には、以下の項目がある。</p>
+  <table class="compare-table" style="table-layout:fixed">
+    <colgroup><col style="width:170px"><col></colgroup>
+    <tr><th style="white-space:nowrap">項目</th><th>概要</th></tr>
+    <tr><td style="white-space:nowrap">3rdダウン変換率</td><td>3rdダウンを更新できている割合。狙い通りの展開で試合を進められているかの目安になる。</td></tr>
+    <tr><td style="white-space:nowrap">レッドゾーン効率</td><td>レッドゾーンに入った回数のうち、タッチダウンなど得点に結びついた割合。</td></tr>
+    <tr><td style="white-space:nowrap">エクスプローシブプレー率</td><td>一定以上のヤードを一気に獲得したプレーが発生した割合。</td></tr>
+  </table>
+
+  <h3>チームの状態を示すスタッツ</h3>
+  <p>チームの状態を示すスタッツとは、個々のプレーというよりチーム全体の傾向や結果を表す数字である。具体的には、以下の項目がある。</p>
+  <table class="compare-table" style="table-layout:fixed">
+    <colgroup><col style="width:170px"><col></colgroup>
+    <tr><th style="white-space:nowrap">項目</th><th>概要</th></tr>
+    <tr><td style="white-space:nowrap">ターンオーバーマージン</td><td>獲得したターンオーバーの数から、失ったターンオーバーの数を引いた差。</td></tr>
+    <tr><td style="white-space:nowrap">タイム・オブ・ポゼッション</td><td>自チームがボールを保持していた時間の長さ。</td></tr>
+    <tr><td style="white-space:nowrap">ペナルティ</td><td>反則によって失った、あるいは得たヤードや機会の量。</td></tr>
+  </table>
+
+  <h2>いつスタッツを確認するか</h2>
+
+  <p>試合前の準備では、スタッツを確認するタイミングにも一定の流れがある。週明けには、直前の試合を振り返って自分たちのスタッツを確認するとともに、次の対戦相手のスタッツ・傾向の分析に着手する。週の半ばには、3rdダウンやレッドゾーンなど特定の状況に絞った準備に重点が移り、週末が近づくと、そこまでの分析を踏まえてゲームプランやコールシートを最終化していく。</p>
+  <p>ただし、この流れをどれだけ体系立てて行うかはチームによって差があり、決まった型があるわけではない。</p>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    テレビ中継や試合後の集計で目にする「3rdダウン変換率」「レッドゾーン効率」といった数字は、単なる結果の記録ではなく、そのチームが試合に向けてどんな準備をしてきたかを映す指標でもある。シーズンを通した数字の推移を追うと、そのチームが何を重視して準備しているかが見えてくることがある。
+  </div>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    近年はNFLなどのプロレベルを中心に、EPA（Expected Points Added）やサクセスレートといった、より高度な効率指標も分析に使われるようになっている。ただし、こうした指標は主にメディアやアナリティクス専門部署で使われているもので、高校・大学レベルの現場のコーチが日常的に使う基本的なスタッツとは、位置づけが異なる。
+  </div>
+
+  <h2>まとめ</h2>
+  <p>スタッツとは、プレーの結果や選択を客観的な数字として記録したものであり、体感に頼らず状況を把握するための試合前準備の基本的な道具である。頻度・傾向、効率・結果、チームの状態という3種類のスタッツを、週内の準備の流れに沿って確認していくことで、次にすべき対応がより具体的に見えてくる。</p>
+
+  <div class="see-also">
+    <span class="label">もっと詳しく</span>
+    <p>ここで紹介した観点をより深く理解するには、以下のページが参考になる。</p>
+    <div class="see-also-links" style="display:flex;flex-wrap:wrap;gap:10px 32px;">
+      <a href="game-management-film-study-basics.html">フィルムスタディ<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="game-management-self-scout-basics.html">スタッツとセルフスカウト<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+
+</article>
+
+<div class="page-nav container">
+  <a class="page-nav-card prev" href="game-management-playbook-basics.html">
+    <span class="nav-label">前のページ</span>
+    <span class="nav-title"><svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M9,0 L4,7 L9,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>プレーブック</span>
+    <span class="nav-desc">11人が共通の役割・約束事を持つための「共通言語」としてのプレーブックを整理。</span>
+  </a>
+  <a class="page-nav-card next" href="game-management-film-study-basics.html">
+    <span class="nav-label">次のページ</span>
+    <span class="nav-title">フィルムスタディ<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span class="nav-desc">試合前に相手チームの映像を分析し、フォーメーションやスキームに表れる傾向を読み解く取り組みを整理。</span>
+  </a>
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">スタッツ</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; <a href="https://www.crosshack.jp/" target="_blank" rel="noopener">CROSSHACK Inc.</a> All rights reserved.</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>
