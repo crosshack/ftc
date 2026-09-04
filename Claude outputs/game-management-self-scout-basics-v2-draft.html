@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon-192.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180.png?v=2">
+<title>スタッツとセルフスカウト | 基礎知識 | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="自チームのプレーコールや実行結果を表す客観的なスタッツと映像から自分たちの傾向を把握するセルフスカウトについて、頻度を示すスタッツと結果を示すスタッツという2種類の観点から解説し、見つかった偏りへの対応やシーズン中の継続的な取り組み方を整理する基礎知識ページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=27">
+<!-- Google tag (gtag.js) -->
+<script>
+(function () {
+  // 本番ドメインでのみ計測する(staging.footballtactics.club・localhost では送信しない)
+  var hosts = ['footballtactics.club', 'www.footballtactics.club'];
+  if (hosts.indexOf(location.hostname) === -1) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-NHS351TN8E';
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', 'G-NHS351TN8E');
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><img src="../assets/img/logo-combined.svg" class="brand-logo" alt="FOOTBALLTACTICS.CLUB"></a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../nfl-db.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="20" x2="21" y2="20"/><rect x="5" y="14" width="3" height="6"/><rect x="11" y="9" width="3" height="11"/><rect x="17" y="4" width="3" height="16"/></svg><span>NFL.<span style="color: var(--accent);">DB</span></span></a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">スタッツとセルフスカウト</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="article-head">
+  <div class="container">
+    <span class="tag tag-flag">ゲームマネジメント</span>
+    <div class="page-head-title-row">
+      <h1>スタッツとセルフスカウト<br><span class="subtitle">― 自分の傾向は、感覚では測れない</span></h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <line x1="10" y1="55" x2="60" y2="55" stroke="#3d4238" stroke-width="1.5"/>
+        <rect x="16" y="38" width="8" height="17" fill="#a8afa2"/>
+        <rect x="30" y="26" width="8" height="29" fill="#ffc633"/>
+        <rect x="44" y="16" width="8" height="39" fill="#a8afa2"/>
+        <circle cx="34" cy="20" r="3.5" fill="none" stroke="#3ecf6e" stroke-width="2"/>
+      </svg>
+    </div>
+    <div class="meta">読了目安 6分</div>
+    <div class="topic-tags">
+      <a href="../glossary/coverage.html">#カバレッジ</a>
+      <a href="../glossary/distance.html">#ディスタンス</a>
+      <a href="../glossary/down.html">#ダウン</a>
+      <a href="../glossary/field.html">#フィールド</a>
+      <a href="../glossary/formation.html">#フォーメーション</a>
+      <a href="../glossary/pass.html">#パス</a>
+      <a href="../glossary/personnel.html">#パーソネル</a>
+      <a href="../glossary/red-zone.html">#レッドゾーン</a>
+      <a href="../glossary/run.html">#ラン</a>
+      <a href="../glossary/turnover.html">#ターンオーバー</a>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>セルフスカウトとは、自チームのプレーコールや実行結果を表す客観的な数字（スタッツ）や映像を通じて、自分たちがどのような傾向を持っているかを把握する作業のことである。プレーの選び方や成功・失敗のパターンには、意識していなくても偏りが生まれやすく、その偏りに自分たちで気づけるかどうかが、次の試合以降の対策の精度を左右する。</p>
+
+  <h2>なぜ数字で確認する必要があるのか</h2>
+
+  <p>自分たちのプレー選択が偏っているかどうかは、コーチや選手の体感だけでは正確に把握できない。「ランとパスはだいたい半々のはずだ」といった感覚が、実際の比率とはかけ離れていることは珍しくなく、思い込みだけでは自分たちの傾向を客観的に評価できない。</p>
+  <p>加えて、相手チームもまた、試合前に自分たちの映像やスタッツを分析し、傾向を洗い出している。自分たちが気づいていない偏りは、相手のスカウティングによって見抜かれ、対策を立てられてしまう可能性が高い。だからこそ、体感に頼らず、客観的な数字で自分たちの傾向を確認しておくことが欠かせない。</p>
+
+  <h2>何を見るか</h2>
+
+  <p>セルフスカウトで確認するスタッツは、大きく「頻度を示すスタッツ」と「結果を示すスタッツ」の2種類に分けられる。</p>
+
+  <h3>頻度を示すスタッツ</h3>
+  <p>頻度を示すスタッツとは、特定の状況でどのプレーやコールをどのくらいの割合で選んでいるかを表す数字である。フォーメーションやパーソネルの使い方も含めて、具体的には以下の項目を確認する。</p>
+  <table class="compare-table" style="table-layout:fixed">
+    <colgroup><col style="width:170px"><col></colgroup>
+    <tr><th style="white-space:nowrap">項目</th><th>概要</th></tr>
+    <tr><td style="white-space:nowrap">ダウン&ディスタンス別のラン・パス比率</td><td>同じダウン&ディスタンスで、ランとパスのどちらを選ぶ比率がどの程度偏っているか。</td></tr>
+    <tr><td style="white-space:nowrap">フォーメーション・パーソネル別のコール割合</td><td>特定のフォーメーションやパーソネルから、同じプレーを選びやすくなっていないか。</td></tr>
+    <tr><td style="white-space:nowrap">フィールドポジション別のコール割合</td><td>レッドゾーンやゴールライン付近など、フィールドポジションによってコールが偏っていないか。</td></tr>
+    <tr><td style="white-space:nowrap">フロント・ブリッツの傾向</td><td>どんな状況でどのフロントを組み、ブリッツを送るかに偏りがないか。</td></tr>
+    <tr><td style="white-space:nowrap">カバレッジの傾向</td><td>特定のダウン&ディスタンスで、同じカバレッジを選びやすくなっていないか。</td></tr>
+  </table>
+
+  <h3>結果を示すスタッツ</h3>
+  <p>結果を示すスタッツとは、選んだプレーがどの程度機能したかを表す数字である。具体的には、以下の項目を確認する。</p>
+  <table class="compare-table" style="table-layout:fixed">
+    <colgroup><col style="width:170px"><col></colgroup>
+    <tr><th style="white-space:nowrap">項目</th><th>概要</th></tr>
+    <tr><td style="white-space:nowrap">状況別の成功率</td><td>ダウン&ディスタンスやフィールドポジションごとに、プレーの成功率がどう変化しているか。</td></tr>
+    <tr><td style="white-space:nowrap">失敗の要因</td><td>プレーが機能しなかった原因が、選手の技術・アサインメント・スキームのどこにあるか。</td></tr>
+    <tr><td style="white-space:nowrap">ターンオーバーの発生状況</td><td>ターンオーバーが起きやすい状況やプレーに、パターンがないか。</td></tr>
+  </table>
+
+  <h2>分析結果をどう活かすか</h2>
+
+  <p>ここまで見てきたスタッツに偏りが見つかった場合、そのままにしておくと相手に利用され続けることになる。対応策の一つが、あえて傾向から外れたプレーコールを織り交ぜる「タンデンシーブレーカー」で、同じ状況で選ぶプレーの幅を意図的に広げることで、相手の読みを外す。</p>
+  <p>セルフスカウトは、シーズンオフや週末にまとめて行うだけの作業ではない。試合を重ねるごとに新たなスタッツの偏りが生まれることもあるため、直近の試合を都度振り返り、次の試合までに修正を反映していくサイクルとして、シーズン中も継続的に行う必要がある。</p>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    あるチームが今シーズン、レッドゾーンなど特定の状況で決まってワンパターンなコールを続けているように見えるとき、それはそのチームのセルフスカウトがまだ機能していない兆候かもしれない。逆に、シーズン中盤以降に同じ状況でのコールの幅が急に広がったチームは、セルフスカウトを踏まえて意図的にタンデンシーブレーカーを取り入れている可能性がある。
+  </div>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    近年はHudlなどの映像分析ソフトウェアを使い、自チームのプレーにタグ付けして状況別のスタッツを自動集計するチームが増えている。人力での集計に比べて網羅性と速さが増し、シーズン中でも継続的にセルフスカウトを回しやすくなっている。
+  </div>
+
+  <h2>まとめ</h2>
+  <p>セルフスカウトは、自チームのプレーコールや実行結果を、頻度を示すスタッツと結果を示すスタッツという2種類の客観的な数字、そして映像から振り返り、自分たちの傾向を把握する作業である。体感では気づけない偏りを数字で確認し、見つかった偏りにはタンデンシーブレーカーで対応する。この振り返りをシーズン中も継続的に行うことが、相手に読まれにくいチームを作る土台となる。</p>
+
+  <div class="see-also">
+    <span class="label">もっと詳しく</span>
+    <p>ここで紹介した観点をより深く理解するには、以下のページが参考になる。</p>
+    <div class="see-also-links" style="display:flex;flex-wrap:wrap;gap:10px 32px;">
+      <a href="game-management-film-study-basics.html">フィルムスタディ<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="offense-play-selection.html">プレー選択とプレスナップリードの基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="defense-situational-basics.html">ディフェンスの状況判断の基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+
+</article>
+
+<div class="page-nav container">
+  <a class="page-nav-card prev" href="game-management-film-study-basics.html">
+    <span class="nav-label">前のページ</span>
+    <span class="nav-title"><svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M9,0 L4,7 L9,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>フィルムスタディ</span>
+    <span class="nav-desc">試合前に相手チームの映像を分析し、フォーメーションやスキームに表れる傾向を読み解く取り組みを整理。</span>
+  </a>
+  <a class="page-nav-card next" href="game-management-play-calling-basics.html">
+    <span class="nav-label">次のページ</span>
+    <span class="nav-title">プレーコール<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span class="nav-desc">傾向を踏まえて用意したゲームプランを、試合の流れの中でどうプレーコールに落とし込むかを整理。</span>
+  </a>
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">スタッツとセルフスカウト</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; <a href="https://www.crosshack.jp/" target="_blank" rel="noopener">CROSSHACK Inc.</a> All rights reserved.</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>
