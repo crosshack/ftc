@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon-192.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180.png?v=2">
+<title>フィルムスタディ | 基礎知識 | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="試合前に対戦相手の映像を分析するフィルムスタディの視点を、編成・パーソネル、状況、選手個々、スキームという4つの傾向から整理し、分析結果をスカウティングレポートやゲームプランにどう反映するかを解説する基礎知識ページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=27">
+<!-- Google tag (gtag.js) -->
+<script>
+(function () {
+  // 本番ドメインでのみ計測する(staging.footballtactics.club・localhost では送信しない)
+  var hosts = ['footballtactics.club', 'www.footballtactics.club'];
+  if (hosts.indexOf(location.hostname) === -1) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-NHS351TN8E';
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', 'G-NHS351TN8E');
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><img src="../assets/img/logo-combined.svg" class="brand-logo" alt="FOOTBALLTACTICS.CLUB"></a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../nfl-db.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="20" x2="21" y2="20"/><rect x="5" y="14" width="3" height="6"/><rect x="11" y="9" width="3" height="11"/><rect x="17" y="4" width="3" height="16"/></svg><span>NFL.<span style="color: var(--accent);">DB</span></span></a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">フィルムスタディ</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="article-head">
+  <div class="container">
+    <span class="tag tag-flag">ゲームマネジメント</span>
+    <div class="page-head-title-row">
+      <h1>フィルムスタディ<br><span class="subtitle">― 敵を知る</span></h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <line x1="8" y1="42" x2="62" y2="42" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/>
+        <circle cx="18" cy="42" r="3.5" fill="#a8afa2"/>
+        <circle cx="30" cy="42" r="3.5" fill="#a8afa2"/>
+        <circle cx="42" cy="42" r="3.5" fill="#ffc633"/>
+        <circle cx="54" cy="42" r="3.5" fill="#a8afa2"/>
+        <circle cx="24" cy="34" r="3.5" fill="#a8afa2"/>
+        <circle cx="42" cy="30" r="13" fill="none" stroke="#3ecf6e" stroke-width="2"/>
+        <line x1="51" y1="39" x2="60" y2="48" stroke="#3ecf6e" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="meta">読了目安 6分</div>
+    <div class="topic-tags">
+      <a href="../glossary/defense.html">#ディフェンス</a>
+      <a href="../glossary/distance.html">#ディスタンス</a>
+      <a href="../glossary/down.html">#ダウン</a>
+      <a href="../glossary/field.html">#フィールド</a>
+      <a href="../glossary/formation.html">#フォーメーション</a>
+      <a href="../glossary/pass.html">#パス</a>
+      <a href="../glossary/personnel.html">#パーソネル</a>
+      <a href="../glossary/playbook.html">#プレーブック</a>
+      <a href="../glossary/red-zone.html">#レッドゾーン</a>
+      <a href="../glossary/run.html">#ラン</a>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>毎週の試合には、必ず特定の相手が存在する。<a href="game-management-playbook-basics.html">プレーブック</a>が整理する「共通言語」は、どの相手と対戦する際にも変わらない土台だが、実際の試合では、その週の相手固有の傾向を踏まえた対応が欠かせない。フィルムスタディとは、試合前に相手チームの映像を分析し、こうした傾向を読み解く作業のことである。</p>
+
+  <h2>フィルムスタディの目的 ― 何のために相手を映像で見るのか</h2>
+
+  <h3>プレーブックとの違い</h3>
+  <p>プレーブックが、自チーム内で「共通言語」を確立するためのものだったのに対し、フィルムスタディは、その言語を使って今週対戦する相手にどう対応するかを組み立てるための準備作業である。</p>
+
+  <h3>他のページとの違い</h3>
+  <p>「己を知る」スタッツとセルフスカウト、試合後に自分たちの映像を見返す総括とフィードバックとは異なり、フィルムスタディは試合前に「相手」の映像を読み解くことに焦点を当てる。</p>
+
+  <h2>何を見るか</h2>
+
+  <p>相手チームの映像は、大きく「編成・パーソネルの傾向」「状況別の傾向」「選手個々の傾向・特徴」「スキームの傾向」という4つの観点から分析できる。</p>
+
+  <h3>編成・パーソネルの傾向</h3>
+  <table class="compare-table" style="table-layout:fixed">
+    <colgroup><col style="width:170px"><col></colgroup>
+    <tr><th style="white-space:nowrap">項目</th><th>概要</th></tr>
+    <tr><td style="white-space:nowrap">フォーメーション</td><td>どのフォーメーションから、ラン・パスのどちらを選びやすいか。</td></tr>
+    <tr><td style="white-space:nowrap">パーソナルグループ</td><td>どの人員構成を、どんな場面（ダウン・距離など）で起用するか。</td></tr>
+    <tr><td style="white-space:nowrap">サイド展開</td><td>プレーをフィールドサイド・バウンダリサイドのどちらに展開しやすいか。</td></tr>
+  </table>
+
+  <h3>状況別の傾向</h3>
+  <table class="compare-table" style="table-layout:fixed">
+    <colgroup><col style="width:170px"><col></colgroup>
+    <tr><th style="white-space:nowrap">項目</th><th>概要</th></tr>
+    <tr><td style="white-space:nowrap">ダウン&ディスタンス</td><td>1st&10、2nd・3rdのロング/ミディアム/ショートなど、状況ごとのラン・パス比率や狙い。</td></tr>
+    <tr><td style="white-space:nowrap">フィールドポジション</td><td>レッドゾーンやゴールライン付近など、エリアによって傾向がどう変わるか。</td></tr>
+    <tr><td style="white-space:nowrap">ゲーム状況</td><td>残り時間やスコア差（2分警告前後、大量リード・ビハインド時など）による傾向の変化。</td></tr>
+  </table>
+
+  <h3>選手個々の傾向・特徴</h3>
+  <table class="compare-table" style="table-layout:fixed">
+    <colgroup><col style="width:170px"><col></colgroup>
+    <tr><th style="white-space:nowrap">項目</th><th>概要</th></tr>
+    <tr><td style="white-space:nowrap">スタンス・しぐさ</td><td>ラインマンの手の置き方、QBの視線や癖など、プレー前の動作に表れるヒント。</td></tr>
+    <tr><td style="white-space:nowrap">キープレーヤー</td><td>エクスプローシブプレーを生む選手、サックを量産するパスラッシャーなど、勝敗を左右する個人。</td></tr>
+    <tr><td style="white-space:nowrap">QBの個人傾向</td><td>好んで狙うレシーバー、投げるまでの時間、プレッシャーを受けた際の逃げ方など。</td></tr>
+  </table>
+
+  <h3>スキームの傾向</h3>
+  <table class="compare-table" style="table-layout:fixed">
+    <colgroup><col style="width:170px"><col></colgroup>
+    <tr><th style="white-space:nowrap">項目</th><th>概要</th></tr>
+    <tr><td style="white-space:nowrap">フロント・スタント</td><td>使用するディフェンスフロントの種類、スタントが発生しやすい位置。</td></tr>
+    <tr><td style="white-space:nowrap">カバレッジ・ブリッツ</td><td>フィールドの左右やダウンによるカバレッジの使い分け、ブリッツの頻度と発生地点。</td></tr>
+    <tr><td style="white-space:nowrap">モーション・テンポ</td><td>モーションの種類とその意図、プレーのテンポ（ハドル・ノーハドル）の使い分け。</td></tr>
+    <tr><td style="white-space:nowrap">プロテクション</td><td>パスプロテクションの傾向、弱点になりやすいエッジの処理。</td></tr>
+  </table>
+
+  <h2>分析結果をどう活かすか</h2>
+
+  <p>映像から読み取った傾向は、まずスカウティングレポートとしてまとめられ、対象となる選手やポジションコーチを含むチーム全体に共有される。</p>
+  <p>その上で、傾向を踏まえた対応策がゲームプランやコールシートに反映される。週の前半は通常のダウン&ディスタンスを想定した練習、後半は3rdダウンやレッドゾーンなど状況別の傾向を踏まえた練習、というように、フィルムスタディの結果は週内の練習スケジュールにも段階的に反映されていく。</p>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    テレビ中継の実況・解説が「このチームは3rd&ロングでほぼパスを選ぶ」「レッドゾーンではこのフォーメーションが多い」といった具体的な傾向に言及することがある。これは放送前に解説者自身がフィルムスタディに近い準備をしている証であり、注意して聞くと観戦の解像度が上がる。
+  </div>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    フィルムスタディは伝統的にコーチが目視で行ってきたが、近年はHudlなどの映像分析ソフトウェアでプレーにタグ付けし、「3rd&ロングのプレーだけを一覧表示する」といった検索・集計が一般的になっている。分析の精度とスピードが上がったことで、スカウティングレポートやゲームプランへの反映もより迅速に行えるようになっている。
+  </div>
+
+  <h2>まとめ</h2>
+  <p>フィルムスタディは、試合前に相手チームの映像を分析し、編成・パーソネルの傾向、状況別の傾向、選手個々の傾向・特徴、スキームの傾向という4つの観点から相手を読み解く作業である。分析結果はスカウティングレポートとしてチームに共有され、ゲームプランやコールシート、さらには週内の練習スケジュールにも段階的に反映されていく。プレーブックという「共通言語」を土台に、今週の相手にどう対応するかを組み立てる、ゲームプランニングの出発点と言える。</p>
+
+  <div class="see-also">
+    <span class="label">もっと詳しく</span>
+    <p>ここで紹介した観点をより深く理解するには、以下のページが参考になる。</p>
+    <div class="see-also-links" style="display:flex;flex-wrap:wrap;gap:10px 32px;">
+      <a href="offense-formations.html">オフェンスフォーメーションの基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="defense-formations.html">ディフェンスフォーメーションの基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="offense-play-selection.html">プレー選択とプレスナップリードの基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="defense-situational-basics.html">ディフェンスの状況判断の基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+
+</article>
+
+<div class="page-nav container">
+  <a class="page-nav-card prev" href="game-management-playbook-basics.html">
+    <span class="nav-label">前のページ</span>
+    <span class="nav-title"><svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M9,0 L4,7 L9,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>プレーブック</span>
+    <span class="nav-desc">11人が共通の役割・約束事を持つための「共通言語」としてのプレーブックを整理。</span>
+  </a>
+  <a class="page-nav-card next" href="game-management-self-scout-basics.html">
+    <span class="nav-label">次のページ</span>
+    <span class="nav-title">スタッツとセルフスカウト<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span class="nav-desc">自チームのプレー傾向を客観的なスタッツで把握し、相手に読まれるリスクを減らす取り組みを整理。</span>
+  </a>
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">フィルムスタディ</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; <a href="https://www.crosshack.jp/" target="_blank" rel="noopener">CROSSHACK Inc.</a> All rights reserved.</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>
