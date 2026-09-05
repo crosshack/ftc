@@ -418,7 +418,8 @@ window.BASICS_DATA = [
         { slug: 'defender', name: 'ディフェンダー' },
         { slug: 'yard', name: 'ヤード' },
         { slug: 'route', name: 'ルート' },
-        { slug: 'area', name: 'エリア' }
+        { slug: 'area', name: 'エリア' },
+        { slug: 'stunt', name: 'スタント' }
       ],
       thumb: '<line x1="0" y1="55" x2="70" y2="55" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="20" cy="55" r="3.5" fill="#eceee9"/> <path d="M20,55 L45,55" fill="none" stroke="#3ecf6e" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowRunCard)"/> <path d="M20,55 Q35,15 55,20" fill="none" stroke="#ffc633" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowPassCard)"/> <defs> <marker id="arrowRunCard" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#3ecf6e"/></marker> <marker id="arrowPassCard" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffc633"/></marker> </defs>'
     },
@@ -823,7 +824,9 @@ window.BASICS_DATA = [
         { slug: 'match-coverage', name: 'パターンマッチ' }
       ,
         { slug: 'pass-coverage', name: 'カバー' },
-        { slug: 'distance', name: 'ディスタンス' }],
+        { slug: 'distance', name: 'ディスタンス' },
+        { slug: 'stunt', name: 'スタント' }
+      ],
       thumb: '<line x1="0" y1="58" x2="70" y2="58" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="16" cy="56" r="4" fill="#a8afa2"/> <path d="M16,56 C24,40 32,26 42,12" stroke="#a8afa2" stroke-width="1.6" stroke-dasharray="2,3" stroke-linecap="round" fill="none" marker-end="url(#passDefCardB)"/> <circle cx="24" cy="54" r="4" fill="#eceee9"/> <path d="M24,54 C32,38 40,24 50,14" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#passDefCardA)"/> <defs> <marker id="passDefCardA" markerWidth="8" markerHeight="8" refX="3" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffc633"/></marker> <marker id="passDefCardB" markerWidth="6" markerHeight="6" refX="2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 Z" fill="#a8afa2"/></marker> </defs>'
     },
     {
@@ -1109,7 +1112,9 @@ window.BASICS_DATA = [
         { slug: 'pass', name: 'パス' },
         { slug: 'personnel', name: 'パーソネル' },
         { slug: 'red-zone', name: 'レッドゾーン' },
-        { slug: 'run', name: 'ラン' }
+        { slug: 'run', name: 'ラン' },
+        { slug: 'stunt', name: 'スタント' },
+        { slug: 'film-study', name: 'フィルムスタディ' }
       ],
       thumb: '<line x1="8" y1="42" x2="62" y2="42" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="18" cy="42" r="3.5" fill="#a8afa2"/> <circle cx="30" cy="42" r="3.5" fill="#a8afa2"/> <circle cx="42" cy="42" r="3.5" fill="#ffc633"/> <circle cx="54" cy="42" r="3.5" fill="#a8afa2"/> <circle cx="24" cy="34" r="3.5" fill="#a8afa2"/> <circle cx="42" cy="30" r="13" fill="none" stroke="#3ecf6e" stroke-width="2"/> <line x1="51" y1="39" x2="60" y2="48" stroke="#3ecf6e" stroke-width="2.5" stroke-linecap="round"/>'
     },
@@ -1132,7 +1137,10 @@ window.BASICS_DATA = [
         { slug: 'personnel', name: 'パーソネル' },
         { slug: 'red-zone', name: 'レッドゾーン' },
         { slug: 'run', name: 'ラン' },
-        { slug: 'turnover', name: 'ターンオーバー' }
+        { slug: 'turnover', name: 'ターンオーバー' },
+        { slug: 'tendency-breaker', name: 'タンデンシーブレーカー' },
+        { slug: 'self-scout', name: 'セルフスカウト' },
+        { slug: 'grading', name: 'グレーディング' }
       ],
       thumb: '<line x1="8" y1="60" x2="62" y2="60" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <path d="M36,22 L52,14 L52,54 L36,46 Z" fill="#eceee9" stroke="#3ecf6e" stroke-width="2" stroke-linejoin="round"/> <circle cx="18" cy="34" r="5.5" fill="#ffc633"/> <circle cx="44" cy="34" r="5.5" fill="#ffc633"/>'
     },
