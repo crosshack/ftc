@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon-192.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180.png?v=2">
+<title>タイムマネジメントの基礎 | 基礎知識 | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="前半終盤の得点機会の見極めから、試合終盤・僅差でのリード側とビハインド側それぞれのゲームクロック操作まで、タイムマネジメントの判断を整理する基礎知識ページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=27">
+<!-- Google tag (gtag.js) -->
+<script>
+(function () {
+  // 本番ドメインでのみ計測する(staging.footballtactics.club・localhost では送信しない)
+  var hosts = ['footballtactics.club', 'www.footballtactics.club'];
+  if (hosts.indexOf(location.hostname) === -1) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-NHS351TN8E';
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', 'G-NHS351TN8E');
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><img src="../assets/img/logo-combined.svg" class="brand-logo" alt="FOOTBALLTACTICS.CLUB"></a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../nfl-db.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="20" x2="21" y2="20"/><rect x="5" y="14" width="3" height="6"/><rect x="11" y="9" width="3" height="11"/><rect x="17" y="4" width="3" height="16"/></svg><span>NFL.<span style="color: var(--accent);">DB</span></span></a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">タイムマネジメントの基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="article-head">
+  <div class="container">
+    <span class="tag tag-flag">ゲームマネジメント</span>
+    <div class="page-head-title-row">
+      <h1>タイムマネジメントの基礎<br><span class="subtitle">― クロックとどう向き合うか</span></h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="35" cy="37" r="18" fill="#eceee9" stroke="#a8afa2" stroke-width="1.4"/>
+        <line x1="35" y1="37" x2="35" y2="25" stroke="#3d4238" stroke-width="1.6" stroke-linecap="round"/>
+        <line x1="35" y1="37" x2="44" y2="37" stroke="#3d4238" stroke-width="1.6" stroke-linecap="round"/>
+        <circle cx="35" cy="37" r="1.6" fill="#3d4238"/>
+        <path d="M8,20 L8,32 L18,26 Z" fill="#3ecf6e"/>
+        <rect x="53" y="20" width="5" height="12" fill="#ffc633"/>
+        <rect x="61" y="20" width="5" height="12" fill="#ffc633"/>
+      </svg>
+    </div>
+    <div class="meta">読了目安 6分</div>
+    <div class="topic-tags">
+      <a href="../glossary/game-clock.html">#ゲームクロック</a>
+      <a href="../glossary/kneel-down.html">#ニーダウン</a>
+      <a href="../glossary/out-of-bounds.html">#アウトオブバウンズ</a>
+      <a href="../glossary/no-huddle.html">#ノーハドル</a>
+      <a href="../glossary/spike.html">#スパイク</a>
+      <a href="../glossary/incomplete-pass.html">#パスインコンプリート</a>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>タイムマネジメントとは、残りのゲームクロックをどう使うか、あるいはどう止めるかを判断することである。試合の序盤・中盤ではそれほど意識されないが、各ハーフの終盤にかけて重要性が増し、特に試合終盤で僅差の場合には、直接勝敗を左右する重要な要素になる。</p>
+
+  <h2>前半終盤の判断</h2>
+
+  <p>前半終盤では、リード・ビハインドを問わず、残り時間内でどれだけ得点のチャンスを作れるかという「得点の見込み」が判断の起点になる。</p>
+
+  <h3>得点の見込みが高い場合</h3>
+  <p>フィールドポジションが良く、残り時間内に複数回の攻撃機会を見込める場合は、テンポを上げてプレー数を確保し、可能な限り得点機会を積み増しにいく。この場面ではリードしている側であっても、リードをさらに広げておくことが、試合終盤での安全マージンになる。</p>
+
+  <h3>得点の見込みが低い場合</h3>
+  <p>残り時間が少ない、あるいは自陣深くでフィールドポジションが悪く、得点まで届く可能性が低いと判断される場合は、無理に攻めてターンオーバーのリスクを負うより、ポゼッションを優先し、ゲームクロックを進めたままハーフを終える選択が取られる。</p>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    NFLのアナリティクスでは、ハーフ終了間際に残り40秒以上あれば自陣のどの位置からでも攻撃を試みる価値があり、21〜40秒程度ならハーフラインを超えた位置に限って攻撃が推奨され、20秒前後で自陣深くにいる場合はニーダウンで終える方が合理的、といった目安が示されている。ただし実際のコーチの判断は、こうした分析が推奨するよりも保守的になりやすい傾向がある。
+  </div>
+
+  <h2>試合終盤、僅差での攻防</h2>
+
+  <p>試合終盤で僅差の場合、タイムマネジメントの方針はリードしている側とビハインドしている側で正反対になる。リードしている側はゲームクロックを進めることを優先し、ビハインドしている側はゲームクロックを止めることを優先する。</p>
+
+  <h3>リードしている側</h3>
+  <ul>
+    <li><strong>ランプレー中心の選択</strong>：パスが失敗すればゲームクロックは止まるため、ラン中心のプレーコールでゲームクロックを進め続ける。</li>
+    <li><strong>インバウンズを保つ</strong>：ランナーがタックルされた地点がインバウンズであれば、次のプレーまでゲームクロックは止まらない。意図的にアウトオブバウンズを避け、時間を消費する。</li>
+    <li><strong>ニーダウン</strong>：QBがスナップを受けてすぐ片膝をつき、プレーを終わらせて、ゲームクロックを進める。このとき攻撃陣は、QBを相手のタックルから守るための陣形を組む。これは「ビクトリーフォーメーション」と呼ばれ、勝利をほぼ手中に収めた状態でこの陣形が組まれることに由来する。</li>
+  </ul>
+
+  <h3>ビハインドしている側</h3>
+  <ul>
+    <li><strong>パスプレー中心の選択</strong>：パスが失敗すればゲームクロックは自動的に止まるため、ラン中心のリード側とは対照的に、パス中心のプレーコールで時間を止めながら前進を狙う。</li>
+    <li><strong>アウトオブバウンズを狙う</strong>：パスプレーではインバウンズでキャッチした直後にアウトオブバウンズへ走り出る、ランプレーでも意図的にサイドライン方向へ切れ込むなど、進んだ地点をアウトオブバウンズにすることでゲームクロックを止める。</li>
+    <li><strong>タイムアウトの使用</strong>：残っているタイムアウトを使い、プレーとプレーの間のゲームクロックの消費を止める。</li>
+    <li><strong>ノーハドル</strong>：ハドルを組まず、プレーとプレーの間の時間そのものを短縮することで、限られたゲームクロックの中でより多くのプレーを実行する。</li>
+    <li><strong>スパイク</strong>：QBがスナップ直後にボールを地面に叩きつけ、パスインコンプリートとして扱うことで、タイムアウトを使わずにゲームクロックを止める。</li>
+  </ul>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    中継で終盤にレシーバーがサイドライン際でキャッチした直後にアウトオブバウンズへ走り出たり、QBがスナップ直後にボールを地面に叩きつけたりする場面を見たら、それはビハインド側が意図的にゲームクロックを止めにいっているサインである。
+  </div>
+
+  <h2>まとめ</h2>
+  <p>タイムマネジメントは、単に急ぐか急がないかの二択ではない。試合の局面が前半終盤か、試合終盤の僅差の攻防かによって、そして自分たちがリードしているかビハインドしているかによって、何を優先すべきかが変わる判断である。</p>
+
+  <div class="see-also">
+    <span class="label">もっと詳しく</span>
+    <p>ここで取り上げたゲームクロックの仕組みや、タイムアウトの権利そのものについては、以下のページが参考になる。</p>
+    <div class="see-also-links" style="display:flex;flex-wrap:wrap;gap:10px 32px;">
+      <a href="rules-clock-basics.html">クロックの基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="game-management-situational-basics.html">ヘッドコーチの状況判断の基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="game-management-play-calling-basics.html">プレーコールの基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+
+</article>
+
+<div class="page-nav container">
+  <a class="page-nav-card prev" href="game-management-situational-basics.html">
+    <span class="nav-label">前のページ</span>
+    <span class="nav-title"><svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M9,0 L4,7 L9,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>ヘッドコーチの状況判断の基礎</span>
+    <span class="nav-desc">リスクとリターンを天秤にかける、ヘッドコーチの代表的な7つの判断を整理。</span>
+  </a>
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">タイムマネジメントの基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; <a href="https://www.crosshack.jp/" target="_blank" rel="noopener">CROSSHACK Inc.</a> All rights reserved.</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>
