@@ -1075,7 +1075,11 @@ window.BASICS_DATA = [
         { slug: 'presnap-motion', name: 'プレスナップモーション' },
         { slug: 'route', name: 'ルート' },
         { slug: 'strong-side', name: 'ストロングサイド' },
-        { slug: 'weak-side', name: 'ウィークサイド' }
+        { slug: 'weak-side', name: 'ウィークサイド' },
+        { slug: 'area', name: 'エリア' },
+        { slug: 'block', name: 'ブロック' },
+        { slug: 'field', name: 'フィールド' },
+        { slug: 'snap', name: 'スナップ' }
       ],
       thumb: '<rect x="15" y="8" width="40" height="54" rx="3" fill="#1c211c" stroke="#3d4238" stroke-width="1.5"/> <rect x="27" y="4" width="16" height="8" rx="2" fill="#3d4238"/> <line x1="22" y1="21" x2="48" y2="21" stroke="#a8afa2" stroke-width="1.2"/> <line x1="22" y1="27" x2="40" y2="27" stroke="#a8afa2" stroke-width="1.2"/> <line x1="22" y1="33" x2="44" y2="33" stroke="#a8afa2" stroke-width="1.2"/> <line x1="27" y1="48" x2="38" y2="42" stroke="#eceee9" stroke-width="1" stroke-dasharray="2,2"/> <circle cx="27" cy="48" r="4" fill="#3ecf6e"/> <circle cx="43" cy="42" r="4" fill="none" stroke="#ffc633" stroke-width="1.4"/>'
     },
@@ -1093,7 +1097,8 @@ window.BASICS_DATA = [
         { slug: 'personnel', name: 'パーソネル' },
         { slug: 'red-zone', name: 'レッドゾーン' },
         { slug: 'run', name: 'ラン' },
-        { slug: 'turnover', name: 'ターンオーバー' }
+        { slug: 'turnover', name: 'ターンオーバー' },
+        { slug: 'yard', name: 'ヤード' }
       ],
       thumb: '<line x1="10" y1="55" x2="60" y2="55" stroke="#3d4238" stroke-width="1.5"/> <rect x="16" y="38" width="8" height="17" fill="#a8afa2"/> <rect x="30" y="26" width="8" height="29" fill="#ffc633"/> <rect x="44" y="16" width="8" height="39" fill="#a8afa2"/> <circle cx="34" cy="20" r="3.5" fill="none" stroke="#3ecf6e" stroke-width="2"/>'
     },
@@ -1114,7 +1119,8 @@ window.BASICS_DATA = [
         { slug: 'red-zone', name: 'レッドゾーン' },
         { slug: 'run', name: 'ラン' },
         { slug: 'stunt', name: 'スタント' },
-        { slug: 'film-study', name: 'フィルムスタディ' }
+        { slug: 'film-study', name: 'フィルムスタディ' },
+        { slug: 'quarterback', name: 'クォーターバック' }
       ],
       thumb: '<line x1="8" y1="42" x2="62" y2="42" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="18" cy="42" r="3.5" fill="#a8afa2"/> <circle cx="30" cy="42" r="3.5" fill="#a8afa2"/> <circle cx="42" cy="42" r="3.5" fill="#ffc633"/> <circle cx="54" cy="42" r="3.5" fill="#a8afa2"/> <circle cx="24" cy="34" r="3.5" fill="#a8afa2"/> <circle cx="42" cy="30" r="13" fill="none" stroke="#3ecf6e" stroke-width="2"/> <line x1="51" y1="39" x2="60" y2="48" stroke="#3ecf6e" stroke-width="2.5" stroke-linecap="round"/>'
     },
@@ -1140,7 +1146,8 @@ window.BASICS_DATA = [
         { slug: 'turnover', name: 'ターンオーバー' },
         { slug: 'tendency-breaker', name: 'タンデンシーブレーカー' },
         { slug: 'self-scout', name: 'セルフスカウト' },
-        { slug: 'grading', name: 'グレーディング' }
+        { slug: 'grading', name: 'グレーディング' },
+        { slug: 'play-call', name: 'プレーコール' }
       ],
       thumb: '<line x1="8" y1="60" x2="62" y2="60" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <path d="M36,22 L52,14 L52,54 L36,46 Z" fill="#eceee9" stroke="#3ecf6e" stroke-width="2" stroke-linejoin="round"/> <circle cx="18" cy="34" r="5.5" fill="#ffc633"/> <circle cx="44" cy="34" r="5.5" fill="#ffc633"/>'
     },
@@ -1159,7 +1166,14 @@ window.BASICS_DATA = [
         { slug: 'offense', name: 'オフェンス' },
         { slug: 'play-call', name: 'プレーコール' },
         { slug: 'signal-caller', name: 'シグナルコーラー' },
-        { slug: 'tempo', name: 'テンポ' }
+        { slug: 'tempo', name: 'テンポ' },
+        { slug: 'defensive-coordinator', name: 'ディフェンスコーディネーター' },
+        { slug: 'field', name: 'フィールド' },
+        { slug: 'offensive-coordinator', name: 'オフェンスコーディネーター' },
+        { slug: 'quarterback', name: 'クォーターバック' },
+        { slug: 'sideline', name: 'サイドライン' },
+        { slug: 'snap', name: 'スナップ' },
+        { slug: 'special-teams-coordinator', name: 'スペシャルチームコーディネーター' }
       ],
       thumb: '<circle cx="16" cy="18" r="5" fill="#a8afa2"/> <line x1="16" y1="23" x2="16" y2="40" stroke="#a8afa2" stroke-width="2.5" stroke-linecap="round"/> <path d="M24,16 a9,9 0 0 1 0,9" fill="none" stroke="#ffc633" stroke-width="1.5" stroke-linecap="round"/> <path d="M28,12 a15,15 0 0 1 0,17" fill="none" stroke="#ffc633" stroke-width="1.5" stroke-linecap="round"/> <line x1="26" y1="28" x2="50" y2="46" stroke="#eceee9" stroke-width="1" stroke-dasharray="2,2"/> <circle cx="52" cy="49" r="5" fill="none" stroke="#3ecf6e" stroke-width="2"/> <line x1="52" y1="54" x2="52" y2="60" stroke="#3ecf6e" stroke-width="2.5" stroke-linecap="round"/>'
     },
@@ -1175,7 +1189,13 @@ window.BASICS_DATA = [
         { slug: 'onside-kick', name: 'オンサイドキック' },
         { slug: 'overtime', name: 'オーバータイム' },
         { slug: 'timeout', name: 'タイムアウト' },
-        { slug: 'two-point-conversion', name: 'ツーポイントコンバージョン' }
+        { slug: 'two-point-conversion', name: 'ツーポイントコンバージョン' },
+        { slug: 'extra-point-point-after-touchdown', name: 'エクストラポイント' },
+        { slug: 'head-coach', name: 'ヘッドコーチ' },
+        { slug: 'kickoff', name: 'キックオフ' },
+        { slug: 'punt', name: 'パント' },
+        { slug: 'yard', name: 'ヤード' },
+        { slug: 'nfl', name: 'ナショナル・フットボール・リーグ' }
       ],
       thumb: '<line x1="35" y1="12" x2="35" y2="52" stroke="#a8afa2" stroke-width="2.5" stroke-linecap="round"/> <line x1="14" y1="22" x2="56" y2="22" stroke="#a8afa2" stroke-width="2.5" stroke-linecap="round"/> <path d="M14,22 a11,11 0 0 0 22,0" fill="none" stroke="#ffc633" stroke-width="1.5" stroke-linecap="round"/> <path d="M34,22 a11,11 0 0 0 22,0" fill="none" stroke="#3ecf6e" stroke-width="1.5" stroke-linecap="round"/> <circle cx="14" cy="22" r="2" fill="#eceee9"/> <circle cx="56" cy="22" r="2" fill="#eceee9"/> <path d="M23,58 L47,58 L35,52 Z" fill="#a8afa2"/>'
     },
@@ -1191,7 +1211,18 @@ window.BASICS_DATA = [
         { slug: 'out-of-bounds', name: 'アウトオブバウンズ' },
         { slug: 'no-huddle', name: 'ノーハドル' },
         { slug: 'spike', name: 'スパイク' },
-        { slug: 'incomplete-pass', name: 'パスインコンプリート' }
+        { slug: 'incomplete-pass', name: 'パスインコンプリート' },
+        { slug: 'field', name: 'フィールド' },
+        { slug: 'half', name: 'ハーフ' },
+        { slug: 'pass', name: 'パス' },
+        { slug: 'play-call', name: 'プレーコール' },
+        { slug: 'possession', name: 'ポゼッション' },
+        { slug: 'quarterback', name: 'クォーターバック' },
+        { slug: 'run', name: 'ラン' },
+        { slug: 'sideline', name: 'サイドライン' },
+        { slug: 'snap', name: 'スナップ' },
+        { slug: 'tackle-2', name: 'タックル' },
+        { slug: 'timeout', name: 'タイムアウト' }
       ],
       thumb: '<circle cx="35" cy="37" r="18" fill="#eceee9" stroke="#a8afa2" stroke-width="1.4"/> <line x1="35" y1="37" x2="35" y2="25" stroke="#3d4238" stroke-width="1.6" stroke-linecap="round"/> <line x1="35" y1="37" x2="44" y2="37" stroke="#3d4238" stroke-width="1.6" stroke-linecap="round"/> <circle cx="35" cy="37" r="1.6" fill="#3d4238"/> <path d="M8,20 L8,32 L18,26 Z" fill="#3ecf6e"/> <rect x="53" y="20" width="5" height="12" fill="#ffc633"/> <rect x="61" y="20" width="5" height="12" fill="#ffc633"/>'
     }
