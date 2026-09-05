@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../assets/img/favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon-192.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180.png?v=2">
+<title>コーチの判断の基礎 | 基礎知識 | FOOTBALLTACTICS.CLUB</title>
+<meta name="description" content="フォースダウンやツーポイントコンバージョンなど、コーチが試合中に下すリスクとリターンを天秤にかける判断を、3つの分類で整理する基礎知識ページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=27">
+<!-- Google tag (gtag.js) -->
+<script>
+(function () {
+  // 本番ドメインでのみ計測する(staging.footballtactics.club・localhost では送信しない)
+  var hosts = ['footballtactics.club', 'www.footballtactics.club'];
+  if (hosts.indexOf(location.hostname) === -1) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-NHS351TN8E';
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', 'G-NHS351TN8E');
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><img src="../assets/img/logo-combined.svg" class="brand-logo" alt="FOOTBALLTACTICS.CLUB"></a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html" class="nav-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav-home-text">ホーム</span></a>
+      <a href="../topics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>トピックス</a>
+      <a href="../basics.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>基礎知識</a>
+      <a href="../tactics.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>戦術まとめ</a>
+      <a href="../glossary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>用語集</a>
+      <a href="../nfl-db.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="20" x2="21" y2="20"/><rect x="5" y="14" width="3" height="6"/><rect x="11" y="9" width="3" height="11"/><rect x="17" y="4" width="3" height="16"/></svg><span>NFL.<span style="color: var(--accent);">DB</span></span></a>
+      <a href="../about.html" class="mobile-only"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">コーチの判断の基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="article-head">
+  <div class="container">
+    <span class="tag tag-flag">ゲームマネジメント</span>
+    <div class="page-head-title-row">
+      <h1>コーチの判断の基礎<br><span class="subtitle">― リスクとリターンを天秤にかける</span></h1>
+      <svg class="page-head-thumb" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <line x1="35" y1="12" x2="35" y2="52" stroke="#a8afa2" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="14" y1="22" x2="56" y2="22" stroke="#a8afa2" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M14,22 a11,11 0 0 0 22,0" fill="none" stroke="#ffc633" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M34,22 a11,11 0 0 0 22,0" fill="none" stroke="#3ecf6e" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="14" cy="22" r="2" fill="#eceee9"/>
+        <circle cx="56" cy="22" r="2" fill="#eceee9"/>
+        <path d="M23,58 L47,58 L35,52 Z" fill="#a8afa2"/>
+      </svg>
+    </div>
+    <div class="meta">読了目安 7分</div>
+    <div class="topic-tags">
+      <a href="../glossary/challenge.html">#チャレンジ</a>
+      <a href="../glossary/fourth-down.html">#フォースダウン</a>
+      <a href="../glossary/onside-kick.html">#オンサイドキック</a>
+      <a href="../glossary/overtime.html">#オーバータイム</a>
+      <a href="../glossary/timeout.html">#タイムアウト</a>
+      <a href="../glossary/two-point-conversion.html">#ツーポイントコンバージョン</a>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>プレーの設計や実行力だけでなく、ヘッドコーチには、試合中の各局面で「今、この選択をすべきか」を判断する役割がある。多くの場面で、より安全な選択肢と、より高いリターンを狙う選択肢の両方が用意されており、どちらを選ぶかによって試合の行方が変わることも珍しくない。ここでは、そうしたリスクとリターンを天秤にかける判断が求められる、代表的な7つの場面を、3つの分類で整理する。</p>
+
+  <h2>リスクを取りに行くかどうかの判断</h2>
+
+  <p>安全な選択肢をあきらめれば、その分より大きな見返りを狙える。以下の3つの場面は、いずれも「安全策に留まるか、賭けに出るか」という同じ構図の判断である。</p>
+
+  <h3>フォースダウンの選択</h3>
+  <p>フォースダウンで攻撃権を維持しに行くか、パントやフィールドゴールで安全に切り替えるかの選択。判断材料になるのは、残りヤード、フィールドポジション、点差、残り時間である。近年のアナリティクスの発展により、多くの状況で「攻めた方が勝率を高める」という分析結果が示されるようになった一方、実際のコーチの選択は、分析が推奨するほど積極的ではない傾向があることが知られている。ビハインドの場面では積極性が増し、リード時には保守的になりやすい。</p>
+
+  <h3>ツーポイントコンバージョンの選択</h3>
+  <p>タッチダウン後、確実な1点（エクストラポイント）か、リスクを伴う2点（ツーポイントコンバージョン）かを選ぶ判断。期待値で考えると、ツーポイントの成功率がエクストラポイントの成功率のおよそ半分を上回れば、狙う価値があるとされる。実際には、残り点差・残り時間を踏まえて判断されることが多く、たとえば大量得点差を追う終盤の連続得点では、いずれツーポイントが必須になる場面を見越して早い段階で試し、失敗した場合に軌道修正する時間を確保する、という考え方がある。</p>
+
+  <h3>オンサイドキックの選択</h3>
+  <p>通常のキックオフの代わりに、短く蹴ってオフェンス側が自陣で回収を狙う選択。ビハインドの終盤、通常のキックオフでは十分な時間内にボールを取り戻せない場面で使われる。ただし成功率は低く、蹴る側に助走をつけさせないルール変更を境に、成功率は21%程度から6%程度まで落ち込んだとされる。相手に狙いを事前に察知されやすいという難しさもある。</p>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    NFLでは、フォースダウンやツーポイントコンバージョンの判断を後押しする分析モデルが広く共有されるようになり、勝率を最大化する観点からは「もっと攻めるべきだ」と指摘される場面が多い。ただし実際のコーチの選択が分析の推奨に追いつくには至っておらず、勝率への影響が明確な場面でも、慣例的にキックやパントを選ぶケースが依然として残っている。
+  </div>
+
+  <h2>限られた権利をどう配分するか</h2>
+
+  <p>回数に上限があり、使えばその分減っていく権利については、「今この場面で使う価値があるか」という判断が常につきまとう。</p>
+
+  <h3>タイムアウトの使いどころ</h3>
+  <p>タイムアウトは、時計を止める効果に加え、選手にプレーを再確認させる、あるいは相手の勢いを断ち切るという役割を持つ。使える回数は限られているため、「今この一つを使ってでも、この流れを止めるべきか」という判断が求められる。</p>
+
+  <h3>チャレンジの判断</h3>
+  <p>判定に異議を唱える権利。回数に上限があり、失敗すればタイムアウトを1つ失うという追加のリスクを伴う。際どい判定のたびに使ってよいものではなく、「この判定を覆せる可能性と、失敗時に失うタイムアウトを天秤にかけて、今使う価値があるか」という判断が求められる。</p>
+
+  <div class="callout">
+    <strong>観戦のヒント：</strong>
+    中継でヘッドコーチがチャレンジフラッグを手に迷う様子が映ることがある。これはまさに、判定を覆せる可能性と、失敗すればタイムアウトを一つ失うリスクとを、その場で天秤にかけている瞬間である。
+  </div>
+
+  <h2>与えられた選択肢から有利な方を選ぶ</h2>
+
+  <p>あらかじめ用意された選択肢の中からどちらかを選ぶ場面もある。選ぶこと自体に勝敗が懸かっているわけではないが、どちらが自分たちに有利かを見極める判断力が問われる。</p>
+
+  <h3>コイントスの選択</h3>
+  <p>試合開始時、そしてオーバータイムに入った際にもコイントスが行われ、勝った側は「蹴るか、受けるか」（あるいは前半の権利を後半に譲る「ディファー」）を選べる。試合開始時のコイントスは、多くのチームが慣例的にディファーを選ぶため判断の余地が比較的定型化している。一方オーバータイムのコイントスは、より重い判断になる。NFLのレギュラーシーズンでは、両チームに少なくとも一度は攻撃機会が保証される方式に変更され、この結果、従来ほぼ全てのチームが選んでいた「受ける」という選択が絶対ではなくなり、コーチの判断が蹴る/受けるでほぼ二分される状況になっている。</p>
+
+  <h3>ペナルティの受け入れ判断</h3>
+  <p>相手の反則があった場合、その罰則を受け入れるか、辞退（デクライン）して実際のプレー結果をそのまま採用するかを選べる場面がある。たとえば、相手のオフサイドで5ヤードの前進が得られる一方、実際のプレーで15ヤードのパスが成功しファーストダウンも得ていたなら、罰則を受け入れるより、そのプレー結果を採用する方が得になる。獲得ヤード・ダウンの更新など、複数の要素を瞬時に比較する判断である。</p>
+
+  <div class="callout flag">
+    <strong>背景・トレンド：</strong>
+    NFLでは、レギュラーシーズンのオーバータイムについて、両チームに攻撃機会を保証する方式への変更が行われた。これにより、従来ほぼ一択だった「コイントスに勝てば受ける」という判断が揺らぎ、蹴るか受けるかでコーチの判断がほぼ二分される状況になっている。
+  </div>
+
+  <h2>まとめ</h2>
+  <p>この7つの場面はいずれも、プレーの巧拙とは別の次元で、試合の勝敗に直結しうる判断である。共通するのは、正解が固定的なマニュアルとして存在するわけではなく、その場のスコア・時間・フィールドポジションといった状況を踏まえて、都度リスクとリターンを見積もる必要があるという点である。</p>
+
+  <div class="see-also">
+    <span class="label">もっと詳しく</span>
+    <p>ここで取り上げた選択肢の仕組み・権利そのものについては、以下のページが参考になる。</p>
+    <div class="see-also-links" style="display:flex;flex-wrap:wrap;gap:10px 32px;">
+      <a href="rules-game-time-basics.html">試合進行の基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="rules-penalties-basics.html">判定・反則・ペナルティの基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="special-teams-kickoff-basics.html">キックオフの基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+
+</article>
+
+<div class="page-nav container">
+  <a class="page-nav-card prev" href="game-management-play-calling-basics.html">
+    <span class="nav-label">前のページ</span>
+    <span class="nav-title"><svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M9,0 L4,7 L9,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>プレーコールの基礎</span>
+    <span class="nav-desc">誰がプレーを選び、どう伝え、スナップ前にどう変えるかという、選択と伝達のプロセスを整理。</span>
+  </a>
+  <a class="page-nav-card next" href="game-management-time-management-basics.html">
+    <span class="nav-label">次のページ</span>
+    <span class="nav-title">タイムマネジメントの基礎<svg class="chev" viewBox="0 0 9 14" aria-hidden="true"><path d="M0,0 L5,7 L0,14" fill="none" stroke="#3ecf6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span class="nav-desc">終盤の残り時間を、スパイクやノーハドルなど複数の手段を組み合わせて精密に管理する技術を整理。</span>
+  </a>
+</div>
+
+<nav class="breadcrumb breadcrumb-footer" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="../index.html" class="breadcrumb-home" aria-label="ホーム"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a></li>
+      <li><a href="../basics.html">基礎知識</a></li>
+      <li><span class="current">コーチの判断の基礎</span></li>
+    </ol>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; <a href="https://www.crosshack.jp/" target="_blank" rel="noopener">CROSSHACK Inc.</a> All rights reserved.</div>
+    <div><a href="../about.html"><span class="site-title">FOOTBALL<span class="brand-tac">TACTICS</span>.CLUB</span> とは</a></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+<button type="button" class="back-to-top" aria-label="ページの先頭に戻る">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</body>
+</html>
