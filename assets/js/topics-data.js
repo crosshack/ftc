@@ -454,4 +454,22 @@ window.TOPICS_DATA = [
         { slug: "yard", name: "ヤード" }],
     thumb: '<line x1="14" y1="56" x2="56" y2="14" stroke="#3d4238" stroke-width="1.2" stroke-dasharray="2,3"/><path d="M14,56 C25,50 35,40 45,32 C50,28 53,24 56,20" fill="none" stroke="#eceee9" stroke-width="2" stroke-linecap="round"/><circle cx="45" cy="32" r="3.5" fill="#ffc633"/>'
   }
+  ,
+  {
+    slug: "behavioral-econ-001c",
+    title: "「もったいない」が生む不合理な判断",
+    excerpt: "「ここまで進めたのだから」という感覚が判断を歪めるサンクコスト効果。NFL固有の実例ではなく、行動経済学の一般理論とNBAの学術研究のエビデンスから、この効果を解説する。",
+    url: "topics/behavioral-econ-001c.html",
+    date: "2026-09-06",
+    readMin: 6,
+    theme: { slug: "behavioral-econ", name: "アメフトの行動経済学", part: "#001c" },
+    tags: [
+        { slug: "field-goal", name: "フィールドゴール" },
+        { slug: "fourth-down", name: "フォースダウン" },
+        { slug: "head-coach", name: "ヘッドコーチ" },
+        { slug: "down", name: "ダウン" },
+        { slug: "distance", name: "ディスタンス" },
+        { slug: "yard", name: "ヤード" }],
+    thumb: '<line x1="14" y1="40" x2="56" y2="40" stroke="#3d4238" stroke-width="1.2" stroke-dasharray="2,3"/><path d="M14,52 C25,50 35,44 45,32 C50,26 53,20 56,14" fill="none" stroke="#eceee9" stroke-width="2" stroke-linecap="round"/><circle cx="46" cy="31" r="3.5" fill="#ffc633"/>'
+  }
 ];
