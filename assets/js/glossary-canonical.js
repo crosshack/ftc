@@ -111,7 +111,7 @@ window.GLOSSARY_CANONICAL = {
   "fumble-lost": "ファンブルロスト",
   "fumble-return-touchdown": "ファンブル・リターン・タッチダウン",
   "gadget-player": "ガジェットプレイヤー",
-  "gamble": "ギャンブル",
+  "go-for-it": "ゴーフォーイット",
   "game-clock": "ゲームクロック",
   "gap": "ギャップ",
   "goal-line": "ゴールライン",

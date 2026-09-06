@@ -95,7 +95,7 @@ window.BASICS_DATA = [
         { slug: 'distance', name: 'ディスタンス' },
         { slug: 'yard', name: 'ヤード' },
         { slug: 'punt', name: 'パント' },
-        { slug: 'gamble', name: 'ギャンブル' },
+        { slug: 'go-for-it', name: 'ギャンブル' },
         { slug: 'turnover-on-downs', name: 'ターンオーバーオンダウンズ' },
         { slug: 'offense', name: 'オフェンス' },
         { slug: 'pass', name: 'パス' }
