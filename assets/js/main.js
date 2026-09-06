@@ -117,6 +117,15 @@
 // cards, hide the rest behind a "すべて表示" link. Scoped purely by
 // heading text (these three headings only ever appear on glossary term
 // pages), so no changes to individual glossary/*.html files are needed.
+//
+// This same TARGET_HEADINGS-based match is also reused (2026-09-06) to tag
+// the matching card-list with a `related-card-list` class, purely so
+// style.css can give the heading -> first-card gap a larger margin that
+// matches basics.html's .section-head rhythm, WITHOUT affecting the
+// unrelated "関連するダッシュボード"(NFL.DB) card-list, which also uses the
+// .card-list class but must be excluded (Atsushi, 2026-09-06). Applied
+// regardless of card count (i.e. even when truncation itself doesn't
+// trigger), since the heading/first-card gap should be consistent either way.
 (function () {
   var LIMIT = 5;
   var TARGET_HEADINGS = ['関連する基礎知識', '関連する戦術まとめ', '関連するトピックス'];
@@ -126,6 +135,7 @@
       if (TARGET_HEADINGS.indexOf(h2.textContent.trim()) === -1) return;
       var list = h2.nextElementSibling;
       if (!list || !list.classList.contains('card-list')) return;
+      list.classList.add('related-card-list');
 
       var cards = Array.prototype.slice.call(list.querySelectorAll(':scope > .card'));
       if (cards.length <= LIMIT) return;

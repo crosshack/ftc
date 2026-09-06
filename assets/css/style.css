@@ -571,8 +571,12 @@ h1, h2, h3, h4 {
    1つ目のカードの余白に揃える。.article-body h2のmargin-bottom(16px)に対し、
    28-16=12pxを追加(2026-09-06、当初は22px狙いの+6pxで対応したが「あまり違いを
    感じない」とのフィードバックを受け、比較対象をbasics.html側の実際の余白値に
-   変更して再調整)。 */
-.article-body h2 + .card-list { margin-top: 12px; }
+   変更して再調整)。対象は「関連する基礎知識」「関連する戦術まとめ」
+   「関連するトピックス」の3セクションのみ(Atsushi指定)で、同じ.card-listクラスを
+   使う「関連するダッシュボード」(NFL.DB)は対象外とする必要があるため、単純な
+   `h2 + .card-list`ではなく、assets/js/main.js側で見出しテキストに基づき付与する
+   `.related-card-list`マーカークラスに対して適用する。 */
+.article-body .related-card-list { margin-top: 12px; }
 .article-body h3 { font-size: 1.1rem; margin: 30px 0 12px; color: var(--accent); }
 .article-body p { margin: 0 0 18px; color: #d9dbd4; }
 .article-body ul, .article-body ol { color: #d9dbd4; padding-left: 22px; margin-bottom: 18px; }
