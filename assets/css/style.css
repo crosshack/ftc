@@ -864,6 +864,18 @@ h1, h2, h3, h4 {
 .page-head.kv-pattern-topics {
   background: url("../img/kv-pattern-topics.svg") repeat;
 }
+.page-head.kv-pattern-basics {
+  background: url("../img/kv-pattern-basics.svg") repeat;
+}
+.page-head.kv-pattern-tactics {
+  background: url("../img/kv-pattern-tactics.svg") repeat;
+}
+.page-head.kv-pattern-glossary {
+  background: url("../img/kv-pattern-glossary.svg") repeat;
+}
+.page-head.kv-pattern-nfl-db {
+  background: url("../img/kv-pattern-nfl-db.svg") repeat;
+}
 
 /* ---------- Glossary ---------- */
 .glossary-index {
