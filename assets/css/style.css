@@ -262,7 +262,8 @@ h1, h2, h3, h4 {
   border-bottom: 1px solid var(--line);
   padding: 64px 0 48px;
   background:
-    linear-gradient(180deg, rgba(62,207,110,0.06), transparent 60%);
+    url("../img/kv-pattern-home.svg") repeat,
+    linear-gradient(180deg, rgba(62,207,110,0.06), transparent 60%) no-repeat;
 }
 .hero .container.kv-flex {
   display: flex;
@@ -859,6 +860,10 @@ h1, h2, h3, h4 {
 .page-head h1.has-icon { position: relative; padding-left: 1.25em; }
 .page-head h1 .page-head-icon { position: absolute; left: 0; top: 50%; transform: translateY(calc(-50% + 2px)); width: 0.85em; height: 0.85em; }
 .page-head p { color: var(--text-dim); }
+/* KVエリア ビジュアル要素(市松模様アイコンパターン、2026-09-06試験導入: ホーム・トピックス一覧のみ) */
+.page-head.kv-pattern-topics {
+  background: url("../img/kv-pattern-topics.svg") repeat;
+}
 
 /* ---------- Glossary ---------- */
 .glossary-index {
