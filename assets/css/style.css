@@ -567,7 +567,6 @@ h1, h2, h3, h4 {
   padding-bottom: 8px;
   border-bottom: 2px solid var(--line-strong);
 }
-.article-body h2 .subtitle { font-size: 0.6em; }
 /* term detail pages (glossary/*.html): the 見出し(h2) -> 1つ目のカード の余白を、
    基礎知識一覧ページ(basics.html)の.section-head(margin-bottom: 28px)と
    1つ目のカードの余白に揃える。.article-body h2のmargin-bottom(16px)に対し、
