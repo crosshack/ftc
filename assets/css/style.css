@@ -566,10 +566,13 @@ h1, h2, h3, h4 {
   padding-bottom: 8px;
   border-bottom: 2px solid var(--line-strong);
 }
-/* term detail pages (glossary/*.html): the 見出し(h2) -> 1つ目のカード の余白が、
-   カード同士の余白(各カードの上下padding 22pxずつ)より詰まって見えていたため、
-   h2直後のcard-listにだけ追加の上マージンを足して揃える(2026-09-06)。 */
-.article-body h2 + .card-list { margin-top: 6px; }
+/* term detail pages (glossary/*.html): the 見出し(h2) -> 1つ目のカード の余白を、
+   基礎知識一覧ページ(basics.html)の.section-head(margin-bottom: 28px)と
+   1つ目のカードの余白に揃える。.article-body h2のmargin-bottom(16px)に対し、
+   28-16=12pxを追加(2026-09-06、当初は22px狙いの+6pxで対応したが「あまり違いを
+   感じない」とのフィードバックを受け、比較対象をbasics.html側の実際の余白値に
+   変更して再調整)。 */
+.article-body h2 + .card-list { margin-top: 12px; }
 .article-body h3 { font-size: 1.1rem; margin: 30px 0 12px; color: var(--accent); }
 .article-body p { margin: 0 0 18px; color: #d9dbd4; }
 .article-body ul, .article-body ol { color: #d9dbd4; padding-left: 22px; margin-bottom: 18px; }
