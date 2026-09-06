@@ -413,4 +413,26 @@ window.TOPICS_DATA = [
       ],
     thumb: '<circle cx="35" cy="52" r="4" fill="#eceee9"/><path d="M35,52 L20,52" fill="none" stroke="#a8afa2" stroke-width="2" stroke-dasharray="3,2" stroke-linecap="round"/><circle cx="20" cy="52" r="3.5" fill="#a8afa2"/><path d="M35,52 Q45,30 58,20" fill="none" stroke="#3ecf6e" stroke-width="2" stroke-linecap="round"/><circle cx="58" cy="20" r="3.5" fill="#3ecf6e"/>'
   }
+  ,
+  {
+    slug: "behavioral-econ-001a",
+    title: "『蹴っておけばよかった』ラムズの4th&1",
+    excerpt: "2025年シーズンWeek 5、ラムズ対フォーティナイナーズ戦のオーバータイム。同点にできるフィールドゴールを見送り、4th&1のギャンブルを選んだショーン・マクベイの判断を、行動経済学の「プロスペクト理論」から解説する。",
+    url: "topics/behavioral-econ-001a.html",
+    date: "2026-09-06",
+    readMin: 6,
+    theme: { slug: "behavioral-econ", name: "アメフトの行動経済学", part: "#001a" },
+    tags: [
+        { slug: "field-goal", name: "フィールドゴール" },
+        { slug: "fourth-down", name: "フォースダウン" },
+        { slug: "overtime", name: "オーバータイム" },
+        { slug: "los-angeles-rams", name: "ロサンゼルス・ラムズ" },
+        { slug: "san-francisco-49ers", name: "サンフランシスコ・フォーティナイナーズ" },
+        { slug: "head-coach", name: "ヘッドコーチ" },
+        { slug: "running-back", name: "ランニングバック" },
+        { slug: "handoff", name: "ハンドオフ" },
+        { slug: "kicker", name: "キッカー" },
+        { slug: "yard", name: "ヤード" }],
+    thumb: '<line x1="35" y1="8" x2="35" y2="62" stroke="#3d4238" stroke-width="1.2" stroke-dasharray="2,3"/><line x1="8" y1="35" x2="62" y2="35" stroke="#3d4238" stroke-width="1.2" stroke-dasharray="2,3"/><path d="M14,55 C20,50 27,43 35,35 C43,27 50,21 56,15" fill="none" stroke="#eceee9" stroke-width="2" stroke-linecap="round"/><circle cx="21" cy="49" r="3.5" fill="#ffc633"/>'
+  }
 ];
