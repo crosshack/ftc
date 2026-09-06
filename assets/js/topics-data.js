@@ -435,4 +435,23 @@ window.TOPICS_DATA = [
         { slug: "yard", name: "ヤード" }],
     thumb: '<line x1="35" y1="8" x2="35" y2="62" stroke="#3d4238" stroke-width="1.2" stroke-dasharray="2,3"/><line x1="8" y1="35" x2="62" y2="35" stroke="#3d4238" stroke-width="1.2" stroke-dasharray="2,3"/><path d="M14,55 C20,50 27,43 35,35 C43,27 50,21 56,15" fill="none" stroke="#eceee9" stroke-width="2" stroke-linecap="round"/><circle cx="21" cy="49" r="3.5" fill="#ffc633"/>'
   }
+  ,
+  {
+    slug: "behavioral-econ-001b",
+    title: "『後悔はない』ライオンズの4th&3",
+    excerpt: "2023年シーズンのプレーオフ、第58回NFCチャンピオンシップ第4Q。同点にできるフィールドゴールを見送り、4th&3のギャンブルを選んだダン・キャンベルの判断を、行動経済学の「自信過剰バイアス」から解説する。",
+    url: "topics/behavioral-econ-001b.html",
+    date: "2026-09-06",
+    readMin: 6,
+    theme: { slug: "behavioral-econ", name: "アメフトの行動経済学", part: "#001b" },
+    tags: [
+        { slug: "field-goal", name: "フィールドゴール" },
+        { slug: "fourth-down", name: "フォースダウン" },
+        { slug: "head-coach", name: "ヘッドコーチ" },
+        { slug: "detroit-lions", name: "デトロイト・ライオンズ" },
+        { slug: "san-francisco-49ers", name: "サンフランシスコ・フォーティナイナーズ" },
+        { slug: "wide-receiver", name: "ワイドレシーバー" },
+        { slug: "yard", name: "ヤード" }],
+    thumb: '<line x1="14" y1="56" x2="56" y2="14" stroke="#3d4238" stroke-width="1.2" stroke-dasharray="2,3"/><path d="M14,56 C25,50 35,40 45,32 C50,28 53,24 56,20" fill="none" stroke="#eceee9" stroke-width="2" stroke-linecap="round"/><circle cx="45" cy="32" r="3.5" fill="#ffc633"/>'
+  }
 ];
