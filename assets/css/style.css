@@ -575,8 +575,18 @@ h1, h2, h3, h4 {
    「関連するトピックス」の3セクションのみ(Atsushi指定)で、同じ.card-listクラスを
    使う「関連するダッシュボード」(NFL.DB)は対象外とする必要があるため、単純な
    `h2 + .card-list`ではなく、assets/js/main.js側で見出しテキストに基づき付与する
-   `.related-card-list`マーカークラスに対して適用する。 */
-.article-body .related-card-list { margin-top: 12px; }
+   `.related-card-list`マーカークラスに対して適用する。
+   2026-09-06追記: 当初margin-topで実装したところ、2回の調整(6px→12px)とも
+   見た目に一切反映されないという不具合が発生した。原因はCSSのマージン相殺
+   (adjacent sibling margin collapsing): 直前のh2のmargin-bottom(16px)と
+   このmargin-topが「隣接する2つの余白」として合算されずmax(16, 12)=16pxに
+   相殺されてしまい、実質的に常にh2側の16pxしか効いていなかった。
+   marginではなくpaddingを使えばこの相殺は起こらない(paddingは要素自身の
+   ボーダーボックス内側の値であり、隣接兄弟要素の余白相殺の対象にならないため、
+   h2のmargin-bottom(16px、相殺相手が無いためそのまま働く)+この
+   padding-top(12px)が単純に加算され、狙い通り28pxになる)ため、
+   margin-topからpadding-topに変更した。 */
+.article-body .related-card-list { padding-top: 12px; }
 .article-body h3 { font-size: 1.1rem; margin: 30px 0 12px; color: var(--accent); }
 .article-body p { margin: 0 0 18px; color: #d9dbd4; }
 .article-body ul, .article-body ol { color: #d9dbd4; padding-left: 22px; margin-bottom: 18px; }
