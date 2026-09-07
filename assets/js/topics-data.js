@@ -304,7 +304,6 @@ window.TOPICS_DATA = [
     theme: { slug: "zone-coverage", name: "ゾーンカバレッジの拡大", part: "前編" },
     tags: [
         { slug: "zone-coverage", name: "ゾーンカバレッジ" },
-        { slug: "zone", name: "ゾーン" },
         { slug: 'presnap-motion', name: 'プレスナップモーション' },
         { slug: "man-to-man-coverage", name: "マンツーマン" },
         { slug: "personnel", name: "パーソネル" },
@@ -315,6 +314,7 @@ window.TOPICS_DATA = [
         { slug: "wide-receiver", name: "ワイドレシーバー" },
         { slug: "defense", name: "ディフェンス" },
         { slug: "matchup", name: "マッチアップ" },
+        { slug: "zone", name: "ゾーン" },
         { slug: "nickel-package", name: "ニッケル" },
         { slug: "dime-package", name: "ダイム" },
         { slug: "defensive-back", name: "ディフェンスバック" },
@@ -335,7 +335,6 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "zone-coverage", name: "ゾーンカバレッジの拡大", part: "後編" },
     tags: [
-        { slug: "zone", name: "ゾーン" },
         { slug: "zone-coverage", name: "ゾーンカバレッジ" },
         { slug: "field", name: "フィールド" },
         { slug: "defense", name: "ディフェンス" },
@@ -355,6 +354,7 @@ window.TOPICS_DATA = [
         { slug: "single-high", name: "シングルハイ" },
         { slug: "linebacker", name: "ラインバッカー" },
         { slug: "coverage", name: "カバレッジ" },
+        { slug: "zone", name: "ゾーン" },
         { slug: "box", name: "ボックス" },
         { slug: "defensive-coordinator", name: "ディフェンスコーディネーター" },
         { slug: "base-4-3", name: "ベース4-3" },
