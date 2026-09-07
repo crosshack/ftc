@@ -125,14 +125,33 @@
   var LIMIT = 3;
   // Sort by date (newest first); for same-date articles, the more recently
   // added one wins (later position in topics-data.js = newer).
-  var list = window.TOPICS_DATA.slice()
+  var sorted = window.TOPICS_DATA.slice()
     .map(function (t, i) { return { t: t, i: i }; })
     .sort(function (a, b) {
       if (a.t.date !== b.t.date) return a.t.date < b.t.date ? 1 : -1;
       return b.i - a.i;
     })
-    .slice(0, LIMIT)
     .map(function (x) { return x.t; });
+  var list = sorted.slice(0, LIMIT);
+
+  // If the last slot would be filled by one half of a single-shot (単発系,
+  // 前編/後編) series without its 前編 also making the cut, prefer showing
+  // 前編 in that slot instead (2026-09-07 rule).
+  function isContinuous(part) { return !!part && part.charAt(0) === "#"; }
+  var lastIndex = list.length - 1;
+  var last = list[lastIndex];
+  if (last && last.theme && !isContinuous(last.theme.part) && last.theme.part !== "前編") {
+    var zenpenAlreadyIn = list.some(function (t) {
+      return t.theme && t.theme.slug === last.theme.slug && t.theme.part === "前編";
+    });
+    if (!zenpenAlreadyIn) {
+      var zenpenMatches = sorted.filter(function (t) {
+        return t.theme && t.theme.slug === last.theme.slug && t.theme.part === "前編";
+      });
+      if (zenpenMatches.length > 0) list[lastIndex] = zenpenMatches[0];
+    }
+  }
+
   // Within the selected set, keep a series' parts in reading order (前編 before 後編).
   list.sort(function (a, b) {
     if (a.theme && b.theme && a.theme.slug === b.theme.slug) {
