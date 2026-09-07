@@ -423,6 +423,7 @@ window.TOPICS_DATA = [
     theme: { slug: "behavioral-econ", name: "アメフトの行動経済学", part: "#001" },
     tags: [
         { slug: "field-goal-2", name: "フィールドゴール" },
+        { slug: "go-for-it", name: "ギャンブル" },
         { slug: "fourth-down", name: "フォースダウン" },
         { slug: "overtime", name: "オーバータイム" },
         { slug: "head-coach", name: "ヘッドコーチ" },
@@ -434,7 +435,6 @@ window.TOPICS_DATA = [
         { slug: "handoff", name: "ハンドオフ" },
         { slug: "kicker", name: "キッカー" },
         { slug: "yard", name: "ヤード" },
-        { slug: "go-for-it", name: "ギャンブル" },
         { slug: "down", name: "ダウン" }],
     thumb: '<line x1="35" y1="8" x2="35" y2="62" stroke="#3d4238" stroke-width="1.2" stroke-dasharray="2,3"/> <line x1="8" y1="35" x2="62" y2="35" stroke="#3d4238" stroke-width="1.2" stroke-dasharray="2,3"/> <path d="M14,55 C20,50 27,43 35,35 C43,27 50,21 56,15" fill="none" stroke="#eceee9" stroke-width="2" stroke-linecap="round"/> <circle cx="21" cy="49" r="3.5" fill="#ffc633"/> <circle cx="49" cy="21" r="3.5" fill="#3ecf6e"/>'
   },
@@ -447,6 +447,7 @@ window.TOPICS_DATA = [
     readMin: 8,
     theme: { slug: "behavioral-econ", name: "アメフトの行動経済学", part: "#002" },
     tags: [
+        { slug: "go-for-it", name: "ギャンブル" },
         { slug: "fourth-down", name: "フォースダウン" },
         { slug: "punt", name: "パント" },
         { slug: "head-coach", name: "ヘッドコーチ" },
@@ -457,7 +458,6 @@ window.TOPICS_DATA = [
         { slug: "down", name: "ダウン" },
         { slug: "distance", name: "ディスタンス" },
         { slug: "yard", name: "ヤード" },
-        { slug: "go-for-it", name: "ギャンブル" },
         { slug: "first-down", name: "ファーストダウン" },
         { slug: "pass", name: "パス" }],
     thumb: '<line x1="35" y1="8" x2="35" y2="62" stroke="#3d4238" stroke-width="1.2" stroke-dasharray="2,3"/> <line x1="8" y1="35" x2="62" y2="35" stroke="#3d4238" stroke-width="1.2" stroke-dasharray="2,3"/> <circle cx="35" cy="35" r="3.5" fill="#eceee9"/> <path d="M35,35 C42,28 48,22 54,16" fill="none" stroke="#3ecf6e" stroke-width="2" stroke-linecap="round"/> <circle cx="54" cy="16" r="3.5" fill="#3ecf6e"/> <path d="M35,35 C28,42 22,48 16,54" fill="none" stroke="#d9534f" stroke-width="2" stroke-linecap="round"/> <circle cx="16" cy="54" r="3.5" fill="#d9534f"/>'
