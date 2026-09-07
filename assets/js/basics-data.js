@@ -119,9 +119,9 @@ window.BASICS_DATA = [
         { slug: 'incomplete-pass', name: 'パスインコンプリート' },
         { slug: 'touchback', name: 'タッチバック' },
         { slug: 'yard', name: 'ヤード' },
-        { slug: 'down', name: 'ダウン（攻撃権）' },
         { slug: 'offense', name: 'オフェンス' },
         { slug: 'returner', name: 'リターナー' },
+        { slug: 'down-by-contact', name: 'ダウン（ボールデッド）' },
         { slug: 'out-of-bounds', name: 'アウトオブバウンズ' },
         { slug: 'sideline', name: 'サイドライン' },
         { slug: 'quarterback', name: 'クォーターバック' },
@@ -137,8 +137,8 @@ window.BASICS_DATA = [
         { slug: 'end-zone', name: 'エンドゾーン' },
         { slug: 'illegal-forward-pass', name: 'イリーガル・フォワードパス' },
         { slug: 'kickoff-return', name: 'キックオフリターン' },
-        { slug: 'punt-return', name: 'パントリターン' },
-        { slug: 'down-by-contact', name: 'ダウン（ボールデッド）' }
+        { slug: 'down', name: 'ダウン（攻撃権）' },
+        { slug: 'punt-return', name: 'パントリターン' }
       ],
       thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="16" cy="44" r="5" fill="#eceee9"/> <path d="M24,42 L46,42" stroke="#ffc633" stroke-width="1.8" stroke-linecap="round" fill="none" marker-end="url(#playThumbArrow)"/> <line x1="54" y1="26" x2="54" y2="46" stroke="#a8afa2" stroke-width="2" stroke-linecap="round"/> <defs> <marker id="playThumbArrow" markerWidth="7" markerHeight="7" refX="2.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#ffc633"/></marker> </defs>'
     },
@@ -605,7 +605,7 @@ window.BASICS_DATA = [
         { slug: 'pass-coverage', name: 'パスカバレッジ' },
         { slug: 'gap', name: 'ギャップ' },
         { slug: 'edge', name: 'エッジ' },
-        { slug: 'tackle', name: 'タックル（ポジション）' },
+        { slug: 'tackle-2', name: 'タックル（タックル動作）' },
         { slug: 'zone-coverage', name: 'ゾーン（カバレッジ）' },
         { slug: 'run-support', name: 'ランサポート' },
         { slug: 'offensive-line', name: 'オフェンスライン' },
@@ -633,8 +633,8 @@ window.BASICS_DATA = [
         { slug: 'box', name: 'ボックス' },
         { slug: 'disguise', name: 'ディスガイズ' },
         { slug: 'kickoff', name: 'キックオフ' },
-        { slug: 'zone', name: 'ゾーン（エリア）' },
-        { slug: 'tackle-2', name: 'タックル（タックル動作）' }
+        { slug: 'tackle', name: 'タックル（ポジション）' },
+        { slug: 'zone', name: 'ゾーン（エリア）' }
       ],
       thumb: '<line x1="0" y1="50" x2="70" y2="50" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/> <circle cx="20" cy="42" r="3.5" fill="#3ecf6e"/><circle cx="35" cy="42" r="3.5" fill="#3ecf6e"/><circle cx="50" cy="42" r="3.5" fill="#3ecf6e"/> <circle cx="27" cy="30" r="3.5" fill="#eceee9"/><circle cx="43" cy="30" r="3.5" fill="#eceee9"/> <circle cx="10" cy="42" r="3.5" fill="#ffc633"/><circle cx="60" cy="42" r="3.5" fill="#ffc633"/>'
     },
