@@ -51,6 +51,7 @@ ICON_SIZE    = 104         # チームアイコンの一辺
 NAME_GAP     = 22          # アイコンとチーム名の間隔
 CENTER_GAP   = 118         # 中心からアイコン内側までの距離（アイコン間 = 236px）
 NAME_SIZE    = 54          # チーム名。最長名(COMMANDERS/BUCCANEERS)で左端82pxに収まる上限
+SEP_SIZE     = 50          # 区切り記号。小文字のため実高は30px（チーム名の実高69pxに対し43%）
 TITLE_SIZE   = 52
 PAD_X        = 80
 BG           = "#141713"   # --bg-alt（Xヘッダー・noteヘッダー画像と同一）
@@ -104,7 +105,7 @@ body{{width:{W}px;height:{H}px;overflow:hidden;}}
 .wkwrap{{position:absolute;top:30px;left:0;right:0;text-align:center;}}
 .wk{{color:{WEEK_COLOR};font-weight:600;font-size:23px;letter-spacing:.24em;}}
 .sep{{position:absolute;left:50%;top:calc(50% + 8px);transform:translate(-50%,-50%);
-     color:{VS_COLOR};font-weight:500;font-size:34px;}}
+     color:{VS_COLOR};font-weight:500;font-size:{SEP_SIZE}px;}}
 .side{{position:absolute;top:calc(50% + 8px);transform:translateY(-50%);
       display:flex;align-items:center;gap:{NAME_GAP}px;}}
 .tname{{color:{TEXT};font-weight:700;font-size:{NAME_SIZE}px;line-height:1;white-space:nowrap;}}
