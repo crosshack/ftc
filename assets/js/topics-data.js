@@ -504,7 +504,6 @@ window.TOPICS_DATA = [
         { slug: "base-package", name: "ベースパッケージ" },
         { slug: "linebacker", name: "ラインバッカー" },
         { slug: "nickel-package", name: "ニッケル" },
-        { slug: "box", name: "ボックス" },
         { slug: "offense", name: "オフェンス" },
         { slug: "defense", name: "ディフェンス" },
         { slug: "head-coach", name: "ヘッドコーチ" },
