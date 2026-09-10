@@ -164,6 +164,7 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "13-personnel", name: "13パーソネルの台頭", part: "後編" },
     tags: [
+        { slug: "base-package", name: "ベースパッケージ" },
         { slug: "personnel", name: "パーソネル" },
         { slug: "nickel-package", name: "ニッケル" },
         { slug: "pass", name: "パス" },
@@ -306,6 +307,7 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "zone-coverage", name: "ゾーンカバレッジの拡大", part: "前編" },
     tags: [
+        { slug: "base-package", name: "ベースパッケージ" },
         { slug: "zone-coverage", name: "ゾーンカバレッジ" },
         { slug: 'presnap-motion', name: 'プレスナップモーション' },
         { slug: "man-to-man-coverage", name: "マンツーマン" },
@@ -477,6 +479,7 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "base-package", name: "ベースパッケージの反発", part: "前編" },
     tags: [
+        { slug: "base-package", name: "ベースパッケージ" },
         { slug: "personnel", name: "パーソネル" },
         { slug: "linebacker", name: "ラインバッカー" },
         { slug: "nickel-package", name: "ニッケル" },
@@ -498,6 +501,7 @@ window.TOPICS_DATA = [
     readMin: 5,
     theme: { slug: "base-package", name: "ベースパッケージの反発", part: "後編" },
     tags: [
+        { slug: "base-package", name: "ベースパッケージ" },
         { slug: "linebacker", name: "ラインバッカー" },
         { slug: "nickel-package", name: "ニッケル" },
         { slug: "box", name: "ボックス" },
