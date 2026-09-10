@@ -18,6 +18,7 @@ window.GLOSSARY_CANONICAL = {
   "baltimore-ravens": "ボルティモア・レイブンズ",
   "base-3-4": "ベース3-4",
   "base-4-3": "ベース4-3",
+  "base-package": "ベースパッケージ",
   "blitz": "ブリッツ",
   "block": "ブロック",
   "blocked-kick": "ブロックキック",
