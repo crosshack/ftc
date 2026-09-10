@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -290,7 +290,19 @@
   </url>
   <url>
     <loc>https://footballtactics.club/topics/13-personnel-2</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/topics/base-package-1</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/topics/base-package-2</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -362,7 +374,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/topics/zone-coverage-1</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -380,7 +392,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/area</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -440,13 +452,19 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/base-3-4</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/base-4-3</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/glossary/base-package</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -482,7 +500,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/box</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -590,7 +608,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/cornerback</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -638,7 +656,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/coverage</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -680,13 +698,13 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/defense</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/defensive-back</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -728,7 +746,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/detroit-lions</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -746,7 +764,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/dime-package</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -974,7 +992,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/front</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1028,7 +1046,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/goal-line-defense</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1052,7 +1070,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/green-bay-packers</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1106,7 +1124,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/head-coach</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1352,7 +1370,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/linebacker</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1382,7 +1400,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/los-angeles-rams</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1406,7 +1424,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/man-to-man-coverage</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1418,7 +1436,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/matchup</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1448,7 +1466,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/minnesota-vikings</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1508,7 +1526,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/nickel-package</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1532,7 +1550,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/offense</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1616,7 +1634,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/pass-coverage</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1640,7 +1658,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/pass</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1658,7 +1676,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/personnel</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1760,7 +1778,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/presnap-motion</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1772,7 +1790,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/prevent-defense</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1838,7 +1856,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/quarterback</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1904,7 +1922,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/route</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1940,7 +1958,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/run</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1964,13 +1982,13 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/safety-help</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/safety</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2036,7 +2054,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/shell</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2108,7 +2126,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/slot-receiver</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2120,7 +2138,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/snap</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2210,7 +2228,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/sub-package</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2282,7 +2300,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/tight-end</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2402,7 +2420,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/wide-receiver</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2462,7 +2480,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/zone-coverage</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2480,7 +2498,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/zone</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
