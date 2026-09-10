@@ -468,5 +468,49 @@ window.TOPICS_DATA = [
         { slug: "distance", name: "ディスタンス" }
       ],
     thumb: '<line x1="35" y1="8" x2="35" y2="62" stroke="#3d4238" stroke-width="1.2" stroke-dasharray="2,3"/> <line x1="8" y1="35" x2="62" y2="35" stroke="#3d4238" stroke-width="1.2" stroke-dasharray="2,3"/> <circle cx="35" cy="35" r="3.5" fill="#eceee9"/> <path d="M35,35 C42,28 48,22 54,16" fill="none" stroke="#3ecf6e" stroke-width="2" stroke-linecap="round"/> <circle cx="54" cy="16" r="3.5" fill="#3ecf6e"/> <path d="M35,35 C28,42 22,48 16,54" fill="none" stroke="#d9534f" stroke-width="2" stroke-linecap="round"/> <circle cx="16" cy="54" r="3.5" fill="#d9534f"/>'
+  },
+  {
+    slug: "base-personnel-1",
+    title: "なぜベースパーソネルが反発しているのか",
+    excerpt: "2023年に20.8%まで落ち込んだNFLのベースパーソネル使用率は、2024〜2025年に29.7%まで反発した。オフェンスの重厚化と「ニッケルタックス」という構造的弱点から、この反発の理由を解説する。",
+    url: "topics/base-personnel-1.html",
+    date: "2026-09-10",
+    readMin: 5,
+    theme: { slug: "base-personnel", name: "ベースパーソネルの反発", part: "前編" },
+    tags: [
+        { slug: "personnel", name: "パーソネル" },
+        { slug: "linebacker", name: "ラインバッカー" },
+        { slug: "nickel-package", name: "ニッケル" },
+        { slug: "tight-end", name: "タイトエンド" },
+        { slug: "safety", name: "セーフティ" },
+        { slug: "box", name: "ボックス" },
+        { slug: "run", name: "ラン" },
+        { slug: "offense", name: "オフェンス" },
+        { slug: "defense", name: "ディフェンス" }
+      ],
+    thumb: '<line x1="8" y1="40" x2="62" y2="40" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="22" cy="40" r="3.5" fill="#ffc633"/><circle cx="35" cy="40" r="3.5" fill="#ffc633"/><circle cx="48" cy="40" r="3.5" fill="#ffc633"/><circle cx="28" cy="52" r="3.5" fill="#eceee9"/><circle cx="42" cy="52" r="3.5" fill="#eceee9"/>'
+  },
+  {
+    slug: "base-personnel-2",
+    title: "ベースパーソネル反発の実例と今後の攻防",
+    excerpt: "1stダウンで82.3%という突出した数字を残すディトロイト・ライオンズの実例と、ベース回帰が抱えるリスク、観戦時の見分け方、今後の展望を解説する。",
+    url: "topics/base-personnel-2.html",
+    date: "2026-09-10",
+    readMin: 5,
+    theme: { slug: "base-personnel", name: "ベースパーソネルの反発", part: "後編" },
+    tags: [
+        { slug: "personnel", name: "パーソネル" },
+        { slug: "linebacker", name: "ラインバッカー" },
+        { slug: "nickel-package", name: "ニッケル" },
+        { slug: "box", name: "ボックス" },
+        { slug: "offense", name: "オフェンス" },
+        { slug: "defense", name: "ディフェンス" },
+        { slug: "head-coach", name: "ヘッドコーチ" },
+        { slug: "detroit-lions", name: "ディトロイト・ライオンズ" },
+        { slug: "green-bay-packers", name: "グリーンベイ・パッカーズ" },
+        { slug: "minnesota-vikings", name: "ミネソタ・バイキングス" }
+      ],
+    thumb: '<line x1="8" y1="40" x2="62" y2="40" stroke="#3d4238" stroke-width="1" stroke-dasharray="2,4"/><circle cx="22" cy="40" r="3.5" fill="#ffc633"/><circle cx="35" cy="40" r="3.5" fill="#ffc633"/><circle cx="48" cy="40" r="3.5" fill="#ffc633"/><circle cx="28" cy="52" r="3.5" fill="#eceee9"/><circle cx="42" cy="52" r="3.5" fill="#eceee9"/>'
   }
+
 ];
