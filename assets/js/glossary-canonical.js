@@ -100,6 +100,7 @@ window.GLOSSARY_CANONICAL = {
   "flanker": "フランカー",
   "flat": "フラット",
   "flat-route": "フラットルート",
+  "flea-flicker": "フリーフリッカー",
   "flood": "フラッド",
   "force": "フォース",
   "formation": "フォーメーション",
