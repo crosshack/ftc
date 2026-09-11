@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -506,7 +506,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/bubble-screen</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -818,7 +818,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/draw</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -951,6 +951,12 @@
   <url>
     <loc>https://footballtactics.club/glossary/flat</loc>
     <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://footballtactics.club/glossary/flea-flicker</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1106,7 +1112,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/handoff</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1286,7 +1292,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/jet-sweep</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1658,7 +1664,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/pass</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1694,7 +1700,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/pitch</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1706,7 +1712,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/play-action-pass</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1844,7 +1850,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/qb-sneak</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1958,7 +1964,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/run</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2012,7 +2018,7 @@
   </url>
   <url>
     <loc>https://footballtactics.club/glossary/screen-pass</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
