@@ -133,16 +133,16 @@ window.NFLDB_DATA = [
         "meta": "レギュラーシーズン 1999〜2025年"
       },
       {
-        "thumb": "<rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"#007BC7\"/><rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"none\" stroke=\"#FFB612\" stroke-width=\"1.5\" opacity=\"0.5\"/><text x=\"35\" y=\"41\" text-anchor=\"middle\" font-family=\"'Oswald', sans-serif\" font-weight=\"700\" font-size=\"19\" fill=\"#ffffff\" letter-spacing=\"1\">LAC</text><rect x=\"16\" y=\"50\" width=\"38\" height=\"5\" rx=\"2.5\" fill=\"#FFC20E\"/>",
-        "url": "nfl-db/los-angeles-chargers.html",
-        "title": "ロサンゼルス・チャージャーズ",
+        "thumb": "<rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"#000000\"/><rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"none\" stroke=\"#A6AEB0\" stroke-width=\"1.5\" opacity=\"0.5\"/><text x=\"35\" y=\"41\" text-anchor=\"middle\" font-family=\"'Oswald', sans-serif\" font-weight=\"700\" font-size=\"26\" fill=\"#ffffff\" letter-spacing=\"1\">LV</text><rect x=\"16\" y=\"50\" width=\"38\" height=\"5\" rx=\"2.5\" fill=\"#A5ACAF\"/>",
+        "url": "nfl-db/las-vegas-raiders.html",
+        "title": "ラスベガス・レイダーズ",
         "excerpt": "得点数・失点数・獲得ヤード数・被獲得ヤード数をシーズン別・ウィーク別・クォーター別にクロス集計。",
         "meta": "レギュラーシーズン 1999〜2025年"
       },
       {
-        "thumb": "<rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"#000000\"/><rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"none\" stroke=\"#A6AEB0\" stroke-width=\"1.5\" opacity=\"0.5\"/><text x=\"35\" y=\"41\" text-anchor=\"middle\" font-family=\"'Oswald', sans-serif\" font-weight=\"700\" font-size=\"26\" fill=\"#ffffff\" letter-spacing=\"1\">LV</text><rect x=\"16\" y=\"50\" width=\"38\" height=\"5\" rx=\"2.5\" fill=\"#A5ACAF\"/>",
-        "url": "nfl-db/las-vegas-raiders.html",
-        "title": "ラスベガス・レイダーズ",
+        "thumb": "<rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"#007BC7\"/><rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"none\" stroke=\"#FFB612\" stroke-width=\"1.5\" opacity=\"0.5\"/><text x=\"35\" y=\"41\" text-anchor=\"middle\" font-family=\"'Oswald', sans-serif\" font-weight=\"700\" font-size=\"19\" fill=\"#ffffff\" letter-spacing=\"1\">LAC</text><rect x=\"16\" y=\"50\" width=\"38\" height=\"5\" rx=\"2.5\" fill=\"#FFC20E\"/>",
+        "url": "nfl-db/los-angeles-chargers.html",
+        "title": "ロサンゼルス・チャージャーズ",
         "excerpt": "得点数・失点数・獲得ヤード数・被獲得ヤード数をシーズン別・ウィーク別・クォーター別にクロス集計。",
         "meta": "レギュラーシーズン 1999〜2025年"
       }
@@ -269,16 +269,16 @@ window.NFLDB_DATA = [
         "meta": "レギュラーシーズン 1999〜2025年"
       },
       {
-        "thumb": "<rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"#002244\"/><rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"none\" stroke=\"#A5ACAF\" stroke-width=\"1.5\" opacity=\"0.5\"/><text x=\"35\" y=\"41\" text-anchor=\"middle\" font-family=\"'Oswald', sans-serif\" font-weight=\"700\" font-size=\"19\" fill=\"#ffffff\" letter-spacing=\"1\">SEA</text><rect x=\"16\" y=\"50\" width=\"38\" height=\"5\" rx=\"2.5\" fill=\"#69BE28\"/>",
-        "url": "nfl-db/seattle-seahawks.html",
-        "title": "シアトル・シーホークス",
+        "thumb": "<rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"#AA0000\"/><rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\" opacity=\"0.5\"/><text x=\"35\" y=\"41\" text-anchor=\"middle\" font-family=\"'Oswald', sans-serif\" font-weight=\"700\" font-size=\"26\" fill=\"#ffffff\" letter-spacing=\"1\">SF</text><rect x=\"16\" y=\"50\" width=\"38\" height=\"5\" rx=\"2.5\" fill=\"#B3995D\"/>",
+        "url": "nfl-db/san-francisco-49ers.html",
+        "title": "サンフランシスコ・フォーティナイナーズ",
         "excerpt": "得点数・失点数・獲得ヤード数・被獲得ヤード数をシーズン別・ウィーク別・クォーター別にクロス集計。",
         "meta": "レギュラーシーズン 1999〜2025年"
       },
       {
-        "thumb": "<rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"#AA0000\"/><rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\" opacity=\"0.5\"/><text x=\"35\" y=\"41\" text-anchor=\"middle\" font-family=\"'Oswald', sans-serif\" font-weight=\"700\" font-size=\"26\" fill=\"#ffffff\" letter-spacing=\"1\">SF</text><rect x=\"16\" y=\"50\" width=\"38\" height=\"5\" rx=\"2.5\" fill=\"#B3995D\"/>",
-        "url": "nfl-db/san-francisco-49ers.html",
-        "title": "サンフランシスコ・フォーティナイナーズ",
+        "thumb": "<rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"#002244\"/><rect x=\"4\" y=\"4\" width=\"62\" height=\"62\" rx=\"10\" fill=\"none\" stroke=\"#A5ACAF\" stroke-width=\"1.5\" opacity=\"0.5\"/><text x=\"35\" y=\"41\" text-anchor=\"middle\" font-family=\"'Oswald', sans-serif\" font-weight=\"700\" font-size=\"19\" fill=\"#ffffff\" letter-spacing=\"1\">SEA</text><rect x=\"16\" y=\"50\" width=\"38\" height=\"5\" rx=\"2.5\" fill=\"#69BE28\"/>",
+        "url": "nfl-db/seattle-seahawks.html",
+        "title": "シアトル・シーホークス",
         "excerpt": "得点数・失点数・獲得ヤード数・被獲得ヤード数をシーズン別・ウィーク別・クォーター別にクロス集計。",
         "meta": "レギュラーシーズン 1999〜2025年"
       }
