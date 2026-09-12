@@ -37,6 +37,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://footballtactics.club/nfl-db-pro</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://footballtactics.club/about</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
