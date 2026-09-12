@@ -741,7 +741,8 @@
     });
 
     // シーズン別表示の対象年(開始年〜終了年)。集計対象期間そのものは変更せず、
-    // スマートフォン等での見やすさのため表示範囲だけを絞り込む。デフォルトは2006〜2025年。
+    // スマートフォン等での見やすさのため表示範囲だけを絞り込む。
+    // デフォルトは、データのある最新シーズンから遡って20シーズン分(年をハードコードしない)。
     var yearOptionsHtml = seasons.map(function (s) {
       return '<option value="' + s + '">' + s + '</option>';
     }).join('');
@@ -750,15 +751,10 @@
     yearStartSel.innerHTML = yearOptionsHtml;
     yearEndSel.innerHTML = yearOptionsHtml;
 
-    function clampToAvailable(year) {
-      var n = Number(year);
-      var min = Number(seasons[0]);
-      var max = Number(seasons[seasons.length - 1]);
-      return String(Math.max(min, Math.min(max, n)));
-    }
+    var DEFAULT_SEASON_SPAN = 20;
 
-    state.yearStart = seasons.indexOf('2006') !== -1 ? '2006' : clampToAvailable('2006');
-    state.yearEnd = seasons.indexOf('2025') !== -1 ? '2025' : clampToAvailable('2025');
+    state.yearEnd = seasons[seasons.length - 1];
+    state.yearStart = seasons[Math.max(0, seasons.length - DEFAULT_SEASON_SPAN)];
     yearStartSel.value = state.yearStart;
     yearEndSel.value = state.yearEnd;
 
