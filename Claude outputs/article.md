@@ -100,7 +100,7 @@
 
 プレーアクションの仕組みや、パーソネルが守備に与える情報については FOOTBALLTACTICS.CLUB の基礎知識で解説しています。
 
-https://footballtactics.club/basics/offense-play-types.html
+https://footballtactics.club/basics/offense-play-types
 
 ## 出典
 
