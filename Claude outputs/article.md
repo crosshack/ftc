@@ -1,11 +1,29 @@
-# ペイトリオッツを二択に嵌めた、プレーアクションの1プレー｜2026 第1週
+# ペイトリオッツを二択にハメた、プレーアクションの1プレー｜2026 Week 1
 
-> 【見出し画像】eyecatch-w1.png（1280×670）
-> 【ハッシュタグ】#NFL #アメフト #シアトル・シーホークス #ニューイングランド・ペイトリオッツ #プレーアクション
+**【note入稿メモ】**
+
+| 要素 | note側の扱い |
+| --- | --- |
+| 記事タイトル | 上記の見出し1行をそのまま |
+| 見出し画像 | `eyecatch-w1.png`（1280×670） |
+| 目次 | リード文の直後に「＋」→「目次」で挿入 |
+| 図1・図2 | 画像ブロック。**キャプションは画像のキャプション欄に入力**（本文には書かない）。ALTも設定する |
+| 観戦のヒント | **小見出し＋引用ブロック** |
+| もっと詳しく | **大見出し＋説明1行＋URL単独行**（埋め込みカードになる） |
+| 出典 | **文字リンク。** URLを単独行に置くとカードが7枚並ぶので避ける |
+| ハッシュタグ | 公開設定画面で入力 |
+
+**ハッシュタグ**: `#NFL` `#アメフト` `#シアトル・シーホークス` `#ニューイングランド・ペイトリオッツ` `#プレーアクション`
+
+**見出し画像のALT**: 実戦プレー解説 2026年Week 1 ペイトリオッツ対シーホークス「ペイトリオッツを二択にハメた、プレーアクションの1プレー」
 
 ---
 
+# 本文
+
 「実戦プレー解説」は、実際の試合の1プレーを取り上げ、「何が起きたか」「なぜ機能したか」を解き明かす連載コンテンツ。今回取り上げるのは、守備の1人に答えのない二択を突きつけ、どちらを選んでも何かを失うように組まれていた例だ。2026年シーズン第1週、シアトル・シーホークス13-10ニューイングランド・ペイトリオッツ。第4Q、同点に追いついた45ヤードのタッチダウンパスを解説する。
+
+《ここに目次を挿入》
 
 ## プレーの背景
 
@@ -25,7 +43,12 @@
 
 唯一のWRであるジャクソン・スミス=エンジグバには、CB（コーナーバック）クリスチャン・ゴンザレスがついた。その後方にS（セーフティ）クレイグ・ウッドソンが控える。
 
-**［図1］** 22パーソネルでランを匂わせたシーホークスに対し、ペイトリオッツはボックスへ人を集めてランを止めにきた。唯一のWRスミス=エンジグバにはゴンザレスがつき、その後方にウッドソンが控える。
+《画像: fig1.png》
+> **キャプション欄に入力**
+> ランを匂わせる22パーソネルに対し、ペイトリオッツはボックスへ人を集め、唯一のWRスミス=エンジグバにはゴンザレスが単独でついた。
+>
+> **ALT**
+> スナップ前の配置図。スクリメージラインの下にシーホークスの22パーソネル、上にランへ備えたペイトリオッツのボックス、左にCBゴンザレスとSウッドソン。
 
 ## プレーの狙い
 
@@ -43,7 +66,12 @@
 
 ボールはそのスミス=エンジグバへ飛ぶ。ウッドソンは間に合わなかった。前に踏み込む速度が足りず、スミス=エンジグバが向きを変えて走り出すまでに間合いを詰めきれない。タックルは外れ、前方にはTE2人のブロックが立つ。そのまま45ヤードを走り切ってタッチダウン。10-10となった。
 
-**［図2］** RBの動きに反応したゴンザレスが前に出た瞬間、スミス=エンジグバは後方のウッドソンへ渡る。その受け渡しの隙間に投げられ、外れたタックルが45ヤードに化けた。
+《画像: fig2.png》
+> **キャプション欄に入力**
+> フラットへ抜けたRBにゴンザレスが食いついた瞬間、スミス=エンジグバは後方のウッドソンへ渡り、その受け渡しの隙間を射抜かれた。
+>
+> **ALT**
+> プレー展開の図。RBが左のフラットへ抜け、ゴンザレスが前に出て対応する。スミス=エンジグバは外へ抜けて上へ走り、45ヤードのタッチダウン。
 
 ## なぜ機能したか
 
@@ -61,32 +89,28 @@
 
 なお、スミス=エンジグバ本人にも、守備が何をコールしていたかは見えていなかった。「パスプレーで嬉しかった。向こうはランだと思っていた。ブリッツを送ってきたんだと思う。自分の仕事はゾーンの空きを見つけることで、ドリューがよく見つけてくれた」。ブリッツだったかどうかを、本人も断定していない。彼が見ていたのは相手のコールではなく、空いた場所だけである。
 
-> **観戦のヒント：**
+### 観戦のヒント
+
 > 4th&1で重い編成が出てきたときは、ボックスに何人いるかではなく、フラットを誰が見ているかを探すといい。RBがフェイクを放棄して外へ抜けた瞬間、それを追うか追わないかを迫られる選手が必ず1人いる。その1人が何を捨てたかに、そのプレーの狙いが出る。
 
 ## まとめ
 
 45ヤードのタッチダウンは、奇襲が当たった結果ではない。重い編成でランを匂わせ、守備をボックスへ集め、フラットへ抜けるRBで1ヤードを確保する。その1ヤードを消しにいけば、後ろが空く。守備は二択に正しく答え、そのうえでタックルを1つ外した。「設計が保証するもの」と「実行が上乗せするもの」は別物だという、プレーデザインの視点からの好例だった。
 
----
+## もっと詳しく
 
-> **もっと詳しく**
-> プレーアクションの仕組みや、パーソネルが守備に与える情報については FOOTBALLTACTICS.CLUB の基礎知識で解説しています。
-> https://footballtactics.club/basics/offense-play-types.html
+プレーアクションの仕組みや、パーソネルが守備に与える情報については FOOTBALLTACTICS.CLUB の基礎知識で解説しています。
+
+https://footballtactics.club/basics/offense-play-types.html
 
 ## 出典
 
-- NFL.com ― Patriots-Seahawks in 2026 NFL Kickoff Game: What We Learned from Seattle's 13-10 win
-  https://www.nfl.com/news/patriots-seahawks-in-2026-nfl-kickoff-game-what-we-learned-from-seattle-s-13-10-win
-- Patriots.com ― After Further Review: Drake Maye breakdown, Patriots defense review, and quick-hit film notes from the loss to the Seahawks
-  https://www.patriots.com/news/after-further-review-drake-maye-breakdown-patriots-defense-review-and-quick-hit-film-notes-from-the-loss-to-the-seahawks
-- Patriots.com ― Game Observations: 8 takeaways from the Patriots loss to the Seahawks in Week 1
-  https://www.patriots.com/news/game-observations-8-takeaways-from-the-patriots-loss-to-the-seahawks-in-week-1
-- Patriots.com ― Seattle Seahawks Postgame Quotes 9/9
-  https://www.patriots.com/news/seattle-seahawks-postgame-quotes-9-9
-- Patriots.com ― New England Patriots Postgame Quotes 9/9
-  https://www.patriots.com/news/new-england-patriots-postgame-quotes-9-9
-- The Herald (HeraldNet) ― Seahawks' new offense tested as Sam Darnold misses time
-  https://www.heraldnet.com/2026/09/11/seahawks-new-offense-tested-as-sam-darnold-misses-time/
-- Pro Football Reference ― New England Patriots at Seattle Seahawks, September 9th, 2026
-  https://www.pro-football-reference.com/boxscores/202609090sea.htm
+※すべて文字リンク（URLを単独行に置かない）
+
+- [NFL.com ― Patriots-Seahawks in 2026 NFL Kickoff Game: What We Learned from Seattle's 13-10 win](https://www.nfl.com/news/patriots-seahawks-in-2026-nfl-kickoff-game-what-we-learned-from-seattle-s-13-10-win)
+- [Patriots.com ― After Further Review: Drake Maye breakdown, Patriots defense review, and quick-hit film notes from the loss to the Seahawks](https://www.patriots.com/news/after-further-review-drake-maye-breakdown-patriots-defense-review-and-quick-hit-film-notes-from-the-loss-to-the-seahawks)
+- [Patriots.com ― Game Observations: 8 takeaways from the Patriots loss to the Seahawks in Week 1](https://www.patriots.com/news/game-observations-8-takeaways-from-the-patriots-loss-to-the-seahawks-in-week-1)
+- [Patriots.com ― Seattle Seahawks Postgame Quotes 9/9](https://www.patriots.com/news/seattle-seahawks-postgame-quotes-9-9)
+- [Patriots.com ― New England Patriots Postgame Quotes 9/9](https://www.patriots.com/news/new-england-patriots-postgame-quotes-9-9)
+- [The Herald ― Seahawks' new offense tested as Sam Darnold misses time](https://www.heraldnet.com/2026/09/11/seahawks-new-offense-tested-as-sam-darnold-misses-time/)
+- [Pro Football Reference ― New England Patriots at Seattle Seahawks, September 9th, 2026](https://www.pro-football-reference.com/boxscores/202609090sea.htm)
