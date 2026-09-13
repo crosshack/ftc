@@ -328,8 +328,7 @@
 
     <div class="nfldb-controls">
       <div class="nfldb-pill-group" data-role="granularity-group">
-        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
-        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill active" data-granularity="week">ウィーク別</button>
         <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
       </div>
       <div class="nfldb-pill-group" data-role="viewmode-group">
@@ -348,7 +347,7 @@
       <div class="nfldb-chart-canvas-wrap">
         <canvas id="chart-coverage-type-canvas" role="img" aria-label="カバレッジタイプ別プレー回数のクロス集計チャート"></canvas>
       </div>
-      <p class="nfldb-legend-note">出典: nflverse（nfl_data_py）のPlay-by-Playデータを集計（集計対象: レギュラーシーズンのみ。カバレッジタイプデータの提供開始年である2018年シーズン以降のみ集計可能）。カバレッジデータは FTN Data via nflverse（2023年以降）／NFL NextGenStats via nflverse（2022年以前）。</p>
+      <p class="nfldb-legend-note">出典: nflverse（nfl_data_py）のPlay-by-Playデータを集計（集計対象: レギュラーシーズンのみ。カバレッジタイプデータの提供開始年である2018年シーズン以降のみ集計可能）。カバレッジデータは FTN Data via nflverse（2023年以降）／NFL NextGenStats via nflverse（2022年以前）。カバレッジタイプは、2023年にデータの提供元が変わったため、年をまたいだ比較ができません。</p>
     </div>
   </section>
 </div>
@@ -549,7 +548,10 @@
     // dataset全体のシーズン範囲(1999〜)より短い独自の対象範囲を持つ。metric.seasons_coveredが
     // あればそちらを優先し、無ければ従来通りdataset全体の範囲を使う。
     var seasonsCovered = metric.seasons_covered || dataset.seasons_covered;
-    var state = { granularity: 'season', season: null, viewMode: 'avg', yearStart: null, yearEnd: null };
+    // 08(カバレッジタイプ)は、2023年にparticipationデータの提供元が変わって判定基準が変わり、
+    // 年をまたいだ比較ができないため、シーズン別を選択肢から外している(2026-09-13)。
+    // 初期表示もウィーク別にする。詳細は claude/mujirushi-coverage-season-removal-brief-2026-09-13.md。
+    var state = { granularity: cfg.metricKey === 'coverage_type' ? 'week' : 'season', season: null, viewMode: 'avg', yearStart: null, yearEnd: null };
     var chart = null;
 
     function seasonCategories() {

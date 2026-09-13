@@ -368,8 +368,7 @@
         <option value="superbowl">スーパーボウル</option>
       </select>
       <div class="nfldb-pill-group" data-role="granularity-group">
-        <button type="button" class="nfldb-pill active" data-granularity="season">シーズン別</button>
-        <button type="button" class="nfldb-pill" data-granularity="week">ウィーク別</button>
+        <button type="button" class="nfldb-pill active" data-granularity="week">ウィーク別</button>
         <button type="button" class="nfldb-pill" data-granularity="quarter">クォーター別</button>
       </div>
       <div class="nfldb-pill-group" data-role="viewmode-group">
@@ -591,7 +590,10 @@
     var section = document.getElementById(cfg.sectionId);
     var metric = dataset.metrics[cfg.metricKey];
     var seasonsCovered = metric.seasons_covered || dataset.seasons_covered;
-    var state = { weekType: 'regular', granularity: 'season', season: null, viewMode: 'avg', yearStart: null, yearEnd: null };
+    // 08(カバレッジタイプ)は、2023年にparticipationデータの提供元が変わって判定基準が変わり、
+    // 年をまたいだ比較ができないため、シーズン別を選択肢から外している(2026-09-13)。
+    // 初期表示もウィーク別にする。詳細は claude/mujirushi-coverage-season-removal-brief-2026-09-13.md。
+    var state = { weekType: 'regular', granularity: cfg.metricKey === 'coverage_type' ? 'week' : 'season', season: null, viewMode: 'avg', yearStart: null, yearEnd: null };
     var chart = null;
 
     function weekTypeGames() {
@@ -707,6 +709,12 @@
       coverage_type: '。カバレッジタイプデータの提供開始年である2018年シーズン以降のみ集計可能'
     };
 
+    // 年をまたいだ比較ができない旨の断り。08(カバレッジタイプ)のみ(2026-09-13追加)。
+    // 提供元の固有名は出さない(出典表記のほうに両方載っているため)。
+    var COMPARABILITY_NOTE = {
+      coverage_type: 'カバレッジタイプは、2023年にデータの提供元が変わったため、年をまたいだ比較ができません。'
+    };
+
     var PARTICIPATION_ATTR = {
       offense_personnel: 'パーソネルデータは FTN Data via nflverse（2023年以降）／NFL NextGenStats via nflverse（2022年以前）。',
       defense_formation: 'パーソネルデータは FTN Data via nflverse（2023年以降）／NFL NextGenStats via nflverse（2022年以前）。',
@@ -717,7 +725,7 @@
       var note = section.querySelector('[data-role="legend-note"]');
       note.textContent = '出典: nflverse（nfl_data_py）のPlay-by-Playデータを集計（集計対象: NFL全32チーム合計、'
         + WEEKTYPE_LABELS[state.weekType] + (SEASON_RANGE_NOTE[cfg.metricKey] || '') + '）。'
-        + (PARTICIPATION_ATTR[cfg.metricKey] || '');
+        + (PARTICIPATION_ATTR[cfg.metricKey] || '') + (COMPARABILITY_NOTE[cfg.metricKey] || '');
     }
 
     function updateChart() {
