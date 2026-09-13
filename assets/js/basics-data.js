@@ -8,7 +8,7 @@ window.BASICS_DATA = [
     entries: [
     {
       slug: 'rules-units-basics',
-      url: 'basics/rules-units-basics.html',
+      url: '/basics/rules-units-basics',
       title: '3つのユニットの基礎',
       excerpt: 'オフェンス・ディフェンス・スペシャルチームの役割分担 ― 得点という目的に対する役割の違いを解説。',
       readMin: 6,
@@ -27,7 +27,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'rules-field-basics',
-      url: 'basics/rules-field-basics.html',
+      url: '/basics/rules-field-basics',
       title: 'フィールドの基礎',
       excerpt: '試合の舞台となる、境界線と区画 ― エンドゾーン・ゴールラインなどフィールドの基本構造を解説。',
       readMin: 7,
@@ -56,7 +56,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'rules-scoring-basics',
-      url: 'basics/rules-scoring-basics.html',
+      url: '/basics/rules-scoring-basics',
       title: '得点方法の基礎',
       excerpt: 'タッチダウン・フィールドゴール・セーフティの3つ ― それぞれの得点条件と点数を解説。',
       readMin: 5,
@@ -80,7 +80,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'rules-possession-basics',
-      url: 'basics/rules-possession-basics.html',
+      url: '/basics/rules-possession-basics',
       title: 'ポゼッションの基礎',
       excerpt: '攻撃権を維持する条件、手放す条件 ― ポゼッションとは何か、その維持と手放す条件を解説。',
       readMin: 7,
@@ -104,7 +104,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'rules-play-deadball-basics',
-      url: 'basics/rules-play-deadball-basics.html',
+      url: '/basics/rules-play-deadball-basics',
       title: 'プレーとボールデッドの基礎',
       excerpt: '1つのプレーの始まりから終わりまで ― ボールデッドまでのプレーの流れを、分類ごとに解説。',
       readMin: 7,
@@ -144,7 +144,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'rules-turnover-basics',
-      url: 'basics/rules-turnover-basics.html',
+      url: '/basics/rules-turnover-basics',
       title: 'ターンオーバーの基礎',
       excerpt: '力ずくで入れ替わる攻撃権 ― インターセプトとファンブルロスト、2つのターンオーバーを解説。',
       readMin: 5,
@@ -168,7 +168,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'rules-game-time-basics',
-      url: 'basics/rules-game-time-basics.html',
+      url: '/basics/rules-game-time-basics',
       title: '試合進行の基礎',
       excerpt: 'コイントスから試合終了までの流れ ― クォーター・ハーフタイム・オーバータイムのルールを解説。',
       readMin: 7,
@@ -185,7 +185,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'rules-clock-basics',
-      url: 'basics/rules-clock-basics.html',
+      url: '/basics/rules-clock-basics',
       title: 'クロックの基礎',
       excerpt: 'ゲームクロックとプレークロックの仕組み ― クロックが止まる3パターンと40秒ルールを解説。',
       readMin: 6,
@@ -207,7 +207,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'rules-penalties-basics',
-      url: 'basics/rules-penalties-basics.html',
+      url: '/basics/rules-penalties-basics',
       title: '判定・反則・ペナルティの基礎',
       excerpt: 'プレーの判定から、代表的な反則まで ― 判定の対象、主な反則の種類と科されるペナルティーを解説。',
       readMin: 8,
@@ -237,7 +237,7 @@ window.BASICS_DATA = [
     entries: [
     {
       slug: 'offense-positions',
-      url: 'basics/offense-positions.html',
+      url: '/basics/offense-positions',
       title: 'オフェンスポジションの基礎',
       excerpt: '11人はそれぞれ何をしているか ― QB・RB・WR・TE・OLの役割を解説。',
       readMin: 9,
@@ -295,7 +295,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'offense-formations',
-      url: 'basics/offense-formations.html',
+      url: '/basics/offense-formations',
       title: 'オフェンスフォーメーションの基礎',
       excerpt: '選手配置は何を語るか ― パーソネル、バックフィールドとレシーバーの型を解説。',
       readMin: 7,
@@ -334,7 +334,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'offense-assignment',
-      url: 'basics/offense-assignment.html',
+      url: '/basics/offense-assignment',
       title: 'オフェンスアサイメントの基礎',
       excerpt: '守備の配置をどう読み、崩すか ― オフェンスのアライメント、アサイメントの基本を解説。',
       readMin: 8,
@@ -380,7 +380,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'offense-play-types',
-      url: 'basics/offense-play-types.html',
+      url: '/basics/offense-play-types',
       title: 'プレータイプの基礎',
       excerpt: 'プレーの種類はどう分類されるか ― ランとパスのプレータイプを解説。',
       readMin: 6,
@@ -425,7 +425,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'offense-run-basics',
-      url: 'basics/offense-run-basics.html',
+      url: '/basics/offense-run-basics',
       title: 'ランオフェンスの基礎',
       excerpt: 'RBをフリーにする条件 ― ホールを作る技術、ホールの作り方を解説。',
       readMin: 7,
@@ -471,7 +471,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'offense-pass-basics',
-      url: 'basics/offense-pass-basics.html',
+      url: '/basics/offense-pass-basics',
       title: 'パスオフェンスの基礎',
       excerpt: 'レシーバーをオープンにする条件 ― セパレーションを作る技術、QBを守る方法を解説。',
       readMin: 8,
@@ -521,7 +521,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'offense-play-selection',
-      url: 'basics/offense-play-selection.html',
+      url: '/basics/offense-play-selection',
       title: 'プレー選択とプレスナップリードの基礎',
       excerpt: 'スナップ前に結果は半分決まる ― 何がプレーを決めるのか、スナップ前に何を読むのかを解説。',
       readMin: 8,
@@ -579,7 +579,7 @@ window.BASICS_DATA = [
     entries: [
     {
       slug: 'defense-positions',
-      url: 'basics/defense-positions.html',
+      url: '/basics/defense-positions',
       title: 'ディフェンスポジションの基礎',
       excerpt: '11人はそれぞれ何をしているか ― DL・LB・DBの役割を解説。',
       readMin: 9,
@@ -640,7 +640,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'defense-formations',
-      url: 'basics/defense-formations.html',
+      url: '/basics/defense-formations',
       title: 'ディフェンスフォーメーションの基礎',
       excerpt: '選手配置は何を語るか ― 4-3・3-4などフロントの組み方の基本を解説。',
       readMin: 7,
@@ -678,7 +678,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'defense-assignment',
-      url: 'basics/defense-assignment.html',
+      url: '/basics/defense-assignment',
       title: 'ディフェンスアサイメントの基礎',
       excerpt: 'どこに立ち、何を守るか ― ディフェンスのアライメント、アサイメントの基本を解説。',
       readMin: 9,
@@ -709,7 +709,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'defense-coverage-basics',
-      url: 'basics/defense-coverage-basics.html',
+      url: '/basics/defense-coverage-basics',
       title: 'カバレッジの基礎',
       excerpt: '11人でパスを封じる設計図 ― マンツーマンとゾーン、カバレッジのパターンを解説。',
       readMin: 10,
@@ -755,7 +755,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'defense-run-basics',
-      url: 'basics/defense-run-basics.html',
+      url: '/basics/defense-run-basics',
       title: 'ランディフェンスの基礎',
       excerpt: 'RBを止める条件 ― ラン・フィット、シェディング、タックリングを解説。',
       readMin: 7,
@@ -786,7 +786,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'defense-pass-basics',
-      url: 'basics/defense-pass-basics.html',
+      url: '/basics/defense-pass-basics',
       title: 'パスディフェンスの基礎',
       excerpt: 'レシーバーをオープンにさせない条件 ― カバレッジの方式、パスラッシュの技術を解説。',
       readMin: 8,
@@ -830,7 +830,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'defense-situational-basics',
-      url: 'basics/defense-situational-basics.html',
+      url: '/basics/defense-situational-basics',
       title: 'ディフェンスの状況判断の基礎',
       excerpt: '攻撃を読み、守り方を選ぶ ― 攻撃を読み、守り方を選ぶプロセスを解説。',
       readMin: 8,
@@ -884,7 +884,7 @@ window.BASICS_DATA = [
     entries: [
     {
       slug: 'special-teams-positions',
-      url: 'basics/special-teams-positions.html',
+      url: '/basics/special-teams-positions',
       title: 'スペシャルチームポジションの基礎',
       excerpt: '蹴る・返す・支える11人 ― キッカー・パンター・リターナーなどの役割を解説。',
       readMin: 7,
@@ -924,7 +924,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'special-teams-field-goal-basics',
-      url: 'basics/special-teams-field-goal-basics.html',
+      url: '/basics/special-teams-field-goal-basics',
       title: 'フィールドゴールの基礎',
       excerpt: '確実に3点を取る条件 ― キッカーを助ける要素、プロテクションの仕組みを解説。',
       readMin: 7,
@@ -953,7 +953,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'special-teams-kickoff-basics',
-      url: 'basics/special-teams-kickoff-basics.html',
+      url: '/basics/special-teams-kickoff-basics',
       title: 'キックオフの基礎',
       excerpt: '再開位置を優位にする条件 ― 蹴る深さとカバレッジを解説。',
       readMin: 6,
@@ -982,7 +982,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'special-teams-punt-basics',
-      url: 'basics/special-teams-punt-basics.html',
+      url: '/basics/special-teams-punt-basics',
       title: 'パントの基礎',
       excerpt: '再開位置を優位にする条件 ― 届ける技術とプロテクションを解説。',
       readMin: 7,
@@ -1014,7 +1014,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'special-teams-return-basics',
-      url: 'basics/special-teams-return-basics.html',
+      url: '/basics/special-teams-return-basics',
       title: 'リターンの基礎',
       excerpt: '再開位置を優位にする条件 ― ブロッキングとリターナーの技術を解説。',
       readMin: 5,
@@ -1054,7 +1054,7 @@ window.BASICS_DATA = [
     entries: [
     {
       slug: 'game-management-playbook-basics',
-      url: 'basics/game-management-playbook-basics.html',
+      url: '/basics/game-management-playbook-basics',
       title: 'プレーブックの基礎',
       excerpt: '11人を動かす共通言語 ― どのような編成で臨み、誰が何を担い、どう動くかの共通認識を解説。',
       readMin: 6,
@@ -1084,7 +1084,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'game-management-stats-basics',
-      url: 'basics/game-management-stats-basics.html',
+      url: '/basics/game-management-stats-basics',
       title: 'スタッツの基礎',
       excerpt: '感覚ではなく、数字で試合を捉える ― 頻度・効率・チームの状態を示す3種類のスタッツを解説。',
       readMin: 7,
@@ -1103,7 +1103,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'game-management-film-study-basics',
-      url: 'basics/game-management-film-study-basics.html',
+      url: '/basics/game-management-film-study-basics',
       title: 'フィルムスタディの基礎',
       excerpt: '相手の傾向は、映像の中にある ― 編成・状況・選手・スキームなど、映像から読み取る傾向を解説。',
       readMin: 6,
@@ -1125,7 +1125,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'game-management-self-scout-basics',
-      url: 'basics/game-management-self-scout-basics.html',
+      url: '/basics/game-management-self-scout-basics',
       title: 'セルフスカウトの基礎',
       excerpt: '見えない弱みは、直せず、狙われる ― 自チームのコール傾向とプレーの成否を見直す視点を解説。',
       readMin: 7,
@@ -1152,7 +1152,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'game-management-play-calling-basics',
-      url: 'basics/game-management-play-calling-basics.html',
+      url: '/basics/game-management-play-calling-basics',
       title: 'プレーコールの基礎',
       excerpt: '選び、伝え、変える ― プレーを選ぶ仕組み、伝達方法、オーディブルによる変更を解説。',
       readMin: 6,
@@ -1178,7 +1178,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'game-management-situational-basics',
-      url: 'basics/game-management-situational-basics.html',
+      url: '/basics/game-management-situational-basics',
       title: 'ヘッドコーチの状況判断の基礎',
       excerpt: 'リスクとリターンを天秤にかける ― フォースダウンやチャレンジなど、7つの判断場面を解説。',
       readMin: 7,
@@ -1200,7 +1200,7 @@ window.BASICS_DATA = [
     },
     {
       slug: 'game-management-time-management-basics',
-      url: 'basics/game-management-time-management-basics.html',
+      url: '/basics/game-management-time-management-basics',
       title: 'タイムマネジメントの基礎',
       excerpt: 'クロックとどう向き合うか ― 前半終盤の判断から、試合終盤・僅差での攻防までを解説。',
       readMin: 6,

@@ -8,7 +8,7 @@ window.TACTICS_DATA = [
     entries: [
     {
       slug: 'offense-formations',
-      url: 'tactics/offense-formations.html',
+      url: '/tactics/offense-formations',
       title: 'オフェンスフォーメーションまとめ',
       excerpt: 'シングルバック、ショットガン、アイフォーメーションなどの代表的なオフェンスフォーメーションを、 パーソネルとフィールド図つきで解説。',
       meta: '全12フォーメーション',
@@ -98,7 +98,7 @@ window.TACTICS_DATA = [
     },
     {
       slug: 'offense-run',
-      url: 'tactics/offense-run.html',
+      url: '/tactics/offense-run',
       title: 'ランコンセプトまとめ',
       excerpt: 'インサイド・ゾーン、アウトサイド・ゾーン、パワーなどの代表的なランコンセプトを、 ブロッキング図とアサイメント表つきで解説。',
       meta: '全6コンセプト',
@@ -160,7 +160,7 @@ window.TACTICS_DATA = [
     },
     {
       slug: 'offense-pass',
-      url: 'tactics/offense-pass.html',
+      url: '/tactics/offense-pass',
       title: 'パスコンセプトまとめ',
       excerpt: 'フォー・バーティカルズ、ダガー、レベルズなどの代表的なパスコンセプトを、 フィールド図とルート表つきで解説。',
       meta: '全12コンセプト',
@@ -254,7 +254,7 @@ window.TACTICS_DATA = [
     },
     {
       slug: 'offense-rpo',
-      url: 'tactics/offense-rpo.html',
+      url: '/tactics/offense-rpo',
       title: 'RPOコンセプトまとめ',
       excerpt: 'バブル、スティック、グランスなどの代表的なRPOコンセプトを、 読みのキーとなるディフェンダーつきで解説。',
       meta: '全6コンセプト',
@@ -320,7 +320,7 @@ window.TACTICS_DATA = [
     entries: [
     {
       slug: 'defense-formations',
-      url: 'tactics/defense-formations.html',
+      url: '/tactics/defense-formations',
       title: 'ディフェンスフォーメーションまとめ',
       excerpt: 'ベース3-4、ベース4-3、ニッケル4-2-5などの代表的なディフェンスフォーメーションを、 カバレッジとの組み合わせでフィールド図つきで解説。',
       meta: '全12パターン',
@@ -409,7 +409,7 @@ window.TACTICS_DATA = [
     },
     {
       slug: 'defense-coverages',
-      url: 'tactics/defense-coverages.html',
+      url: '/tactics/defense-coverages',
       title: 'カバレッジまとめ',
       excerpt: 'カバー1、カバー2、カバー3などの代表的なマン・ゾーンカバレッジを、 担当するマッチアップ・ゾーンがわかるフィールド図つきで解説。',
       meta: '全12カバレッジ',
