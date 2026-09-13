@@ -698,6 +698,15 @@
     // participation(パーソネル/チャート)由来の3指標には、nflverseが指定する帰属表示を付ける。
     // `FTN Data via nflverse` / `NFL NextGenStats via nflverse` は指定文字列のため変更しないこと
     // (訳さない・語順を変えない・via nflverse を省略しない)。2026-09-13追加。
+    // 集計可能な年範囲の断り。チーム別32ページのHTMLに直書きされている文言と同じものを、
+    // NFL全体ページでも出す(2026-09-13追加)。年は `seasons_covered` から取ることもできるが、
+    // チーム別ページ側がHTML直書きでハードコードのため、33ページで食い違わないよう揃えてある。
+    var SEASON_RANGE_NOTE = {
+      offense_personnel: '。パーソネルデータの提供開始年である2016年シーズン以降のみ集計可能',
+      defense_formation: '。パーソネルデータの提供開始年である2016年シーズン以降のみ集計可能',
+      coverage_type: '。カバレッジタイプデータの提供開始年である2018年シーズン以降のみ集計可能'
+    };
+
     var PARTICIPATION_ATTR = {
       offense_personnel: 'パーソネルデータは FTN Data via nflverse（2023年以降）／NFL NextGenStats via nflverse（2022年以前）。',
       defense_formation: 'パーソネルデータは FTN Data via nflverse（2023年以降）／NFL NextGenStats via nflverse（2022年以前）。',
@@ -706,7 +715,8 @@
 
     function updateLegendNote() {
       var note = section.querySelector('[data-role="legend-note"]');
-      note.textContent = '出典: nflverse（nfl_data_py）のPlay-by-Playデータを集計（集計対象: NFL全32チーム合計、' + WEEKTYPE_LABELS[state.weekType] + '）。'
+      note.textContent = '出典: nflverse（nfl_data_py）のPlay-by-Playデータを集計（集計対象: NFL全32チーム合計、'
+        + WEEKTYPE_LABELS[state.weekType] + (SEASON_RANGE_NOTE[cfg.metricKey] || '') + '）。'
         + (PARTICIPATION_ATTR[cfg.metricKey] || '');
     }
 
