@@ -695,9 +695,19 @@
       return { labels: labels, datasets: barDatasets.concat(lineDatasets) };
     }
 
+    // participation(パーソネル/チャート)由来の3指標には、nflverseが指定する帰属表示を付ける。
+    // `FTN Data via nflverse` / `NFL NextGenStats via nflverse` は指定文字列のため変更しないこと
+    // (訳さない・語順を変えない・via nflverse を省略しない)。2026-09-13追加。
+    var PARTICIPATION_ATTR = {
+      offense_personnel: 'パーソネルデータは FTN Data via nflverse（2023年以降）／NFL NextGenStats via nflverse（2022年以前）。',
+      defense_formation: 'パーソネルデータは FTN Data via nflverse（2023年以降）／NFL NextGenStats via nflverse（2022年以前）。',
+      coverage_type: 'カバレッジデータは FTN Data via nflverse（2023年以降）／NFL NextGenStats via nflverse（2022年以前）。'
+    };
+
     function updateLegendNote() {
       var note = section.querySelector('[data-role="legend-note"]');
-      note.textContent = '出典: nflverse（nfl_data_py）のPlay-by-Playデータを集計（集計対象: NFL全32チーム合計、' + WEEKTYPE_LABELS[state.weekType] + '）。';
+      note.textContent = '出典: nflverse（nfl_data_py）のPlay-by-Playデータを集計（集計対象: NFL全32チーム合計、' + WEEKTYPE_LABELS[state.weekType] + '）。'
+        + (PARTICIPATION_ATTR[cfg.metricKey] || '');
     }
 
     function updateChart() {
